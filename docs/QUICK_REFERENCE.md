@@ -88,6 +88,12 @@ bun run lint
 # Development server
 python manage.py runserver
 
+# Run all Django tests
+python manage.py test
+
+# Run a single Django test method
+python manage.py test api.tests.SomeTestCase.test_method_name
+
 # Migrations
 python manage.py makemigrations
 python manage.py migrate
@@ -104,6 +110,67 @@ python manage.py createsuperuser
 # Build frontend and start Django
 ./start.sh
 ```
+
+---
+
+## Debugging Django
+
+### Quick `breakpoint()` Debugging
+
+Use Python's built-in debugger directly in backend code:
+
+```python
+def get_player_rankings():
+    players_records = DataNormalizationService.normalize_data()
+    breakpoint()
+    return players_records
+```
+
+You do not need to import `breakpoint()` in this project because it is a Python built-in.
+
+Run the app or a test, then use these `pdb` commands:
+
+| Command | Meaning |
+|---------|---------|
+| `n` | Step over the next line |
+| `s` | Step into a function call |
+| `r` | Run until the current function returns |
+| `c` | Continue execution |
+| `l` | Show code around the current line |
+| `p value` | Print a value |
+| `pp value` | Pretty-print a value |
+| `q` | Quit the debugger |
+
+### VS Code Breakpoint Debugging
+
+This repository includes `.vscode/launch.json` with Django debug targets.
+
+Available configurations:
+- `Django Runserver`
+- `Django Test`
+
+How to use it:
+1. Open a backend file such as `api/views.py` or `api/services/player_ranking_service.py`
+2. Click in the gutter to add a breakpoint
+3. Open the Run and Debug panel in VS Code
+4. Choose `Django Runserver` or `Django Test`
+5. Press `F5` to start debugging
+
+Useful VS Code shortcuts:
+
+| Shortcut | Meaning |
+|----------|---------|
+| `F10` | Step over |
+| `F11` | Step into |
+| `Shift+F11` | Step out |
+| `F5` | Continue |
+
+### Good Backend Files to Debug
+
+- `api/views.py`
+- `api/services/external_stats_service.py`
+- `api/services/data_normalization_service.py`
+- `api/services/player_ranking_service.py`
 
 ---
 
@@ -270,6 +337,7 @@ urlpatterns = [
 | `SETUP_COMPLETE.md` | What was configured |
 | `docs/DEPLOYMENT.md` | Production deployment |
 | `docs/EXPLICIT_ROUTES.md` | Explicit routes pattern ⭐ |
+| `docs/DATABASE_TABLES.md` | Database table reference |
 | `docs/MIGRATION_CHECKLIST.md` | Migration guide |
 | `docs/CBV_REFERENCE.md` | View class reference |
 | `docs/QUICK_REFERENCE.md` | This document |

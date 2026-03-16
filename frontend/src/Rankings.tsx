@@ -14,7 +14,7 @@ import {
   useReactTable,
   type VisibilityState,
 } from "@tanstack/react-table";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ArrowUp, ArrowDown, Circle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 // import { Checkbox } from "@/components/ui/checkbox";
@@ -47,6 +47,8 @@ const fetchPlayerRankings = async (): Promise<ApiResponse> => {
 
 type Player = {
   rank: number;
+  rank_change: "up" | "down" | "same";
+  previous_rank: number | null;
   name: string;
   position: string;
   points: number;
@@ -58,6 +60,50 @@ type Player = {
   man_of_the_match: number;
   rating: number;
   appearances: number;
+  player_id: number;
+};
+
+const PreviousRankDisplay = ({
+  previousRank,
+}: {
+  previousRank: number | null;
+}) => {
+  if (previousRank === null) return null;
+  return <span className="text-orange-400 opacity-70">{previousRank}</span>;
+};
+
+const RankChangeIcon = ({
+  rankChange,
+  previousRank,
+}: {
+  rankChange: "up" | "down" | "same";
+  previousRank: number | null;
+}) => {
+  switch (rankChange) {
+    case "up":
+      return (
+        <div className="flex items-center gap-2">
+          <ArrowUp className="w-4 h-4 text-green-600" />
+          <PreviousRankDisplay previousRank={previousRank} />
+        </div>
+      );
+    case "down":
+      return (
+        <div className="flex items-center gap-2">
+          <ArrowDown className="w-4 h-4 text-red-600" />
+          <PreviousRankDisplay previousRank={previousRank} />
+        </div>
+      );
+    case "same":
+      return (
+        <div className="flex items-center gap-2">
+          <Circle className="w-2 h-2 text-gray-500 fill-gray-500" />
+          <PreviousRankDisplay previousRank={previousRank} />
+        </div>
+      );
+    default:
+      return null;
+  }
 };
 
 const columns: ColumnDef<Player>[] = [
@@ -88,7 +134,13 @@ const columns: ColumnDef<Player>[] = [
     accessorKey: "rank",
     header: () => <div className="text-center w-20">Rank</div>,
     cell: ({ row }) => (
-      <div className="text-center font-medium w-20">{row.getValue("rank")}</div>
+      <div className="flex items-center justify-center gap-2 w-20">
+        <span className="font-medium">{row.getValue("rank")}</span>
+        <RankChangeIcon
+          rankChange={row.original.rank_change}
+          previousRank={row.original.previous_rank}
+        />
+      </div>
     ),
     enableSorting: false,
   },
