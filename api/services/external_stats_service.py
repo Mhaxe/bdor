@@ -1,17 +1,11 @@
 import logging
-from typing import cast
 
 import cloudscraper
 from django.db import OperationalError, ProgrammingError
-from django.db.models import Manager
 from django.db.transaction import atomic
 from django.utils import timezone
 
-from api.models import ExternalPlayerStat, ExternalStatsBatch, StatsSource
-from api.selectors.stats_selectors import (
-    SUPPORTED_STATS_SOURCES,
-    get_latest_stats_batches,
-)
+from api.models import Player, StatsSource
 
 URL = "https://1xbet.whoscored.com/statisticsfeed/1/getplayerstatistics"
 logger = logging.getLogger(__name__)
@@ -63,51 +57,30 @@ SOURCE_CONFIG: dict[str, dict[str, dict[str, str]]] = {
     },
 }
 
+SUPPORTED_STATS_SOURCES = list(StatsSource.values)
+
 
 def to_int(value) -> int | None:
     """Convert external numeric values to integers when possible."""
 
     if value is None or value == "":
-            return None
+        return None
     return int(float(value))
+
 
 def to_float(value) -> float | None:
     """Convert external numeric values to floats when possible."""
+
     if value is None or value == "":
-            return None
+        return None
     return float(value)
 
-def get_first_int(payload: list[dict], key: str) -> int | None:
-    """Return the first integer-like value for a payload field."""
-
-    if not payload:
-        return None
-    return to_int(payload[0].get(key))
-
-def get_first_str(payload: list[dict], key: str) -> str:
-    """Return the first string value for a payload field."""
-
-    if not payload:
-        return ""
-    return str(payload[0].get(key) or "")
 
 class ExternalStatsService:
-    """Fetch and persist external player stats as raw JSON and rows."""
+    """Fetch external stats and upsert one stable combined player row per player."""
 
     @staticmethod
-    def _batch_manager() -> Manager:
-        """Return the default manager for stats batches."""
-
-        return cast(Manager, ExternalStatsBatch._default_manager)
-
-    @staticmethod
-    def _player_stat_manager() -> Manager:
-        """Return the default manager for normalized player stats."""
-
-        return cast(Manager, ExternalPlayerStat._default_manager)
-
-    @staticmethod
-    def sync_if_stale() -> list[ExternalStatsBatch]:
+    def sync_if_stale() -> list[tuple[str, list[dict]]]:
         """Fetch stats only when today's data has not already been stored."""
 
         if not ExternalStatsService.should_fetch_today():
@@ -124,7 +97,7 @@ class ExternalStatsService:
         """Return whether external stats should be fetched for today."""
 
         try:
-            latest_batches = get_latest_stats_batches()
+            latest_player = Player.objects.order_by("-updated_at", "player_id").first()
         except (OperationalError, ProgrammingError):
             logger.debug(
                 "Skipping external stats freshness check before database is ready"
@@ -134,38 +107,11 @@ class ExternalStatsService:
             logger.exception("Unexpected error while checking external stats freshness")
             return False
 
-        if len(latest_batches) < len(SUPPORTED_STATS_SOURCES):
+        if latest_player is None:
             return True
 
         today = timezone.localdate()
-        for batch in latest_batches:
-            if timezone.localdate(batch.fetched_at) != today:
-                return True
-
-        return False
-
-    @staticmethod
-    def fetch_and_store_source(source: str) -> ExternalStatsBatch:
-        """Fetch one source payload and persist both raw and normalized rows."""
-
-        payload = ExternalStatsService._fetch_source_payload(source)
-        with atomic():
-            return ExternalStatsService._store_source_payload(source, payload)
-
-    @staticmethod
-    def sync_all_sources() -> list[ExternalStatsBatch]:
-        """Fetch all sources, then store them atomically as one unit."""
-
-        fetched_payloads = [
-            (str(source), ExternalStatsService._fetch_source_payload(str(source)))
-            for source in SUPPORTED_STATS_SOURCES
-        ]
-
-        with atomic():
-            return [
-                ExternalStatsService._store_source_payload(source, payload)
-                for source, payload in fetched_payloads
-            ]
+        return timezone.localdate(latest_player.updated_at) != today
 
     @staticmethod
     def _fetch_source_payload(source: str) -> list[dict]:
@@ -179,59 +125,121 @@ class ExternalStatsService:
         return response.json().get("playerTableStats", [])
 
     @staticmethod
-    def _store_source_payload(source: str, payload: list[dict]) -> ExternalStatsBatch:
-        """Store one fetched payload and its normalized player rows."""
+    def _upsert_players_from_payloads(
+        fetched_payloads: list[tuple[str, list[dict]]],
+    ) -> None:
+        """Aggregate source payloads and upsert one stable row per player."""
 
-        batch = ExternalStatsService._batch_manager().create(
-            source=source,
-            season_id=get_first_int(payload, "seasonId"),
-            competition_name=get_first_str(payload, "tournamentName"),
-            request_params=SOURCE_CONFIG[source]["params"],
-            raw_payload=payload,
-            record_count=len(payload),
-        )
-        ExternalStatsService._create_normalized_rows(batch=batch, payload=payload)
+        players_by_id: dict[int, dict] = {}
 
-        logger.info(
-            "Stored %s external stats rows for source '%s' in batch %s",
-            len(payload),
-            source,
-            batch.id,
-        )
-        return batch
+        for _, payload in fetched_payloads:
+            for row in payload:
+                player_id = to_int(row.get("playerId"))
+                if player_id is None:
+                    continue
 
-    @staticmethod
-    def _create_normalized_rows(batch: ExternalStatsBatch, payload: list[dict]) -> None:
-        """Persist query-friendly player stats rows for a batch."""
+                if player_id not in players_by_id:
+                    players_by_id[player_id] = {
+                        "name": str(row.get("name") or ""),
+                        "position_text": str(row.get("positionText") or ""),
+                        "team_id": to_int(row.get("teamId")),
+                        "team_name": str(row.get("teamName") or ""),
+                        "stats": {
+                            "goals": 0,
+                            "assists": 0,
+                            "yellow_cards": 0,
+                            "red_cards": 0,
+                            "man_of_the_match": 0,
+                            "appearances": 0,
+                            "rating": 0.0,
+                        },
+                        "rating_total": 0.0,
+                        "rating_count": 0,
+                    }
 
-        player_rows_by_id: dict[int, dict] = {}
-        for row in payload:
-            player_id = to_int(row.get("playerId"))
-            if player_id is None:
+                player = players_by_id[player_id]
+                stats = player["stats"]
+                stats["goals"] += to_int(row.get("goal")) or 0
+                stats["assists"] += to_int(row.get("assistTotal")) or 0
+                stats["yellow_cards"] += to_int(row.get("yellowCard")) or 0
+                stats["red_cards"] += to_int(row.get("redCard")) or 0
+                stats["man_of_the_match"] += to_int(row.get("manOfTheMatch")) or 0
+                stats["appearances"] += to_int(row.get("apps")) or 0
+
+                rating = to_float(row.get("rating"))
+                if rating is not None:
+                    player["rating_total"] += rating
+                    player["rating_count"] += 1
+
+                if not player["name"]:
+                    player["name"] = str(row.get("name") or "")
+                if not player["position_text"]:
+                    player["position_text"] = str(row.get("positionText") or "")
+                if not player["team_name"]:
+                    player["team_name"] = str(row.get("teamName") or "")
+                if player["team_id"] is None:
+                    player["team_id"] = to_int(row.get("teamId"))
+
+        if not players_by_id:
+            return
+
+        now = timezone.now()
+        player_ids = list(players_by_id.keys())
+        existing_players = {
+            player.player_id: player
+            for player in Player.objects.filter(player_id__in=player_ids)
+        }
+
+        to_create: list[Player] = []
+        to_update: list[Player] = []
+
+        for player_id, data in players_by_id.items():
+            stats = data["stats"]
+            rating_count = data["rating_count"]
+            stats["rating"] = (
+                round(data["rating_total"] / rating_count, 2) if rating_count else 0.0
+            )
+
+            existing = existing_players.get(player_id)
+            if existing is None:
+                to_create.append(
+                    Player(
+                        player_id=player_id,
+                        name=data["name"],
+                        position_text=data["position_text"],
+                        team_id=data["team_id"],
+                        team_name=data["team_name"],
+                        stats=stats,
+                        updated_at=now,
+                    )
+                )
                 continue
 
-            player_rows_by_id[player_id] = row
+            existing.name = data["name"]
+            existing.position_text = data["position_text"]
+            existing.team_id = data["team_id"]
+            existing.team_name = data["team_name"]
+            existing.stats = stats
+            existing.updated_at = now
+            to_update.append(existing)
 
-        player_stats = [
-            ExternalPlayerStat(
-                batch=batch,
-                source=batch.source,
-                player_id=player_id,
-                name=str(row.get("name") or ""),
-                position_text=str(row.get("positionText") or ""),
-                team_id=to_int(row.get("teamId")),
-                team_name=str(row.get("teamName") or ""),
-                goals=to_int(row.get("goal")) or 0,
-                assists=to_int(row.get("assistTotal")) or 0,
-                yellow_cards=to_int(row.get("yellowCard")) or 0,
-                red_cards=to_int(row.get("redCard")) or 0,
-                man_of_the_match=to_int(row.get("manOfTheMatch"))
-                or 0,
-                appearances=to_int(row.get("apps")) or 0,
-                rating=to_float(row.get("rating")) or 0.0,
-                raw_row=row,
+        if to_create:
+            Player.objects.bulk_create(to_create)
+        if to_update:
+            Player.objects.bulk_update(
+                to_update,
+                ["name", "position_text", "team_id", "team_name", "stats", "updated_at"],
             )
-            for player_id, row in player_rows_by_id.items()
+
+    @staticmethod
+    def sync_all_sources() -> list[tuple[str, list[dict]]]:
+        """Fetch all sources and upsert aggregated players."""
+
+        fetched_payloads = [
+            (str(source), ExternalStatsService._fetch_source_payload(str(source)))
+            for source in SUPPORTED_STATS_SOURCES
         ]
 
-        ExternalStatsService._player_stat_manager().bulk_create(player_stats)
+        with atomic():
+            ExternalStatsService._upsert_players_from_payloads(fetched_payloads)
+            return fetched_payloads

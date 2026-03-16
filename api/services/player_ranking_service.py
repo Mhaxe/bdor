@@ -1,10 +1,10 @@
-import pandas as pd
+from django.utils import timezone
 
+from api.models import Player
 from api.services.data_normalization_service import (
     POSITION_MAPPING,
     DataNormalizationService,
 )
-from api.services.ranking_snapshot_service import RankingSnapshotService
 from core.players import create_player
 
 
@@ -12,8 +12,7 @@ class PlayerRankingService:
     """Build ranked player results from normalized stats records.
 
     This service coordinates data normalization, position remapping, player
-    model creation, points calculation, rank metadata enrichment, and
-    persistence of the latest rankings snapshot.
+    model creation, points calculation, and latest rank persistence.
     """
 
     @staticmethod
@@ -23,8 +22,7 @@ class PlayerRankingService:
         The service normalizes raw competition data into player records, maps
         source position labels to the domain model values expected by
         `create_player`, calculates each player's points, sorts players by
-        score, adds `rank`, `previous_rank`, and `rank_change`, and saves the
-        resulting rankings snapshot for future comparisons.
+        score, and adds `rank`, `previous_rank`, and `rank_change`.
 
         Returns:
             list[dict]: Ranking records enriched with player stats, points,
@@ -68,9 +66,44 @@ class PlayerRankingService:
         # player_points = player_points[:100]
         player_points.sort(key=lambda x: x["points"], reverse=True)
 
-        # Convert to DataFrame to add rank and rank_change columns
-        player_points_df = pd.DataFrame(player_points)
-        player_points = DataNormalizationService.add_rank_change(player_points_df)
+        for index, player in enumerate(player_points):
+            current_rank = index + 1
+            previous_rank = player.get("previous_rank")
+            player["rank"] = current_rank
+            player["rank_change"] = DataNormalizationService.calculate_rank_change(
+                current_rank, previous_rank
+            )
 
-        RankingSnapshotService.create_snapshot(player_points)
+        PlayerRankingService._update_player_ranks(player_points)
         return player_points
+
+    @staticmethod
+    def _update_player_ranks(rankings: list[dict]) -> None:
+        """Persist latest rank values to Player rows."""
+
+        if not rankings:
+            return
+
+        player_ids = [int(ranking["player_id"]) for ranking in rankings]
+        players_by_id = {
+            player.player_id: player
+            for player in Player.objects.filter(player_id__in=player_ids)
+        }
+
+        now = timezone.now()
+        players_to_update: list[Player] = []
+        for ranking in rankings:
+            player = players_by_id.get(int(ranking["player_id"]))
+            if player is None:
+                continue
+
+            player.previous_rank = ranking.get("previous_rank")
+            player.rank = ranking["rank"]
+            player.updated_at = now
+            players_to_update.append(player)
+
+        if players_to_update:
+            Player.objects.bulk_update(
+                players_to_update,
+                ["previous_rank", "rank", "updated_at"],
+            )
