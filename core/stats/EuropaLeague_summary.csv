@@ -1,0 +1,652 @@
+tournamentShortName,apps,subOn,manOfTheMatch,goal,assistTotal,name,playerId,positionText,teamId,teamName,tournamentId,tournamentRegionId,tournamentRegionCode,tournamentRegionName,tournamentName,rating,minsPlayed,yellowCard,redCard,ranking
+UCL,4,0,2,5,0,Harry Kane,83532,Forward,37,Bayern,12,250,ceu,Europe,Champions League,8.6,311,0,0,1
+UCL,3,0,2,6,0,Victor Osimhen,298510,Forward,294,Galatasaray,12,250,ceu,Europe,Champions League,8.45,226,0,0,2
+UCL,3,0,3,4,0,Lautaro Martínez,299344,Forward,75,Inter,12,250,ceu,Europe,Champions League,8.446666667,172,1,0,3
+UCL,4,0,2,5,0,Kylian Mbappé,300713,Forward,52,Real Madrid,12,250,ceu,Europe,Champions League,8.29,351,0,0,4
+UCL,3,0,2,2,1,Phil Foden,331254,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,8.25,270,0,0,5
+UCL,3,0,2,2,2,Julián Alvarez,365409,Forward,63,Atletico,12,250,ceu,Europe,Champions League,8.136666667,270,0,0,6
+UCL,3,0,1,2,1,Khvicha Kvaratskhelia,370984,Forward,304,PSG,12,250,ceu,Europe,Champions League,8.06,228,0,0,7
+UCL,4,0,1,4,1,Marcus Rashford,300299,Forward,65,Barcelona,12,250,ceu,Europe,Champions League,8.045,327,0,0,8
+UCL,3,0,0,2,1,Lamine Yamal,480249,Forward,65,Barcelona,12,250,ceu,Europe,Champions League,8.04,255,2,0,9
+UCL,3,0,1,3,2,Fermín López,463838,Midfielder,65,Barcelona,12,250,ceu,Europe,Champions League,8.036666667,270,2,0,10
+UCL,4,0,1,2,2,Nuno Mendes,395221,Defender,304,PSG,12,250,ceu,Europe,Champions League,7.995,345,2,0,11
+UCL,4,0,0,1,2,Michael Olise,371281,Midfielder,37,Bayern,12,250,ceu,Europe,Champions League,7.8725,334,1,0,12
+UCL,4,0,1,5,0,Erling Haaland,315227,Forward,167,Man City,12,250,ceu,Europe,Champions League,7.7975,342,0,0,13
+UCL,4,0,2,2,0,Jens Petter Hauge,320977,Midfielder,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,7.7525,356,0,0,14
+UCL,3,1,0,3,1,Gabriel Martinelli,380706,Forward,13,Arsenal,12,250,ceu,Europe,Champions League,7.743333333,182,0,0,15
+UCL,4,0,1,1,3,Dominik Szoboszlai,369875,Midfielder,26,Liverpool,12,250,ceu,Europe,Champions League,7.7175,360,0,0,16
+UCL,4,1,1,1,2,Hakan Çalhanoglu,110373,Midfielder,75,Inter,12,250,ceu,Europe,Champions League,7.7075,255,0,0,17
+UCL,4,0,1,0,1,Thibaut Courtois,73798,Goalkeeper,52,Real Madrid,12,250,ceu,Europe,Champions League,7.7025,360,0,0,18
+UCL,4,0,1,2,0,Micky van de Ven,425229,Defender,30,Tottenham,12,250,ceu,Europe,Champions League,7.6225,360,2,0,19
+UCL,4,0,1,2,1,Trincão,368409,Forward,296,Sporting,12,250,ceu,Europe,Champions League,7.59,316,0,0,20
+UCL,3,1,0,2,0,Bukayo Saka,367185,Forward,13,Arsenal,12,250,ceu,Europe,Champions League,7.573333333,197,0,0,21
+UCL,4,0,1,1,0,Dan Burn,82277,Defender,23,Newcastle,12,250,ceu,Europe,Champions League,7.5725,335,1,0,22
+UCL,4,0,0,0,1,Nick Pope,105720,Goalkeeper,23,Newcastle,12,250,ceu,Europe,Champions League,7.565,360,0,0,23
+UCL,3,1,0,2,1,Marcus Thuram,296322,Forward,75,Inter,12,250,ceu,Europe,Champions League,7.56,172,1,0,24
+UCL,3,1,1,1,2,Leandro Trossard,113994,Forward,13,Arsenal,12,250,ceu,Europe,Champions League,7.556666667,170,0,0,25
+UCL,4,0,1,1,2,Hans Vanaken,243567,Midfielder,124,Club Brugge,12,250,ceu,Europe,Champions League,7.54,360,1,0,26
+UCL,2,0,0,0,0,Temirlan Anarbekov,421734,Goalkeeper,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,7.525,180,0,0,27
+UCL,2,0,0,1,0,Raphaël Guerreiro,115375,Defender,37,Bayern,12,250,ceu,Europe,Champions League,7.52,159,0,0,28
+UCL,4,0,2,4,1,Anthony Gordon,349669,Forward,23,Newcastle,12,250,ceu,Europe,Champions League,7.4475,306,0,0,29
+UCL,3,0,0,0,1,Alessandro Bastoni,329665,Defender,75,Inter,12,250,ceu,Europe,Champions League,7.446666667,239,0,0,30
+UCL,4,0,1,3,0,Luis Díaz,377168,Forward,37,Bayern,12,250,ceu,Europe,Champions League,7.4175,269,0,1,31
+UCL,3,2,0,2,1,Nicolas Jackson,426050,Forward,37,Bayern,12,250,ceu,Europe,Champions League,7.416666667,112,0,0,32
+UCL,3,0,0,1,0,Jordan Teze,361839,Defender,248,Monaco,12,250,ceu,Europe,Champions League,7.41,270,0,0,33
+UCL,4,0,0,1,1,Mason Greenwood,367782,Forward,249,Marseille,12,250,ceu,Europe,Champions League,7.3925,316,0,0,34
+UCL,4,0,0,0,1,Josko Gvardiol,402664,Defender,167,Man City,12,250,ceu,Europe,Champions League,7.375,350,0,0,35
+UCL,4,0,0,1,1,Gabriel Magalhães,334087,Defender,13,Arsenal,12,250,ceu,Europe,Champions League,7.375,327,1,0,36
+UCL,2,0,0,1,1,Giacomo Raspadori,371497,Forward,63,Atletico,12,250,ceu,Europe,Champions League,7.37,108,0,0,37
+UCL,4,1,1,2,0,Mikel Merino,238916,Midfielder,13,Arsenal,12,250,ceu,Europe,Champions League,7.3575,245,1,0,38
+UCL,4,0,0,1,1,Jérémy Doku,388098,Forward,167,Man City,12,250,ceu,Europe,Champions League,7.3525,281,0,0,39
+UCL,4,0,0,0,1,Kieran Trippier,83078,Defender,23,Newcastle,12,250,ceu,Europe,Champions League,7.3525,339,0,0,40
+UCL,3,0,0,0,2,Leroy Sané,144711,Forward,294,Galatasaray,12,250,ceu,Europe,Champions League,7.343333333,247,0,0,41
+UCL,4,0,0,0,0,Neofytos Michael,296202,Goalkeeper,2748,Pafos FC,12,250,ceu,Europe,Champions League,7.3425,360,0,0,42
+UCL,4,0,2,1,0,Derrick Luckassen,231140,Defender,2748,Pafos FC,12,250,ceu,Europe,Champions League,7.34,360,1,0,43
+UCL,3,0,0,0,0,Martín Zubimendi,372424,Midfielder,13,Arsenal,12,250,ceu,Europe,Champions League,7.34,253,3,0,44
+UCL,3,0,0,1,2,Karim Adeyemi,392646,Forward,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,7.333333333,234,0,0,45
+UCL,4,1,1,3,0,Felix Nmecha,367783,Midfielder,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,7.3225,259,0,0,46
+UCL,3,0,0,0,0,Dean Huijsen,468852,Defender,52,Real Madrid,12,250,ceu,Europe,Champions League,7.32,270,1,0,47
+UCL,4,0,2,0,0,Marco Carnesecchi,383278,Goalkeeper,300,Atalanta,12,250,ceu,Europe,Champions League,7.3175,360,0,0,48
+UCL,4,2,2,2,0,Estêvão,510728,Forward,15,Chelsea,12,250,ceu,Europe,Champions League,7.2975,225,1,0,49
+UCL,4,0,0,0,0,Gerónimo Rulli,125375,Goalkeeper,249,Marseille,12,250,ceu,Europe,Champions League,7.295,360,0,0,50
+UCL,3,0,0,1,1,Andy Robertson,115726,Defender,26,Liverpool,12,250,ceu,Europe,Champions League,7.293333333,264,0,0,51
+UCL,3,1,0,1,0,Carlos Augusto,357897,Defender,75,Inter,12,250,ceu,Europe,Champions League,7.29,190,0,0,52
+UCL,4,1,1,3,1,Igor Paixão,436553,Forward,249,Marseille,12,250,ceu,Europe,Champions League,7.2875,224,0,0,53
+UCL,4,0,0,2,0,Denzel Dumfries,322153,Defender,75,Inter,12,250,ceu,Europe,Champions League,7.28,333,0,0,54
+UCL,4,0,1,0,0,Matheus Silva,401149,Defender,2569,Qarabag FK,12,250,ceu,Europe,Champions League,7.275,349,2,0,55
+UCL,4,0,1,2,2,Carlos Forbs,468850,Forward,124,Club Brugge,12,250,ceu,Europe,Champions League,7.2725,260,0,0,56
+UCL,3,0,0,1,0,Federico Gatti,439909,Defender,87,Juventus,12,250,ceu,Europe,Champions League,7.27,270,0,0,57
+UCL,4,0,0,1,1,Vitinha,384887,Midfielder,304,PSG,12,250,ceu,Europe,Champions League,7.265,360,0,0,58
+UCL,3,0,0,0,1,Pedri,402197,Midfielder,65,Barcelona,12,250,ceu,Europe,Champions League,7.256666667,249,0,0,59
+UCL,4,0,1,0,0,Guglielmo Vicario,147863,Goalkeeper,30,Tottenham,12,250,ceu,Europe,Champions League,7.2475,360,0,0,60
+UCL,4,0,0,1,1,Christos Tzolis,399296,Forward,124,Club Brugge,12,250,ceu,Europe,Champions League,7.24,350,0,0,61
+UCL,4,0,1,0,2,Bradley Barcola,425366,Forward,304,PSG,12,250,ceu,Europe,Champions League,7.23,308,0,0,62
+UCL,4,0,0,0,2,Konrad Laimer,248010,Midfielder,37,Bayern,12,250,ceu,Europe,Champions League,7.23,353,1,0,63
+UCL,4,0,1,1,1,Alejandro Grimaldo,107252,Defender,36,Leverkusen,12,250,ceu,Europe,Champions League,7.23,360,0,0,64
+UCL,4,1,0,0,0,Federico Dimarco,255929,Defender,75,Inter,12,250,ceu,Europe,Champions League,7.2275,291,0,0,65
+UCL,2,1,0,1,0,Patrik Schick,243565,Forward,36,Leverkusen,12,250,ceu,Europe,Champions League,7.22,123,0,0,66
+UCL,4,0,0,0,2,Florian Wirtz,394786,Midfielder,26,Liverpool,12,250,ceu,Europe,Champions League,7.22,342,0,0,67
+UCL,3,0,0,0,0,Wilfried Singo,371063,Defender,294,Galatasaray,12,250,ceu,Europe,Champions League,7.213333333,270,0,0,68
+UCL,4,0,1,1,3,Pierre-Emerick Aubameyang,44120,Forward,249,Marseille,12,250,ceu,Europe,Champions League,7.1975,352,0,0,69
+UCL,4,1,0,0,2,Declan Rice,332325,Midfielder,13,Arsenal,12,250,ceu,Europe,Champions League,7.1975,293,2,0,70
+UCL,4,1,0,1,1,Cody Gakpo,352825,Forward,26,Liverpool,12,250,ceu,Europe,Champions League,7.195,205,0,0,71
+UCL,3,2,1,3,0,Gorka Guruzeta,362602,Forward,53,Athletic Club,12,250,ceu,Europe,Champions League,7.19,157,0,0,72
+UCL,4,0,1,1,2,Serhou Guirassy,236506,Forward,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,7.1825,334,0,0,73
+UCL,4,0,0,2,0,Virgil van Dijk,95408,Defender,26,Liverpool,12,250,ceu,Europe,Champions League,7.18,360,0,0,74
+UCL,2,0,0,1,0,Marquinhos,101949,Defender,304,PSG,12,250,ceu,Europe,Champions League,7.18,180,0,0,75
+UCL,3,1,0,0,1,Myles Lewis-Skelly,467918,Defender,13,Arsenal,12,250,ceu,Europe,Champions League,7.173333333,197,1,0,76
+UCL,3,2,0,0,1,Rodrygo,347862,Forward,52,Real Madrid,12,250,ceu,Europe,Champions League,7.16,104,0,0,77
+UCL,4,0,0,0,0,David Raya,276366,Goalkeeper,13,Arsenal,12,250,ceu,Europe,Champions League,7.1575,360,0,0,78
+UCL,3,0,0,0,1,Yann Bisseck,349126,Defender,75,Inter,12,250,ceu,Europe,Champions League,7.153333333,238,1,0,79
+UCL,2,1,0,1,0,Lennart Karl,557706,Midfielder,37,Bayern,12,250,ceu,Europe,Champions League,7.14,86,0,0,80
+UCL,4,2,0,3,1,Harvey Barnes,331382,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,7.1375,172,0,0,81
+UCL,4,0,0,0,0,Yann Sommer,35758,Goalkeeper,75,Inter,12,250,ceu,Europe,Champions League,7.1375,360,0,0,82
+UCL,4,1,0,1,2,Francesco Pio Esposito,497222,Forward,75,Inter,12,250,ceu,Europe,Champions League,7.135,274,0,0,83
+UCL,4,0,0,0,1,Pedro Porro,362352,Defender,30,Tottenham,12,250,ceu,Europe,Champions League,7.135,360,1,0,84
+UCL,3,0,0,0,0,Michael Zetterer,280191,Goalkeeper,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,7.126666667,270,1,0,85
+UCL,4,0,0,0,0,Nikita Haikin,275011,Goalkeeper,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,7.1225,360,0,0,86
+UCL,4,1,0,0,0,Malick Thiaw,393355,Defender,23,Newcastle,12,250,ceu,Europe,Champions League,7.1175,297,1,0,87
+UCL,3,0,0,0,1,Mauro Júnior,346767,Defender,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,7.113333333,270,0,0,88
+UCL,3,0,0,0,0,William Saliba,361822,Defender,13,Arsenal,12,250,ceu,Europe,Champions League,7.113333333,270,0,0,89
+UCL,3,0,0,1,0,Wilson Odobert,444751,Forward,30,Tottenham,12,250,ceu,Europe,Champions League,7.113333333,239,0,0,90
+UCL,2,2,0,1,0,Daniel Bassi,437444,Forward,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,7.105,66,0,0,91
+UCL,4,1,0,3,0,Marcos Llorente,254582,Midfielder,63,Atletico,12,250,ceu,Europe,Champions League,7.105,272,0,0,92
+UCL,4,0,0,3,0,Leandro Andrade,443690,Midfielder,2569,Qarabag FK,12,250,ceu,Europe,Champions League,7.1,261,0,0,93
+UCL,3,1,1,1,0,Jude Bellingham,379868,Midfielder,52,Real Madrid,12,250,ceu,Europe,Champions League,7.1,190,1,0,94
+UCL,3,0,1,2,0,Viktor Gyökeres,362815,Forward,13,Arsenal,12,250,ceu,Europe,Champions League,7.096666667,238,0,0,95
+UCL,3,0,0,0,1,Nico O'Reilly,468847,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,7.093333333,266,1,0,96
+UCL,4,0,0,2,1,Nicolò Tresoldi,432044,Forward,124,Club Brugge,12,250,ceu,Europe,Champions League,7.09,297,0,0,97
+UCL,3,1,0,0,0,Mohammed Kudus,400166,Midfielder,30,Tottenham,12,250,ceu,Europe,Champions League,7.083333333,200,0,0,98
+UCL,4,2,1,3,1,Dusan Vlahovic,315369,Forward,87,Juventus,12,250,ceu,Europe,Champions League,7.0825,193,0,0,99
+UCL,4,1,0,0,0,Sven Botman,379732,Defender,23,Newcastle,12,250,ceu,Europe,Champions League,7.0825,284,0,0,100
+UCL,4,0,0,0,1,Chiquinho,361961,Midfielder,843,Olympiacos,12,250,ceu,Europe,Champions League,7.075,281,0,0,101
+UCL,4,0,0,0,0,Aurélien Tchouaméni,353423,Midfielder,52,Real Madrid,12,250,ceu,Europe,Champions League,7.0725,350,1,0,102
+UCL,4,0,0,1,0,Ibrahima Konaté,345957,Defender,26,Liverpool,12,250,ceu,Europe,Champions League,7.0725,345,0,0,103
+UCL,4,0,1,1,1,Kenan Yildiz,494525,Forward,87,Juventus,12,250,ceu,Europe,Champions League,7.065,328,0,0,104
+UCL,4,1,0,0,0,Mamadou Coulibaly,482049,Midfielder,248,Monaco,12,250,ceu,Europe,Champions League,7.0475,307,1,0,105
+UCL,2,1,0,1,0,João Neves,465388,Midfielder,304,PSG,12,250,ceu,Europe,Champions League,7.045,82,0,0,106
+UCL,3,0,0,0,0,Stefan de Vrij,82399,Defender,75,Inter,12,250,ceu,Europe,Champions League,7.043333333,226,1,0,107
+UCL,4,0,0,0,1,Jules Koundé,301019,Defender,65,Barcelona,12,250,ceu,Europe,Champions League,7.04,345,1,0,108
+UCL,2,0,0,0,0,Rodri,303139,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,7.04,121,1,0,109
+UCL,4,0,0,0,0,Yarek Gasiorowski,504417,Defender,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,7.0375,316,1,0,110
+UCL,4,0,0,1,1,Giuliano Simeone,422918,Forward,63,Atletico,12,250,ceu,Europe,Champions League,7.0375,325,0,0,111
+UCL,4,1,0,0,0,Jurriën Timber,388650,Defender,13,Arsenal,12,250,ceu,Europe,Champions League,7.0375,278,0,0,112
+UCL,4,1,0,1,0,Antoine Griezmann,80241,Forward,63,Atletico,12,250,ceu,Europe,Champions League,7.0225,231,0,0,113
+UCL,2,0,0,1,0,Raphael Onyedika,425338,Midfielder,124,Club Brugge,12,250,ceu,Europe,Champions League,7.005,165,1,0,114
+UCL,3,0,0,2,0,Yunus Akgün,361709,Forward,294,Galatasaray,12,250,ceu,Europe,Champions League,7,223,0,0,115
+UCL,4,0,0,0,1,Arda Güler,415181,Midfielder,52,Real Madrid,12,250,ceu,Europe,Champions League,6.9875,308,0,0,116
+UCL,4,0,0,1,1,Geovany Quenda,509068,Midfielder,296,Sporting,12,250,ceu,Europe,Champions League,6.9875,311,1,0,117
+UCL,4,0,1,0,1,Nicolas Pépé,239872,Forward,839,Villarreal,12,250,ceu,Europe,Champions League,6.985,360,0,0,118
+UCL,4,0,0,1,0,Enzo Barrenechea,456787,Midfielder,299,Benfica,12,250,ceu,Europe,Champions League,6.9825,360,1,0,119
+UCL,4,0,0,0,0,Philipp Köhn,383689,Goalkeeper,248,Monaco,12,250,ceu,Europe,Champions League,6.9825,360,0,0,120
+UCL,4,0,0,0,0,Davinson Sánchez,322655,Defender,294,Galatasaray,12,250,ceu,Europe,Champions League,6.98,360,0,0,121
+UCL,4,1,1,2,1,Jonathan Burkardt,363037,Forward,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.9775,283,1,0,122
+UCL,4,2,1,1,1,Mohamed Salah,108226,Forward,26,Liverpool,12,250,ceu,Europe,Champions League,6.97,224,0,0,123
+UCL,4,1,0,1,0,Senny Mayulu,513665,Midfielder,304,PSG,12,250,ceu,Europe,Champions League,6.9675,237,0,0,124
+UCL,3,0,0,0,0,Éder Militão,337879,Defender,52,Real Madrid,12,250,ceu,Europe,Champions League,6.966666667,270,1,0,125
+UCL,4,0,0,0,3,Achraf Hakimi,320834,Defender,304,PSG,12,250,ceu,Europe,Champions League,6.965,322,1,0,126
+UCL,4,0,0,0,0,Kady Borges,319707,Midfielder,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.965,301,0,0,127
+UCL,4,0,1,0,2,Lukás Provod,383685,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.9625,341,0,0,128
+UCL,4,0,0,0,1,Joey Veerman,382556,Midfielder,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.96,360,1,0,129
+UCL,2,1,0,0,0,Yuri Berchiche,56057,Defender,53,Athletic Club,12,250,ceu,Europe,Champions League,6.96,112,0,0,130
+UCL,3,0,0,0,0,Álvaro Carreras,437583,Defender,52,Real Madrid,12,250,ceu,Europe,Champions League,6.956666667,270,2,0,131
+UCL,3,0,1,0,2,Kevin De Bruyne,73084,Midfielder,276,Napoli,12,250,ceu,Europe,Champions League,6.95,191,0,0,132
+UCL,3,1,0,0,1,Jamie Gittens,436425,Forward,15,Chelsea,12,250,ceu,Europe,Champions League,6.946666667,165,0,0,133
+UCL,3,0,0,0,1,Éderson,362556,Midfielder,300,Atalanta,12,250,ceu,Europe,Champions League,6.946666667,241,1,0,134
+UCL,3,1,0,0,1,Serge Gnabry,119501,Forward,37,Bayern,12,250,ceu,Europe,Champions League,6.94,181,0,0,135
+UCL,2,0,0,0,0,Jakub Markovic,383684,Goalkeeper,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.935,180,0,0,136
+UCL,4,0,0,0,0,David Luiz,27586,Defender,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.93,273,0,0,137
+UCL,3,0,0,0,0,Mohammed Salisu,362357,Defender,248,Monaco,12,250,ceu,Europe,Champions League,6.923333333,263,1,0,138
+UCL,4,0,0,0,1,Nathaniel Brown,445354,Defender,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.92,341,1,0,139
+UCL,4,0,0,0,0,Daniel Podence,300513,Forward,843,Olympiacos,12,250,ceu,Europe,Champions League,6.92,342,1,0,140
+UCL,4,0,0,0,0,Dayot Upamecano,327721,Defender,37,Bayern,12,250,ceu,Europe,Champions League,6.9175,334,0,0,141
+UCL,4,0,0,0,0,Bruno Guimarães,338780,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,6.91,319,0,0,142
+UCL,3,1,0,0,0,Raúl Asencio,534899,Defender,52,Real Madrid,12,250,ceu,Europe,Champions League,6.91,195,0,0,143
+UCL,4,4,1,0,0,Lee Kang-In,367780,Midfielder,304,PSG,12,250,ceu,Europe,Champions League,6.9075,137,0,0,144
+UCL,4,1,0,0,0,Rúben Dias,313171,Defender,167,Man City,12,250,ceu,Europe,Champions League,6.9075,281,1,0,145
+UCL,4,1,1,2,0,Dennis Man,329769,Forward,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.9,231,0,0,146
+UCL,3,1,0,0,0,Franco Mastantuono,514810,Midfielder,52,Real Madrid,12,250,ceu,Europe,Champions League,6.893333333,139,0,0,147
+UCL,4,1,0,2,0,Youssoupha Mbodji,581579,Defender,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.8925,269,2,0,148
+UCL,4,0,1,1,1,Camilo Durán,496971,Forward,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.89,296,0,0,149
+UCL,3,0,0,0,1,Khéphren Thuram,366379,Midfielder,87,Juventus,12,250,ceu,Europe,Champions League,6.89,224,1,0,150
+UCL,3,1,0,1,0,Ansu Fati,382234,Forward,248,Monaco,12,250,ceu,Europe,Champions League,6.883333333,161,0,0,151
+UCL,4,0,0,0,1,Maghnes Akliouche,426648,Midfielder,248,Monaco,12,250,ceu,Europe,Champions League,6.8825,343,0,0,152
+UCL,3,1,0,0,0,Ryan Flamingo,444737,Defender,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.873333333,204,0,0,153
+UCL,3,0,0,0,0,Abdülkerim Bardakci,108073,Defender,294,Galatasaray,12,250,ceu,Europe,Champions League,6.87,270,1,0,154
+UCL,2,0,0,0,1,Cristian Romero,323663,Defender,30,Tottenham,12,250,ceu,Europe,Champions League,6.87,163,0,0,155
+UCL,4,0,0,0,0,Manuel Neuer,13754,Goalkeeper,37,Bayern,12,250,ceu,Europe,Champions League,6.87,360,1,0,156
+UCL,2,0,0,0,0,Rodinei,121184,Defender,843,Olympiacos,12,250,ceu,Europe,Champions League,6.87,151,0,0,157
+UCL,4,4,0,2,0,Alisson Santos,557549,Forward,296,Sporting,12,250,ceu,Europe,Champions League,6.8675,70,0,0,158
+UCL,4,0,0,0,0,Anan Khalaili,444136,Forward,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.8675,343,0,0,159
+UCL,4,1,0,1,0,Joelinton,201755,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,6.8675,238,2,0,160
+UCL,4,2,1,0,1,Xavi Simons,399772,Midfielder,30,Tottenham,12,250,ceu,Europe,Champions League,6.8675,200,1,0,161
+UCL,4,0,0,0,1,Mario Lemina,123481,Midfielder,294,Galatasaray,12,250,ceu,Europe,Champions League,6.865,296,1,0,162
+UCL,4,1,0,0,2,Guus Til,322148,Midfielder,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.8625,277,1,0,163
+UCL,4,0,0,0,0,Santiago Mouriño,448936,Defender,839,Villarreal,12,250,ceu,Europe,Champions League,6.8625,360,2,0,164
+UCL,2,1,0,1,0,Ross Sykes,342821,Defender,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.86,113,0,0,165
+UCL,3,0,1,0,0,Aleksandr Martynovich,30091,Defender,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.86,270,0,0,166
+UCL,4,0,0,0,0,Berat Djimsiti,100962,Defender,300,Atalanta,12,250,ceu,Europe,Champions League,6.855,345,1,0,167
+UCL,4,0,0,0,0,Rodrigo Bentancur,303657,Midfielder,30,Tottenham,12,250,ceu,Europe,Champions League,6.845,322,0,0,168
+UCL,3,0,0,0,0,Nayef Aguerd,362434,Defender,249,Marseille,12,250,ceu,Europe,Champions League,6.843333333,270,2,0,169
+UCL,3,2,0,0,2,Jacob Murphy,141486,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,6.84,139,0,0,170
+UCL,4,1,0,0,0,Ismail Jakobs,349699,Defender,294,Galatasaray,12,250,ceu,Europe,Champions League,6.84,289,2,0,171
+UCL,2,0,0,1,0,Rasmus Kristensen,302812,Defender,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.84,149,0,0,172
+UCL,2,0,0,1,0,Yan Couto,421975,Defender,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.84,153,0,0,173
+UCL,3,2,0,1,1,Carney Chukwuemeka,410639,Midfielder,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.836666667,114,0,0,174
+UCL,3,0,0,0,1,Sandro Tonali,343501,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,6.836666667,270,0,0,175
+UCL,3,2,0,1,0,Francisco Conceição,409221,Forward,87,Juventus,12,250,ceu,Europe,Champions League,6.836666667,145,1,0,176
+UCL,3,0,0,0,0,Iván Fresneda,444257,Defender,296,Sporting,12,250,ceu,Europe,Champions League,6.833333333,260,0,0,177
+UCL,3,1,0,0,1,Joaquin Seys,483461,Defender,124,Club Brugge,12,250,ceu,Europe,Champions League,6.833333333,209,0,0,178
+UCL,3,0,0,0,1,Fabián Ruiz,294193,Midfielder,304,PSG,12,250,ceu,Europe,Champions League,6.83,193,0,0,179
+UCL,4,1,0,0,1,Julian Ryerson,320436,Defender,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.83,297,0,0,180
+UCL,4,0,0,1,0,Maxi Araújo,460758,Midfielder,296,Sporting,12,250,ceu,Europe,Champions League,6.83,336,2,0,181
+UCL,4,0,0,0,0,David Zima,404203,Defender,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.82,360,0,0,182
+UCL,3,2,0,2,1,Ricardo Pepi,377466,Forward,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.82,112,0,0,183
+UCL,2,0,0,0,0,Clément Lenglet,236511,Defender,63,Atletico,12,250,ceu,Europe,Champions League,6.815,180,2,0,184
+UCL,4,1,0,1,0,Enzo Fernández,369430,Midfielder,15,Chelsea,12,250,ceu,Europe,Champions League,6.815,262,1,0,185
+UCL,4,0,0,0,0,Aleksandar Pavlovic,481079,Midfielder,37,Bayern,12,250,ceu,Europe,Champions League,6.81,334,0,0,186
+UCL,3,0,0,1,1,Lloyd Kelly,332419,Defender,87,Juventus,12,250,ceu,Europe,Champions League,6.81,270,0,0,187
+UCL,4,3,0,1,1,João Palhinha,322774,Midfielder,30,Tottenham,12,250,ceu,Europe,Champions League,6.8025,161,0,0,188
+UCL,4,0,0,0,0,Joshua Kimmich,283323,Midfielder,37,Bayern,12,250,ceu,Europe,Champions League,6.8025,360,0,0,189
+UCL,4,1,0,0,0,Pau Cubarsí,498386,Defender,65,Barcelona,12,250,ceu,Europe,Champions League,6.795,250,0,0,190
+UCL,4,2,1,0,1,Savinho,397821,Forward,167,Man City,12,250,ceu,Europe,Champions League,6.79,215,2,0,191
+UCL,4,2,0,1,0,Luis Suárez,402887,Forward,296,Sporting,12,250,ceu,Europe,Champions League,6.7875,214,1,0,192
+UCL,2,1,0,0,0,Aleksandr Golovin,244560,Midfielder,248,Monaco,12,250,ceu,Europe,Champions League,6.78,123,1,0,193
+UCL,2,0,0,0,1,Rodrigo Huescas,512077,Defender,10,Copenhagen,12,250,ceu,Europe,Champions League,6.77,105,0,0,194
+UCL,4,1,0,0,0,Nordin Jackers,143459,Goalkeeper,124,Club Brugge,12,250,ceu,Europe,Champions League,6.7675,341,0,0,195
+UCL,3,0,0,0,0,Charles De Ketelaere,386390,Forward,300,Atalanta,12,250,ceu,Europe,Champions League,6.766666667,221,0,0,196
+UCL,4,0,0,0,0,Pêpê Rodrigues,344716,Midfielder,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.765,337,0,0,197
+UCL,4,0,0,0,0,Gianluigi Donnarumma,262515,Goalkeeper,167,Man City,12,250,ceu,Europe,Champions League,6.7625,360,1,0,198
+UCL,4,0,0,1,1,Abdellah Zoubir,124594,Midfielder,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.76,345,0,0,199
+UCL,4,1,0,1,0,Hugo Ekitiké,403784,Forward,26,Liverpool,12,250,ceu,Europe,Champions League,6.76,253,0,0,200
+UCL,2,1,0,0,1,Rico Lewis,444791,Defender,167,Man City,12,250,ceu,Europe,Champions League,6.76,83,0,0,201
+UCL,4,0,0,1,0,Willian Pacho,432378,Defender,304,PSG,12,250,ceu,Europe,Champions League,6.7575,360,0,0,202
+UCL,4,0,0,0,0,Pedro Bicalho,367282,Midfielder,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.755,326,0,0,203
+UCL,3,0,0,0,0,Jarell Quansah,430019,Defender,36,Leverkusen,12,250,ceu,Europe,Champions League,6.753333333,270,0,0,204
+UCL,3,0,0,0,0,Federico Valverde,344644,Midfielder,52,Real Madrid,12,250,ceu,Europe,Champions League,6.753333333,270,0,0,205
+UCL,3,1,0,1,1,Marko Jankovic,241007,Midfielder,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.753333333,201,0,0,206
+UCL,4,1,0,1,0,Bernardo Silva,136741,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,6.75,281,2,0,207
+UCL,2,0,0,1,0,Eric Dier,117973,Defender,248,Monaco,12,250,ceu,Europe,Champions League,6.75,180,0,0,208
+UCL,4,0,1,0,0,Loïc Badé,398416,Defender,36,Leverkusen,12,250,ceu,Europe,Champions League,6.7475,337,0,0,209
+UCL,4,2,0,0,0,Nico González,422939,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,6.7475,207,1,0,210
+UCL,3,0,0,0,0,John Stones,101374,Defender,167,Man City,12,250,ceu,Europe,Champions League,6.746666667,253,0,0,211
+UCL,4,1,0,0,1,Kevin Rodríguez,464388,Forward,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.7425,264,0,0,212
+UCL,4,0,0,0,0,Morten Hjulmand,403647,Midfielder,296,Sporting,12,250,ceu,Europe,Champions League,6.7425,340,1,0,213
+UCL,4,0,0,2,0,Scott McTominay,336915,Midfielder,276,Napoli,12,250,ceu,Europe,Champions League,6.7425,339,0,0,214
+UCL,4,2,0,1,0,Conor Gallagher,375621,Midfielder,63,Atletico,12,250,ceu,Europe,Champions League,6.74,206,0,0,215
+UCL,4,2,0,0,0,Manuel Locatelli,273539,Midfielder,87,Juventus,12,250,ceu,Europe,Champions League,6.74,210,0,0,216
+UCL,4,0,0,0,0,Weston McKennie,338275,Midfielder,87,Juventus,12,250,ceu,Europe,Champions League,6.7375,329,0,0,217
+UCL,3,3,0,1,1,Couhaib Driouech,400009,Forward,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.736666667,55,1,0,218
+UCL,3,0,0,0,0,Oscar Dorley,404197,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.733333333,270,0,0,219
+UCL,3,0,0,2,0,Rasmus Højlund,439584,Forward,276,Napoli,12,250,ceu,Europe,Champions League,6.726666667,252,0,0,220
+UCL,4,1,0,0,0,Baris Alper Yilmaz,421779,Forward,294,Galatasaray,12,250,ceu,Europe,Champions League,6.725,285,0,0,221
+UCL,2,0,0,0,0,Ilkay Gündogan,77464,Midfielder,294,Galatasaray,12,250,ceu,Europe,Champions League,6.725,142,0,0,222
+UCL,2,1,0,0,0,Jesús Areso,422820,Defender,53,Athletic Club,12,250,ceu,Europe,Champions League,6.725,103,1,0,223
+UCL,2,1,0,0,0,José María Giménez,135914,Defender,63,Atletico,12,250,ceu,Europe,Champions League,6.725,127,1,0,224
+UCL,4,1,0,0,0,Piotr Zielinski,118169,Midfielder,75,Inter,12,250,ceu,Europe,Champions League,6.725,257,0,0,225
+UCL,3,1,0,2,0,Ferran Torres,349760,Forward,65,Barcelona,12,250,ceu,Europe,Champions League,6.723333333,169,0,0,226
+UCL,3,1,0,1,0,Tyrique George,523597,Forward,15,Chelsea,12,250,ceu,Europe,Champions League,6.723333333,152,0,0,227
+UCL,3,2,0,0,0,CJ Egan-Riley,425574,Defender,249,Marseille,12,250,ceu,Europe,Champions League,6.72,135,0,0,228
+UCL,4,2,0,0,0,Stepán Chaloupek,499961,Defender,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.7175,274,0,0,229
+UCL,3,1,0,0,0,Ronald Araujo,384711,Defender,65,Barcelona,12,250,ceu,Europe,Champions League,6.716666667,196,0,0,230
+UCL,4,1,0,1,0,Nick Woltemade,386606,Forward,23,Newcastle,12,250,ceu,Europe,Champions League,6.715,269,0,0,231
+UCL,4,1,0,0,3,Tijjani Reijnders,343382,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,6.715,266,0,0,232
+UCL,3,2,1,0,0,Eljif Elmas,339579,Midfielder,276,Napoli,12,250,ceu,Europe,Champions League,6.713333333,115,0,0,233
+UCL,3,2,0,1,0,Geny Catamo,425093,Midfielder,296,Sporting,12,250,ceu,Europe,Champions League,6.713333333,95,0,0,234
+UCL,3,0,0,0,0,Mohamed Elyounoussi,141732,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.71,252,0,0,235
+UCL,4,1,0,2,0,Aleix García,280663,Midfielder,36,Leverkusen,12,250,ceu,Europe,Champions League,6.71,309,0,0,236
+UCL,3,0,1,1,0,Gelson Martins,296576,Midfielder,843,Olympiacos,12,250,ceu,Europe,Champions League,6.71,198,0,0,237
+UCL,2,0,0,0,1,Krépin Diatta,335692,Midfielder,248,Monaco,12,250,ceu,Europe,Champions League,6.71,147,1,0,238
+UCL,2,0,0,0,0,Leonardo Balerdi,362788,Defender,249,Marseille,12,250,ceu,Europe,Champions League,6.71,180,1,0,239
+UCL,3,0,0,0,0,Dodi Lukébakio,299490,Forward,299,Benfica,12,250,ceu,Europe,Champions League,6.703333333,257,2,0,240
+UCL,4,0,0,0,0,Egor Sorokin,243195,Defender,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.7025,360,0,0,241
+UCL,3,1,0,0,0,Eduardo Quaresma,394932,Defender,296,Sporting,12,250,ceu,Europe,Champions League,6.696666667,180,0,0,242
+UCL,4,0,0,0,0,Jerdy Schouten,331555,Midfielder,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.695,316,0,0,243
+UCL,2,1,0,1,0,Ousmane Dembélé,299513,Forward,304,PSG,12,250,ceu,Europe,Champions League,6.695,52,0,0,244
+UCL,4,0,0,0,0,Patrick Berg,320986,Midfielder,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.695,360,2,0,245
+UCL,4,0,0,1,0,Anouar Ait El Hadj,400139,Midfielder,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.6925,300,0,0,246
+UCL,4,0,0,1,0,Ofri Arad,399380,Defender,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.6925,295,2,0,247
+UCL,4,1,1,1,0,Moisés Caicedo,410175,Midfielder,15,Chelsea,12,250,ceu,Europe,Champions League,6.69,311,1,0,248
+UCL,3,0,0,0,0,Caio Henrique,320313,Defender,248,Monaco,12,250,ceu,Europe,Champions League,6.686666667,226,0,0,249
+UCL,2,2,0,0,1,Sofiane Boufal,234363,Forward,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.685,33,0,0,250
+UCL,4,1,0,0,0,Nnamdi Collins,450125,Defender,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.6825,269,0,0,251
+UCL,4,1,0,1,1,Ansgar Knauff,403747,Forward,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.675,281,0,0,252
+UCL,4,1,0,0,0,Thilo Kehrer,255167,Defender,248,Monaco,12,250,ceu,Europe,Champions League,6.6725,315,1,0,253
+UCL,3,2,0,0,0,Destiny Udogie,401044,Defender,30,Tottenham,12,250,ceu,Europe,Champions League,6.67,102,0,0,254
+UCL,2,0,0,0,0,Adama Boiro,515307,Defender,53,Athletic Club,12,250,ceu,Europe,Champions League,6.67,158,0,0,255
+UCL,2,2,0,0,1,João Mário,395173,Defender,87,Juventus,12,250,ceu,Europe,Champions League,6.67,105,0,0,256
+UCL,4,0,0,0,0,Nicolás Otamendi,75691,Defender,299,Benfica,12,250,ceu,Europe,Champions League,6.67,360,2,0,257
+UCL,2,1,0,0,0,Piero Hincapié,404832,Defender,13,Arsenal,12,250,ceu,Europe,Champions League,6.67,74,0,0,258
+UCL,3,2,0,1,0,Julian Brandt,141556,Midfielder,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.666666667,108,0,0,259
+UCL,3,2,0,1,0,Alejandro Garnacho,437022,Forward,15,Chelsea,12,250,ceu,Europe,Champions League,6.663333333,128,0,0,260
+UCL,4,1,0,0,0,Pape Matar Sarr,403859,Midfielder,30,Tottenham,12,250,ceu,Europe,Champions League,6.6625,259,0,0,261
+UCL,2,1,0,0,0,Fran García,422957,Defender,52,Real Madrid,12,250,ceu,Europe,Champions League,6.66,96,0,0,262
+UCL,4,1,0,0,1,Jonathan Tah,134946,Defender,37,Bayern,12,250,ceu,Europe,Champions League,6.66,243,1,0,263
+UCL,4,0,0,0,0,Pape Gueye,399047,Midfielder,839,Villarreal,12,250,ceu,Europe,Champions League,6.66,339,2,0,264
+UCL,3,0,0,0,1,Ryan Gravenberch,363884,Midfielder,26,Liverpool,12,250,ceu,Europe,Champions League,6.66,242,1,0,265
+UCL,3,2,0,0,0,Lewis Miley,474264,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,6.656666667,145,0,0,266
+UCL,4,0,1,2,0,Ismael Saibari,404776,Midfielder,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.655,336,2,0,267
+UCL,2,0,0,0,0,Jindrich Stanek,303019,Goalkeeper,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.655,180,0,0,268
+UCL,3,2,0,0,1,Randal Kolo Muani,333542,Forward,30,Tottenham,12,250,ceu,Europe,Champions League,6.653333333,105,2,0,269
+UCL,4,1,0,0,0,David Goldar,144095,Defender,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.6525,294,0,0,270
+UCL,4,2,0,0,0,Gerard Martín,512879,Defender,65,Barcelona,12,250,ceu,Europe,Champions League,6.6525,170,1,0,271
+UCL,4,1,0,0,2,Marcel Sabitzer,92051,Midfielder,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.65,260,0,0,272
+UCL,4,0,0,1,0,Robin Le Normand,367008,Defender,63,Atletico,12,250,ceu,Europe,Champions League,6.65,296,2,0,273
+UCL,2,2,0,1,0,Rayan Cherki,386153,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,6.645,15,0,0,274
+UCL,4,0,0,0,0,Vanja Milinkovic-Savic,149474,Goalkeeper,276,Napoli,12,250,ceu,Europe,Champions League,6.64,360,0,0,275
+UCL,4,3,0,1,0,Brahim Díaz,317541,Midfielder,52,Real Madrid,12,250,ceu,Europe,Champions League,6.635,132,1,0,276
+UCL,2,2,0,0,0,Sacha Boey,372280,Defender,37,Bayern,12,250,ceu,Europe,Champions League,6.635,65,0,0,277
+UCL,3,2,0,1,0,Robert Silva,484203,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.633333333,71,0,0,278
+UCL,4,2,0,0,0,Eberechi Eze,332403,Midfielder,13,Arsenal,12,250,ceu,Europe,Champions League,6.6325,186,0,0,279
+UCL,2,0,0,0,0,Josip Stanisic,413272,Defender,37,Bayern,12,250,ceu,Europe,Champions League,6.63,141,1,0,280
+UCL,2,0,0,0,1,Malo Gusto,403850,Defender,15,Chelsea,12,250,ceu,Europe,Champions League,6.63,171,0,0,281
+UCL,4,0,0,0,0,Lucas Torreira,248109,Midfielder,294,Galatasaray,12,250,ceu,Europe,Champions League,6.6275,357,0,0,282
+UCL,2,2,0,0,0,Jorne Spileers,459085,Defender,124,Club Brugge,12,250,ceu,Europe,Champions League,6.625,54,0,0,283
+UCL,4,0,0,0,0,Odin Bjørtuft,354608,Defender,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.625,360,1,0,284
+UCL,4,0,0,0,2,Mikel Jauregizar,511120,Midfielder,53,Athletic Club,12,250,ceu,Europe,Champions League,6.6225,295,1,0,285
+UCL,4,0,1,0,0,Ugurcan Çakir,258840,Goalkeeper,294,Galatasaray,12,250,ceu,Europe,Champions League,6.6225,360,1,0,286
+UCL,3,1,0,1,0,Can Uzun,467776,Midfielder,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.62,156,0,0,287
+UCL,3,1,0,0,0,Facundo Buonanotte,432384,Midfielder,15,Chelsea,12,250,ceu,Europe,Champions League,6.62,163,1,0,288
+UCL,4,0,0,0,2,Håkon Evjen,356742,Midfielder,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.6175,355,0,0,289
+UCL,3,1,0,0,0,Alexander Isak,299254,Forward,26,Liverpool,12,250,ceu,Europe,Champions League,6.616666667,132,0,0,290
+UCL,4,3,0,1,0,Alexis Mac Allister,345319,Midfielder,26,Liverpool,12,250,ceu,Europe,Champions League,6.615,149,1,0,291
+UCL,3,1,0,0,1,Alex Berenguer,238899,Forward,53,Athletic Club,12,250,ceu,Europe,Champions League,6.613333333,232,0,0,292
+UCL,3,2,0,0,0,Ibrahim Mbaye,535536,Forward,304,PSG,12,250,ceu,Europe,Champions League,6.613333333,99,0,0,293
+UCL,3,1,1,1,0,Mario Pasalic,129903,Midfielder,300,Atalanta,12,250,ceu,Europe,Champions League,6.613333333,225,0,0,294
+UCL,3,0,0,0,0,Stanislav Lobotka,111892,Midfielder,276,Napoli,12,250,ceu,Europe,Champions League,6.613333333,235,0,0,295
+UCL,2,1,0,0,0,Archie Gray,429922,Midfielder,30,Tottenham,12,250,ceu,Europe,Champions League,6.61,98,0,0,296
+UCL,4,0,0,0,0,Anatoliy Trubin,369877,Goalkeeper,299,Benfica,12,250,ceu,Europe,Champions League,6.6075,360,0,0,297
+UCL,3,1,0,0,0,Curtis Jones,355354,Midfielder,26,Liverpool,12,250,ceu,Europe,Champions League,6.603333333,191,1,0,298
+UCL,4,0,0,1,0,Daniel Svensson,418584,Defender,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.6025,360,1,0,299
+UCL,4,1,0,0,1,Pote,344378,Midfielder,296,Sporting,12,250,ceu,Europe,Champions League,6.6025,278,2,0,300
+UCL,3,2,0,0,0,Cristhian Mosquera,425591,Defender,13,Arsenal,12,250,ceu,Europe,Champions League,6.6,124,0,0,301
+UCL,3,0,0,0,0,Robert Sánchez,362151,Goalkeeper,15,Chelsea,12,250,ceu,Europe,Champions League,6.6,270,0,0,302
+UCL,4,0,0,0,0,Lorenzo Pirola,390738,Defender,843,Olympiacos,12,250,ceu,Europe,Champions League,6.6,346,1,0,303
+UCL,4,1,0,1,0,Mislav Orsic,141670,Forward,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.5975,304,1,0,304
+UCL,4,0,0,0,1,Heorhii Sudakov,404104,Midfielder,299,Benfica,12,250,ceu,Europe,Champions League,6.595,326,0,0,305
+UCL,4,3,0,1,0,Oleksii Kashchuk,399837,Midfielder,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.595,122,0,0,306
+UCL,4,2,0,0,0,Costinha,395954,Defender,843,Olympiacos,12,250,ceu,Europe,Champions League,6.595,215,0,0,307
+UCL,4,4,0,2,0,Lazar Samardzic,393039,Midfielder,300,Atalanta,12,250,ceu,Europe,Champions League,6.595,80,0,0,308
+UCL,4,3,0,0,0,Conor Bradley,424945,Defender,26,Liverpool,12,250,ceu,Europe,Champions League,6.5925,221,2,0,309
+UCL,4,4,0,1,0,Emmanuel Addai,462454,Forward,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.5925,137,0,0,310
+UCL,2,0,0,0,0,Roméo Lavia,425319,Midfielder,15,Chelsea,12,250,ceu,Europe,Champions League,6.585,74,0,0,311
+UCL,4,2,0,0,0,Anthony Elanga,413211,Forward,23,Newcastle,12,250,ceu,Europe,Champions League,6.5825,165,0,0,312
+UCL,3,1,0,0,0,Honest Ahanor,535735,Defender,300,Atalanta,12,250,ceu,Europe,Champions League,6.58,185,0,0,313
+UCL,4,0,0,0,0,Benjamin Pavard,259648,Defender,249,Marseille,12,250,ceu,Europe,Champions League,6.58,358,2,0,314
+UCL,4,0,0,0,0,Pablo Barrios,434138,Midfielder,63,Atletico,12,250,ceu,Europe,Champions League,6.58,345,0,0,315
+UCL,4,0,0,1,0,Vangelis Pavlidis,330514,Forward,299,Benfica,12,250,ceu,Europe,Champions League,6.58,349,0,0,316
+UCL,3,1,0,0,0,Davide Zappacosta,141312,Midfielder,300,Atalanta,12,250,ceu,Europe,Champions League,6.576666667,209,0,0,317
+UCL,3,1,0,0,0,Matteo Ruggeri,402046,Defender,63,Atletico,12,250,ceu,Europe,Champions League,6.576666667,207,0,0,318
+UCL,3,1,0,0,0,Nicolò Barella,148684,Midfielder,75,Inter,12,250,ceu,Europe,Champions League,6.576666667,174,1,0,319
+UCL,4,0,0,0,0,Lukas Lerager,342577,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.57,360,2,0,320
+UCL,4,0,0,0,0,Matej Kovár,388668,Goalkeeper,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.57,360,0,0,321
+UCL,4,0,0,0,0,Christian Burgess,134493,Defender,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.565,360,1,0,322
+UCL,4,0,0,0,0,Odilon Kossounou,384516,Defender,300,Atalanta,12,250,ceu,Europe,Champions League,6.5625,288,1,0,323
+UCL,4,3,0,0,1,Ken Sema,145392,Midfielder,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.5625,107,0,0,324
+UCL,4,0,0,0,0,Richard Ríos,402213,Midfielder,299,Benfica,12,250,ceu,Europe,Champions League,6.5575,336,1,0,325
+UCL,3,1,0,0,0,Tomás Araújo,426502,Defender,299,Benfica,12,250,ceu,Europe,Champions League,6.556666667,197,1,0,326
+UCL,2,1,0,0,0,Ethan Nwaneri,456771,Midfielder,13,Arsenal,12,250,ceu,Europe,Champions League,6.555,82,1,0,327
+UCL,4,0,0,0,0,Joel Ordóñez,446053,Defender,124,Club Brugge,12,250,ceu,Europe,Champions League,6.5525,350,0,0,328
+UCL,4,0,0,0,0,Gonçalo Inácio,395992,Defender,296,Sporting,12,250,ceu,Europe,Champions League,6.5475,360,0,0,329
+UCL,3,1,0,1,0,Timothy Weah,353991,Forward,249,Marseille,12,250,ceu,Europe,Champions League,6.546666667,190,0,0,330
+UCL,2,0,0,0,0,Thomas Delaney,73744,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.545,133,1,0,331
+UCL,3,1,0,0,1,Arthur Vermeeren,445430,Midfielder,249,Marseille,12,250,ceu,Europe,Champions League,6.543333333,151,0,0,332
+UCL,4,1,0,0,0,Frenkie de Jong,279423,Midfielder,65,Barcelona,12,250,ceu,Europe,Champions League,6.5425,301,2,0,333
+UCL,4,0,0,0,0,Aleksandar Stankovic,459075,Midfielder,124,Club Brugge,12,250,ceu,Europe,Champions League,6.5375,360,0,0,334
+UCL,3,1,0,0,0,Domingos Quina,331582,Midfielder,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.536666667,177,0,0,335
+UCL,3,0,0,0,0,Marc Cucurella,363496,Defender,15,Chelsea,12,250,ceu,Europe,Champions League,6.533333333,270,0,0,336
+UCL,3,1,0,0,0,Matheus Nunes,394933,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,6.53,197,0,0,337
+UCL,2,1,0,0,0,Youssoupha Sanyang,569289,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.53,76,0,0,338
+UCL,2,2,0,0,0,Josh Acheampong,518604,Defender,15,Chelsea,12,250,ceu,Europe,Champions League,6.53,50,0,0,339
+UCL,4,2,0,0,2,Jobe Bellingham,422365,Midfielder,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.5275,201,0,0,340
+UCL,4,0,0,0,0,Panagiotis Retsos,302402,Defender,843,Olympiacos,12,250,ceu,Europe,Champions League,6.525,356,0,0,341
+UCL,4,3,0,0,0,Petar Sucic,439534,Midfielder,75,Inter,12,250,ceu,Europe,Champions League,6.525,151,0,0,342
+UCL,3,1,0,0,1,Alejandro Balde,422938,Defender,65,Barcelona,12,250,ceu,Europe,Champions League,6.52,183,1,0,343
+UCL,4,4,0,0,1,Ange-Yoan Bonny,447489,Forward,75,Inter,12,250,ceu,Europe,Champions League,6.52,103,0,0,344
+UCL,4,2,0,0,0,Kevin Danso,330816,Defender,30,Tottenham,12,250,ceu,Europe,Champions League,6.52,198,0,0,345
+UCL,3,3,0,2,0,Gonçalo Ramos,395802,Forward,304,PSG,12,250,ceu,Europe,Champions League,6.516666667,74,0,0,346
+UCL,4,0,0,0,0,Kevin Medina,402679,Defender,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.515,360,1,0,347
+UCL,4,0,0,0,0,Kyriani Sabbe,459256,Defender,124,Club Brugge,12,250,ceu,Europe,Champions League,6.515,314,0,0,348
+UCL,4,2,0,0,0,Koke,80764,Midfielder,63,Atletico,12,250,ceu,Europe,Champions League,6.5125,197,0,0,349
+UCL,4,0,0,0,0,Francisco Ortega,349263,Defender,843,Olympiacos,12,250,ceu,Europe,Champions League,6.51,323,0,0,350
+UCL,4,0,0,2,0,Ramy Bensebaini,288892,Defender,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.4975,332,1,0,351
+UCL,3,1,0,0,0,Jajá,397494,Forward,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.496666667,148,0,0,352
+UCL,2,0,0,0,0,Oihan Sancet,381510,Midfielder,53,Athletic Club,12,250,ceu,Europe,Champions League,6.495,149,0,0,353
+UCL,4,1,0,0,0,Eric García,368091,Defender,65,Barcelona,12,250,ceu,Europe,Champions League,6.49,275,0,0,354
+UCL,3,1,0,0,0,Davide Frattesi,331425,Midfielder,75,Inter,12,250,ceu,Europe,Champions League,6.49,174,0,0,355
+UCL,3,1,0,0,0,Miguel Gutiérrez,395788,Defender,276,Napoli,12,250,ceu,Europe,Champions League,6.49,204,1,0,356
+UCL,3,0,0,0,0,Wojciech Szczesny,73379,Goalkeeper,65,Barcelona,12,250,ceu,Europe,Champions League,6.49,270,0,0,357
+UCL,4,0,0,0,1,Pierre Kalulu,391836,Defender,87,Juventus,12,250,ceu,Europe,Champions League,6.4875,360,0,0,358
+UCL,4,0,0,1,0,Jordan Larsson,228689,Forward,10,Copenhagen,12,250,ceu,Europe,Champions League,6.485,290,0,0,359
+UCL,2,0,0,0,0,Dávid Hancko,362779,Defender,63,Atletico,12,250,ceu,Europe,Champions League,6.475,180,0,0,360
+UCL,4,0,0,0,0,Brandon Mechele,129832,Defender,124,Club Brugge,12,250,ceu,Europe,Champions League,6.4675,360,0,0,361
+UCL,4,2,0,0,0,Mathias Rasmussen,321073,Midfielder,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.465,190,0,0,362
+UCL,2,2,0,0,1,William Osula,416209,Forward,23,Newcastle,12,250,ceu,Europe,Champions League,6.465,22,0,0,363
+UCL,2,1,0,0,0,Ousmane Diomande,443663,Defender,296,Sporting,12,250,ceu,Europe,Champions League,6.46,100,0,0,364
+UCL,4,1,0,0,0,Vasil Kusej,476762,Forward,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.4575,240,0,0,365
+UCL,2,2,0,0,1,Gonzalo García,498798,Forward,52,Real Madrid,12,250,ceu,Europe,Champions League,6.455,11,0,0,366
+UCL,2,2,0,0,1,Ilias Akhomach,428500,Forward,839,Villarreal,12,250,ceu,Europe,Champions League,6.455,30,1,0,367
+UCL,4,0,0,0,0,Ivan Sunjic,363683,Midfielder,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.455,360,1,0,368
+UCL,2,1,0,0,0,Jacob Ramsey,369813,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,6.455,70,0,0,369
+UCL,3,2,0,1,0,Edmilson,530652,Forward,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.453333333,116,0,0,370
+UCL,4,2,0,0,0,Kassoum Ouattara,467072,Defender,248,Monaco,12,250,ceu,Europe,Champions League,6.4525,240,1,0,371
+UCL,3,0,0,0,0,Emerson,101955,Defender,249,Marseille,12,250,ceu,Europe,Champions League,6.45,215,0,1,372
+UCL,4,0,0,1,0,Kevin Mac Allister,312686,Defender,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.4475,337,2,0,373
+UCL,4,1,0,0,0,Pierre-Emile Højbjerg,101859,Midfielder,249,Marseille,12,250,ceu,Europe,Champions League,6.4475,298,1,0,374
+UCL,4,0,0,0,0,Luís Mata,354147,Defender,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.445,350,0,0,375
+UCL,4,1,0,0,0,Vinícius Júnior,337782,Forward,52,Real Madrid,12,250,ceu,Europe,Champions League,6.4425,271,1,0,376
+UCL,3,2,0,1,0,Eduardo Camavinga,369109,Midfielder,52,Real Madrid,12,250,ceu,Europe,Champions League,6.44,95,0,0,377
+UCL,4,0,0,1,0,Waldemar Anton,296768,Defender,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.44,360,1,0,378
+UCL,4,1,0,0,0,Warren Zaïre-Emery,444679,Midfielder,304,PSG,12,250,ceu,Europe,Champions League,6.44,291,0,0,379
+UCL,4,1,0,0,0,Matt O'Riley,342889,Midfielder,249,Marseille,12,250,ceu,Europe,Champions League,6.4375,263,1,0,380
+UCL,3,2,0,0,0,Dani Olmo,261212,Midfielder,65,Barcelona,12,250,ceu,Europe,Champions League,6.436666667,112,1,0,381
+UCL,4,1,0,1,0,Robert Navarro,400237,Midfielder,53,Athletic Club,12,250,ceu,Europe,Champions League,6.4325,245,0,0,382
+UCL,4,0,0,0,0,Arthur Theate,399961,Defender,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.43,360,0,0,383
+UCL,4,0,0,0,0,Elvin Cafarquliyev,402680,Defender,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.43,332,0,0,384
+UCL,3,0,0,0,1,Fredrik Bjørkan,320971,Defender,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.423333333,257,1,0,385
+UCL,4,0,0,1,0,Folarin Balogun,384065,Forward,248,Monaco,12,250,ceu,Europe,Champions League,6.42,318,0,0,386
+UCL,4,2,0,0,1,Fotis Ioannidis,418176,Forward,296,Sporting,12,250,ceu,Europe,Champions League,6.42,194,0,0,387
+UCL,4,4,0,1,0,Andreas Helmersen,261339,Forward,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.4175,64,0,0,388
+UCL,4,0,0,1,0,Renato Veiga,434077,Midfielder,839,Villarreal,12,250,ceu,Europe,Champions League,6.415,360,2,0,389
+UCL,3,0,0,0,0,Juan Foyth,335107,Defender,839,Villarreal,12,250,ceu,Europe,Champions League,6.41,270,0,0,390
+UCL,4,3,0,0,0,Manuel Akanji,297390,Defender,75,Inter,12,250,ceu,Europe,Champions League,6.41,167,0,0,391
+UCL,3,1,0,0,1,Mario Götze,80382,Midfielder,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.403333333,171,0,0,392
+UCL,4,1,0,0,0,Marcos López,371042,Defender,10,Copenhagen,12,250,ceu,Europe,Champions League,6.4025,297,2,0,393
+UCL,2,0,0,0,0,Pedro Neto,337916,Forward,15,Chelsea,12,250,ceu,Europe,Champions League,6.4,158,0,0,394
+UCL,4,0,0,1,0,Ayoub El Kaabi,346110,Forward,843,Olympiacos,12,250,ceu,Europe,Champions League,6.4,341,0,0,395
+UCL,2,2,0,0,0,Mathías Olivera,347178,Defender,276,Napoli,12,250,ceu,Europe,Champions League,6.395,73,0,0,396
+UCL,4,1,0,1,0,Promise David,532188,Forward,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.3925,205,0,0,397
+UCL,4,0,0,0,0,Fredrik Sjøvold,438195,Defender,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.39,360,0,0,398
+UCL,2,2,0,0,0,Lucas Hernández,139186,Defender,304,PSG,12,250,ceu,Europe,Champions League,6.39,70,0,0,399
+UCL,3,1,0,0,0,Sergiño Dest,379205,Defender,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.39,186,0,0,400
+UCL,4,1,0,0,0,Roland Sallai,243889,Forward,294,Galatasaray,12,250,ceu,Europe,Champions League,6.3875,288,0,0,401
+UCL,2,0,0,0,0,William Clem,458988,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.385,171,0,0,402
+UCL,4,1,0,0,0,Richarlison,317804,Forward,30,Tottenham,12,250,ceu,Europe,Champions League,6.3825,255,2,0,403
+UCL,4,1,0,0,0,Nikola Krstovic,404252,Forward,300,Atalanta,12,250,ceu,Europe,Champions League,6.38,280,0,0,404
+UCL,4,0,0,0,0,Ivan Perisic,70524,Forward,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.38,315,1,0,405
+UCL,4,1,0,0,0,Amar Dedic,418203,Defender,299,Benfica,12,250,ceu,Europe,Champions League,6.375,264,0,0,406
+UCL,4,2,0,0,0,Djed Spence,362219,Defender,30,Tottenham,12,250,ceu,Europe,Champions League,6.375,179,0,0,407
+UCL,3,2,0,0,0,Jorthy Mokio,517929,Defender,130,Ajax,12,250,ceu,Europe,Champions League,6.373333333,212,1,0,408
+UCL,2,2,0,0,0,Munashe Garan'anga,474641,Defender,10,Copenhagen,12,250,ceu,Europe,Champions League,6.37,34,0,0,409
+UCL,4,0,0,0,0,Andrea Cambiaso,423440,Defender,87,Juventus,12,250,ceu,Europe,Champions League,6.3675,347,2,0,410
+UCL,4,3,0,0,0,Christos Mouzakitis,533922,Midfielder,843,Olympiacos,12,250,ceu,Europe,Champions League,6.3675,184,0,0,411
+UCL,3,0,0,0,0,João Simões,540227,Midfielder,296,Sporting,12,250,ceu,Europe,Champions League,6.366666667,224,0,0,412
+UCL,3,1,0,0,1,Takumi Minamino,262838,Midfielder,248,Monaco,12,250,ceu,Europe,Champions League,6.366666667,174,0,0,413
+UCL,4,1,0,0,1,Maximilian Beier,387125,Forward,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.365,228,1,0,414
+UCL,2,2,0,0,0,Thiago Almada,361732,Midfielder,63,Atletico,12,250,ceu,Europe,Champions League,6.365,46,0,0,415
+UCL,3,0,0,0,1,Leonardo Spinazzola,92329,Defender,276,Napoli,12,250,ceu,Europe,Champions League,6.363333333,237,1,0,416
+UCL,3,0,0,0,0,Sam Beukema,422739,Defender,276,Napoli,12,250,ceu,Europe,Champions League,6.363333333,237,0,0,417
+UCL,4,1,0,0,0,Tomás Chory,339647,Forward,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.36,261,0,0,418
+UCL,3,0,0,0,0,Ritsu Doan,343435,Midfielder,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.36,222,1,0,419
+UCL,3,1,0,0,0,Bjorn Meijer,415775,Defender,124,Club Brugge,12,250,ceu,Europe,Champions League,6.353333333,153,0,0,420
+UCL,4,0,0,0,0,Jan Oblak,76662,Goalkeeper,63,Atletico,12,250,ceu,Europe,Champions League,6.3525,360,0,0,421
+UCL,4,0,0,0,0,Aitor Paredes,402663,Defender,53,Athletic Club,12,250,ceu,Europe,Champions League,6.35,360,2,0,422
+UCL,3,1,0,0,1,Junnosuke Suzuki,562979,Defender,10,Copenhagen,12,250,ceu,Europe,Champions League,6.35,225,1,0,423
+UCL,4,2,0,0,0,Marc Casadó,454343,Midfielder,65,Barcelona,12,250,ceu,Europe,Champions League,6.35,167,2,0,424
+UCL,4,1,0,0,0,Erkin Tapalov,424172,Defender,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.3475,226,0,0,425
+UCL,4,0,0,0,0,Jorginho,530684,Forward,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.3475,321,2,0,426
+UCL,2,0,0,0,0,Alisson Becker,114147,Goalkeeper,26,Liverpool,12,250,ceu,Europe,Champions League,6.345,146,0,0,427
+UCL,4,2,0,0,0,Sergi Cardona,448209,Defender,839,Villarreal,12,250,ceu,Europe,Champions League,6.345,197,0,0,428
+UCL,3,2,0,0,1,Nariman Akhundzada,443691,Forward,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.343333333,108,1,0,429
+UCL,4,1,0,0,0,Ernest Poku,422737,Forward,36,Leverkusen,12,250,ceu,Europe,Champions League,6.3425,248,0,0,430
+UCL,4,0,0,0,0,Frank Anguissa,349561,Midfielder,276,Napoli,12,250,ceu,Europe,Champions League,6.34,341,0,0,431
+UCL,3,0,0,0,0,Dani Vivian,357839,Defender,53,Athletic Club,12,250,ceu,Europe,Champions League,6.34,226,0,0,432
+UCL,4,3,0,0,0,Ibrahim Maza,477985,Forward,36,Leverkusen,12,250,ceu,Europe,Champions League,6.3375,184,1,0,433
+UCL,3,2,0,0,2,Andrey Santos,451236,Midfielder,15,Chelsea,12,250,ceu,Europe,Champions League,6.336666667,113,2,0,434
+UCL,2,1,0,0,0,Fabian Schär,82726,Defender,23,Newcastle,12,250,ceu,Europe,Champions League,6.335,70,0,0,435
+UCL,3,2,0,0,0,Ben White,322036,Defender,13,Arsenal,12,250,ceu,Europe,Champions League,6.333333333,82,0,0,436
+UCL,3,3,0,1,0,Fábio Silva,380655,Forward,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.333333333,39,0,0,437
+UCL,4,4,0,0,0,Marc Giger,551801,Forward,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.3325,113,1,0,438
+UCL,4,0,0,0,0,Youssoufa Moukoko,406701,Forward,10,Copenhagen,12,250,ceu,Europe,Champions League,6.33,277,0,0,439
+UCL,3,1,0,0,0,David Doudera,476672,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.33,159,1,0,440
+UCL,4,1,0,0,0,Alejandro Rego,560362,Midfielder,53,Athletic Club,12,250,ceu,Europe,Champions League,6.325,244,0,0,441
+UCL,4,0,0,0,0,Valeri Gromyko,376895,Midfielder,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.325,305,1,0,442
+UCL,3,1,0,0,0,Trevoh Chalobah,353292,Defender,15,Chelsea,12,250,ceu,Europe,Champions League,6.323333333,225,0,0,443
+UCL,4,0,0,0,0,Gregor Kobel,336028,Goalkeeper,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.3225,360,0,0,444
+UCL,4,1,0,1,0,Sondre Fet,321062,Midfielder,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.3225,248,0,0,445
+UCL,3,3,0,0,1,Hidemasa Morita,409279,Midfielder,296,Sporting,12,250,ceu,Europe,Champions League,6.316666667,49,0,0,446
+UCL,3,0,0,0,0,Rui Silva,141833,Goalkeeper,296,Sporting,12,250,ceu,Europe,Champions League,6.313333333,270,0,0,447
+UCL,2,2,0,0,0,Pape Cabral,584953,Midfielder,248,Monaco,12,250,ceu,Europe,Champions League,6.31,34,0,0,448
+UCL,4,0,0,0,0,Edmond Tapsoba,369446,Defender,36,Leverkusen,12,250,ceu,Europe,Champions League,6.3075,360,3,0,449
+UCL,4,1,0,1,0,Christian Kofane,550465,Forward,36,Leverkusen,12,250,ceu,Europe,Champions League,6.3075,191,0,0,450
+UCL,3,2,0,0,0,Andreas Schjelderup,424588,Forward,299,Benfica,12,250,ceu,Europe,Champions League,6.303333333,104,0,0,451
+UCL,4,0,0,0,0,Dastan Satpaev,556176,Forward,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.3025,350,2,0,452
+UCL,4,0,0,0,0,Robin Koch,276205,Defender,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.3025,350,0,0,453
+UCL,4,4,0,0,1,David Neres,326505,Forward,276,Napoli,12,250,ceu,Europe,Champions League,6.3,81,0,0,454
+UCL,2,2,0,0,1,Roony Bardghji,435529,Forward,65,Barcelona,12,250,ceu,Europe,Champions League,6.3,23,0,0,455
+UCL,2,2,0,1,0,Viktor Dadason,584180,Forward,10,Copenhagen,12,250,ceu,Europe,Champions League,6.3,61,0,0,456
+UCL,3,2,0,0,0,Robert Lewandowski,29400,Forward,65,Barcelona,12,250,ceu,Europe,Champions League,6.296666667,120,0,0,457
+UCL,4,0,0,0,0,Adem Zorgane,422197,Midfielder,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.295,354,0,0,458
+UCL,4,0,0,0,0,Mateusz Kochalski,499524,Goalkeeper,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.2925,360,0,0,459
+UCL,2,2,0,0,0,Edon Zhegrova,363181,Midfielder,87,Juventus,12,250,ceu,Europe,Champions League,6.29,21,0,0,460
+UCL,3,2,0,0,0,Nahuel Molina,303728,Defender,63,Atletico,12,250,ceu,Europe,Champions League,6.29,135,1,0,461
+UCL,4,1,0,0,0,Farès Chaïbi,444725,Midfielder,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.2875,295,0,0,462
+UCL,4,1,0,0,0,Michal Sadílek,361838,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.2875,255,0,0,463
+UCL,4,4,0,0,0,Toral Bayramov,389344,Defender,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.2875,77,1,0,464
+UCL,4,2,0,1,0,Brennan Johnson,379688,Forward,30,Tottenham,12,250,ceu,Europe,Champions League,6.2875,151,0,1,465
+UCL,4,0,0,0,0,Unai Simón,332823,Goalkeeper,53,Athletic Club,12,250,ceu,Europe,Champions League,6.285,360,0,0,466
+UCL,4,1,0,0,0,Anass Salah-Eddine,437387,Defender,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.28,286,0,0,467
+UCL,3,0,0,0,0,Tomás Vlcek,365943,Defender,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.28,248,0,0,468
+UCL,2,1,0,0,0,Loïs Openda,363618,Forward,87,Juventus,12,250,ceu,Europe,Champions League,6.28,85,0,0,469
+UCL,3,1,0,0,0,Malik Tillman,397465,Midfielder,36,Leverkusen,12,250,ceu,Europe,Champions League,6.276666667,164,1,0,470
+UCL,2,0,0,0,0,David Moses,551510,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.275,142,0,0,471
+UCL,3,2,0,0,0,Christian Nørgaard,101856,Midfielder,13,Arsenal,12,250,ceu,Europe,Champions League,6.273333333,108,1,0,472
+UCL,3,3,0,1,0,Mamadou Diakhon,482831,Forward,124,Club Brugge,12,250,ceu,Europe,Champions League,6.273333333,51,1,0,473
+UCL,2,2,0,0,0,Federico Chiesa,322971,Forward,26,Liverpool,12,250,ceu,Europe,Champions League,6.27,47,0,0,474
+UCL,4,1,0,0,0,Oscar Gloukh,439420,Midfielder,130,Ajax,12,250,ceu,Europe,Champions League,6.2675,217,0,0,475
+UCL,2,2,0,0,0,Lewis Hall,430294,Defender,23,Newcastle,12,250,ceu,Europe,Champions League,6.265,42,0,0,476
+UCL,4,0,0,1,0,Georges Mikautadze,389020,Forward,839,Villarreal,12,250,ceu,Europe,Champions League,6.265,288,0,0,477
+UCL,4,0,0,0,0,Lucas Chevalier,398299,Goalkeeper,304,PSG,12,250,ceu,Europe,Champions League,6.2625,360,0,0,478
+UCL,2,2,0,0,0,Kamaldeen Sulemana,422135,Forward,300,Atalanta,12,250,ceu,Europe,Champions League,6.26,57,0,0,479
+UCL,3,3,0,0,0,Íñigo Ruíz de Galarreta,106586,Midfielder,53,Athletic Club,12,250,ceu,Europe,Champions League,6.25,80,0,0,480
+UCL,3,3,0,0,0,Tani Oluwaseyi,445292,Forward,839,Villarreal,12,250,ceu,Europe,Champions League,6.25,84,0,0,481
+UCL,3,1,0,0,0,Mikel Vesga,261516,Midfielder,53,Athletic Club,12,250,ceu,Europe,Champions League,6.246666667,180,0,0,482
+UCL,4,0,0,0,0,Sondre Auklend,395378,Midfielder,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.245,334,2,0,483
+UCL,3,3,0,0,0,Leon Goretzka,115519,Midfielder,37,Bayern,12,250,ceu,Europe,Champions League,6.243333333,49,0,0,484
+UCL,4,0,0,0,0,Kjell Scherpen,361867,Goalkeeper,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.2425,360,0,0,485
+UCL,4,0,0,0,0,Mark Flekken,115131,Goalkeeper,36,Leverkusen,12,250,ceu,Europe,Champions League,6.2425,360,0,0,486
+UCL,3,1,0,0,0,Illia Zabarnyi,399826,Defender,304,PSG,12,250,ceu,Europe,Champions League,6.24,143,1,1,487
+UCL,2,2,0,0,0,Quentin Ndjantou,560493,Forward,304,PSG,12,250,ceu,Europe,Champions League,6.24,24,0,0,488
+UCL,3,3,0,0,0,Franjo Ivanovic,499993,Forward,299,Benfica,12,250,ceu,Europe,Champions League,6.236666667,60,0,0,489
+UCL,3,3,0,0,0,Nico Serrano,423109,Forward,53,Athletic Club,12,250,ceu,Europe,Champions League,6.236666667,57,0,0,490
+UCL,4,0,0,0,0,Fredrik Aursnes,303544,Midfielder,299,Benfica,12,250,ceu,Europe,Champions League,6.235,339,1,0,491
+UCL,3,1,0,0,0,Giorgi Mamardashvili,401633,Goalkeeper,26,Liverpool,12,250,ceu,Europe,Champions League,6.233333333,214,0,0,492
+UCL,3,1,0,0,0,Nico Schlotterbeck,371275,Defender,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.23,200,0,0,493
+UCL,3,0,0,0,0,Michele Di Gregorio,319696,Goalkeeper,87,Juventus,12,250,ceu,Europe,Champions League,6.23,270,0,0,494
+UCL,2,2,0,0,0,Esmir Bajraktarevic,445302,Forward,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.225,39,0,0,495
+UCL,3,1,0,0,0,Isak Hien,454908,Defender,300,Atalanta,12,250,ceu,Europe,Champions League,6.223333333,215,0,0,496
+UCL,4,3,0,0,0,Viktor Claesson,99972,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.2225,174,0,0,497
+UCL,3,0,0,0,0,Luiz Júnior,400826,Goalkeeper,839,Villarreal,12,250,ceu,Europe,Champions League,6.22,270,0,0,498
+UCL,3,0,0,0,0,Lorenzo Bernasconi,480033,Defender,300,Atalanta,12,250,ceu,Europe,Champions League,6.216666667,226,1,0,499
+UCL,3,2,0,0,0,Alexander Sørloth,302497,Forward,63,Atletico,12,250,ceu,Europe,Champions League,6.216666667,129,0,0,500
+UCL,3,1,0,0,0,Arthur,437724,Defender,36,Leverkusen,12,250,ceu,Europe,Champions League,6.216666667,228,0,0,501
+UCL,4,0,0,0,0,Matteo Politano,122683,Forward,276,Napoli,12,250,ceu,Europe,Champions League,6.215,262,1,0,502
+UCL,3,1,0,0,0,Nico González,345322,Forward,63,Atletico,12,250,ceu,Europe,Champions League,6.213333333,156,0,0,503
+UCL,3,1,0,0,0,Reece James,361330,Defender,15,Chelsea,12,250,ceu,Europe,Champions League,6.21,167,1,0,504
+UCL,4,1,0,0,0,Santi Comesaña,362735,Midfielder,839,Villarreal,12,250,ceu,Europe,Champions League,6.2075,267,1,0,505
+UCL,2,2,0,0,0,Marco Brescianini,367260,Midfielder,300,Atalanta,12,250,ceu,Europe,Champions League,6.205,18,0,0,506
+UCL,2,1,0,0,0,Thomas Partey,238940,Midfielder,839,Villarreal,12,250,ceu,Europe,Champions League,6.205,102,0,0,507
+UCL,2,2,0,0,0,Filip Kostic,105995,Midfielder,87,Juventus,12,250,ceu,Europe,Champions League,6.2,20,0,0,508
+UCL,2,2,0,0,0,Gianluca Prestianni,438274,Forward,299,Benfica,12,250,ceu,Europe,Champions League,6.2,41,0,0,509
+UCL,3,3,0,0,0,Noa Lang,354283,Forward,276,Napoli,12,250,ceu,Europe,Champions League,6.2,70,0,0,510
+UCL,2,1,0,0,0,Oliver Edvardsen,383616,Forward,130,Ajax,12,250,ceu,Europe,Champions League,6.2,135,0,0,511
+UCL,3,3,0,0,0,Giorgi Zaria,322883,Midfielder,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.196666667,53,0,0,512
+UCL,2,2,0,0,0,Kian Fitz-Jim,415781,Midfielder,130,Ajax,12,250,ceu,Europe,Champions League,6.195,25,0,0,513
+UCL,4,0,0,0,0,Bahlul Mustafazada,383100,Defender,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.195,360,0,0,514
+UCL,4,0,0,0,0,Teun Koopmeiners,343308,Midfielder,87,Juventus,12,250,ceu,Europe,Champions League,6.195,279,0,0,515
+UCL,3,0,0,0,0,Jeremie Frimpong,392644,Defender,26,Liverpool,12,250,ceu,Europe,Champions League,6.193333333,139,0,0,516
+UCL,2,1,0,0,0,Cisse Sandra,420300,Midfielder,124,Club Brugge,12,250,ceu,Europe,Champions League,6.19,112,0,0,517
+UCL,3,2,0,0,0,Jostein Gundersen,320735,Defender,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.19,105,0,1,518
+UCL,4,0,0,0,0,Marten de Roon,85070,Midfielder,300,Atalanta,12,250,ceu,Europe,Champions League,6.19,316,2,0,519
+UCL,3,3,0,0,0,Villads Nielsen,521876,Defender,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.19,30,0,0,520
+UCL,4,2,0,0,0,Jean-Mattéo Bahoya,444748,Forward,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.18,161,0,0,521
+UCL,4,3,0,0,0,Amir Murillo,280972,Defender,249,Marseille,12,250,ceu,Europe,Champions League,6.18,155,0,0,522
+UCL,3,0,0,0,0,Bruno Felipe,425315,Forward,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.18,205,0,1,523
+UCL,4,2,0,0,0,Kostas Pileas,383307,Defender,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.18,219,0,0,524
+UCL,3,3,0,0,0,Louis Patris,400512,Defender,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.176666667,33,0,0,525
+UCL,3,2,0,0,0,Raúl Moro,396490,Forward,130,Ajax,12,250,ceu,Europe,Champions League,6.176666667,110,0,0,526
+UCL,3,0,0,0,0,Tosin Adarabioyo,136464,Defender,15,Chelsea,12,250,ceu,Europe,Champions League,6.176666667,226,1,0,527
+UCL,2,2,0,0,0,Matheus Reis,283978,Defender,296,Sporting,12,250,ceu,Europe,Champions League,6.175,25,0,0,528
+UCL,4,1,0,0,1,Elias Achouri,421895,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.17,257,0,0,529
+UCL,3,0,0,0,0,Owen Wijndal,328550,Defender,130,Ajax,12,250,ceu,Europe,Champions League,6.17,191,0,0,530
+UCL,4,2,0,0,0,Alfonso Pedraza,276489,Defender,839,Villarreal,12,250,ceu,Europe,Champions League,6.1675,165,1,0,531
+UCL,3,2,0,0,0,Leandro Barreiro,363038,Midfielder,299,Benfica,12,250,ceu,Europe,Champions League,6.166666667,93,0,0,532
+UCL,3,2,0,0,0,Milos Kerkez,424273,Defender,26,Liverpool,12,250,ceu,Europe,Champions League,6.166666667,96,0,0,533
+UCL,4,3,0,0,0,Eliesse Ben Seghir,444598,Midfielder,36,Leverkusen,12,250,ceu,Europe,Champions League,6.165,112,0,0,534
+UCL,3,1,0,0,0,Ayoze Pérez,135366,Forward,839,Villarreal,12,250,ceu,Europe,Champions League,6.163333333,156,0,0,535
+UCL,3,2,0,0,0,Álex Baena,395242,Midfielder,63,Atletico,12,250,ceu,Europe,Champions League,6.16,90,0,0,536
+UCL,3,3,0,0,0,Paul Wanner,430703,Midfielder,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.16,41,0,0,537
+UCL,3,0,0,0,0,Lucas Bergvall,505295,Midfielder,30,Tottenham,12,250,ceu,Europe,Champions League,6.156666667,210,0,0,538
+UCL,4,3,0,0,0,Alberto Moleiro,448211,Midfielder,839,Villarreal,12,250,ceu,Europe,Champions League,6.1525,114,1,0,539
+UCL,3,3,0,0,0,Angel Gomes,338497,Midfielder,249,Marseille,12,250,ceu,Europe,Champions League,6.15,62,0,0,540
+UCL,2,2,0,0,0,Joe Willock,342563,Midfielder,23,Newcastle,12,250,ceu,Europe,Champions League,6.15,29,0,0,541
+UCL,3,2,0,0,0,Juan Jesus,84603,Defender,276,Napoli,12,250,ceu,Europe,Champions League,6.146666667,158,0,0,542
+UCL,4,3,0,0,0,Min-Jae Kim,370912,Defender,37,Bayern,12,250,ceu,Europe,Champions League,6.145,153,1,0,543
+UCL,2,2,0,0,0,George Ilenikhena,470978,Forward,248,Monaco,12,250,ceu,Europe,Champions League,6.145,34,0,0,544
+UCL,2,1,0,0,0,Trent Alexander-Arnold,318871,Defender,52,Real Madrid,12,250,ceu,Europe,Champions League,6.145,14,0,0,545
+UCL,3,1,0,0,0,Armando Obispo,345333,Defender,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,6.143333333,157,0,0,546
+UCL,4,2,0,0,0,Jonathan David,383855,Forward,87,Juventus,12,250,ceu,Europe,Champions League,6.1425,165,0,0,547
+UCL,4,4,0,0,1,Ricardinho,416884,Forward,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.1425,39,0,0,548
+UCL,4,3,0,0,0,Mika Biereth,430909,Forward,248,Monaco,12,250,ceu,Europe,Champions League,6.14,95,0,0,549
+UCL,2,0,0,0,0,Sherkhan Kalmurza,569452,Goalkeeper,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.14,180,0,0,550
+UCL,3,0,0,0,0,Fedde Leysen,428122,Defender,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.136666667,270,0,0,551
+UCL,2,1,0,0,0,Ulisses Garcia,149348,Defender,249,Marseille,12,250,ceu,Europe,Champions League,6.135,113,0,0,552
+UCL,4,4,0,0,0,Bruno Langa,390741,Defender,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.1325,48,1,0,553
+UCL,2,2,0,0,0,Oscar Bobb,430709,Midfielder,167,Man City,12,250,ceu,Europe,Champions League,6.13,28,0,0,554
+UCL,3,3,0,0,0,Yoram Zague,513663,Defender,10,Copenhagen,12,250,ceu,Europe,Champions League,6.13,96,1,0,555
+UCL,3,3,0,0,0,Muhammed Cham,426340,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.126666667,40,0,0,556
+UCL,3,2,0,0,1,Yunus Musah,400357,Midfielder,300,Atalanta,12,250,ceu,Europe,Champions League,6.126666667,128,2,0,557
+UCL,3,2,0,0,0,Daiki Hashioka,411101,Defender,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.12,112,0,0,558
+UCL,2,1,0,0,0,Daniele Rugani,116207,Defender,87,Juventus,12,250,ceu,Europe,Champions League,6.12,101,0,0,559
+UCL,2,2,0,0,0,Adilet Sadybekov,456837,Midfielder,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.115,30,0,0,560
+UCL,4,3,0,0,0,Eren Elmali,373036,Defender,294,Galatasaray,12,250,ceu,Europe,Champions League,6.115,101,0,0,561
+UCL,4,0,0,0,0,Vlad Dragomir,346190,Midfielder,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.115,332,0,0,562
+UCL,2,2,0,0,0,Giulian Biancone,367162,Defender,843,Olympiacos,12,250,ceu,Europe,Champions League,6.105,18,0,0,563
+UCL,3,0,0,0,0,Iñaki Williams,255182,Forward,53,Athletic Club,12,250,ceu,Europe,Champions League,6.103333333,174,0,0,564
+UCL,4,2,0,0,0,Claudio Echeverri,478241,Midfielder,36,Leverkusen,12,250,ceu,Europe,Champions League,6.1025,136,1,0,565
+UCL,2,0,0,0,0,Vanderson,408033,Defender,248,Monaco,12,250,ceu,Europe,Champions League,6.1,112,0,0,566
+UCL,4,0,0,0,0,Gabriel Pereira,472900,Defender,10,Copenhagen,12,250,ceu,Europe,Champions League,6.0975,342,1,0,567
+UCL,2,2,0,0,0,Gianluca Scamacca,302650,Forward,300,Atalanta,12,250,ceu,Europe,Champions League,6.095,33,0,0,568
+UCL,4,0,0,0,0,Aleksandr Mrynskiy,499083,Defender,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.09,351,0,0,569
+UCL,2,2,0,0,0,Ole Didrik Blomberg,402884,Midfielder,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.09,27,0,0,570
+UCL,3,3,0,0,0,Kaan Ayhan,129171,Defender,294,Galatasaray,12,250,ceu,Europe,Champions League,6.086666667,33,0,0,571
+UCL,2,2,0,0,0,Olzhas Baybek,538766,Midfielder,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.085,45,0,0,572
+UCL,3,0,0,0,0,Ademola Lookman,299451,Forward,300,Atalanta,12,250,ceu,Europe,Champions League,6.083333333,198,0,0,573
+UCL,4,1,0,0,0,Andoni Gorosabel,345908,Defender,53,Athletic Club,12,250,ceu,Europe,Champions League,6.0825,257,1,0,574
+UCL,4,3,0,0,0,Ellyes Skhiri,238903,Midfielder,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.0825,93,0,0,575
+UCL,2,2,0,0,0,Hugo Vetlesen,335698,Midfielder,124,Club Brugge,12,250,ceu,Europe,Champions League,6.08,19,0,0,576
+UCL,3,2,0,0,0,Zeno Debast,410633,Defender,296,Sporting,12,250,ceu,Europe,Champions League,6.076666667,123,1,0,577
+UCL,3,0,0,0,0,Samuel Dahl,509647,Defender,299,Benfica,12,250,ceu,Europe,Champions League,6.073333333,249,0,0,578
+UCL,2,1,0,0,0,Aymeric Laporte,122117,Defender,53,Athletic Club,12,250,ceu,Europe,Champions League,6.07,135,0,0,579
+UCL,4,0,0,0,0,Dani García,127392,Midfielder,843,Olympiacos,12,250,ceu,Europe,Champions League,6.07,274,2,0,580
+UCL,2,0,0,0,0,Lucas Rosa,459064,Defender,130,Ajax,12,250,ceu,Europe,Champions League,6.07,174,1,0,581
+UCL,2,2,0,0,0,Berkan Kutlu,399932,Midfielder,294,Galatasaray,12,250,ceu,Europe,Champions League,6.065,3,0,0,582
+UCL,3,0,0,0,0,António Silva,443613,Defender,299,Benfica,12,250,ceu,Europe,Champions League,6.06,253,0,0,583
+UCL,4,1,0,0,0,Hugo Larsson,443796,Midfielder,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,6.06,281,0,0,584
+UCL,4,2,0,0,0,Josip Sutalo,402666,Defender,130,Ajax,12,250,ceu,Europe,Champions League,6.055,221,0,0,585
+UCL,2,0,0,0,0,Remko Pasveer,34550,Goalkeeper,130,Ajax,12,250,ceu,Europe,Champions League,6.055,180,0,0,586
+UCL,2,2,0,0,0,Dani Bolt,399242,Defender,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6.05,27,0,0,587
+UCL,2,2,0,0,0,Omar Marmoush,394749,Forward,167,Man City,12,250,ceu,Europe,Champions League,6.05,8,0,0,588
+UCL,4,0,0,0,0,Youri Baas,422801,Defender,130,Ajax,12,250,ceu,Europe,Champions League,6.05,325,1,0,589
+UCL,2,2,0,0,0,Pascal Groß,71824,Midfielder,44,Borussia Dortmund,12,250,ceu,Europe,Champions League,6.045,24,0,0,590
+UCL,4,0,0,0,0,Ousseynou Niang,539156,Midfielder,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6.04,345,1,0,591
+UCL,4,1,0,0,0,Davy Klaassen,108860,Midfielder,130,Ajax,12,250,ceu,Europe,Champions League,6.0275,315,1,0,592
+UCL,3,3,0,0,0,Vasilije Adzic,484428,Midfielder,87,Juventus,12,250,ceu,Europe,Champions League,6.026666667,38,0,0,593
+UCL,2,0,0,0,0,Jorrel Hato,467715,Defender,15,Chelsea,12,250,ceu,Europe,Champions League,6.025,180,0,0,594
+UCL,4,0,0,0,0,Christos Zafeiris,436152,Midfielder,349,Slavia Prague,12,250,ceu,Europe,Champions League,6.025,340,1,0,595
+UCL,3,0,0,0,0,Haitam Aleesami,295248,Defender,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.02,244,1,0,596
+UCL,4,1,0,0,0,Raoul Bellanova,349184,Defender,300,Atalanta,12,250,ceu,Europe,Champions League,6.02,242,1,0,597
+UCL,4,0,0,0,0,Mika Godts,462099,Forward,130,Ajax,12,250,ceu,Europe,Champions League,6.0175,315,0,0,598
+UCL,3,0,0,0,0,Alessandro Buongiorno,333373,Defender,276,Napoli,12,250,ceu,Europe,Champions League,6.016666667,270,0,0,599
+UCL,3,3,0,0,0,Mads Emil Madsen,404279,Midfielder,10,Copenhagen,12,250,ceu,Europe,Champions League,6.016666667,56,0,0,600
+UCL,2,2,0,0,0,Jug Stanojev,493135,Midfielder,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,6.015,45,0,0,601
+UCL,4,4,0,0,0,Tom Bischof,431282,Midfielder,37,Bayern,12,250,ceu,Europe,Champions League,6.015,74,1,0,602
+UCL,3,2,0,0,0,James McConnell,492375,Midfielder,130,Ajax,12,250,ceu,Europe,Champions League,6.01,118,1,0,603
+UCL,2,2,0,0,0,Anders Klynge,444344,Midfielder,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6.005,3,0,0,604
+UCL,3,2,0,0,0,Landry Dimata,344071,Forward,2748,Pafos FC,12,250,ceu,Europe,Champions League,6.003333333,75,0,0,605
+UCL,2,2,0,0,0,Isak Määttä,395826,Defender,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,6,13,0,0,606
+UCL,4,1,0,0,0,Kamiel Van de Perre,530542,Midfielder,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,6,247,2,0,607
+UCL,2,2,0,0,0,Musa Qurbanli,404260,Forward,2569,Qarabag FK,12,250,ceu,Europe,Champions League,6,2,0,0,608
+UCL,3,2,0,0,0,Lynnt Audoor,431320,Midfielder,124,Club Brugge,12,250,ceu,Europe,Champions League,5.996666667,78,0,0,609
+UCL,2,2,0,0,0,Myron Boadu,357081,Forward,129,PSV Eindhoven,12,250,ceu,Europe,Champions League,5.995,12,0,0,610
+UCL,3,0,0,0,0,Ezequiél Fernández,411433,Midfielder,36,Leverkusen,12,250,ceu,Europe,Champions League,5.993333333,222,0,0,611
+UCL,2,2,0,0,0,Marc Bernal,534796,Midfielder,65,Barcelona,12,250,ceu,Europe,Champions League,5.99,21,0,0,612
+UCL,4,4,0,0,0,Mauro Icardi,106964,Forward,294,Galatasaray,12,250,ceu,Europe,Champions League,5.99,79,1,0,613
+UCL,4,4,0,0,0,Mehdi Taremi,358801,Forward,843,Olympiacos,12,250,ceu,Europe,Champions League,5.99,101,1,0,614
+UCL,2,0,0,0,0,Facundo Medina,330672,Defender,249,Marseille,12,250,ceu,Europe,Champions League,5.985,126,1,0,615
+UCL,4,3,0,0,0,Gabriel Sara,349218,Midfielder,294,Galatasaray,12,250,ceu,Europe,Champions League,5.9825,110,0,0,616
+UCL,4,2,0,0,0,Anton Gaaei,484494,Defender,130,Ajax,12,250,ceu,Europe,Champions League,5.96,221,2,0,617
+UCL,2,2,0,0,0,Ivan Schranz,399384,Forward,349,Slavia Prague,12,250,ceu,Europe,Champions League,5.95,46,1,0,618
+UCL,2,2,0,0,0,Mons Bassouamina,457891,Forward,2748,Pafos FC,12,250,ceu,Europe,Champions League,5.95,55,0,0,619
+UCL,4,0,0,0,0,Kasper Høgh,479291,Forward,439,Bodoe/Glimt,12,250,ceu,Europe,Champions League,5.9475,296,0,0,620
+UCL,3,3,0,0,0,Mojmír Chytil,464771,Forward,349,Slavia Prague,12,250,ceu,Europe,Champions League,5.946666667,61,1,0,621
+UCL,3,3,0,0,0,Romeo Vermant,476732,Forward,124,Club Brugge,12,250,ceu,Europe,Champions League,5.94,63,0,0,622
+UCL,4,1,0,0,0,Damir Kasabulat,439585,Defender,1770,Kairat Almaty,12,250,ceu,Europe,Champions League,5.9375,242,0,0,623
+UCL,4,1,0,0,0,Youri Regeer,427577,Midfielder,130,Ajax,12,250,ceu,Europe,Champions League,5.9375,181,0,0,624
+UCL,3,2,0,0,0,Anderson Silva,380620,Forward,2748,Pafos FC,12,250,ceu,Europe,Champions League,5.936666667,75,0,0,625
+UCL,3,0,0,0,0,Ko Itakura,369525,Defender,130,Ajax,12,250,ceu,Europe,Champions League,5.933333333,264,1,0,626
+UCL,4,0,0,0,0,Pantelis Hatzidiakos,300755,Defender,10,Copenhagen,12,250,ceu,Europe,Champions League,5.9325,324,1,0,627
+UCL,4,2,0,0,0,Dani Parejo,28186,Midfielder,839,Villarreal,12,250,ceu,Europe,Champions League,5.9225,148,0,0,628
+UCL,3,0,0,0,0,Santiago Hezze,392345,Midfielder,843,Olympiacos,12,250,ceu,Europe,Champions League,5.92,219,0,1,629
+UCL,2,2,0,0,0,Diogo Nascimento,492324,Midfielder,843,Olympiacos,12,250,ceu,Europe,Champions League,5.915,86,0,0,630
+UCL,2,2,0,0,0,Andreas Christensen,130331,Defender,65,Barcelona,12,250,ceu,Europe,Champions League,5.91,24,0,0,631
+UCL,2,2,0,0,0,Henrique Araújo,424769,Forward,299,Benfica,12,250,ceu,Europe,Champions League,5.91,12,0,0,632
+UCL,3,2,0,0,0,Rob Schoofs,92586,Midfielder,2647,Union St.Gilloise,12,250,ceu,Europe,Champions League,5.89,68,1,0,633
+UCL,2,2,0,0,0,Robinio Vaz,511691,Forward,249,Marseille,12,250,ceu,Europe,Champions League,5.89,27,0,0,634
+UCL,3,0,0,0,0,Tajon Buchanan,371027,Forward,839,Villarreal,12,250,ceu,Europe,Champions League,5.89,212,0,0,635
+UCL,4,3,0,0,0,Aurèle Amenda,450271,Defender,45,Eintracht Frankfurt,12,250,ceu,Europe,Champions League,5.8725,133,1,0,636
+UCL,2,2,0,0,0,Lorenzo Scipioni,437277,Midfielder,843,Olympiacos,12,250,ceu,Europe,Champions League,5.865,23,1,0,637
+UCL,2,1,0,0,0,Christian Mawissa,456749,Defender,248,Monaco,12,250,ceu,Europe,Champions League,5.86,98,1,0,638
+UCL,3,0,0,0,0,Giovanni Di Lorenzo,122469,Defender,276,Napoli,12,250,ceu,Europe,Champions League,5.853333333,201,0,1,639
+UCL,2,1,0,0,0,Gabriel Strefezza,335576,Forward,843,Olympiacos,12,250,ceu,Europe,Champions League,5.85,50,1,0,640
+UCL,3,1,0,0,0,Unai Gómez,480619,Midfielder,53,Athletic Club,12,250,ceu,Europe,Champions League,5.846666667,161,0,0,641
+UCL,3,0,0,0,0,Kenneth Taylor,401122,Midfielder,130,Ajax,12,250,ceu,Europe,Champions League,5.836666667,170,0,1,642
+UCL,3,2,0,0,0,Billy Gilmour,381255,Midfielder,276,Napoli,12,250,ceu,Europe,Champions League,5.83,85,0,0,643
+UCL,2,0,0,0,0,Robert Andrich,122140,Midfielder,36,Leverkusen,12,250,ceu,Europe,Champions League,5.805,121,0,1,644
+UCL,3,1,0,0,0,João Pedro,373525,Forward,15,Chelsea,12,250,ceu,Europe,Champions League,5.796666667,190,0,1,645
+UCL,3,0,0,1,0,Wout Weghorst,115479,Forward,130,Ajax,12,250,ceu,Europe,Champions League,5.78,199,1,0,646
+UCL,2,0,0,0,0,João Correia,381794,Defender,2748,Pafos FC,12,250,ceu,Europe,Champions League,5.765,81,0,1,647
+UCL,3,0,0,0,0,Konstantinos Tzolakis,397331,Goalkeeper,843,Olympiacos,12,250,ceu,Europe,Champions League,5.75,270,0,0,648
+UCL,2,0,0,0,0,Vítezslav Jaros,391831,Goalkeeper,130,Ajax,12,250,ceu,Europe,Champions League,5.565,180,0,0,649
+UCL,2,1,0,0,0,Lorenzo Lucca,424819,Forward,276,Napoli,12,250,ceu,Europe,Champions League,5.415,77,0,1,650
+UCL,4,0,0,0,0,Dominik Kotarski,365432,Goalkeeper,10,Copenhagen,12,250,ceu,Europe,Champions League,5.37,360,0,0,651

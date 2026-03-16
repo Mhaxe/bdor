@@ -1,0 +1,493 @@
+﻿teamName,apps,assistTotal,goal,manOfTheMatch,minsPlayed,name,playedPositions,playedPositionsShort,playerId,positionText,ranking,redCard,teamId,teamRegionName,tournamentName,tournamentRegionId,tournamentRegionName,yellowCard,rating
+Real Madrid,12,2,13,4,1050,Kylian Mbappé,-AMC-AML-AMR-FW-,"AM(CLR),FW",300713,Forward,1,0,52,Spain,LaLiga,206,Spain,2,8.0475
+Barcelona,8,4,4,3,634,Lamine Yamal,-AMR-,AM(R),480249,Forward,2,0,65,Spain,LaLiga,206,Spain,0,7.89875
+Villarreal,5,0,3,1,313,Gerard Moreno,-AMC-AMR-FW-,"AM(CR),FW",97659,Forward,3,0,839,Spain,LaLiga,206,Spain,0,7.672
+Real Madrid,12,4,5,3,869,Vinícius Júnior,-AML-FW-,"AM(L),FW",337782,Forward,4,0,52,Spain,LaLiga,206,Spain,2,7.5175
+Villarreal,2,1,0,0,160,Yéremy Pino,-AMC-AML-AMR-,AM(CLR),403865,Midfielder,5,0,839,Spain,LaLiga,206,Spain,0,7.5
+Real Sociedad,1,0,1,0,57,Álvaro Odriozola,-DR-,D(R),317354,Defender,6,0,68,Spain,LaLiga,206,Spain,0,7.47
+Villarreal,3,2,1,0,257,Etta Eyong,-FW-,FW,445095,Forward,7,0,839,Spain,LaLiga,206,Spain,0,7.45
+Real Betis,8,1,4,2,681,Antony,-AMR-,AM(R),364315,Forward,8,0,54,Spain,LaLiga,206,Spain,1,7.445
+Barcelona,6,2,3,0,385,Raphinha,-AMC-AML-AMR-FW-,"AM(CLR),FW",300447,Forward,9,0,65,Spain,LaLiga,206,Spain,2,7.415
+Mallorca,8,0,1,3,662,Pablo Maffeo,-DL-DR-MR-,"D(LR),M(R)",294848,Defender,10,0,51,Spain,LaLiga,206,Spain,3,7.38875
+Real Madrid,12,5,3,1,793,Arda Güler,-AMC-AMR-,AM(CR),415181,Midfielder,11,0,52,Spain,LaLiga,206,Spain,1,7.365833333
+Atletico,12,2,7,4,947,Julián Alvarez,-AMC-AML-AMR-FW-,"AM(CLR),FW",365409,Forward,12,0,63,Spain,LaLiga,206,Spain,1,7.358333333
+Real Betis,8,2,3,0,558,Abde Ezzalzouli,-AML-,AM(L),427283,Forward,13,0,54,Spain,LaLiga,206,Spain,1,7.33875
+Barcelona,8,2,3,1,486,Fermín López,-AMC-AML-,AM(CL),463838,Midfielder,14,0,65,Spain,LaLiga,206,Spain,1,7.28875
+Sevilla,4,0,0,0,360,Kike Salas,-DC-DL-,D(CL),431509,Defender,15,0,67,Spain,LaLiga,206,Spain,0,7.2475
+Barcelona,10,1,2,1,850,Pedri,-MC-ML-,M(CL),402197,Midfielder,16,1,65,Spain,LaLiga,206,Spain,0,7.237
+Real Oviedo,12,0,0,3,1080,Aarón Escandell,-GK-,GK,141073,Goalkeeper,17,0,61,Spain,LaLiga,206,Spain,1,7.2175
+Girona,7,0,2,1,529,Azzedine Ounahi,-AMC-AMR-,AM(CR),392361,Midfielder,18,0,2783,Spain,LaLiga,206,Spain,3,7.188571429
+Real Madrid,8,1,2,0,472,Jude Bellingham,-FW-MC-ML-MR-,"M(CLR),FW",379868,Midfielder,19,0,52,Spain,LaLiga,206,Spain,0,7.18125
+Villarreal,9,0,0,0,810,Luiz Júnior,-GK-,GK,400826,Goalkeeper,20,0,839,Spain,LaLiga,206,Spain,1,7.168888889
+Villarreal,12,1,2,1,753,Nicolas Pépé,-AMC-AML-AMR-FW-,"AM(CLR),FW",239872,Forward,21,0,839,Spain,LaLiga,206,Spain,1,7.168333333
+Real Madrid,10,1,1,1,811,Éder Militão,-DC-DR-,D(CR),337879,Defender,22,0,52,Spain,LaLiga,206,Spain,2,7.163
+Barcelona,12,6,2,0,808,Marcus Rashford,-AMC-AML-AMR-FW-,"AM(CLR),FW",300299,Forward,23,0,65,Spain,LaLiga,206,Spain,2,7.128333333
+Villarreal,9,1,0,1,797,Santiago Mouriño,-DC-DR-,D(CR),448936,Defender,24,1,839,Spain,LaLiga,206,Spain,3,7.11
+Rayo Vallecano,4,0,0,0,352,Nobel Mendy,-DC-,D(C),469508,Defender,25,0,64,Spain,LaLiga,206,Spain,0,7.0975
+Real Madrid,12,0,1,1,1072,Álvaro Carreras,-DC-DL-ML-,"D(CL),M(L)",437583,Defender,26,0,52,Spain,LaLiga,206,Spain,2,7.090833333
+Real Betis,12,4,2,0,998,Pablo Fornals,-MC-ML-MR-,M(CLR),297203,Midfielder,27,0,54,Spain,LaLiga,206,Spain,1,7.073333333
+Getafe,12,6,0,2,1080,Luis Milla,-MC-,M(C),279320,Midfielder,28,0,819,Spain,LaLiga,206,Spain,1,7.0575
+Espanyol,11,3,0,1,814,Edu Expósito,-MC-,M(C),335696,Midfielder,29,0,70,Spain,LaLiga,206,Spain,2,7.053636364
+Real Betis,12,2,5,4,1034,Cucho Hernández,-AMC-AML-AMR-FW-,"AM(CLR),FW",362501,Forward,30,0,54,Spain,LaLiga,206,Spain,1,7.0525
+Getafe,3,1,1,1,270,Christantus Uche,-AMC-FW-,"AM(C),FW",531674,Midfielder,31,0,819,Spain,LaLiga,206,Spain,1,7.05
+Atletico,12,4,2,2,899,Giuliano Simeone,-AML-AMR-,AM(LR),422918,Forward,32,0,63,Spain,LaLiga,206,Spain,1,7.048333333
+Sevilla,11,3,1,1,915,José Ángel Carmona,-DC-DL-DR-MR-,"D(CLR),M(R)",422956,Defender,33,0,67,Spain,LaLiga,206,Spain,5,7.042727273
+Atletico,4,0,0,0,360,José María Giménez,-DC-DR-,D(CR),135914,Defender,34,0,63,Spain,LaLiga,206,Spain,1,7.0375
+Real Madrid,12,4,0,0,991,Federico Valverde,-DR-MC-ML-MR-,"D(R),M(CLR)",344644,Midfielder,35,0,52,Spain,LaLiga,206,Spain,1,7.035833333
+Sevilla,10,1,0,1,839,Gabriel Suazo,-DL-ML-,"D(L),M(L)",286080,Defender,36,0,67,Spain,LaLiga,206,Spain,3,7.019
+Real Sociedad,12,2,5,1,1050,Mikel Oyarzabal,-AMC-AML-AMR-FW-,"AM(CLR),FW",298839,Forward,37,0,68,Spain,LaLiga,206,Spain,1,7.015833333
+Barcelona,11,1,5,1,701,Ferran Torres,-AML-AMR-FW-,"AM(LR),FW",349760,Forward,38,0,65,Spain,LaLiga,206,Spain,2,7.011818182
+Athletic Club,8,1,2,2,537,Nico Williams,-AML-AMR-,AM(LR),408449,Forward,39,0,53,Spain,LaLiga,206,Spain,0,7.00875
+Levante,9,1,5,0,729,Etta Eyong,-FW-,FW,445095,Forward,40,0,832,Spain,LaLiga,206,Spain,2,7.006666667
+Barcelona,6,0,0,0,540,Joan García,-GK-,GK,422824,Goalkeeper,41,0,65,Spain,LaLiga,206,Spain,0,6.998333333
+Real Betis,11,2,1,1,786,Giovani Lo Celso,-FW-MC-MR-,"M(CR),FW",303908,Midfielder,42,0,54,Spain,LaLiga,206,Spain,3,6.99
+Espanyol,11,2,2,1,967,Carlos Romero,-DL-,D(L),468931,Defender,43,0,70,Spain,LaLiga,206,Spain,0,6.976363636
+Valencia,7,0,1,2,454,Mouctar Diakhaby,-DC-DMC-,"D(C),DMC",322095,Defender,44,0,55,Spain,LaLiga,206,Spain,3,6.975714286
+Sevilla,2,0,1,0,180,Dodi Lukébakio,-AMC-AML-AMR-FW-,"AM(CLR),FW",299490,Forward,45,0,67,Spain,LaLiga,206,Spain,0,6.975
+Villarreal,9,0,1,1,810,Rafa Marín,-DC-,D(C),430301,Defender,46,0,839,Spain,LaLiga,206,Spain,1,6.972222222
+Atletico,12,3,0,1,1080,Marcos Llorente,-DR-FW-MC-MR-,"D(R),M(CR),FW",254582,Midfielder,47,0,63,Spain,LaLiga,206,Spain,3,6.966666667
+Real Madrid,1,0,0,0,90,Antonio Rüdiger,-DC-DL-DR-,D(CLR),104010,Defender,48,0,52,Spain,LaLiga,206,Spain,0,6.96
+Real Betis,8,0,1,1,675,Marc Bartra,-DC-DMC-DR-,"D(CR),DMC",83686,Defender,49,0,54,Spain,LaLiga,206,Spain,0,6.95875
+Barcelona,12,0,1,1,936,Eric García,-DC-DMC-DR-,"D(CR),DMC",368091,Defender,50,0,65,Spain,LaLiga,206,Spain,0,6.9575
+Mallorca,7,2,0,1,371,Jan Virgili,,Forward,581683,Forward,51,0,51,Spain,LaLiga,206,Spain,0,6.951428571
+Mallorca,2,0,0,0,180,Lucas Bergström,-GK-,GK,424586,Goalkeeper,52,0,51,Spain,LaLiga,206,Spain,0,6.95
+Valencia,12,0,0,0,1080,Julen Agirrezabala,-GK-,GK,423108,Goalkeeper,53,0,55,Spain,LaLiga,206,Spain,1,6.9475
+Real Sociedad,11,3,1,2,840,Ander Barrenetxea,-ML-MR-,M(LR),367857,Forward,54,0,68,Spain,LaLiga,206,Spain,1,6.946363636
+Mallorca,11,0,6,1,897,Vedat Muriqi,-FW-,FW,254352,Forward,55,1,51,Spain,LaLiga,206,Spain,1,6.946363636
+Barcelona,10,2,0,0,823,Frenkie de Jong,-DC-MC-,"D(C),M(C)",279423,Midfielder,56,1,65,Spain,LaLiga,206,Spain,2,6.946
+Real Oviedo,9,0,1,0,732,David Carmo,-DC-,D(C),374812,Defender,57,0,61,Spain,LaLiga,206,Spain,3,6.944444444
+Levante,9,0,4,0,704,Iván Romero,-FW-,FW,407567,Forward,58,0,832,Spain,LaLiga,206,Spain,1,6.938888889
+Espanyol,6,1,0,0,496,Clemens Riedel,-DC-,D(C),419935,Defender,59,0,70,Spain,LaLiga,206,Spain,1,6.938333333
+Atletico,9,0,1,0,579,Nico González,-FW-MC-ML-MR-,"M(CLR),FW",345322,Forward,60,0,63,Spain,LaLiga,206,Spain,2,6.927777778
+Celta Vigo,12,0,0,1,1080,Ionut Radu,-GK-,GK,296723,Goalkeeper,61,0,62,Spain,LaLiga,206,Spain,0,6.923333333
+Espanyol,10,0,4,0,689,Pere Milla,-AMC-AML-AMR-FW-,"AM(CLR),FW",140772,Midfielder,62,1,70,Spain,LaLiga,206,Spain,3,6.919
+Atletico,7,1,2,1,295,Thiago Almada,-AMC-AML-AMR-FW-,"AM(CLR),FW",361732,Midfielder,63,0,63,Spain,LaLiga,206,Spain,0,6.915714286
+Atletico,11,0,1,0,859,Pablo Barrios,-MC-,M(C),434138,Midfielder,64,0,63,Spain,LaLiga,206,Spain,0,6.913636364
+Barcelona,10,2,1,1,599,Dani Olmo,-AMC-AML-AMR-FW-,"AM(CLR),FW",261212,Midfielder,65,0,65,Spain,LaLiga,206,Spain,0,6.892
+Villarreal,7,0,0,1,543,Juan Foyth,-DC-DMC-DR-,"D(CR),DMC",335107,Defender,66,0,839,Spain,LaLiga,206,Spain,0,6.887142857
+Levante,2,0,0,0,180,Pablo Campos,,Goalkeeper,411636,Goalkeeper,67,0,832,Spain,LaLiga,206,Spain,0,6.885
+Barcelona,9,0,7,1,449,Robert Lewandowski,-FW-,FW,29400,Forward,68,0,65,Spain,LaLiga,206,Spain,1,6.878888889
+Athletic Club,8,1,0,0,647,Aymeric Laporte,-DC-DL-,D(CL),122117,Defender,69,0,53,Spain,LaLiga,206,Spain,1,6.87875
+Sevilla,5,0,0,0,334,Andrés Castrín,,Defender,448284,Defender,70,0,67,Spain,LaLiga,206,Spain,1,6.874
+Villarreal,12,0,4,1,729,Tajon Buchanan,-DR-MC-ML-MR-,"D(R),M(CLR)",371027,Forward,71,0,839,Spain,LaLiga,206,Spain,3,6.8725
+Villarreal,11,1,2,1,683,Pape Gueye,-MC-,M(C),399047,Midfielder,72,0,839,Spain,LaLiga,206,Spain,4,6.866363636
+Real Madrid,10,1,0,0,775,Dean Huijsen,-DC-,D(C),468852,Defender,73,1,52,Spain,LaLiga,206,Spain,3,6.865
+Rayo Vallecano,11,1,4,2,855,Jorge de Frutos,-AML-AMR-FW-,"AM(LR),FW",386230,Forward,74,0,64,Spain,LaLiga,206,Spain,1,6.857272727
+Real Madrid,11,0,0,0,875,Aurélien Tchouaméni,-DC-DMC-,"D(C),DMC",353423,Midfielder,75,0,52,Spain,LaLiga,206,Spain,4,6.856363636
+Deportivo Alaves,11,0,1,0,990,Nahuel Tenaglia,-DC-DR-,D(CR),347874,Defender,76,0,60,Spain,LaLiga,206,Spain,1,6.852727273
+Barcelona,8,0,0,0,692,Pau Cubarsí,-DC-,D(C),498386,Defender,77,0,65,Spain,LaLiga,206,Spain,1,6.85
+Osasuna,12,1,1,1,1080,Alejandro Catena,-DC-,D(C),374638,Defender,78,0,131,Spain,LaLiga,206,Spain,4,6.835
+Deportivo Alaves,6,0,0,0,540,Facundo Garcés,-DC-,D(C),337454,Defender,79,0,60,Spain,LaLiga,206,Spain,2,6.833333333
+Villarreal,3,0,0,0,238,Pau Navarro,-DR-,D(R),537235,Defender,80,0,839,Spain,LaLiga,206,Spain,2,6.833333333
+Levante,10,0,0,1,900,Mathew Ryan,-GK-,GK,81523,Goalkeeper,81,0,832,Spain,LaLiga,206,Spain,1,6.832
+Osasuna,12,0,0,1,1080,Sergio Herrera,-GK-,GK,381674,Goalkeeper,82,0,131,Spain,LaLiga,206,Spain,0,6.831666667
+Atletico,7,1,1,0,359,Álex Baena,-AMC-AML-FW-,"AM(CL),FW",395242,Midfielder,83,0,63,Spain,LaLiga,206,Spain,1,6.824285714
+Rayo Vallecano,12,1,0,1,1080,Andrei Ratiu,-DR-MR-,"D(R),M(R)",372331,Defender,84,0,64,Spain,LaLiga,206,Spain,4,6.820833333
+Real Betis,12,2,0,0,958,Héctor Bellerín,-DR-MR-,"D(R),M(R)",125211,Defender,85,0,54,Spain,LaLiga,206,Spain,1,6.819166667
+Espanyol,11,0,1,0,990,Leandro Cabrera,-DC-DL-,D(CL),73265,Defender,86,0,70,Spain,LaLiga,206,Spain,1,6.812727273
+Real Betis,7,1,0,0,450,Sergi Altimira,-DMC-,DMC,489232,Midfielder,87,0,54,Spain,LaLiga,206,Spain,1,6.811428571
+Real Oviedo,5,1,0,0,369,Lucas Ahijado,,Defender,298482,Defender,88,0,61,Spain,LaLiga,206,Spain,1,6.806
+Osasuna,10,0,1,1,899,Abel Bretones,-DL-ML-,"D(L),M(L)",461771,Defender,89,1,131,Spain,LaLiga,206,Spain,2,6.805
+Rayo Vallecano,12,0,0,0,1071,Florian Lejeune,-DC-,D(C),80758,Defender,90,0,64,Spain,LaLiga,206,Spain,2,6.8
+Villarreal,11,2,2,0,707,Santi Comesaña,-MC-,M(C),362735,Midfielder,91,0,839,Spain,LaLiga,206,Spain,2,6.796363636
+Rayo Vallecano,12,2,1,0,1013,Pep Chavarría,-DL-ML-,"D(L),M(L)",448468,Defender,92,0,64,Spain,LaLiga,206,Spain,3,6.795
+Deportivo Alaves,11,0,0,1,938,Antonio Blanco,-DMC-,DMC,409467,Midfielder,93,0,60,Spain,LaLiga,206,Spain,4,6.780909091
+Deportivo Alaves,12,1,2,1,799,Toni Martínez,-FW-,FW,280060,Forward,94,0,60,Spain,LaLiga,206,Spain,0,6.775
+Real Betis,6,1,0,1,432,Junior Firpo,-DL-ML-,"D(L),M(L)",351252,Defender,95,0,54,Spain,LaLiga,206,Spain,2,6.773333333
+Real Betis,7,0,0,0,630,Pau López,-GK-,GK,145427,Goalkeeper,96,0,54,Spain,LaLiga,206,Spain,1,6.77
+Villarreal,12,2,4,1,679,Alberto Moleiro,-AMC-AML-,AM(CL),448211,Midfielder,97,0,839,Spain,LaLiga,206,Spain,1,6.77
+Valencia,12,0,0,0,1080,César Tárrega,-DC-,D(C),427831,Defender,98,0,55,Spain,LaLiga,206,Spain,4,6.77
+Sevilla,11,4,3,1,816,Rubén Vargas,-AMC-AML-AMR-FW-,"AM(CLR),FW",381550,Midfielder,99,0,67,Spain,LaLiga,206,Spain,1,6.767272727
+Deportivo Alaves,12,0,0,1,1071,Jonny,-DC-DL-DR-ML-MR-,"D(CLR),M(LR)",115917,Defender,100,0,60,Spain,LaLiga,206,Spain,2,6.766666667
+Getafe,7,1,0,1,510,Abdel Abqar,-DC-,D(C),409740,Defender,101,0,819,Spain,LaLiga,206,Spain,4,6.765714286
+Getafe,11,0,1,1,923,Juan Iglesias,-DL-DR-MR-,"D(LR),M(R)",408735,Defender,102,0,819,Spain,LaLiga,206,Spain,1,6.765454545
+Elche,12,0,0,0,1080,Aleix Febas,-MC-,M(C),381643,Midfielder,103,0,833,Spain,LaLiga,206,Spain,1,6.760833333
+Elche,10,1,0,1,844,Pedro Bigas,-DC-DL-,D(CL),108100,Defender,104,0,833,Spain,LaLiga,206,Spain,1,6.758
+Sevilla,8,0,0,1,720,Odysseas Vlachodimos,-GK-,GK,110273,Goalkeeper,105,0,67,Spain,LaLiga,206,Spain,2,6.7575
+Rayo Vallecano,12,0,0,0,1080,Augusto Batalla,-GK-,GK,303629,Goalkeeper,106,0,64,Spain,LaLiga,206,Spain,1,6.753333333
+Real Madrid,9,0,1,0,550,Franco Mastantuono,-AMR-,AM(R),514810,Forward,107,0,52,Spain,LaLiga,206,Spain,3,6.75
+Real Betis,12,0,0,0,1080,Natan,-DC-DL-,D(CL),402206,Defender,108,0,54,Spain,LaLiga,206,Spain,4,6.749166667
+Deportivo Alaves,6,0,0,0,422,Jon Pacheco,-DC-,D(C),395320,Defender,109,0,60,Spain,LaLiga,206,Spain,2,6.748333333
+Barcelona,6,0,0,1,540,Wojciech Szczesny,-GK-,GK,73379,Goalkeeper,110,0,65,Spain,LaLiga,206,Spain,0,6.738333333
+Elche,12,2,0,0,1073,Álvaro Núñez,-DR-,D(R),509876,Defender,111,0,833,Spain,LaLiga,206,Spain,1,6.736666667
+Barcelona,11,0,1,0,755,Jules Koundé,-DC-DR-,D(CR),301019,Defender,112,0,65,Spain,LaLiga,206,Spain,2,6.734545455
+Espanyol,12,0,0,0,1080,Marko Dmitrovic,-GK-,GK,259393,Goalkeeper,113,0,70,Spain,LaLiga,206,Spain,0,6.733333333
+Getafe,9,1,4,1,651,Borja Mayoral,-AMR-FW-,"AM(R),FW",278721,Forward,114,0,819,Spain,LaLiga,206,Spain,0,6.731111111
+Celta Vigo,1,0,0,0,90,Joseph Aidoo,-DC-,D(C),320713,Defender,115,0,62,Spain,LaLiga,206,Spain,0,6.73
+Atletico,11,2,0,0,766,Koke,-MC-ML-MR-,M(CLR),80764,Midfielder,116,0,63,Spain,LaLiga,206,Spain,3,6.729090909
+Celta Vigo,9,0,0,2,714,Marcos Alonso,-DC-DL-ML-,"D(CL),M(L)",84008,Defender,117,0,62,Spain,LaLiga,206,Spain,2,6.721111111
+Athletic Club,10,0,0,0,756,Alex Berenguer,-DL-DR-FW-MC-ML-MR-,"D(LR),M(CLR),FW",238899,Forward,118,0,53,Spain,LaLiga,206,Spain,1,6.721
+Osasuna,11,0,4,0,903,Ante Budimir,-FW-,FW,98126,Forward,119,0,131,Spain,LaLiga,206,Spain,0,6.72
+Espanyol,12,2,2,0,852,Roberto Fernández,-FW-,FW,448296,Forward,120,0,70,Spain,LaLiga,206,Spain,0,6.718333333
+Athletic Club,12,0,0,1,1080,Unai Simón,-GK-,GK,332823,Goalkeeper,121,0,53,Spain,LaLiga,206,Spain,0,6.715
+Celta Vigo,7,2,1,1,376,Javi Rueda,,Defender,463588,Defender,122,0,62,Spain,LaLiga,206,Spain,2,6.714285714
+Getafe,12,0,1,0,1060,Mauro Arambarri,-MC-,M(C),303016,Midfielder,123,0,819,Spain,LaLiga,206,Spain,2,6.713333333
+Elche,6,0,0,0,540,Matías Dituro,-GK-,GK,422916,Goalkeeper,124,0,833,Spain,LaLiga,206,Spain,1,6.711666667
+Athletic Club,11,0,0,0,733,Íñigo Ruíz de Galarreta,-DMC-,DMC,106586,Midfielder,125,0,53,Spain,LaLiga,206,Spain,5,6.710909091
+Mallorca,12,3,0,0,859,Johan Mojica,-DL-ML-,"D(L),M(L)",135098,Defender,126,0,51,Spain,LaLiga,206,Spain,1,6.710833333
+Girona,11,0,0,0,888,Vitor Reis,-DC-,D(C),478314,Defender,127,1,2783,Spain,LaLiga,206,Spain,3,6.71
+Athletic Club,12,0,0,0,1035,Yuri Berchiche,-DL-ML-,"D(L),M(L)",56057,Defender,128,0,53,Spain,LaLiga,206,Spain,1,6.705833333
+Girona,6,1,1,0,398,Viktor Tsygankov,-MC-ML-MR-,M(CLR),231125,Forward,129,0,2783,Spain,LaLiga,206,Spain,0,6.705
+Celta Vigo,12,2,5,0,725,Borja Iglesias,-FW-,FW,259042,Forward,130,0,62,Spain,LaLiga,206,Spain,2,6.704166667
+Real Oviedo,7,0,0,0,530,David Costas,-DC-,D(C),135404,Defender,131,0,61,Spain,LaLiga,206,Spain,0,6.702857143
+Elche,11,0,0,0,934,David Affengruber,-DC-,D(C),423282,Defender,132,1,833,Spain,LaLiga,206,Spain,3,6.702727273
+Real Sociedad,11,2,2,1,662,Brais Méndez,-AMC-AMR-FW-,"AM(CR),FW",344542,Midfielder,133,0,68,Spain,LaLiga,206,Spain,2,6.700909091
+Athletic Club,11,1,0,0,741,Jesús Areso,-DR-,D(R),422820,Defender,134,0,53,Spain,LaLiga,206,Spain,1,6.699090909
+Deportivo Alaves,8,0,2,1,553,Lucas Boyé,-AML-FW-,"AM(L),FW",303800,Forward,135,1,60,Spain,LaLiga,206,Spain,0,6.695
+Valencia,12,3,1,1,855,Luis Rioja,-ML-MR-,M(LR),381713,Forward,136,0,55,Spain,LaLiga,206,Spain,1,6.693333333
+Athletic Club,11,0,0,0,961,Dani Vivian,-DC-,D(C),357839,Defender,137,1,53,Spain,LaLiga,206,Spain,3,6.692727273
+Real Sociedad,12,0,0,0,824,Sergio Gómez,-DL-MC-ML-MR-,"D(L),M(CLR)",355110,Forward,138,0,68,Spain,LaLiga,206,Spain,1,6.691666667
+Levante,9,0,0,0,693,Matías Moreno,-DC-,D(C),482951,Defender,139,0,832,Spain,LaLiga,206,Spain,1,6.69
+Barcelona,8,1,0,0,593,Alejandro Balde,-DL-DR-ML-,"D(LR),M(L)",422938,Defender,140,0,65,Spain,LaLiga,206,Spain,2,6.68875
+Osasuna,12,1,0,0,1062,Jon Moncayola,-DR-MC-MR-,"D(R),M(CR)",381673,Midfielder,141,0,131,Spain,LaLiga,206,Spain,2,6.6875
+Barcelona,10,0,2,0,604,Ronald Araujo,-DC-DR-,D(CR),384711,Defender,142,0,65,Spain,LaLiga,206,Spain,2,6.687
+Real Sociedad,11,0,0,0,904,Jon Aramburu,-DR-,D(R),463961,Defender,143,0,68,Spain,LaLiga,206,Spain,3,6.686363636
+Sevilla,9,1,1,0,754,Lucien Agoumé,-DMC-,DMC,388505,Midfielder,144,0,67,Spain,LaLiga,206,Spain,5,6.681111111
+Celta Vigo,9,1,1,0,804,Sergio Carreira,-ML-MR-,M(LR),386622,Defender,145,0,62,Spain,LaLiga,206,Spain,1,6.68
+Deportivo Alaves,12,0,3,0,749,Carlos Vicente,-AMR-,AM(R),462861,Forward,146,0,60,Spain,LaLiga,206,Spain,1,6.68
+Real Sociedad,8,0,0,0,698,Duje Caleta-Car,-DC-,D(C),251134,Defender,147,0,68,Spain,LaLiga,206,Spain,3,6.67875
+Elche,10,2,1,1,546,Álvaro Rodríguez,-FW-,FW,460772,Forward,148,0,833,Spain,LaLiga,206,Spain,0,6.673
+Levante,11,1,1,1,946,Manu Sánchez,-DL-ML-,"D(L),M(L)",374813,Defender,149,0,832,Spain,LaLiga,206,Spain,4,6.672727273
+Elche,9,0,0,0,597,Victor Chust,-DC-,D(C),402862,Defender,150,0,833,Spain,LaLiga,206,Spain,3,6.672222222
+Getafe,8,0,0,0,589,Kiko Femenía,-DL-DR-MR-,"D(LR),M(R)",75919,Defender,151,0,819,Spain,LaLiga,206,Spain,1,6.67125
+Elche,11,1,1,1,776,Germán Valera,-ML-,M(L),390240,Forward,152,0,833,Spain,LaLiga,206,Spain,1,6.67
+Athletic Club,7,0,1,0,549,Aitor Paredes,-DC-,D(C),402663,Defender,153,0,53,Spain,LaLiga,206,Spain,1,6.668571429
+Celta Vigo,11,2,1,1,672,Óscar Mingueza,-DC-DR-ML-MR-,"D(CR),M(LR)",397469,Defender,154,0,62,Spain,LaLiga,206,Spain,1,6.667272727
+Mallorca,12,0,0,0,1080,Antonio Raíllo,-DC-,D(C),294006,Defender,155,0,51,Spain,LaLiga,206,Spain,2,6.666666667
+Osasuna,11,0,0,0,801,Lucas Torró,-DMC-,DMC,249960,Midfielder,156,0,131,Spain,LaLiga,206,Spain,3,6.662727273
+Getafe,12,0,0,0,1080,David Soria,-GK-,GK,243262,Goalkeeper,157,0,819,Spain,LaLiga,206,Spain,1,6.661666667
+Athletic Club,1,0,0,0,64,Selton Sánchez,,Midfielder,599259,Midfielder,158,0,53,Spain,LaLiga,206,Spain,0,6.66
+Real Betis,9,0,0,0,537,Valentín Gómez,-DC-DL-,D(CL),433286,Defender,159,0,54,Spain,LaLiga,206,Spain,2,6.66
+Atletico,12,0,4,0,442,Antoine Griezmann,-AMC-AML-AMR-FW-,"AM(CLR),FW",80241,Forward,160,0,63,Spain,LaLiga,206,Spain,0,6.655
+Elche,12,0,4,1,861,Rafa Mir,-AMR-FW-,"AM(R),FW",300369,Forward,161,0,833,Spain,LaLiga,206,Spain,1,6.654166667
+Rayo Vallecano,12,0,0,0,838,Pathé Ciss,-DC-DMC-,"D(C),DMC",422963,Midfielder,162,0,64,Spain,LaLiga,206,Spain,2,6.648333333
+Villarreal,10,2,0,0,727,Sergi Cardona,-DL-,D(L),448209,Defender,163,0,839,Spain,LaLiga,206,Spain,1,6.648
+Levante,12,2,1,0,1025,Jeremy Toljan,-DL-DR-ML-MR-,"D(LR),M(LR)",129620,Defender,164,0,832,Spain,LaLiga,206,Spain,3,6.644166667
+Celta Vigo,11,1,0,1,712,Hugo Sotelo,-MC-,M(C),415345,Midfielder,165,0,62,Spain,LaLiga,206,Spain,1,6.643636364
+Getafe,3,1,0,0,108,Ismael Bekhoucha,,Defender,550147,Defender,166,0,819,Spain,LaLiga,206,Spain,1,6.643333333
+Villarreal,7,2,2,0,432,Georges Mikautadze,-FW-,FW,389020,Forward,167,0,839,Spain,LaLiga,206,Spain,0,6.64
+Villarreal,9,1,0,0,450,Alfonso Pedraza,-DL-ML-,"D(L),M(L)",276489,Defender,168,0,839,Spain,LaLiga,206,Spain,2,6.636666667
+Barcelona,2,1,0,0,66,Gavi,-MC-ML-,M(CL),422937,Midfielder,169,0,65,Spain,LaLiga,206,Spain,0,6.63
+Real Betis,7,1,0,0,494,Ricardo Rodríguez,-DC-DL-ML-,"D(CL),M(L)",61610,Defender,170,0,54,Spain,LaLiga,206,Spain,0,6.63
+Atletico,10,0,1,0,887,Robin Le Normand,-DC-,D(C),367008,Defender,171,0,63,Spain,LaLiga,206,Spain,2,6.63
+Atletico,3,0,0,0,186,Johnny Cardoso,-MC-,M(C),379230,Midfielder,172,0,63,Spain,LaLiga,206,Spain,2,6.626666667
+Sevilla,7,0,0,0,499,César Azpilicueta,-DC-DL-DR-MR-,"D(CLR),M(R)",25931,Defender,173,0,67,Spain,LaLiga,206,Spain,2,6.625714286
+Atletico,12,1,0,0,972,Dávid Hancko,-DC-DL-,D(CL),362779,Defender,174,0,63,Spain,LaLiga,206,Spain,0,6.623333333
+Real Oviedo,3,0,0,0,270,Eric Bailly,-DC-DR-,D(CR),243814,Defender,175,0,61,Spain,LaLiga,206,Spain,1,6.623333333
+Mallorca,10,0,1,1,681,Samú Costa,-DMC-,DMC,391562,Midfielder,176,0,51,Spain,LaLiga,206,Spain,3,6.623
+Espanyol,8,0,0,1,581,Fernando Calero,-DC-DMC-,"D(C),DMC",362354,Defender,177,0,70,Spain,LaLiga,206,Spain,2,6.62
+Rayo Vallecano,10,0,0,0,575,Óscar Valentín,-DMC-,DMC,422958,Midfielder,178,0,64,Spain,LaLiga,206,Spain,0,6.619
+Real Oviedo,4,0,0,0,317,Javi López,-DL-,D(L),395234,Defender,179,0,61,Spain,LaLiga,206,Spain,0,6.6175
+Villarreal,4,1,1,0,110,Manor Solomon,-AMC-AML-AMR-,AM(CLR),345022,Forward,180,0,839,Spain,LaLiga,206,Spain,0,6.6175
+Getafe,9,0,3,1,765,Adrián Liso,-FW-,FW,519104,Forward,181,0,819,Spain,LaLiga,206,Spain,1,6.614444444
+Real Sociedad,12,0,0,0,1080,Igor Zubeldia,-DC-DMC-,"D(C),DMC",315566,Defender,182,0,68,Spain,LaLiga,206,Spain,4,6.613333333
+Real Betis,7,0,0,0,557,Sofyan Amrabat,-DL-DMC-,"D(L),DMC",248144,Midfielder,183,0,54,Spain,LaLiga,206,Spain,3,6.612857143
+Atletico,8,0,0,0,452,Matteo Ruggeri,-DL-ML-,"D(L),M(L)",402046,Defender,184,0,63,Spain,LaLiga,206,Spain,1,6.6125
+Real Betis,5,0,0,0,450,Álvaro Valles,-GK-,GK,448208,Goalkeeper,185,0,54,Spain,LaLiga,206,Spain,0,6.612
+Valencia,12,1,3,0,893,Arnaut Danjuma,-AML-FW-,"AM(L),FW",323625,Forward,186,0,55,Spain,LaLiga,206,Spain,0,6.611666667
+Real Oviedo,11,0,1,0,952,Leander Dendoncker,-DC-MC-,"D(C),M(C)",124106,Midfielder,187,0,61,Spain,LaLiga,206,Spain,2,6.609090909
+Elche,9,0,1,1,547,Rodrigo Mendoza,,Midfielder,463938,Midfielder,188,0,833,Spain,LaLiga,206,Spain,2,6.606666667
+Elche,6,1,0,0,260,Josan,-DR-MR-,"D(R),M(R)",273453,Midfielder,189,0,833,Spain,LaLiga,206,Spain,1,6.603333333
+Espanyol,12,1,0,0,807,Tyrhys Dolan,-AMC-AML-AMR-FW-,"AM(CLR),FW",398922,Forward,190,0,70,Spain,LaLiga,206,Spain,1,6.603333333
+Osasuna,12,1,1,1,845,Víctor Muñoz,,Forward,548106,Forward,191,0,131,Spain,LaLiga,206,Spain,2,6.6025
+Celta Vigo,10,1,2,1,582,Ferran Jutglà,-AML-FW-,"AM(L),FW",396158,Forward,192,0,62,Spain,LaLiga,206,Spain,1,6.601
+Athletic Club,12,0,1,0,1071,Mikel Jauregizar,-DMC-,DMC,511120,Midfielder,193,0,53,Spain,LaLiga,206,Spain,1,6.600833333
+Mallorca,12,1,0,0,934,Sergi Darder,-MC-ML-MR-,M(CLR),106596,Midfielder,194,0,51,Spain,LaLiga,206,Spain,2,6.599166667
+Mallorca,10,0,0,1,900,Leo Román,-GK-,GK,423420,Goalkeeper,195,0,51,Spain,LaLiga,206,Spain,1,6.597
+Sevilla,10,0,3,0,632,Isaac Romero,-FW-,FW,492362,Forward,196,0,67,Spain,LaLiga,206,Spain,3,6.596
+Osasuna,10,2,0,0,515,Rubén García,-AMC-AML-AMR-FW-,"AM(CLR),FW",119189,Midfielder,197,0,131,Spain,LaLiga,206,Spain,0,6.596
+Osasuna,12,0,0,0,1069,Enzo Boyomo,-DC-,D(C),447842,Defender,198,0,131,Spain,LaLiga,206,Spain,3,6.594166667
+Girona,11,1,1,1,686,Arnau Martínez,-DR-MR-,"D(R),M(R)",444239,Defender,199,0,2783,Spain,LaLiga,206,Spain,3,6.591818182
+Getafe,11,0,0,0,979,Diego Rico,-DC-DL-ML-,"D(CL),M(L)",323352,Defender,200,0,819,Spain,LaLiga,206,Spain,1,6.591818182
+Valencia,10,0,0,0,708,Pepelu,-DMC-,DMC,302889,Midfielder,201,0,55,Spain,LaLiga,206,Spain,1,6.591
+Levante,9,0,1,0,560,Kervin Arriaga,-DC-DMC-,"D(C),DMC",433488,Midfielder,202,0,832,Spain,LaLiga,206,Spain,1,6.59
+Levante,12,1,2,1,764,Carlos Álvarez,-MR-,M(R),406937,Midfielder,203,0,832,Spain,LaLiga,206,Spain,1,6.589166667
+Girona,12,0,0,0,953,Daley Blind,-DC-DL-DMC-ML-,"D(CL),DMC,M(L)",70033,Defender,204,0,2783,Spain,LaLiga,206,Spain,1,6.585
+Rayo Vallecano,11,2,0,0,659,Unai López,-MC-MR-,M(CR),236575,Midfielder,205,0,64,Spain,LaLiga,206,Spain,3,6.58
+Sevilla,7,1,2,0,391,Alexis Sánchez,-FW-MC-ML-MR-,"M(CLR),FW",25244,Forward,206,0,67,Spain,LaLiga,206,Spain,0,6.578571429
+Sevilla,10,1,0,0,668,Juanlu Sánchez,-DR-MC-MR-,"D(R),M(CR)",395187,Midfielder,207,0,67,Spain,LaLiga,206,Spain,0,6.578
+Real Sociedad,4,0,0,0,360,Jon Martín,-DC-,D(C),495459,Defender,208,0,68,Spain,LaLiga,206,Spain,1,6.5725
+Getafe,10,0,0,0,856,Domingos Duarte,-DC-,D(C),322772,Defender,209,0,819,Spain,LaLiga,206,Spain,3,6.571
+Villarreal,11,0,0,0,793,Renato Veiga,-DC-DL-,D(CL),434077,Midfielder,210,0,839,Spain,LaLiga,206,Spain,1,6.569090909
+Espanyol,12,2,0,0,806,Omar El Hilali,-DR-,D(R),449410,Defender,211,0,70,Spain,LaLiga,206,Spain,3,6.568333333
+Mallorca,12,0,0,0,1080,Martin Valjent,-DC-,D(C),142387,Defender,212,0,51,Spain,LaLiga,206,Spain,1,6.568333333
+Barcelona,10,0,0,0,402,Gerard Martín,-DL-,D(L),512879,Defender,213,0,65,Spain,LaLiga,206,Spain,1,6.561
+Real Madrid,12,0,0,0,1080,Thibaut Courtois,-GK-,GK,73798,Goalkeeper,214,0,52,Spain,LaLiga,206,Spain,0,6.560833333
+Celta Vigo,6,0,0,0,436,Carlos Domínguez,-DC-,D(C),415344,Defender,215,0,62,Spain,LaLiga,206,Spain,1,6.56
+Sevilla,10,0,1,0,599,Nemanja Gudelj,-DC-MC-,"D(C),M(C)",77417,Midfielder,216,0,67,Spain,LaLiga,206,Spain,2,6.558
+Real Madrid,8,0,0,0,345,Eduardo Camavinga,-DL-DMC-,"D(L),DMC",369109,Midfielder,217,0,52,Spain,LaLiga,206,Spain,0,6.5575
+Levante,9,1,0,0,525,Pablo Martínez,-MC-,M(C),388808,Midfielder,218,0,832,Spain,LaLiga,206,Spain,1,6.556666667
+Osasuna,8,1,0,1,614,Valentin Rosier,-DC-DL-DR-ML-MR-,"D(CLR),M(LR)",319388,Defender,219,1,131,Spain,LaLiga,206,Spain,1,6.55625
+Atletico,12,0,0,0,1080,Jan Oblak,-GK-,GK,76662,Goalkeeper,220,0,63,Spain,LaLiga,206,Spain,0,6.555833333
+Elche,6,0,0,0,540,Iñaki Peña,-GK-,GK,367164,Goalkeeper,221,0,833,Spain,LaLiga,206,Spain,0,6.551666667
+Elche,11,0,4,0,618,André Silva,-FW-,FW,299460,Forward,222,0,833,Spain,LaLiga,206,Spain,0,6.55
+Real Oviedo,11,1,0,0,664,Haissem Hassan,-AMR-,AM(R),475046,Forward,223,0,61,Spain,LaLiga,206,Spain,1,6.55
+Osasuna,6,0,0,0,372,Aimar Oroz,-AMC-AML-FW-,"AM(CL),FW",395321,Midfielder,224,0,131,Spain,LaLiga,206,Spain,1,6.55
+Celta Vigo,12,1,0,0,800,Ilaix Moriba,-DMC-,DMC,409030,Midfielder,225,0,62,Spain,LaLiga,206,Spain,1,6.549166667
+Real Oviedo,6,0,0,0,540,Dani Calvo,-DC-,D(C),300918,Defender,226,0,61,Spain,LaLiga,206,Spain,2,6.548333333
+Deportivo Alaves,9,0,0,0,449,Abde Rebbach,-AML-,AM(L),447835,Forward,227,0,60,Spain,LaLiga,206,Spain,2,6.546666667
+Girona,9,0,1,0,596,Joel Roca,-AML-,AM(L),444242,Midfielder,228,0,2783,Spain,LaLiga,206,Spain,0,6.544444444
+Real Sociedad,3,0,1,0,112,Orri Óskarsson,-FW-,FW,428066,Forward,229,0,68,Spain,LaLiga,206,Spain,0,6.543333333
+Mallorca,11,1,2,0,663,Mateo Joseph,-FW-,FW,463233,Forward,230,0,51,Spain,LaLiga,206,Spain,0,6.541818182
+Deportivo Alaves,12,0,0,1,1080,Antonio Sivera,-GK-,GK,141044,Goalkeeper,231,0,60,Spain,LaLiga,206,Spain,0,6.540833333
+Getafe,7,0,0,0,429,Davinchi,,Defender,568737,Defender,232,0,819,Spain,LaLiga,206,Spain,1,6.535714286
+Real Madrid,9,0,0,0,301,Dani Ceballos,-MC-ML-,M(CL),144890,Midfielder,233,0,52,Spain,LaLiga,206,Spain,0,6.531111111
+Girona,5,0,0,0,262,Alejandro Francés,-DC-DR-,D(CR),416959,Defender,234,1,2783,Spain,LaLiga,206,Spain,1,6.526
+Real Madrid,9,2,0,0,293,Brahim Díaz,-AMC-AML-AMR-FW-,"AM(CLR),FW",317541,Midfielder,235,0,52,Spain,LaLiga,206,Spain,1,6.524444444
+Girona,9,0,1,0,729,Axel Witsel,-DC-MC-,"D(C),M(C)",25191,Defender,236,1,2783,Spain,LaLiga,206,Spain,0,6.524444444
+Rayo Vallecano,12,2,1,0,838,Isi Palazón,-AMC-AMR-FW-,"AM(CR),FW",422959,Midfielder,237,0,64,Spain,LaLiga,206,Spain,4,6.524166667
+Girona,9,0,2,1,640,Vladyslav Vanat,-FW-,FW,410504,Forward,238,0,2783,Spain,LaLiga,206,Spain,0,6.521111111
+Real Sociedad,10,0,1,0,563,Takefusa Kubo,-AMC-AML-AMR-FW-,"AM(CLR),FW",377285,Forward,239,0,68,Spain,LaLiga,206,Spain,0,6.52
+Athletic Club,2,0,0,0,85,Beñat Prados,-DMC-,DMC,414643,Midfielder,240,0,53,Spain,LaLiga,206,Spain,1,6.52
+Girona,11,0,0,1,943,Paulo Gazzaniga,-GK-,GK,104732,Goalkeeper,241,1,2783,Spain,LaLiga,206,Spain,0,6.515454545
+Barcelona,7,0,0,0,174,Roony Bardghji,,Forward,435529,Forward,242,0,65,Spain,LaLiga,206,Spain,0,6.512857143
+Celta Vigo,10,1,1,0,406,Iago Aspas,-AMC-AMR-FW-,"AM(CR),FW",91242,Forward,243,0,62,Spain,LaLiga,206,Spain,1,6.51
+Deportivo Alaves,12,0,0,0,660,Pablo Ibáñez,-DMC-,DMC,444254,Midfielder,244,0,60,Spain,LaLiga,206,Spain,3,6.51
+Deportivo Alaves,8,0,0,0,278,Calebe,-MC-MR-,M(CR),397568,Midfielder,245,0,60,Spain,LaLiga,206,Spain,1,6.51
+Espanyol,7,0,0,0,295,Rubén Sánchez,-DR-MR-,"D(R),M(R)",426757,Defender,246,0,70,Spain,LaLiga,206,Spain,0,6.51
+Celta Vigo,4,0,0,0,335,Yoel Lago,-DC-,D(C),528001,Defender,247,0,62,Spain,LaLiga,206,Spain,2,6.51
+Deportivo Alaves,12,3,0,0,743,Carles Aleñá,-AMC-AML-AMR-,AM(CLR),303268,Midfielder,248,0,60,Spain,LaLiga,206,Spain,0,6.505833333
+Girona,11,0,0,0,945,Álex Moreno,-DL-ML-,"D(L),M(L)",135374,Defender,249,0,2783,Spain,LaLiga,206,Spain,1,6.502727273
+Getafe,12,0,2,0,745,Mario Martín,-DMC-,DMC,471047,Midfielder,250,0,819,Spain,LaLiga,206,Spain,4,6.501666667
+Barcelona,2,0,0,0,48,Dro Fernández,,Midfielder,572375,Midfielder,251,0,65,Spain,LaLiga,206,Spain,0,6.5
+Girona,10,1,0,0,797,Iván Martín,-MC-MR-,M(CR),372473,Midfielder,252,1,2783,Spain,LaLiga,206,Spain,1,6.497
+Real Madrid,7,0,0,0,404,Raúl Asencio,-DC-,D(C),534899,Defender,253,0,52,Spain,LaLiga,206,Spain,1,6.495714286
+Elche,11,0,0,0,718,Marc Aguado,-DMC-,DMC,448050,Midfielder,254,0,833,Spain,LaLiga,206,Spain,0,6.495454545
+Elche,7,0,1,0,416,Adrià Pedrosa,-DL-ML-,"D(L),M(L)",363966,Defender,255,0,833,Spain,LaLiga,206,Spain,3,6.494285714
+Rayo Vallecano,12,1,3,0,785,Álvaro García,-AMC-AML-FW-,"AM(CL),FW",135345,Midfielder,256,0,64,Spain,LaLiga,206,Spain,2,6.493333333
+Real Madrid,7,0,0,0,376,Dani Carvajal,-DR-,D(R),106883,Defender,257,0,52,Spain,LaLiga,206,Spain,0,6.491428571
+Getafe,12,0,0,0,777,Djené Dakonam,-DC-DMC-DR-,"D(CR),DMC",332990,Defender,258,0,819,Spain,LaLiga,206,Spain,2,6.485
+Espanyol,5,0,1,0,133,Miguel Rubio,-DC-,D(C),357118,Defender,259,0,70,Spain,LaLiga,206,Spain,0,6.484
+Celta Vigo,4,0,0,0,255,Mihailo Ristic,-DL-ML-,"D(L),M(L)",244778,Defender,260,0,62,Spain,LaLiga,206,Spain,0,6.4825
+Real Oviedo,8,1,0,1,542,Santiago Colombatto,-DMC-,DMC,298175,Midfielder,261,0,61,Spain,LaLiga,206,Spain,3,6.48125
+Rayo Vallecano,9,0,1,0,378,Fran Pérez,-AML-AMR-,AM(LR),444265,Midfielder,262,0,64,Spain,LaLiga,206,Spain,0,6.478888889
+Sevilla,5,0,0,0,295,Tanguy Nianzou,-DC-,D(C),382492,Defender,263,0,67,Spain,LaLiga,206,Spain,4,6.478
+Espanyol,8,0,2,0,666,Javi Puado,-AMC-AML-AMR-FW-,"AM(CLR),FW",362423,Forward,264,0,70,Spain,LaLiga,206,Spain,2,6.47375
+Elche,9,2,0,0,459,Martim Neto,-MC-,M(C),438351,Midfielder,265,0,833,Spain,LaLiga,206,Spain,1,6.47
+Valencia,12,2,0,0,711,Javi Guerra,-MC-,M(C),431507,Midfielder,266,0,55,Spain,LaLiga,206,Spain,2,6.469166667
+Real Sociedad,11,0,1,0,878,Jon Gorrotxategi,-DMC-,DMC,541871,Midfielder,267,0,68,Spain,LaLiga,206,Spain,3,6.469090909
+Espanyol,11,0,2,1,445,Kike García,-FW-,FW,79840,Forward,268,0,70,Spain,LaLiga,206,Spain,1,6.469090909
+Real Sociedad,9,0,1,0,451,Carlos Soler,-MC-ML-MR-,M(CLR),313542,Midfielder,269,0,68,Spain,LaLiga,206,Spain,2,6.466666667
+Celta Vigo,7,0,1,0,341,Hugo Álvarez,-ML-MR-,M(LR),427001,Midfielder,270,0,62,Spain,LaLiga,206,Spain,0,6.465714286
+Celta Vigo,4,0,1,0,183,Miguel Román,,Midfielder,462768,Midfielder,271,0,62,Spain,LaLiga,206,Spain,3,6.465
+Real Madrid,5,0,0,0,158,Trent Alexander-Arnold,-DMC-DR-MR-,"D(R),DMC,M(R)",318871,Defender,272,0,52,Spain,LaLiga,206,Spain,0,6.462
+Deportivo Alaves,7,0,1,0,235,Ander Guevara,-DMC-,DMC,344120,Midfielder,273,0,60,Spain,LaLiga,206,Spain,0,6.461428571
+Athletic Club,5,1,0,0,242,Andoni Gorosabel,-DR-MR-,"D(R),M(R)",345908,Defender,274,0,53,Spain,LaLiga,206,Spain,0,6.458
+Real Betis,8,0,1,1,324,Aitor Ruibal,-DR-ML-MR-,"D(R),M(LR)",349494,Forward,275,0,54,Spain,LaLiga,206,Spain,0,6.4525
+Athletic Club,3,0,0,0,131,Íñigo Lekue,-DL-DR-ML-MR-,"D(LR),M(LR)",291686,Defender,276,1,53,Spain,LaLiga,206,Spain,0,6.45
+Valencia,7,0,0,0,630,Dimitri Foulquier,-DC-DL-DR-MR-,"D(CLR),M(R)",101084,Defender,277,0,55,Spain,LaLiga,206,Spain,0,6.447142857
+Levante,7,0,0,0,439,Unai Vencedor,-DMC-,DMC,392383,Midfielder,278,1,832,Spain,LaLiga,206,Spain,1,6.445714286
+Sevilla,10,1,2,0,487,Akor Adams,-FW-,FW,408616,Forward,279,0,67,Spain,LaLiga,206,Spain,1,6.438
+Barcelona,8,0,0,0,318,Andreas Christensen,-DC-DMC-,"D(C),DMC",130331,Defender,280,0,65,Spain,LaLiga,206,Spain,1,6.43625
+Sevilla,6,0,1,1,201,Alfon González,-AML-,AM(L),408942,Forward,281,0,67,Spain,LaLiga,206,Spain,0,6.433333333
+Real Oviedo,9,0,0,0,711,Nacho Vidal,-DR-,D(R),335790,Defender,282,0,61,Spain,LaLiga,206,Spain,1,6.432222222
+Real Betis,9,1,0,0,398,Rodrigo Riquelme,-DL-MC-ML-,"D(L),M(CL)",382631,Midfielder,283,0,54,Spain,LaLiga,206,Spain,0,6.426666667
+Athletic Club,10,0,1,0,592,Gorka Guruzeta,-FW-,FW,362602,Forward,284,0,53,Spain,LaLiga,206,Spain,1,6.425
+Athletic Club,7,0,1,0,122,Alejandro Rego,,Midfielder,560362,Midfielder,285,0,53,Spain,LaLiga,206,Spain,0,6.42
+Real Madrid,2,0,0,0,112,Fran García,-DL-,D(L),422957,Defender,286,0,52,Spain,LaLiga,206,Spain,0,6.42
+Valencia,12,0,3,0,611,Hugo Duro,-AML-FW-,"AM(L),FW",354526,Forward,287,0,55,Spain,LaLiga,206,Spain,1,6.4175
+Sevilla,8,0,0,0,588,Batista Mendy,-DC-DMC-,"D(C),DMC",391316,Midfielder,288,0,67,Spain,LaLiga,206,Spain,2,6.4175
+Atletico,5,0,0,0,400,Clément Lenglet,-DC-,D(C),236511,Defender,289,1,63,Spain,LaLiga,206,Spain,1,6.416
+Atletico,2,0,0,0,24,Marc Pubill,-DR-,D(R),430148,Defender,290,0,63,Spain,LaLiga,206,Spain,0,6.415
+Rayo Vallecano,4,0,0,0,222,Luiz Felipe,-DC-,D(C),294744,Defender,291,0,64,Spain,LaLiga,206,Spain,1,6.415
+Elche,5,0,0,0,127,Héctor Fort,-DL-DR-,D(LR),483206,Defender,292,0,833,Spain,LaLiga,206,Spain,0,6.414
+Valencia,12,1,1,1,638,Baptiste Santamaría,-DMC-,DMC,236558,Midfielder,293,0,55,Spain,LaLiga,206,Spain,2,6.4075
+Levante,8,0,1,0,167,Goduine Koyalipou,-FW-,FW,469950,Forward,294,0,832,Spain,LaLiga,206,Spain,1,6.4075
+Valencia,9,0,0,0,366,Jesús Vázquez,-DL-,D(L),408732,Defender,295,0,55,Spain,LaLiga,206,Spain,0,6.406666667
+Deportivo Alaves,3,0,0,0,219,Moussa Diarra,-DC-DL-,D(CL),375342,Defender,296,0,60,Spain,LaLiga,206,Spain,1,6.406666667
+Real Oviedo,11,0,2,0,733,Salomón Rondón,-FW-,FW,25964,Forward,297,0,61,Spain,LaLiga,206,Spain,2,6.406363636
+Deportivo Alaves,9,0,0,0,577,Youssef Enríquez,-DL-,D(L),519969,Defender,298,0,60,Spain,LaLiga,206,Spain,2,6.405555556
+Real Madrid,10,0,0,0,255,Rodrygo,-AMC-AML-AMR-FW-,"AM(CLR),FW",347862,Forward,299,0,52,Spain,LaLiga,206,Spain,1,6.405
+Osasuna,12,0,1,0,444,Raúl García,-FW-,FW,383924,Forward,300,0,131,Spain,LaLiga,206,Spain,1,6.403333333
+Girona,9,0,0,0,424,Yáser Asprilla,-AMC-AML-AMR-FW-,"AM(CLR),FW",443540,Midfielder,301,0,2783,Spain,LaLiga,206,Spain,0,6.403333333
+Atletico,11,0,2,1,492,Alexander Sørloth,-AMR-FW-,"AM(R),FW",302497,Forward,302,1,63,Spain,LaLiga,206,Spain,2,6.400909091
+Osasuna,5,0,1,0,147,Iker Benito,,Forward,430907,Forward,303,0,131,Spain,LaLiga,206,Spain,1,6.4
+Real Oviedo,11,0,0,0,758,Rahim Alhassane,-DL-,D(L),456006,Defender,304,0,61,Spain,LaLiga,206,Spain,0,6.399090909
+Valencia,6,0,0,0,238,André Almeida,-FW-MC-ML-,"M(CL),FW",322246,Midfielder,305,0,55,Spain,LaLiga,206,Spain,0,6.395
+Valencia,2,0,0,0,45,Eray Cömert,-DC-DMC-,"D(C),DMC",301034,Defender,306,0,55,Spain,LaLiga,206,Spain,0,6.39
+Deportivo Alaves,10,0,1,0,414,Denis Suárez,-MC-ML-MR-,M(CLR),106525,Midfielder,307,0,60,Spain,LaLiga,206,Spain,3,6.39
+Real Sociedad,12,0,0,1,1080,Álex Remiro,-GK-,GK,270504,Goalkeeper,308,0,68,Spain,LaLiga,206,Spain,0,6.388333333
+Barcelona,8,1,0,0,401,Marc Casadó,-DMC-,DMC,454343,Midfielder,309,0,65,Spain,LaLiga,206,Spain,0,6.3825
+Real Betis,2,0,0,0,101,Ángel Ortiz,-DR-,D(R),545675,Defender,310,0,54,Spain,LaLiga,206,Spain,0,6.38
+Elche,1,0,0,0,20,Yago Santiago,,Forward,468089,Forward,311,0,833,Spain,LaLiga,206,Spain,0,6.38
+Sevilla,10,0,0,0,734,Marcão,-DC-,D(C),318120,Defender,312,0,67,Spain,LaLiga,206,Spain,1,6.379
+Real Oviedo,10,0,1,0,498,Federico Viñas,,Forward,484254,Forward,313,1,61,Spain,LaLiga,206,Spain,2,6.379
+Celta Vigo,10,0,2,0,520,Pablo Durán,-AML-FW-,"AM(L),FW",459082,Forward,314,0,62,Spain,LaLiga,206,Spain,0,6.377
+Rayo Vallecano,3,0,0,0,189,Jozhua Vertrouwd,,Defender,505924,Defender,315,0,64,Spain,LaLiga,206,Spain,0,6.376666667
+Barcelona,3,1,0,0,11,Marc Bernal,,Midfielder,534796,Midfielder,316,0,65,Spain,LaLiga,206,Spain,0,6.376666667
+Villarreal,11,0,0,0,567,Thomas Partey,-DR-MC-MR-,"D(R),M(CR)",238940,Midfielder,317,0,839,Spain,LaLiga,206,Spain,0,6.371818182
+Elche,2,0,0,0,50,Mourad El Ghezouani,,Forward,402630,Forward,318,0,833,Spain,LaLiga,206,Spain,0,6.37
+Real Oviedo,11,0,0,0,630,Ilyas Chaira,-AML-,AM(L),495542,Forward,319,0,61,Spain,LaLiga,206,Spain,0,6.368181818
+Mallorca,10,0,0,0,696,Manu Morlanes,-DMC-,DMC,349660,Midfielder,320,1,51,Spain,LaLiga,206,Spain,0,6.368
+Levante,9,0,0,0,805,Unai Elgezabal,-DC-,D(C),299752,Defender,321,0,832,Spain,LaLiga,206,Spain,2,6.367777778
+Real Sociedad,12,1,1,0,485,Gonçalo Guedes,-AMC-AML-AMR-FW-,"AM(CLR),FW",247995,Forward,322,0,68,Spain,LaLiga,206,Spain,0,6.3675
+Osasuna,10,0,0,0,696,Moi Gómez,-MC-ML-MR-,M(CLR),101238,Forward,323,0,131,Spain,LaLiga,206,Spain,1,6.367
+Mallorca,1,0,0,0,62,David López,,Defender,502424,Defender,324,0,51,Spain,LaLiga,206,Spain,0,6.36
+Espanyol,12,0,1,0,915,Pol Lozano,-DMC-,DMC,382157,Midfielder,325,0,70,Spain,LaLiga,206,Spain,2,6.359166667
+Girona,5,1,0,0,196,Thomas Lemar,-AMC-AML-AMR-,AM(CLR),132962,Midfielder,326,0,2783,Spain,LaLiga,206,Spain,0,6.356
+Rayo Vallecano,12,0,0,0,775,Pedro Díaz,-MC-,M(C),448514,Midfielder,327,0,64,Spain,LaLiga,206,Spain,0,6.355
+Athletic Club,9,0,1,0,625,Oihan Sancet,-FW-MC-,"M(C),FW",381510,Midfielder,328,0,53,Spain,LaLiga,206,Spain,1,6.353333333
+Levante,9,0,0,0,578,Oriol Rey,-MC-,M(C),362623,Midfielder,329,0,832,Spain,LaLiga,206,Spain,0,6.352222222
+Celta Vigo,11,0,0,0,515,Bryan Zaragoza,-AML-AMR-,AM(LR),429273,Forward,330,0,62,Spain,LaLiga,206,Spain,0,6.351818182
+Athletic Club,11,0,2,0,428,Robert Navarro,-AML-AMR-,AM(LR),400237,Midfielder,331,0,53,Spain,LaLiga,206,Spain,1,6.350909091
+Mallorca,6,0,0,0,283,Omar Mascarell,-DC-DMC-,"D(C),DMC",115996,Midfielder,332,0,51,Spain,LaLiga,206,Spain,1,6.35
+Sevilla,8,0,1,1,556,Djibril Sow,-MC-,M(C),317630,Midfielder,333,0,67,Spain,LaLiga,206,Spain,2,6.34375
+Real Sociedad,6,0,0,0,261,Beñat Turrientes,-DMC-,DMC,407138,Midfielder,334,0,68,Spain,LaLiga,206,Spain,2,6.335
+Girona,8,0,3,0,188,Cristhian Stuani,-AMC-AML-AMR-FW-,"AM(CLR),FW",24400,Forward,335,0,2783,Spain,LaLiga,206,Spain,2,6.33375
+Valencia,7,0,0,0,434,Thierry Correia,-DR-MR-,"D(R),M(R)",367180,Defender,336,0,55,Spain,LaLiga,206,Spain,0,6.332857143
+Levante,11,0,0,0,769,Adrián de la Fuente,-DC-,D(C),383780,Defender,337,0,832,Spain,LaLiga,206,Spain,2,6.332727273
+Sevilla,1,0,0,0,5,Adrià Pedrosa,-DL-ML-,"D(L),M(L)",363966,Defender,338,0,67,Spain,LaLiga,206,Spain,0,6.33
+Valencia,4,1,0,0,90,Filip Ugrinic,-MC-,M(C),379684,Midfielder,339,0,55,Spain,LaLiga,206,Spain,0,6.33
+Sevilla,9,1,0,0,241,Chidera Ejuke,-AMC-AML-AMR-FW-,"AM(CLR),FW",337022,Forward,340,0,67,Spain,LaLiga,206,Spain,0,6.328888889
+Villarreal,10,0,0,0,353,Dani Parejo,-MC-,M(C),28186,Midfielder,341,0,839,Spain,LaLiga,206,Spain,2,6.326
+Osasuna,4,0,0,0,192,Iker Muñoz,-DMC-,DMC,474267,Midfielder,342,0,131,Spain,LaLiga,206,Spain,1,6.3225
+Athletic Club,1,0,0,0,46,Adama Boiro,-DL-,D(L),515307,Defender,343,0,53,Spain,LaLiga,206,Spain,0,6.32
+Villarreal,3,0,0,0,270,Arnau Tenas,-GK-,GK,396147,Goalkeeper,344,0,839,Spain,LaLiga,206,Spain,0,6.32
+Villarreal,5,0,1,0,117,Ayoze Pérez,-AMC-AML-AMR-FW-,"AM(CLR),FW",135366,Forward,345,0,839,Spain,LaLiga,206,Spain,0,6.32
+Sevilla,9,0,1,0,264,Peque Fernández,-AMC-,AM(C),464952,Forward,346,0,67,Spain,LaLiga,206,Spain,4,6.317777778
+Real Betis,4,0,0,0,91,Nelson Deossa,-MC-,M(C),432475,Midfielder,347,0,54,Spain,LaLiga,206,Spain,0,6.3175
+Valencia,12,0,2,0,872,Diego López,-AMC-AML-AMR-FW-,"AM(CLR),FW",422656,Forward,348,0,55,Spain,LaLiga,206,Spain,2,6.315
+Rayo Vallecano,9,0,1,0,517,Alemão,-FW-,FW,436617,Forward,349,0,64,Spain,LaLiga,206,Spain,0,6.314444444
+Valencia,10,0,0,0,746,José Gayà,-DL-ML-,"D(L),M(L)",119817,Defender,350,1,55,Spain,LaLiga,206,Spain,3,6.312
+Athletic Club,9,0,1,0,677,Iñaki Williams,-AMC-AML-AMR-FW-,"AM(CLR),FW",255182,Forward,351,0,53,Spain,LaLiga,206,Spain,0,6.311111111
+Barcelona,2,0,0,0,38,Jofre Torrents,,Defender,572374,Defender,352,0,65,Spain,LaLiga,206,Spain,0,6.31
+Girona,9,2,0,0,368,Bryan Gil,-MC-ML-MR-,M(CLR),368519,Forward,353,0,2783,Spain,LaLiga,206,Spain,2,6.31
+Levante,9,1,0,0,337,Jon Olasagasti,-MC-,M(C),413346,Midfielder,354,0,832,Spain,LaLiga,206,Spain,1,6.307777778
+Valencia,9,0,0,0,699,Copete,-DC-,D(C),444252,Defender,355,0,55,Spain,LaLiga,206,Spain,1,6.307777778
+Elche,8,0,1,0,174,John Donald,-DC-DMC-,"D(C),DMC",408347,Defender,356,0,833,Spain,LaLiga,206,Spain,1,6.30625
+Real Sociedad,9,0,0,0,388,Aihen Muñoz,-DL-,D(L),367583,Defender,357,0,68,Spain,LaLiga,206,Spain,1,6.303333333
+Rayo Vallecano,1,0,0,0,45,Pelayo Fernández,,Defender,531953,Defender,358,0,64,Spain,LaLiga,206,Spain,0,6.3
+Levante,7,0,0,0,213,Víctor García,,Defender,395708,Defender,359,0,832,Spain,LaLiga,206,Spain,0,6.298571429
+Villarreal,9,1,1,0,407,Tani Oluwaseyi,-FW-,FW,445292,Forward,360,0,839,Spain,LaLiga,206,Spain,0,6.296666667
+Deportivo Alaves,10,0,0,0,497,Victor Parada,,Defender,463966,Defender,361,0,60,Spain,LaLiga,206,Spain,3,6.292
+Getafe,10,0,0,0,264,Coba da Costa,-AML-,AM(L),538555,Forward,362,0,819,Spain,LaLiga,206,Spain,1,6.287
+Mallorca,11,1,0,0,541,Pablo Torre,-AMC-,AM(C),445092,Midfielder,363,0,51,Spain,LaLiga,206,Spain,1,6.285454545
+Atletico,12,0,1,0,340,Conor Gallagher,-MC-ML-,M(CL),375621,Midfielder,364,0,63,Spain,LaLiga,206,Spain,1,6.284166667
+Real Madrid,1,0,0,0,11,Endrick,-FW-,FW,445649,Forward,365,0,52,Spain,LaLiga,206,Spain,0,6.28
+Espanyol,7,0,0,0,266,Charles Pickel,-MC-,M(C),316532,Midfielder,366,0,70,Spain,LaLiga,206,Spain,1,6.277142857
+Atletico,5,0,0,0,134,Javi Galán,-DL-ML-,"D(L),M(L)",369497,Defender,367,0,63,Spain,LaLiga,206,Spain,0,6.276
+Athletic Club,4,0,0,0,124,Nico Serrano,,Forward,423109,Forward,368,0,53,Spain,LaLiga,206,Spain,0,6.275
+Osasuna,8,0,0,0,282,Jorge Herrando,-DC-,D(C),444253,Defender,369,0,131,Spain,LaLiga,206,Spain,0,6.27
+Levante,3,0,0,0,117,Diego Pampín,,Defender,345366,Defender,370,0,832,Spain,LaLiga,206,Spain,1,6.266666667
+Real Sociedad,3,0,0,0,40,Umar Sadiq,-FW-,FW,297546,Forward,371,0,68,Spain,LaLiga,206,Spain,0,6.266666667
+Valencia,9,1,0,1,243,Dani Raba,-AMC-AMR-FW-,"AM(CR),FW",334221,Forward,372,0,55,Spain,LaLiga,206,Spain,0,6.26
+Mallorca,9,0,1,0,439,Mateu Morey,-DR-MR-,"D(R),M(R)",384368,Defender,373,0,51,Spain,LaLiga,206,Spain,2,6.258888889
+Elche,11,0,0,0,341,Léo Pétrot,-DC-DL-,D(CL),301330,Defender,374,0,833,Spain,LaLiga,206,Spain,0,6.256363636
+Celta Vigo,6,0,0,0,292,Fran Beltrán,-DMC-,DMC,362421,Midfielder,375,0,62,Spain,LaLiga,206,Spain,0,6.255
+Espanyol,3,0,0,0,60,Luca Koleosho,-AML-AMR-,AM(LR),438959,Forward,376,0,70,Spain,LaLiga,206,Spain,0,6.253333333
+Real Betis,7,0,0,0,315,Marc Roca,-DC-DMC-,"D(C),DMC",323148,Midfielder,377,0,54,Spain,LaLiga,206,Spain,0,6.247142857
+Osasuna,8,0,0,0,487,Juan Cruz,-DC-DL-,D(CL),96566,Defender,378,0,131,Spain,LaLiga,206,Spain,0,6.24375
+Rayo Vallecano,8,0,1,0,183,Pacha Espino,-DL-,D(L),143655,Defender,379,0,64,Spain,LaLiga,206,Spain,0,6.24375
+Celta Vigo,10,0,0,0,701,Javi Rodríguez,-DC-DR-,D(CR),508331,Defender,380,0,62,Spain,LaLiga,206,Spain,1,6.242
+Osasuna,4,0,0,0,140,Asier Osambela,,Midfielder,518928,Midfielder,381,0,131,Spain,LaLiga,206,Spain,0,6.24
+Celta Vigo,7,0,0,0,470,Manu Fernández,-DC-,D(C),578374,Defender,382,0,62,Spain,LaLiga,206,Spain,1,6.24
+Espanyol,10,0,0,0,439,Urko González de Zárate,-DMC-,DMC,401173,Midfielder,383,0,70,Spain,LaLiga,206,Spain,0,6.235
+Levante,12,0,1,0,228,José Luis Morales,-DR-FW-MC-ML-MR-,"D(R),M(CLR),FW",135321,Forward,384,0,832,Spain,LaLiga,206,Spain,1,6.234166667
+Real Oviedo,11,0,1,0,627,Alberto Reina,-DMC-,DMC,463821,Midfielder,385,1,61,Spain,LaLiga,206,Spain,2,6.232727273
+Real Oviedo,5,0,0,0,154,Ovie Ejaria,-MC-ML-,M(CL),327852,Forward,386,0,61,Spain,LaLiga,206,Spain,1,6.232
+Levante,12,1,0,0,773,Roger Brugué,-ML-,M(L),448231,Midfielder,387,0,832,Spain,LaLiga,206,Spain,0,6.231666667
+Girona,1,0,0,0,19,Abel Ruiz,-FW-,FW,372828,Forward,388,0,2783,Spain,LaLiga,206,Spain,0,6.23
+Mallorca,2,0,0,0,67,Dani Rodríguez,-AMC-AML-AMR-FW-,"AM(CLR),FW",6227,Midfielder,389,0,51,Spain,LaLiga,206,Spain,0,6.225
+Girona,2,0,0,0,41,Donny van de Beek,-MC-,M(C),275035,Midfielder,390,0,2783,Spain,LaLiga,206,Spain,0,6.225
+Real Madrid,3,0,0,0,56,David Alaba,-DC-DL-MC-ML-,"D(CL),M(CL)",39722,Defender,391,0,52,Spain,LaLiga,206,Spain,0,6.223333333
+Espanyol,6,0,0,0,219,Jofre Carreras,-AML-AMR-,AM(LR),430451,Forward,392,0,70,Spain,LaLiga,206,Spain,0,6.221666667
+Mallorca,7,1,0,0,211,Marc Domenech,,Forward,537076,Forward,393,0,51,Spain,LaLiga,206,Spain,0,6.221428571
+Atletico,8,0,0,0,132,Nahuel Molina,-DR-MR-,"D(R),M(R)",303728,Defender,394,0,63,Spain,LaLiga,206,Spain,1,6.21875
+Real Sociedad,2,0,0,0,90,Yangel Herrera,-MC-,M(C),318505,Midfielder,395,0,68,Spain,LaLiga,206,Spain,1,6.21
+Espanyol,5,0,0,0,80,Antoniu Roca,-AMR-,AM(R),506011,Forward,396,0,70,Spain,LaLiga,206,Spain,0,6.206
+Mallorca,4,0,0,0,160,Toni Lato,-DL-ML-,"D(L),M(L)",312580,Defender,397,0,51,Spain,LaLiga,206,Spain,0,6.205
+Mallorca,4,0,0,0,217,Marash Kumbulla,-DC-,D(C),343778,Defender,398,0,51,Spain,LaLiga,206,Spain,0,6.205
+Athletic Club,8,0,1,0,257,Maroan Sannadi,-FW-,FW,541704,Forward,399,0,53,Spain,LaLiga,206,Spain,1,6.20375
+Real Madrid,7,0,0,0,96,Gonzalo García,-FW-,FW,498798,Forward,400,0,52,Spain,LaLiga,206,Spain,0,6.201428571
+Barcelona,1,0,0,0,46,Toni Fernández,,Forward,534797,Forward,401,0,65,Spain,LaLiga,206,Spain,0,6.2
+Girona,11,0,0,0,555,Hugo Rincón,,Defender,481851,Defender,402,0,2783,Spain,LaLiga,206,Spain,1,6.195454545
+Real Oviedo,7,0,0,0,196,Santi Cazorla,-MC-ML-MR-,M(CLR),4522,Midfielder,403,0,61,Spain,LaLiga,206,Spain,0,6.192857143
+Real Betis,7,0,1,0,65,Cédric Bakambu,-AML-AMR-FW-,"AM(LR),FW",86513,Forward,404,0,54,Spain,LaLiga,206,Spain,0,6.192857143
+Elche,1,0,0,0,5,Adam El Mokhtari,,Forward,508338,Forward,405,0,833,Spain,LaLiga,206,Spain,0,6.19
+Real Oviedo,2,0,0,0,136,Oier Luengo,,Defender,448447,Defender,406,0,61,Spain,LaLiga,206,Spain,0,6.19
+Real Betis,7,0,0,0,187,Pablo García,,Forward,551186,Forward,407,0,54,Spain,LaLiga,206,Spain,1,6.178571429
+Valencia,5,1,0,0,85,Largie Ramazani,-AML-FW-,"AM(L),FW",388665,Forward,408,0,55,Spain,LaLiga,206,Spain,0,6.172
+Rayo Vallecano,4,0,0,0,130,Iván Balliu,-DL-DR-MR-,"D(LR),M(R)",101613,Defender,409,0,64,Spain,LaLiga,206,Spain,1,6.17
+Rayo Vallecano,3,0,0,0,33,Randy Nteka,-AMC-FW-,"AM(C),FW",422960,Midfielder,410,0,64,Spain,LaLiga,206,Spain,0,6.17
+Villarreal,1,0,0,0,8,Adrià Alti,-DR-MR-,"D(R),M(R)",448041,Defender,411,0,839,Spain,LaLiga,206,Spain,0,6.16
+Celta Vigo,2,0,0,0,151,Damián Rodríguez,-MC-,M(C),438846,Midfielder,412,0,62,Spain,LaLiga,206,Spain,1,6.16
+Espanyol,7,0,0,0,120,Ramon Terrats,-MC-MR-,M(CR),444244,Midfielder,413,0,70,Spain,LaLiga,206,Spain,0,6.16
+Sevilla,4,0,0,0,360,Ørjan Nyland,-GK-,GK,39187,Goalkeeper,414,0,67,Spain,LaLiga,206,Spain,1,6.1575
+Real Sociedad,12,0,0,0,541,Pablo Marín,-DMC-,DMC,459677,Midfielder,415,0,68,Spain,LaLiga,206,Spain,1,6.1575
+Villarreal,7,0,0,0,162,Ilias Akhomach,-AMR-,AM(R),428500,Forward,416,0,839,Spain,LaLiga,206,Spain,0,6.154285714
+Celta Vigo,6,0,0,0,347,Carl Starfelt,-DC-,D(C),378626,Defender,417,1,62,Spain,LaLiga,206,Spain,1,6.153333333
+Getafe,4,0,0,0,156,Javi Muñoz,-MC-,M(C),276819,Midfielder,418,0,819,Spain,LaLiga,206,Spain,0,6.1525
+Mallorca,2,0,0,0,15,Jan Salas,,Midfielder,537870,Midfielder,419,0,51,Spain,LaLiga,206,Spain,0,6.15
+Deportivo Alaves,8,0,0,0,269,Mariano Díaz,-FW-,FW,323236,Forward,420,0,60,Spain,LaLiga,206,Spain,1,6.15
+Real Oviedo,1,0,0,0,13,Omar Falah,,Defender,557844,Defender,421,0,61,Spain,LaLiga,206,Spain,0,6.15
+Real Sociedad,1,0,0,0,10,Urko González de Zárate,-DMC-,DMC,401173,Midfielder,422,0,68,Spain,LaLiga,206,Spain,0,6.15
+Deportivo Alaves,3,0,0,0,34,Carlos Protesoni,-DMC-,DMC,362393,Midfielder,423,0,60,Spain,LaLiga,206,Spain,0,6.146666667
+Espanyol,6,0,0,0,128,José Salinas,,Defender,402092,Defender,424,0,70,Spain,LaLiga,206,Spain,1,6.146666667
+Deportivo Alaves,8,0,0,0,366,Jon Guridi,-FW-MC-,"M(C),FW",335041,Midfielder,425,0,60,Spain,LaLiga,206,Spain,0,6.1425
+Sevilla,6,0,0,0,146,Adnan Januzaj,-AMC-AML-AMR-,AM(CLR),130334,Midfielder,426,0,67,Spain,LaLiga,206,Spain,1,6.128333333
+Elche,4,0,0,0,142,Grady Diangana,-AMC-AML-AMR-FW-,"AM(CLR),FW",306943,Forward,427,0,833,Spain,LaLiga,206,Spain,1,6.1225
+Real Sociedad,4,0,0,0,96,Aritz Elustondo,-DC-DR-,D(CR),256864,Defender,428,0,68,Spain,LaLiga,206,Spain,0,6.12
+Elche,3,0,0,0,10,Federico Redondo,-DMC-,DMC,419616,Midfielder,429,0,833,Spain,LaLiga,206,Spain,0,6.12
+Sevilla,2,0,0,0,100,Ramón Martínez,,Defender,536136,Defender,430,0,67,Spain,LaLiga,206,Spain,0,6.12
+Elche,2,0,0,0,125,Ali Houary,,Forward,508339,Forward,431,0,833,Spain,LaLiga,206,Spain,0,6.12
+Mallorca,7,0,1,0,289,Takuma Asano,-AMC-AML-AMR-FW-,"AM(CLR),FW",126316,Forward,432,0,51,Spain,LaLiga,206,Spain,1,6.12
+Real Oviedo,7,0,0,0,323,Kwasi Sibo,,Midfielder,463426,Midfielder,433,0,61,Spain,LaLiga,206,Spain,0,6.118571429
+Valencia,9,0,0,0,340,Lucas Beltrán,-AMC-FW-,"AM(C),FW",365410,Forward,434,0,55,Spain,LaLiga,206,Spain,0,6.113333333
+Sevilla,2,0,0,0,129,Fábio Cardoso,-DC-,D(C),322771,Defender,435,0,67,Spain,LaLiga,206,Spain,0,6.11
+Atletico,7,0,0,0,137,Giacomo Raspadori,-AMC-AML-FW-,"AM(CL),FW",371497,Forward,436,0,63,Spain,LaLiga,206,Spain,0,6.105714286
+Mallorca,6,0,0,0,69,Abdón Prats,-FW-,FW,9270,Forward,437,0,51,Spain,LaLiga,206,Spain,0,6.105
+Girona,10,0,0,0,474,Portu,-FW-MC-ML-MR-,"M(CLR),FW",106895,Forward,438,0,2783,Spain,LaLiga,206,Spain,1,6.098
+Celta Vigo,5,0,0,0,105,Jones El Abdellaoui,,Forward,441888,Forward,439,0,62,Spain,LaLiga,206,Spain,0,6.098
+Real Sociedad,4,0,0,0,70,Jon Karrikaburu,,Forward,423913,Forward,440,0,68,Spain,LaLiga,206,Spain,0,6.095
+Levante,1,0,0,0,11,Sergio Lozano,,Midfielder,349661,Midfielder,441,0,832,Spain,LaLiga,206,Spain,0,6.09
+Athletic Club,3,0,0,0,32,Urko Izeta,,Forward,463431,Forward,442,0,53,Spain,LaLiga,206,Spain,1,6.083333333
+Girona,2,0,0,0,72,Dawda Camara,,Forward,444249,Forward,443,0,2783,Spain,LaLiga,206,Spain,0,6.08
+Rayo Vallecano,5,0,0,0,41,Óscar Trejo,-FW-MC-ML-MR-,"M(CLR),FW",16942,Midfielder,444,0,64,Spain,LaLiga,206,Spain,2,6.076
+Sevilla,2,0,0,0,16,Manu Bueno,,Midfielder,469547,Midfielder,445,0,67,Spain,LaLiga,206,Spain,0,6.075
+Elche,1,0,0,0,25,Jairo Izquierdo,,Defender,403808,Defender,446,0,833,Spain,LaLiga,206,Spain,0,6.07
+Athletic Club,6,0,0,0,143,Unai Gómez,-AMC-,AM(C),480619,Midfielder,447,0,53,Spain,LaLiga,206,Spain,0,6.07
+Celta Vigo,6,0,0,0,236,Williot Swedberg,-AMC-AML-,AM(CL),444227,Midfielder,448,0,62,Spain,LaLiga,206,Spain,1,6.07
+Real Oviedo,9,0,0,0,308,Josip Brekalo,-AMC-AML-AMR-FW-,"AM(CLR),FW",298792,Forward,449,0,61,Spain,LaLiga,206,Spain,1,6.065555556
+Real Sociedad,6,0,0,0,150,Arsen Zakharyan,-MC-ML-MR-,M(CLR),400185,Midfielder,450,0,68,Spain,LaLiga,206,Spain,1,6.061666667
+Getafe,7,1,0,0,383,Alex Sancris,,Forward,463844,Forward,451,1,819,Spain,LaLiga,206,Spain,0,6.061428571
+Real Betis,1,0,0,0,46,Diego Llorente,-DC-DMC-,"D(C),DMC",123232,Defender,452,0,54,Spain,LaLiga,206,Spain,0,6.06
+Rayo Vallecano,3,0,0,0,11,Samu Becerra,,Midfielder,578016,Midfielder,453,0,64,Spain,LaLiga,206,Spain,0,6.06
+Athletic Club,9,0,0,0,186,Mikel Vesga,-MC-,M(C),261516,Midfielder,454,0,53,Spain,LaLiga,206,Spain,0,6.058888889
+Real Sociedad,5,0,0,0,130,Luka Sucic,-AMC-AMR-,AM(CR),407080,Midfielder,455,0,68,Spain,LaLiga,206,Spain,0,6.058
+Elche,2,0,0,0,49,Bambo Diaby,-DC-,D(C),379633,Defender,456,0,833,Spain,LaLiga,206,Spain,0,6.055
+Mallorca,5,0,0,0,117,Javi Llabrés,,Forward,428593,Forward,457,0,51,Spain,LaLiga,206,Spain,0,6.054
+Getafe,6,0,0,0,133,Abu Kamara,-AML-AMR-,AM(LR),435987,Forward,458,0,819,Spain,LaLiga,206,Spain,0,6.05
+Levante,2,0,0,0,12,Alan Matturro,-DC-,D(C),445480,Defender,459,0,832,Spain,LaLiga,206,Spain,0,6.045
+Levante,3,0,0,0,38,Iker Losada,,Forward,381583,Forward,460,0,832,Spain,LaLiga,206,Spain,0,6.043333333
+Real Oviedo,6,0,0,0,116,Álex Forés,,Forward,513640,Forward,461,0,61,Spain,LaLiga,206,Spain,0,6.026666667
+Real Oviedo,2,0,0,0,26,Pablo Agudín,,Midfielder,597609,Midfielder,462,0,61,Spain,LaLiga,206,Spain,0,6.025
+Levante,4,0,0,0,70,Carlos Espí,,Forward,516341,Forward,463,0,832,Spain,LaLiga,206,Spain,0,6.025
+Real Oviedo,1,0,0,0,13,Borja Sánchez,,Midfielder,461767,Midfielder,464,0,61,Spain,LaLiga,206,Spain,0,6.02
+Osasuna,9,0,0,0,108,Kike Barja,-AML-AMR-,AM(LR),336251,Forward,465,0,131,Spain,LaLiga,206,Spain,1,6.016666667
+Real Oviedo,11,0,1,0,530,Luka Ilic,-AMC-,AM(C),361898,Midfielder,466,1,61,Spain,LaLiga,206,Spain,2,6.01
+Real Betis,5,0,0,0,42,Chimy Ávila,-AML-AMR-FW-,"AM(LR),FW",303707,Forward,467,0,54,Spain,LaLiga,206,Spain,2,6.006
+Osasuna,6,0,0,0,102,Sheraldo Becker,-AMC-AML-AMR-FW-,"AM(CLR),FW",137227,Forward,468,0,131,Spain,LaLiga,206,Spain,0,6.003333333
+Athletic Club,1,0,0,0,1,Álex Padilla,,Goalkeeper,449383,Goalkeeper,469,1,53,Spain,LaLiga,206,Spain,0,6
+Real Madrid,1,0,0,0,1,Andrii Lunin,-GK-,GK,345031,Goalkeeper,470,1,52,Spain,LaLiga,206,Spain,0,6
+Real Betis,1,0,0,0,1,Dani Pérez,,Midfielder,462987,Midfielder,471,0,54,Spain,LaLiga,206,Spain,0,6
+Sevilla,1,0,0,0,1,Oso,,Defender,511064,Defender,472,0,67,Spain,LaLiga,206,Spain,1,6
+Rayo Vallecano,6,0,0,0,76,Gerard Gumbau,-DMC-,DMC,294123,Midfielder,473,0,64,Spain,LaLiga,206,Spain,0,5.99
+Girona,9,0,0,0,330,Jhon Solís,-DMC-,DMC,445345,Midfielder,474,0,2783,Spain,LaLiga,206,Spain,0,5.984444444
+Getafe,1,0,0,0,12,Álex Sola,-DR-ML-MR-,"D(R),M(LR)",370000,Midfielder,475,0,819,Spain,LaLiga,206,Spain,0,5.98
+Deportivo Alaves,1,0,0,0,1,Lander Pinillos,,Midfielder,561841,Midfielder,476,0,60,Spain,LaLiga,206,Spain,0,5.98
+Girona,3,0,0,0,22,Lancinet Kourouma,,Midfielder,542750,Midfielder,477,0,2783,Spain,LaLiga,206,Spain,0,5.97
+Levante,3,0,0,0,242,Jorge Cabello,,Defender,518057,Defender,478,0,832,Spain,LaLiga,206,Spain,0,5.966666667
+Rayo Vallecano,7,0,0,0,147,Sergio Camello,-FW-,FW,372469,Forward,479,1,64,Spain,LaLiga,206,Spain,2,5.96
+Mallorca,9,0,0,0,307,Antonio Sánchez,-DR-MC-MR-,"D(R),M(CR)",425092,Midfielder,480,1,51,Spain,LaLiga,206,Spain,2,5.914444444
+Getafe,4,0,0,0,64,Yvan Neyou,-DMC-,DMC,396583,Defender,481,0,819,Spain,LaLiga,206,Spain,2,5.9
+Getafe,2,0,0,0,32,Juanmi,-AMC-AML-AMR-FW-,"AM(CLR),FW",83080,Forward,482,0,819,Spain,LaLiga,206,Spain,0,5.865
+Sevilla,1,0,0,0,46,Stanis Idumbo,,Midfielder,516051,Midfielder,483,0,67,Spain,LaLiga,206,Spain,0,5.83
+Girona,3,0,0,0,202,David López,-DC-DMC-,"D(C),DMC",92691,Defender,484,0,2783,Spain,LaLiga,206,Spain,0,5.806666667
+Deportivo Alaves,1,0,0,0,9,Diego Morcillo,,Forward,464011,Forward,485,0,60,Spain,LaLiga,206,Spain,0,5.8
+Girona,2,0,0,0,136,Vladyslav Krapyvtsov,,Goalkeeper,497397,Goalkeeper,486,0,2783,Spain,LaLiga,206,Spain,0,5.785
+Girona,1,0,0,0,45,Bojan Miovski,-FW-,FW,424737,Forward,487,0,2783,Spain,LaLiga,206,Spain,0,5.78
+Real Oviedo,1,0,0,0,45,Marco Esteban,,Defender,506112,Defender,488,0,61,Spain,LaLiga,206,Spain,0,5.73
+Girona,2,0,0,0,112,Yangel Herrera,-MC-,M(C),318505,Midfielder,489,0,2783,Spain,LaLiga,206,Spain,0,5.715
+Real Sociedad,2,0,0,0,65,Mikel Goti,,Midfielder,546571,Midfielder,490,0,68,Spain,LaLiga,206,Spain,0,5.675
+Getafe,3,0,0,0,15,Allan Nyom,-DL-DR-MR-,"D(LR),M(R)",91434,Defender,491,1,819,Spain,LaLiga,206,Spain,1,5.66
+Girona,2,0,0,0,180,Ladislav Krejcí,-DC-DMC-,"D(C),DMC",404245,Defender,492,0,2783,Spain,LaLiga,206,Spain,1,5.505

@@ -1,0 +1,290 @@
+playedPositions,playedPositionsShort,teamRegionName,tournamentShortName,apps,manOfTheMatch,goal,assistTotal,name,playerId,positionText,teamId,teamName,tournamentRegionName,tournamentName,rating,minsPlayed,yellowCard,redCard,ranking
+-FW-,FW,England,EPL,11,5,14,1,Erling Haaland,315227,Forward,167,Man City,England,Premier League,7.900909091,948,0,0,1
+-DL-MC-,"D(L),M(C)",England,EPL,11,1,1,3,Granit Xhaka,89401,Midfielder,16,Sunderland,England,Premier League,7.367272727,990,4,0,2
+-DC-DMC-,"D(C),DMC",England,EPL,11,2,2,2,Declan Rice,332325,Midfielder,13,Arsenal,England,Premier League,7.330909091,896,0,0,3
+-DC-DR-MR-,"D(CR),M(R)",England,EPL,9,2,1,1,Nordi Mukiele,299077,Defender,16,Sunderland,England,Premier League,7.306666667,810,1,0,4
+-DMC-DR-,"D(R),DMC",England,EPL,11,3,3,1,Moisés Caicedo,410175,Midfielder,15,Chelsea,England,Premier League,7.299090909,945,2,0,5
+-DC-,D(C),England,EPL,11,2,1,2,Gabriel Magalhães,334087,Defender,13,Arsenal,England,Premier League,7.299090909,990,1,0,6
+-MC-ML-MR-,M(CLR),England,EPL,11,2,1,3,Jérémy Doku,388098,Forward,167,Man City,England,Premier League,7.298181818,623,0,0,7
+-DC-,D(C),England,EPL,9,1,2,0,Dan Ballard,371761,Defender,16,Sunderland,England,Premier League,7.282222222,581,0,0,8
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,10,1,1,4,Mohammed Kudus,400166,Midfielder,30,Tottenham,England,Premier League,7.255,879,3,0,9
+-FW-MC-ML-,"M(CL),FW",England,EPL,10,1,1,4,Jack Grealish,113069,Midfielder,31,Everton,England,Premier League,7.239,827,3,0,10
+-DC-,D(C),England,EPL,10,1,1,1,Marc Guéhi,374631,Defender,162,Crystal Palace,England,Premier League,7.234,900,0,0,11
+-DL-MC-ML-MR-,"D(L),M(CLR)",England,EPL,9,2,3,0,Bukayo Saka,367185,Forward,13,Arsenal,England,Premier League,7.223333333,684,0,0,12
+-AMC-AML-FW-,"AM(CL),FW",England,EPL,11,2,4,3,João Pedro,373525,Forward,15,Chelsea,England,Premier League,7.211818182,934,0,0,13
+-DC-DL-DR-,D(CLR),England,EPL,11,1,2,1,Jurriën Timber,388650,Defender,13,Arsenal,England,Premier League,7.209090909,883,2,0,14
+-FW-,FW,England,EPL,11,2,8,0,Igor Thiago,443784,Forward,189,Brentford,England,Premier League,7.192727273,925,3,0,15
+-DC-,D(C),England,EPL,8,0,1,1,Omar Alderete,344639,Defender,16,Sunderland,England,Premier League,7.18,667,1,0,16
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,0,4,1,Iliman Ndiaye,366116,Forward,31,Everton,England,Premier League,7.178181818,919,2,0,17
+-AML-AMR-FW-,"AM(LR),FW",England,EPL,11,2,6,3,Antoine Semenyo,357073,Forward,183,Bournemouth,England,Premier League,7.174545455,990,2,0,18
+-DMC-,DMC,England,EPL,9,2,3,1,Ryan Gravenberch,363884,Midfielder,26,Liverpool,England,Premier League,7.166666667,782,2,0,19
+-DC-DMC-DR-,"D(CR),DMC",England,EPL,10,2,2,0,Trevoh Chalobah,353292,Defender,15,Chelsea,England,Premier League,7.16,842,2,1,20
+-DC-DMC-DR-MR-,"D(CR),DMC,M(R)",England,EPL,11,1,1,2,Daniel Muñoz,400496,Defender,162,Crystal Palace,England,Premier League,7.158181818,990,3,0,21
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,9,0,1,1,Phil Foden,331254,Midfielder,167,Man City,England,Premier League,7.155555556,714,3,0,22
+-DC-,D(C),England,EPL,11,1,0,1,Maxence Lacroix,401130,Defender,162,Crystal Palace,England,Premier League,7.145454545,990,1,0,23
+-AML-AMR-,AM(LR),England,EPL,11,0,1,3,Yankuba Minteh,484175,Forward,211,Brighton,England,Premier League,7.138181818,952,0,0,24
+-DC-,D(C),England,EPL,11,1,0,2,Marcos Senesi,328330,Defender,183,Bournemouth,England,Premier League,7.117272727,978,3,0,25
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,11,0,2,3,Bruno Fernandes,123761,Midfielder,32,Man Utd,England,Premier League,7.082727273,982,2,0,26
+-DC-DMC-,"D(C),DMC",England,EPL,11,0,0,0,Chris Richards,395401,Defender,162,Crystal Palace,England,Premier League,7.082727273,990,0,0,27
+-DMC-,DMC,England,EPL,11,1,2,1,Martín Zubimendi,372424,Midfielder,13,Arsenal,England,Premier League,7.080909091,940,2,0,28
+-DMC-,DMC,England,EPL,11,2,2,1,João Palhinha,322774,Midfielder,30,Tottenham,England,Premier League,7.078181818,863,3,0,29
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,2,3,2,Pedro Neto,337916,Forward,15,Chelsea,England,Premier League,7.077272727,837,0,0,30
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,11,3,1,1,Dominik Szoboszlai,369875,Midfielder,26,Liverpool,England,Premier League,7.075454545,990,4,0,31
+-FW-,FW,England,EPL,11,2,6,0,Jean-Philippe Mateta,328096,Forward,162,Crystal Palace,England,Premier League,7.071818182,963,2,0,32
+-DR-MC-ML-MR-,"D(R),M(CLR)",England,EPL,9,0,1,1,Matheus Nunes,394933,Midfielder,167,Man City,England,Premier League,7.042222222,694,1,0,33
+-GK-,GK,England,EPL,11,3,0,0,Robin Roefs,422814,Goalkeeper,16,Sunderland,England,Premier League,7.041818182,990,1,0,34
+-DL-,D(L),England,EPL,10,0,1,2,Nico O'Reilly,468847,Midfielder,167,Man City,England,Premier League,7.037,686,2,0,35
+-MC-,M(C),England,EPL,10,0,1,0,Nico González,422939,Midfielder,167,Man City,England,Premier League,7.022,646,3,0,36
+-GK-,GK,England,EPL,11,1,0,0,Nick Pope,105720,Goalkeeper,23,Newcastle,England,Premier League,7.020909091,977,1,0,37
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,1,3,2,Cody Gakpo,352825,Forward,26,Liverpool,England,Premier League,7.017272727,831,0,0,38
+-MC-MR-,M(CR),England,EPL,10,0,1,2,Amad Diallo,386634,Forward,32,Man Utd,England,Premier League,7.014,756,1,0,39
+-DC-DL-ML-,"D(CL),M(L)",England,EPL,11,0,0,2,Marc Cucurella,363496,Defender,15,Chelsea,England,Premier League,7.004545455,898,2,0,40
+-MC-MR-,M(CR),England,EPL,11,0,1,1,James Garner,367781,Midfielder,31,Everton,England,Premier League,6.999090909,990,4,0,41
+-DC-,D(C),England,EPL,11,0,0,0,James Tarkowski,131464,Defender,31,Everton,England,Premier League,6.996363636,990,2,0,42
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,1,5,1,Bryan Mbeumo,353377,Forward,32,Man Utd,England,Premier League,6.993636364,956,0,0,43
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,1,3,1,Jarrod Bowen,322596,Forward,29,West Ham,England,Premier League,6.991818182,990,0,0,44
+-DL-ML-,"D(L),M(L)",England,EPL,11,0,1,0,Tyrick Mitchell,389579,Defender,162,Crystal Palace,England,Premier League,6.991818182,990,2,0,45
+-DMC-,DMC,England,EPL,11,1,1,2,Sean Longstaff,342811,Midfielder,19,Leeds,England,Premier League,6.978181818,790,1,0,46
+-DC-,D(C),England,EPL,11,0,0,0,Virgil van Dijk,95408,Defender,26,Liverpool,England,Premier League,6.969090909,990,2,0,47
+-DC-,D(C),England,EPL,10,0,0,0,William Saliba,361822,Defender,13,Arsenal,England,Premier League,6.961,726,0,0,48
+-AMC-AML-AMR-,AM(CLR),England,EPL,9,0,1,2,Eberechi Eze,332403,Midfielder,13,Arsenal,England,Premier League,6.96,623,0,0,49
+-MC-,M(C),England,EPL,10,0,3,1,Enzo Fernández,369430,Midfielder,15,Chelsea,England,Premier League,6.958,882,2,0,50
+-DMC-,DMC,England,EPL,7,0,1,0,Amadou Onana,400815,Midfielder,24,Aston Villa,England,Premier League,6.947142857,488,2,0,51
+-DC-,D(C),England,EPL,9,0,0,1,Cristian Romero,323663,Defender,30,Tottenham,England,Premier League,6.944444444,749,4,0,52
+-DC-DR-MR-,"D(CR),M(R)",England,EPL,8,0,0,0,Kenny Tete,145996,Defender,170,Fulham,England,Premier League,6.93875,720,1,0,53
+-DC-DL-DMC-DR-MR-,"D(CLR),DMC,M(R)",England,EPL,11,0,1,2,Reece James,361330,Defender,15,Chelsea,England,Premier League,6.933636364,707,2,0,54
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,9,0,3,1,Ismaïla Sarr,322670,Forward,162,Crystal Palace,England,Premier League,6.931111111,794,1,0,55
+-DC-,D(C),England,EPL,11,1,1,0,Jan Paul van Hecke,365402,Defender,211,Brighton,England,Premier League,6.930909091,990,3,0,56
+-DC-DR-,D(CR),England,EPL,11,1,2,0,Michael Keane,107941,Defender,31,Everton,England,Premier League,6.929090909,965,0,0,57
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,11,1,3,0,Lucas Paquetá,319756,Midfielder,29,West Ham,England,Premier League,6.928181818,961,5,0,58
+-DC-DL-,D(CL),England,EPL,11,0,1,2,Riccardo Calafiori,386519,Defender,13,Arsenal,England,Premier League,6.926363636,863,3,0,59
+-DC-,D(C),England,EPL,11,2,1,0,Matthijs de Ligt,320374,Defender,32,Man Utd,England,Premier League,6.92,990,0,0,60
+-GK-,GK,England,EPL,11,0,0,0,Martin Dúbravka,46092,Goalkeeper,184,Burnley,England,Premier League,6.918181818,990,0,0,61
+-DL-ML-,"D(L),M(L)",England,EPL,11,1,0,1,Adrien Truffert,398301,Defender,183,Bournemouth,England,Premier League,6.912727273,963,2,0,62
+-AML-AMR-FW-,"AM(LR),FW",England,EPL,11,1,3,1,Kevin Schade,407260,Midfielder,189,Brentford,England,Premier League,6.910909091,923,4,0,63
+-DC-,D(C),England,EPL,11,1,0,0,Rúben Dias,313171,Defender,167,Man City,England,Premier League,6.91,905,0,0,64
+-MC-,M(C),England,EPL,10,1,1,2,Kiernan Dewsbury-Hall,391256,Midfielder,31,Everton,England,Premier League,6.907,888,5,0,65
+-DMC-DR-,"D(R),DMC",England,EPL,9,0,0,2,Mats Wieffer,445059,Midfielder,211,Brighton,England,Premier League,6.906666667,642,3,0,66
+-DC-DL-DMC-,"D(CL),DMC",England,EPL,9,0,0,2,Boubacar Kamara,331790,Midfielder,24,Aston Villa,England,Premier League,6.906666667,647,3,0,67
+-DC-,D(C),England,EPL,11,0,2,0,Joe Rodon,302312,Defender,19,Leeds,England,Premier League,6.906363636,990,0,0,68
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,9,0,2,2,Leandro Trossard,113994,Forward,13,Arsenal,England,Premier League,6.89,646,0,0,69
+-DR-,D(R),England,EPL,11,0,0,0,Michael Kayode,470031,Defender,189,Brentford,England,Premier League,6.888181818,955,1,0,70
+-DC-,D(C),England,EPL,8,0,0,0,Malick Thiaw,393355,Defender,23,Newcastle,England,Premier League,6.885,633,1,0,71
+-DMC-,DMC,England,EPL,10,2,3,1,Bruno Guimarães,338780,Midfielder,23,Newcastle,England,Premier League,6.875,896,3,0,72
+-DC-DL-,D(CL),England,EPL,11,2,3,0,Micky van de Ven,425229,Defender,30,Tottenham,England,Premier League,6.870909091,980,2,0,73
+-DC-DL-,D(CL),England,EPL,7,0,0,1,Josko Gvardiol,402664,Defender,167,Man City,England,Premier League,6.867142857,610,0,0,74
+-AML-FW-,"AM(L),FW",England,EPL,10,0,4,0,Viktor Gyökeres,362815,Forward,13,Arsenal,England,Premier League,6.863,804,1,0,75
+-AMC-AML-FW-,"AM(CL),FW",England,EPL,10,0,1,0,Matheus Cunha,362758,Forward,32,Man Utd,England,Premier League,6.861,685,0,0,76
+-DMC-,DMC,England,EPL,11,1,2,1,Josh Cullen,273292,Midfielder,184,Burnley,England,Premier League,6.859090909,944,1,0,77
+-GK-,GK,England,EPL,11,0,0,0,Guglielmo Vicario,147863,Goalkeeper,30,Tottenham,England,Premier League,6.857272727,990,0,0,78
+-DC-,D(C),England,EPL,10,1,0,0,Joachim Andersen,231135,Defender,170,Fulham,England,Premier League,6.856,852,0,0,79
+-DC-DMC-,"D(C),DMC",England,EPL,10,1,3,1,Casemiro,88526,Midfielder,32,Man Utd,England,Premier League,6.835,625,3,1,80
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,9,1,3,2,Emiliano Buendía,260592,Midfielder,24,Aston Villa,England,Premier League,6.834444444,430,2,0,81
+-AMC-AML-,AM(CL),England,EPL,9,0,1,1,Mikkel Damsgaard,401168,Midfielder,189,Brentford,England,Premier League,6.831111111,722,0,0,82
+-DR-MC-ML-MR-,"D(R),M(CLR)",England,EPL,11,1,2,0,Matty Cash,322043,Defender,24,Aston Villa,England,Premier League,6.829090909,968,3,0,83
+-DC-DL-DR-MR-,"D(CLR),M(R)",England,EPL,11,0,0,1,Trai Hume,424514,Defender,16,Sunderland,England,Premier League,6.829090909,979,1,0,84
+-MC-ML-MR-,M(CLR),England,EPL,11,1,2,1,Marcus Tavernier,344314,Midfielder,183,Bournemouth,England,Premier League,6.825454545,862,0,0,85
+-MC-ML-,M(CL),England,EPL,10,2,2,0,Diego Gómez,446133,Midfielder,211,Brighton,England,Premier League,6.823,544,2,0,86
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,2,4,2,Richarlison,317804,Forward,30,Tottenham,England,Premier League,6.821818182,634,2,0,87
+-MC-ML-,M(CL),England,EPL,11,0,1,1,Elliot Anderson,402596,Midfielder,174,Nottingham Forest,England,Premier League,6.817272727,990,2,0,88
+-MC-,M(C),England,EPL,10,0,2,2,Pape Matar Sarr,403859,Midfielder,30,Tottenham,England,Premier League,6.813,571,0,0,89
+-GK-,GK,England,EPL,11,0,0,0,Bernd Leno,92173,Goalkeeper,170,Fulham,England,Premier League,6.811818182,990,1,0,90
+-DC-,D(C),England,EPL,11,1,0,0,Ibrahima Konaté,345957,Defender,26,Liverpool,England,Premier League,6.804545455,926,2,0,91
+-DC-,D(C),England,EPL,8,1,1,0,Santiago Bueno,444241,Defender,161,Wolves,England,Premier League,6.80125,664,2,0,92
+-MC-,M(C),England,EPL,10,0,1,2,Tijjani Reijnders,343382,Midfielder,167,Man City,England,Premier League,6.799,761,2,0,93
+-DL-DR-ML-MR-,"D(LR),M(LR)",England,EPL,11,1,1,0,Neco Williams,386969,Defender,174,Nottingham Forest,England,Premier League,6.787272727,990,4,0,94
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,9,1,0,0,Daichi Kamada,344166,Midfielder,162,Crystal Palace,England,Premier League,6.786666667,763,0,0,95
+-DMC-,DMC,England,EPL,11,0,0,1,Sandro Tonali,343501,Midfielder,23,Newcastle,England,Premier League,6.786363636,872,0,0,96
+-AMC-FW-,"AM(C),FW",England,EPL,8,0,4,0,Nick Woltemade,386606,Forward,23,Newcastle,England,Premier League,6.78,618,0,0,97
+-MC-MR-,M(CR),England,EPL,11,0,1,0,Alex Scott,410998,Midfielder,183,Bournemouth,England,Premier League,6.776363636,737,1,0,98
+-DMC-,DMC,England,EPL,8,0,0,1,Florentino,369712,Midfielder,184,Burnley,England,Premier League,6.77,657,1,0,99
+-DR-MC-MR-,"D(R),M(CR)",England,EPL,11,0,1,1,Tyler Adams,315275,Midfielder,183,Bournemouth,England,Premier League,6.768181818,957,4,0,100
+-DL-,D(L),England,EPL,11,0,0,4,Quilindschy Hartman,444739,Defender,184,Burnley,England,Premier League,6.767272727,979,1,0,101
+-DMC-,DMC,England,EPL,9,0,0,0,Adam Wharton,430774,Midfielder,162,Crystal Palace,England,Premier League,6.758888889,701,1,0,102
+-AMR-,AM(R),England,EPL,8,0,0,1,Oscar Bobb,430709,Midfielder,167,Man City,England,Premier League,6.75375,454,0,0,103
+-AML-FW-,"AM(L),FW",England,EPL,8,0,2,0,Noah Okafor,376090,Forward,19,Leeds,England,Premier League,6.7525,521,2,0,104
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,1,1,1,Brenden Aaronson,371012,Midfielder,19,Leeds,England,Premier League,6.750909091,716,1,0,105
+-FW-,FW,England,EPL,10,1,3,1,Hugo Ekitiké,403784,Forward,26,Liverpool,England,Premier League,6.749,637,0,0,106
+-DC-DL-ML-,"D(CL),M(L)",England,EPL,11,0,0,3,Lucas Digne,89925,Defender,24,Aston Villa,England,Premier League,6.746363636,822,2,0,107
+-GK-,GK,England,EPL,11,0,0,0,Dean Henderson,304008,Goalkeeper,162,Crystal Palace,England,Premier League,6.742727273,990,1,0,108
+-MC-,M(C),England,EPL,11,0,1,0,Yasin Ayari,470690,Midfielder,211,Brighton,England,Premier League,6.733636364,873,0,0,109
+-DR-ML-MR-,"D(R),M(LR)",England,EPL,10,0,2,1,Jacob Murphy,141486,Midfielder,23,Newcastle,England,Premier League,6.733,572,0,0,110
+-DL-ML-MR-,"D(L),M(LR)",England,EPL,10,0,0,1,Patrick Dorgu,495260,Defender,32,Man Utd,England,Premier League,6.732,624,4,0,111
+-DC-DL-,D(CL),England,EPL,7,1,0,0,Tyrone Mings,123167,Defender,24,Aston Villa,England,Premier League,6.728571429,498,0,0,112
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,0,4,2,Mohamed Salah,108226,Forward,26,Liverpool,England,Premier League,6.720909091,985,1,0,113
+-DC-MC-,"D(C),M(C)",England,EPL,10,1,1,1,Anton Stach,401073,Midfielder,19,Leeds,England,Premier League,6.72,801,1,0,114
+-GK-,GK,England,EPL,9,0,0,0,Emiliano Martínez,102248,Goalkeeper,24,Aston Villa,England,Premier League,6.72,810,1,0,115
+-GK-,GK,England,EPL,8,0,0,0,Gianluigi Donnarumma,262515,Goalkeeper,167,Man City,England,Premier League,6.72,720,2,0,116
+-DL-ML-,"D(L),M(L)",England,EPL,11,0,0,0,Hugo Bueno,409730,Defender,161,Wolves,England,Premier League,6.711818182,794,1,0,117
+-MC-,M(C),England,EPL,11,0,2,0,Idrissa Gueye,80464,Midfielder,31,Everton,England,Premier League,6.709090909,952,0,0,118
+-MC-ML-MR-,M(CLR),England,EPL,10,1,2,0,Harry Wilson,333044,Forward,170,Fulham,England,Premier League,6.697,660,1,0,119
+-DL-ML-MR-,"D(L),M(LR)",England,EPL,10,0,2,0,Ryan Sessegnon,322611,Midfielder,170,Fulham,England,Premier League,6.692,839,0,0,120
+-DC-DR-,D(CR),England,EPL,8,0,0,0,Bafodé Diakité,366875,Defender,183,Bournemouth,England,Premier League,6.685,720,1,0,121
+-DC-DR-MR-,"D(CR),M(R)",England,EPL,11,0,0,0,Sepp van den Berg,351705,Defender,189,Brentford,England,Premier League,6.680909091,990,0,0,122
+-DR-MC-ML-MR-,"D(R),M(CLR)",England,EPL,11,1,1,2,Alex Iwobi,136824,Forward,170,Fulham,England,Premier League,6.679090909,906,2,0,123
+-AMC-AMR-,AM(CR),England,EPL,10,0,1,1,Estêvão,510728,Forward,15,Chelsea,England,Premier League,6.677,341,2,0,124
+-DMC-,DMC,England,EPL,11,0,0,0,Noah Sadiki,437449,Midfielder,16,Sunderland,England,Premier League,6.674545455,984,4,0,125
+-DR-MR-,"D(R),M(R)",England,EPL,11,0,0,1,Pedro Porro,362352,Defender,30,Tottenham,England,Premier League,6.67,867,1,0,126
+-AMC-AMR-FW-,"AM(CR),FW",England,EPL,8,1,3,0,Zian Flemming,361694,Midfielder,184,Burnley,England,Premier League,6.67,346,2,0,127
+-DC-DMC-,"D(C),DMC",England,EPL,8,0,1,1,Ladislav Krejcí,404245,Defender,161,Wolves,England,Premier League,6.6675,720,1,0,128
+-GK-,GK,England,EPL,11,0,0,0,Djordje Petrovic,406564,Goalkeeper,183,Bournemouth,England,Premier League,6.661818182,990,1,0,129
+-MC-,M(C),England,EPL,10,0,1,1,Rodrigo Bentancur,303657,Midfielder,30,Tottenham,England,Premier League,6.658,659,1,0,130
+-MC-ML-MR-,M(CLR),England,EPL,11,1,1,0,John McGinn,318449,Midfielder,24,Aston Villa,England,Premier League,6.654545455,845,1,0,131
+-DC-DL-DMC-DR-,"D(CLR),DMC",England,EPL,7,0,0,1,Kristoffer Ajer,321085,Defender,189,Brentford,England,Premier League,6.651428571,388,0,0,132
+-DC-DR-,D(CR),England,EPL,7,0,0,0,Tosin Adarabioyo,136464,Defender,15,Chelsea,England,Premier League,6.648571429,377,1,0,133
+-GK-,GK,England,EPL,11,1,0,0,Jordan Pickford,110189,Goalkeeper,31,Everton,England,Premier League,6.643636364,990,0,0,134
+-DL-DR-MR-,"D(LR),M(R)",England,EPL,9,1,0,0,Kieran Trippier,83078,Defender,23,Newcastle,England,Premier League,6.643333333,700,1,0,135
+-DC-,D(C),England,EPL,11,0,0,0,Lewis Dunk,86441,Defender,211,Brighton,England,Premier League,6.637272727,990,3,0,136
+-MC-,M(C),England,EPL,9,0,1,1,Sasa Lukic,297395,Midfielder,170,Fulham,England,Premier League,6.635555556,681,5,0,137
+-DC-DL-ML-MR-,"D(CL),M(LR)",England,EPL,11,1,0,0,Gabriel Gudmundsson,330549,Defender,19,Leeds,England,Premier League,6.635454545,915,1,0,138
+-DC-,D(C),England,EPL,8,0,0,0,Pau Torres,344259,Defender,24,Aston Villa,England,Premier League,6.6325,598,0,0,139
+-DC-DL-ML-,"D(CL),M(L)",England,EPL,8,0,0,0,Reinildo Mandava,361812,Defender,16,Sunderland,England,Premier League,6.63125,663,2,1,140
+-AML-AMR-,AM(LR),England,EPL,11,0,4,1,Jaidon Anthony,400610,Forward,184,Burnley,England,Premier League,6.629090909,894,3,0,141
+-DC-,D(C),England,EPL,8,0,0,0,Murillo,445424,Defender,174,Nottingham Forest,England,Premier League,6.62625,651,2,0,142
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,8,0,0,1,Xavi Simons,399772,Midfielder,30,Tottenham,England,Premier League,6.62625,537,2,0,143
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,11,0,0,2,Bernardo Silva,136741,Midfielder,167,Man City,England,Premier League,6.622727273,645,2,0,144
+-DL-ML-,"D(L),M(L)",England,EPL,11,0,0,3,El Hadji Malick Diouf,479288,Defender,29,West Ham,England,Premier League,6.620909091,945,1,0,145
+-DC-MC-,"D(C),M(C)",England,EPL,11,0,1,1,Marshall Munetsi,377411,Midfielder,161,Wolves,England,Premier League,6.616363636,803,2,0,146
+-DC-DR-,D(CR),England,EPL,11,0,0,0,Nathan Collins,372724,Defender,189,Brentford,England,Premier League,6.614545455,990,4,0,147
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,0,1,2,Morgan Rogers,362824,Forward,24,Aston Villa,England,Premier League,6.604545455,978,2,0,148
+-GK-,GK,England,EPL,7,0,0,0,Alphonse Areola,92516,Goalkeeper,29,West Ham,England,Premier League,6.602857143,630,0,0,149
+-GK-,GK,England,EPL,11,1,0,0,David Raya,276366,Goalkeeper,13,Arsenal,England,Premier League,6.602727273,990,1,0,150
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,2,6,0,Danny Welbeck,39308,Forward,211,Brighton,England,Premier League,6.601818182,714,2,0,151
+-DC-DL-ML-,"D(CL),M(L)",England,EPL,11,1,0,1,Dan Burn,82277,Defender,23,Newcastle,England,Premier League,6.600909091,973,3,1,152
+-DL-DR-MC-ML-MR-,"D(LR),M(CLR)",England,EPL,10,0,0,0,Ferdi Kadioglu,321958,Defender,211,Brighton,England,Premier League,6.6,735,3,0,153
+-AMC-AML-,AM(CL),England,EPL,9,0,1,1,Mateus Fernandes,447231,Midfielder,29,West Ham,England,Premier League,6.6,647,1,0,154
+-AMC-FW-,"AM(C),FW",England,EPL,11,1,2,1,Benjamin Sesko,424191,Forward,32,Man Utd,England,Premier League,6.599090909,617,1,0,155
+-DMC-,DMC,England,EPL,11,0,0,1,Yehor Yarmoliuk,444304,Midfielder,189,Brentford,England,Premier League,6.598181818,873,1,0,156
+-DC-DR-MR-,"D(CR),M(R)",England,EPL,11,1,0,1,Kyle Walker,69778,Defender,184,Burnley,England,Premier League,6.592727273,990,3,0,157
+-DC-DR-,D(CR),England,EPL,10,0,0,0,Ezri Konsa,301440,Defender,24,Aston Villa,England,Premier League,6.592,876,0,1,158
+-FW-,FW,England,EPL,8,0,4,0,Junior Kroupi,479170,Forward,183,Bournemouth,England,Premier League,6.59,254,1,0,159
+-AMC-AMR-FW-,"AM(CR),FW",England,EPL,10,0,0,2,Georginio Rutter,362433,Forward,211,Brighton,England,Premier League,6.586,685,2,0,160
+-DC-,D(C),England,EPL,11,0,0,0,Maximilian Kilman,368310,Defender,29,West Ham,England,Premier League,6.583636364,990,3,0,161
+-DL-FW-ML-MR-,"D(L),M(LR),FW",England,EPL,10,1,2,0,Dango Ouattara,422183,Forward,189,Brentford,England,Premier League,6.583,644,2,0,162
+-ML-MR-,M(LR),England,EPL,10,0,1,1,Dan Ndoye,398414,Forward,174,Nottingham Forest,England,Premier League,6.582,762,1,0,163
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,10,0,0,0,Jhon Arias,424039,Midfielder,161,Wolves,England,Premier League,6.579,550,0,0,164
+-MC-,M(C),England,EPL,8,0,0,1,Tim Iroegbunam,416208,Midfielder,31,Everton,England,Premier League,6.5725,341,4,0,165
+-GK-,GK,England,EPL,11,0,0,0,Robert Sánchez,362151,Goalkeeper,15,Chelsea,England,Premier League,6.571818182,905,1,1,166
+-AML-,AM(L),England,EPL,8,0,0,0,Kevin,429174,Forward,170,Fulham,England,Premier League,6.56375,316,1,0,167
+-DC-DR-,D(CR),England,EPL,11,0,0,0,Jake O'Brien,424495,Defender,31,Everton,England,Premier League,6.563636364,870,0,0,168
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,9,0,0,0,Joelinton,201755,Midfielder,23,Newcastle,England,Premier League,6.56,654,2,0,169
+-DC-DMC-,"D(C),DMC",England,EPL,9,0,0,0,Ethan Ampadu,322418,Defender,19,Leeds,England,Premier League,6.556666667,789,3,0,170
+-DL-DR-ML-MR-,"D(LR),M(LR)",England,EPL,9,1,0,1,Diogo Dalot,353418,Defender,32,Man Utd,England,Premier League,6.552222222,595,0,0,171
+-DC-,D(C),England,EPL,9,1,0,0,Sven Botman,379732,Defender,23,Newcastle,England,Premier League,6.552222222,645,0,0,172
+-AML-AMR-,AM(LR),England,EPL,9,0,0,1,Crysencio Summerville,382564,Forward,29,West Ham,England,Premier League,6.551111111,645,3,0,173
+-FW-,FW,England,EPL,9,0,1,0,Evanilson,384430,Forward,183,Bournemouth,England,Premier League,6.55,724,1,0,174
+-AML-FW-,"AM(L),FW",England,EPL,11,0,4,0,Wilson Isidor,363535,Forward,16,Sunderland,England,Premier League,6.545454545,677,0,0,175
+-AML-FW-,"AM(L),FW",England,EPL,8,0,2,1,Lyle Foster,371447,Forward,184,Burnley,England,Premier League,6.545,584,2,0,176
+-DR-MR-,"D(R),M(R)",England,EPL,9,0,1,1,Malo Gusto,403850,Defender,15,Chelsea,England,Premier League,6.544444444,553,0,1,177
+-MC-,M(C),England,EPL,9,0,1,1,Lucas Bergvall,505295,Midfielder,30,Tottenham,England,Premier League,6.54,414,1,0,178
+-DL-ML-,"D(L),M(L)",England,EPL,10,0,1,0,Milos Kerkez,424273,Defender,26,Liverpool,England,Premier League,6.539,698,3,0,179
+-MC-ML-MR-,M(CLR),England,EPL,8,0,1,0,Mason Mount,343346,Midfielder,32,Man Utd,England,Premier League,6.5325,354,0,0,180
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,0,2,0,Brennan Johnson,379688,Forward,30,Tottenham,England,Premier League,6.520909091,470,2,0,181
+-FW-MC-,"M(C),FW",England,EPL,10,0,1,1,Mikel Merino,238916,Midfielder,13,Arsenal,England,Premier League,6.52,415,0,0,182
+-DC-MC-ML-MR-,"D(C),M(CLR)",England,EPL,11,0,0,2,Jordan Henderson,68659,Midfielder,189,Brentford,England,Premier League,6.52,836,3,0,183
+-DL-DR-MR-,"D(LR),M(R)",England,EPL,10,0,0,0,Djed Spence,362219,Defender,30,Tottenham,England,Premier League,6.517,761,2,0,184
+-AML-FW-,"AM(L),FW",England,EPL,9,0,1,0,Dominic Calvert-Lewin,141469,Forward,19,Leeds,England,Premier League,6.516666667,617,0,0,185
+-DC-DL-DMC-,"D(CL),DMC",England,EPL,9,0,0,0,Pascal Struijk,355609,Defender,19,Leeds,England,Premier League,6.516666667,728,1,0,186
+-AML-FW-,"AM(L),FW",England,EPL,8,0,2,0,Mathys Tel,422885,Forward,30,Tottenham,England,Premier League,6.51125,249,0,0,187
+-AMC-AMR-FW-,"AM(CR),FW",England,EPL,10,0,0,1,David Brooks,295084,Midfielder,183,Bournemouth,England,Premier League,6.51,556,3,0,188
+-MC-,M(C),England,EPL,11,0,0,0,João Gomes,403693,Midfielder,161,Wolves,England,Premier League,6.506363636,837,3,0,189
+-GK-,GK,England,EPL,11,1,0,0,Caoimhín Kelleher,322176,Goalkeeper,189,Brentford,England,Premier League,6.493636364,990,1,0,190
+-DC-DL-DR-ML-MR-,"D(CLR),M(LR)",England,EPL,7,0,0,0,Timothy Castagne,141169,Defender,170,Fulham,England,Premier League,6.491428571,399,0,0,191
+-MC-ML-MR-,M(CLR),England,EPL,10,0,1,1,Enzo Le Fée,398393,Midfielder,16,Sunderland,England,Premier League,6.491,696,1,0,192
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,0,2,1,Morgan Gibbs-White,332867,Midfielder,174,Nottingham Forest,England,Premier League,6.489090909,911,0,0,193
+-AMC-AMR-,AM(CR),England,EPL,7,0,1,1,Brajan Gruda,471784,Midfielder,211,Brighton,England,Premier League,6.484285714,220,0,0,194
+-FW-,FW,England,EPL,8,1,2,0,Callum Wilson,134115,Forward,29,West Ham,England,Premier League,6.48375,368,0,0,195
+-DC-,D(C),England,EPL,11,0,0,0,Maxime Estève,414233,Defender,184,Burnley,England,Premier League,6.483636364,983,0,0,196
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,10,0,1,0,Callum Hudson-Odoi,350088,Forward,174,Nottingham Forest,England,Premier League,6.479,572,0,0,197
+-DC-DL-ML-,"D(CL),M(L)",England,EPL,11,0,0,1,Luke Shaw,118244,Defender,32,Man Utd,England,Premier League,6.475454545,938,0,0,198
+-DC-DR-,D(CR),England,EPL,7,0,0,0,Cristhian Mosquera,425591,Defender,13,Arsenal,England,Premier League,6.464285714,295,0,0,199
+-GK-,GK,England,EPL,7,0,0,0,Sam Johnstone,105603,Goalkeeper,161,Wolves,England,Premier League,6.464285714,630,0,0,200
+-DMC-,DMC,England,EPL,10,0,2,0,Lesley Ugochukwu,404616,Midfielder,184,Burnley,England,Premier League,6.464,594,0,1,201
+-AML-AMR-FW-,"AM(LR),FW",England,EPL,11,0,1,0,Ollie Watkins,148503,Forward,24,Aston Villa,England,Premier League,6.462727273,870,0,0,202
+-AMC-AML-AMR-,AM(CLR),England,EPL,8,0,0,1,Savinho,397821,Forward,167,Man City,England,Premier League,6.4575,391,1,0,203
+-GK-,GK,England,EPL,11,0,0,0,Bart Verbruggen,400138,Goalkeeper,211,Brighton,England,Premier League,6.457272727,990,0,0,204
+-DC-,D(C),England,EPL,7,0,0,0,Hjalmar Ekdal,399619,Defender,184,Burnley,England,Premier League,6.445714286,534,0,0,205
+-DC-DL-DR-ML-MR-,"D(CLR),M(LR)",England,EPL,10,0,1,0,Kyle Walker-Peters,313672,Defender,29,West Ham,England,Premier League,6.445,466,1,0,206
+-MC-,M(C),England,EPL,8,0,2,0,Tomás Soucek,143595,Midfielder,29,West Ham,England,Premier League,6.43625,426,0,1,207
+-DL-DR-MR-,"D(LR),M(R)",England,EPL,7,0,0,0,Aaron Wan-Bissaka,331924,Defender,29,West Ham,England,Premier League,6.431428571,563,0,0,208
+-FW-,FW,England,EPL,10,0,1,1,Raúl Jiménez,108186,Forward,170,Fulham,England,Premier League,6.427,453,0,0,209
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,8,0,2,1,Federico Chiesa,322971,Forward,26,Liverpool,England,Premier League,6.425,117,1,0,210
+-DC-DR-,D(CR),England,EPL,7,0,0,0,James Hill,362837,Defender,183,Bournemouth,England,Premier League,6.421428571,276,1,0,211
+-DC-DMC-DR-,"D(CR),DMC",England,EPL,10,0,0,1,Jefferson Lerma,133464,Midfielder,162,Crystal Palace,England,Premier League,6.413,361,2,0,212
+-DC-DL-ML-,"D(CL),M(L)",England,EPL,8,0,0,0,Vitalii Mykolenko,345516,Defender,31,Everton,England,Premier League,6.41,716,1,0,213
+-DR-MR-,"D(R),M(R)",England,EPL,9,0,0,0,Conor Bradley,424945,Defender,26,Liverpool,England,Premier League,6.408888889,534,4,0,214
+-FW-,FW,England,EPL,11,0,1,0,Beto,380546,Forward,31,Everton,England,Premier League,6.407272727,612,1,0,215
+-AMC-AML-AMR-,AM(CLR),England,EPL,9,0,0,0,Yéremy Pino,403865,Midfielder,162,Crystal Palace,England,Premier League,6.401111111,536,2,0,216
+-DC-DR-,D(CR),England,EPL,11,0,0,0,Nikola Milenkovic,319785,Defender,174,Nottingham Forest,England,Premier League,6.398181818,990,1,0,217
+-DL-ML-,"D(L),M(L)",England,EPL,7,0,0,1,Destiny Udogie,401044,Defender,30,Tottenham,England,Premier League,6.397142857,342,0,0,218
+-DC-DL-DMC-DR-,"D(CLR),DMC",England,EPL,8,0,0,0,Lutsharel Geertruida,345441,Defender,16,Sunderland,England,Premier League,6.395,338,0,0,219
+-FW-MC-ML-,"M(CL),FW",England,EPL,10,0,0,2,Alexis Mac Allister,345319,Midfielder,26,Liverpool,England,Premier League,6.395,645,1,0,220
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,7,0,0,0,Anthony Gordon,349669,Forward,23,Newcastle,England,Premier League,6.392857143,467,0,1,221
+-MC-,M(C),England,EPL,7,0,0,1,Ryan Yates,342830,Midfielder,174,Nottingham Forest,England,Premier League,6.392857143,241,1,0,222
+-DC-,D(C),England,EPL,8,1,1,1,Harry Maguire,99487,Defender,32,Man Utd,England,Premier League,6.39,344,0,0,223
+-DR-MR-,"D(R),M(R)",England,EPL,11,0,0,0,Jayden Bogle,354291,Defender,19,Leeds,England,Premier League,6.385454545,962,2,0,224
+-DC-,D(C),England,EPL,11,0,0,0,Leny Yoro,437299,Defender,32,Man Utd,England,Premier League,6.385454545,643,0,0,225
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,0,0,0,Florian Wirtz,394786,Midfielder,26,Liverpool,England,Premier League,6.380909091,693,1,0,226
+-DR-MR-,"D(R),M(R)",England,EPL,8,0,0,0,Álex Jiménez,497295,Defender,183,Bournemouth,England,Premier League,6.3775,414,4,0,227
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,10,0,0,1,Wilson Odobert,444751,Forward,30,Tottenham,England,Premier League,6.377,379,0,0,228
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,11,1,3,0,Donyell Malen,351354,Forward,24,Aston Villa,England,Premier League,6.370909091,335,0,0,229
+-FW-,FW,England,EPL,7,0,1,1,Rodrigo Muniz,403649,Forward,170,Fulham,England,Premier League,6.37,353,1,0,230
+-MC-ML-MR-,M(CLR),England,EPL,9,0,0,0,Will Hughes,108638,Midfielder,162,Crystal Palace,England,Premier League,6.37,449,3,0,231
+-DMC-,DMC,England,EPL,11,0,0,0,Carlos Baleba,436048,Midfielder,211,Brighton,England,Premier League,6.369090909,653,4,0,232
+-DC-,D(C),England,EPL,7,0,0,0,Kevin Danso,330816,Defender,30,Tottenham,England,Premier League,6.365714286,258,3,0,233
+-DL-DR-MC-ML-MR-,"D(LR),M(CLR)",England,EPL,7,0,1,1,James Milner,4511,Midfielder,211,Brighton,England,Premier League,6.361428571,190,1,0,234
+-MC-ML-,M(CL),England,EPL,9,0,0,0,Curtis Jones,355354,Midfielder,26,Liverpool,England,Premier League,6.361111111,339,1,0,235
+-FW-,FW,England,EPL,8,1,2,0,Chris Wood,73380,Forward,174,Nottingham Forest,England,Premier League,6.35625,545,0,0,236
+-DL-DR-,D(LR),England,EPL,9,0,1,0,Maxim De Cuyper,392647,Defender,211,Brighton,England,Premier League,6.352222222,414,1,0,237
+-AMC-AMR-FW-,"AM(CR),FW",England,EPL,10,0,1,0,Loum Tchaouna,425118,Forward,184,Burnley,England,Premier League,6.347,440,1,0,238
+-FW-,FW,England,EPL,7,0,1,0,Eliezer Mayenda,494670,Forward,16,Sunderland,England,Premier League,6.342857143,263,0,0,239
+-AML-AMR-FW-,"AM(LR),FW",England,EPL,8,0,1,0,Gabriel Martinelli,380706,Forward,13,Arsenal,England,Premier League,6.3425,216,0,0,240
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,10,0,1,0,Justin Kluivert,331579,Forward,183,Bournemouth,England,Premier League,6.339,396,2,0,241
+-DL-FW-MC-ML-MR-,"D(L),M(CLR),FW",England,EPL,9,0,0,1,Keane Lewis-Potter,368512,Forward,189,Brentford,England,Premier League,6.337777778,451,1,0,242
+-FW-,FW,England,EPL,9,0,1,0,Jørgen Strand Larsen,333048,Forward,161,Wolves,England,Premier League,6.335555556,711,0,0,243
+-MC-,M(C),England,EPL,11,0,0,0,Sander Berge,321020,Midfielder,170,Fulham,England,Premier League,6.332727273,960,2,0,244
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,8,0,0,0,Amine Adli,389409,Forward,183,Bournemouth,England,Premier League,6.33125,213,0,0,245
+-AMR-,AM(R),England,EPL,11,0,1,1,Chemsdine Talbi,476110,Forward,16,Sunderland,England,Premier League,6.33,591,0,0,246
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,10,0,0,0,Evann Guessand,382587,Forward,24,Aston Villa,England,Premier League,6.326,426,0,0,247
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,9,0,1,0,Ryan Christie,128882,Midfielder,183,Bournemouth,England,Premier League,6.317777778,227,1,0,248
+-DC-DMC-DR-,"D(CR),DMC",England,EPL,8,0,0,0,Emmanuel Agbadou,402810,Defender,161,Wolves,England,Premier League,6.31375,562,0,1,249
+-DMC-,DMC,England,EPL,9,0,0,0,Manuel Ugarte,408962,Midfielder,32,Man Utd,England,Premier League,6.302222222,301,0,0,250
+-DR-ML-MR-,"D(R),M(LR)",England,EPL,10,0,0,0,Jackson Tchatchoua,408580,Defender,161,Wolves,England,Premier League,6.295,518,0,0,251
+-DMC-,DMC,England,EPL,8,0,1,0,Ibrahim Sangaré,328075,Midfielder,174,Nottingham Forest,England,Premier League,6.2925,504,2,0,252
+-MC-,M(C),England,EPL,8,0,0,1,Lewis Miley,474264,Midfielder,23,Newcastle,England,Premier League,6.275,274,0,0,253
+-AMC-AML-,AM(CL),England,EPL,11,0,1,0,Harvey Barnes,331382,Midfielder,23,Newcastle,England,Premier League,6.269090909,468,0,0,254
+-FW-ML-MR-,"M(LR),FW",England,EPL,7,0,0,0,Simon Adingra,443004,Forward,16,Sunderland,England,Premier League,6.268571429,301,1,0,255
+-DL-MC-ML-MR-,"D(L),M(CLR)",England,EPL,7,0,0,0,Ian Maatsen,384134,Defender,24,Aston Villa,England,Premier League,6.265714286,171,1,0,256
+-DMC-,DMC,England,EPL,7,0,0,0,Lamare Bogarde,408946,Defender,24,Aston Villa,England,Premier League,6.261428571,294,1,0,257
+-FW-,FW,England,EPL,10,0,0,0,Igor Jesus,397497,Forward,174,Nottingham Forest,England,Premier League,6.261,331,0,0,258
+-AMC-,AM(C),England,EPL,11,0,0,0,Josh King,515865,Midfielder,170,Fulham,England,Premier League,6.251818182,668,2,0,259
+-AMC-AML-,AM(CL),England,EPL,9,0,0,0,Jamie Gittens,436425,Forward,15,Chelsea,England,Premier League,6.236666667,251,0,0,260
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,8,0,1,0,Hwang Hee-Chan,262854,Forward,161,Wolves,England,Premier League,6.23375,371,0,0,261
+-GK-,GK,England,EPL,11,0,0,0,Matz Sels,78386,Goalkeeper,174,Nottingham Forest,England,Premier League,6.231818182,990,1,0,262
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,9,0,0,1,Jacob Bruun Larsen,307202,Forward,184,Burnley,England,Premier League,6.214444444,415,0,0,263
+-DMC-,DMC,England,EPL,9,0,2,0,Mathias Jensen,339674,Midfielder,189,Brentford,England,Premier League,6.214444444,216,0,0,264
+-DMC-,DMC,England,EPL,11,0,0,0,André,397585,Midfielder,161,Wolves,England,Premier League,6.208181818,707,3,0,265
+-DMC-,DMC,England,EPL,8,0,0,0,Andrey Santos,451236,Midfielder,15,Chelsea,England,Premier League,6.2025,229,2,0,266
+-DC-DL-,D(CL),England,EPL,11,0,0,0,Calvin Bassey,396976,Defender,170,Fulham,England,Premier League,6.194545455,908,3,0,267
+-AMC-AMR-FW-,"AM(CR),FW",England,EPL,11,0,2,0,Lukas Nmecha,347340,Forward,19,Leeds,England,Premier League,6.184545455,274,0,0,268
+-DL-DMC-,"D(L),DMC",England,EPL,7,0,0,0,Vitaly Janelt,298689,Midfielder,189,Brentford,England,Premier League,6.171428571,146,0,0,269
+-AMC-AML-,AM(CL),England,EPL,11,0,1,0,Emile Smith Rowe,363686,Midfielder,170,Fulham,England,Premier League,6.170909091,218,0,0,270
+-DL-ML-,"D(L),M(L)",England,EPL,8,0,0,0,Rico Henry,229562,Defender,189,Brentford,England,Premier League,6.16875,191,1,0,271
+-FW-,FW,England,EPL,10,0,1,0,William Osula,416209,Forward,23,Newcastle,England,Premier League,6.165,213,0,0,272
+-DL-,D(L),England,EPL,7,0,0,0,Myles Lewis-Skelly,467918,Defender,13,Arsenal,England,Premier League,6.151428571,87,1,0,273
+-FW-,FW,England,EPL,7,0,0,1,Stefanos Tzimas,519565,Forward,211,Brighton,England,Premier League,6.141428571,84,0,0,274
+-MC-,M(C),England,EPL,8,0,0,0,Justin Devenny,450950,Midfielder,162,Crystal Palace,England,Premier League,6.1375,158,0,0,275
+-DC-FW-MC-,"D(C),M(C),FW",England,EPL,10,0,0,0,Josh Laurent,142676,Midfielder,184,Burnley,England,Premier League,6.137,560,1,0,276
+-FW-,FW,England,EPL,11,0,0,0,Thierno Barry,537713,Forward,31,Everton,England,Premier League,6.134545455,386,1,0,277
+-AML-AMR-FW-,"AM(LR),FW",England,EPL,11,0,0,0,Anthony Elanga,413211,Forward,23,Newcastle,England,Premier League,6.133636364,414,0,0,278
+-AMC-,AM(C),England,EPL,10,0,0,1,Hannibal Mejbri,416207,Midfielder,184,Burnley,England,Premier League,6.131,290,1,0,279
+-MC-,M(C),England,EPL,7,0,0,0,Kobbie Mainoo,460260,Midfielder,32,Man Utd,England,Premier League,6.128571429,138,0,0,280
+-MC-ML-MR-,M(CLR),England,EPL,10,0,0,0,Jean-Ricner Bellegarde,320242,Midfielder,161,Wolves,England,Premier League,6.126,479,1,0,281
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,9,0,0,0,Adama Traoré,140088,Forward,170,Fulham,England,Premier League,6.116666667,245,0,0,282
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,8,0,0,0,Charly Alcaraz,391348,Midfielder,31,Everton,England,Premier League,6.1125,244,2,0,283
+-FW-,FW,England,EPL,7,0,0,0,Tolu Arokodare,402056,Forward,161,Wolves,England,Premier League,6.111428571,209,0,0,284
+-FW-MC-ML-MR-,"M(CLR),FW",England,EPL,10,0,0,0,Jack Harrison,317896,Forward,19,Leeds,England,Premier League,6.11,263,0,0,285
+-DMC-,DMC,England,EPL,8,0,0,0,Ao Tanaka,423347,Midfielder,19,Leeds,England,Premier League,6.0975,323,0,0,286
+-MC-MR-,M(CR),England,EPL,7,0,0,0,Tom Cairney,79583,Midfielder,170,Fulham,England,Premier League,6.095714286,197,1,0,287
+-DC-DL-,D(CL),England,EPL,8,0,0,0,Toti Gomes,431283,Defender,161,Wolves,England,Premier League,6.09125,528,2,1,288
+-AMC-AML-AMR-FW-,"AM(CLR),FW",England,EPL,8,0,0,0,Daniel James,302313,Midfielder,19,Leeds,England,Premier League,6.04875,288,0,0,289

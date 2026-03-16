@@ -1,0 +1,275 @@
+"""
+Explicit Routes Configuration Example
+======================================
+
+This file demonstrates how to organize explicit React routes for Django.
+When you're ready to switch from the catch-all route to explicit routes,
+use this as a template.
+
+Usage:
+1. Copy this file to routes_config.py
+2. Update the routes to match your React Router configuration
+3. Import in urls.py and use to generate URL patterns
+4. Keep this file in sync with frontend/src/routes (or wherever your React routes are)
+
+See docs/EXPLICIT_ROUTES.md for detailed guidance.
+"""
+
+# =============================================================================
+# PUBLIC ROUTES - Accessible to all users
+# =============================================================================
+
+PUBLIC_ROUTES = [
+    # Format: (path, name, description)
+    ('', 'home', 'Landing page'),
+    ('about/', 'about', 'About us page'),
+    ('contact/', 'contact', 'Contact form'),
+    ('pricing/', 'pricing', 'Pricing information'),
+    ('features/', 'features', 'Features overview'),
+]
+
+# =============================================================================
+# AUTHENTICATED ROUTES - Require user login
+# =============================================================================
+
+AUTHENTICATED_ROUTES = [
+    # Format: (path, name, description)
+    ('dashboard/', 'dashboard', 'User dashboard'),
+    ('profile/', 'profile', 'User profile'),
+    ('settings/', 'settings', 'Account settings'),
+    ('notifications/', 'notifications', 'User notifications'),
+]
+
+# =============================================================================
+# ADMIN ROUTES - Require admin/staff permissions
+# =============================================================================
+
+ADMIN_ROUTES = [
+    # Format: (path, name, description)
+    ('admin-dashboard/', 'admin_dashboard', 'Admin dashboard'),
+    ('users-management/', 'users_management', 'Manage users'),
+    ('analytics/', 'analytics', 'Analytics dashboard'),
+]
+
+# =============================================================================
+# DYNAMIC ROUTES - Routes with nested paths or parameters
+# =============================================================================
+
+DYNAMIC_ROUTES = [
+    # Format: (regex_pattern, name, description)
+    # These use re_path instead of path, allowing nested routes
+    (r'^products/.*', 'products', 'Product catalog and detail pages'),
+    (r'^blog/.*', 'blog', 'Blog posts and categories'),
+    (r'^users/.*', 'users', 'User profiles and pages'),
+    (r'^docs/.*', 'docs', 'Documentation pages'),
+]
+
+# =============================================================================
+# ROUTE CONFIGURATION
+# =============================================================================
+
+# Map route types to their corresponding view classes
+ROUTE_VIEW_MAP = {
+    'PUBLIC': 'PublicReactView',      # Public, possibly cached
+    'AUTHENTICATED': 'PrivateReactView',  # Requires authentication
+    'ADMIN': 'AdminReactView',        # Requires admin permissions
+    'DYNAMIC': 'PublicReactView',     # Default for dynamic routes
+}
+
+# Cache durations (in seconds) for different route types
+CACHE_DURATIONS = {
+    'PUBLIC': 60 * 15,      # 15 minutes for public pages
+    'AUTHENTICATED': 0,     # No caching for authenticated pages
+    'ADMIN': 0,             # No caching for admin pages
+    'DYNAMIC': 60 * 5,      # 5 minutes for dynamic content
+}
+
+# =============================================================================
+# HELPER FUNCTIONS
+# =============================================================================
+
+def get_all_routes():
+    """
+    Get all routes organized by type.
+    Useful for debugging and documentation.
+    """
+    return {
+        'public': PUBLIC_ROUTES,
+        'authenticated': AUTHENTICATED_ROUTES,
+        'admin': ADMIN_ROUTES,
+        'dynamic': DYNAMIC_ROUTES,
+    }
+
+
+def generate_url_patterns_code():
+    """
+    Generate Python code for URL patterns.
+    Run this to get copy-paste ready code for urls.py
+    """
+    lines = []
+    lines.append("# Generated URL patterns")
+    lines.append("# Copy these into your urls.py file\n")
+
+    lines.append("# Public routes")
+    for path, name, desc in PUBLIC_ROUTES:
+        lines.append(f"path('{path}', PublicReactView.as_view(), name='{name}'),  # {desc}")
+
+    lines.append("\n# Authenticated routes")
+    for path, name, desc in AUTHENTICATED_ROUTES:
+        lines.append(f"path('{path}', PrivateReactView.as_view(), name='{name}'),  # {desc}")
+
+    lines.append("\n# Admin routes")
+    for path, name, desc in ADMIN_ROUTES:
+        lines.append(f"path('{path}', AdminReactView.as_view(), name='{name}'),  # {desc}")
+
+    lines.append("\n# Dynamic routes")
+    for pattern, name, desc in DYNAMIC_ROUTES:
+        lines.append(f"re_path(r'{pattern}', PublicReactView.as_view(), name='{name}'),  # {desc}")
+
+    return '\n'.join(lines)
+
+
+def print_route_summary():
+    """
+    Print a summary of all configured routes.
+    Useful for documentation and keeping track of routes.
+    """
+    print("="*80)
+    print("ROUTE CONFIGURATION SUMMARY")
+    print("="*80)
+
+    print(f"\nPublic Routes ({len(PUBLIC_ROUTES)}):")
+    for path, name, desc in PUBLIC_ROUTES:
+        print(f"  /{path:<30} -> {name:<20} # {desc}")
+
+    print(f"\nAuthenticated Routes ({len(AUTHENTICATED_ROUTES)}):")
+    for path, name, desc in AUTHENTICATED_ROUTES:
+        print(f"  /{path:<30} -> {name:<20} # {desc}")
+
+    print(f"\nAdmin Routes ({len(ADMIN_ROUTES)}):")
+    for path, name, desc in ADMIN_ROUTES:
+        print(f"  /{path:<30} -> {name:<20} # {desc}")
+
+    print(f"\nDynamic Routes ({len(DYNAMIC_ROUTES)}):")
+    for pattern, name, desc in DYNAMIC_ROUTES:
+        print(f"  {pattern:<30} -> {name:<20} # {desc}")
+
+    print(f"\nTotal Routes: {len(PUBLIC_ROUTES) + len(AUTHENTICATED_ROUTES) + len(ADMIN_ROUTES) + len(DYNAMIC_ROUTES)}")
+    print("="*80)
+
+
+# =============================================================================
+# VALIDATION
+# =============================================================================
+
+def validate_routes():
+    """
+    Validate route configuration for common issues.
+    """
+    errors = []
+    warnings = []
+
+    # Check for duplicate names
+    all_names = []
+    for routes in [PUBLIC_ROUTES, AUTHENTICATED_ROUTES, ADMIN_ROUTES]:
+        all_names.extend([name for _, name, _ in routes])
+    all_names.extend([name for _, name, _ in DYNAMIC_ROUTES])
+
+    duplicates = [name for name in set(all_names) if all_names.count(name) > 1]
+    if duplicates:
+        errors.append(f"Duplicate route names found: {duplicates}")
+
+    # Check for trailing slashes consistency
+    for routes in [PUBLIC_ROUTES, AUTHENTICATED_ROUTES, ADMIN_ROUTES]:
+        for path, name, _ in routes:
+            if path and not path.endswith('/'):
+                warnings.append(f"Route '{name}' ({path}) should have trailing slash")
+
+    # Report results
+    if errors:
+        print("ERRORS:")
+        for error in errors:
+            print(f"  ❌ {error}")
+
+    if warnings:
+        print("WARNINGS:")
+        for warning in warnings:
+            print(f"  ⚠️  {warning}")
+
+    if not errors and not warnings:
+        print("✅ Route configuration is valid!")
+
+    return len(errors) == 0
+
+
+# =============================================================================
+# REACT ROUTER SYNC HELPER
+# =============================================================================
+
+# Keep this comment block in sync with your React Router configuration
+"""
+REACT ROUTER ROUTES (frontend/src/routes.tsx or similar)
+=========================================================
+
+Public Routes:
+- /                  -> Home component
+- /about             -> About component
+- /contact           -> Contact component
+- /pricing           -> Pricing component
+- /features          -> Features component
+
+Authenticated Routes:
+- /dashboard         -> Dashboard component
+- /profile           -> Profile component
+- /settings          -> Settings component
+- /notifications     -> Notifications component
+
+Admin Routes:
+- /admin-dashboard   -> AdminDashboard component
+- /users-management  -> UsersManagement component
+- /analytics         -> Analytics component
+
+Dynamic Routes:
+- /products/*        -> Products router (handles /products/:id, /products/categories, etc.)
+- /blog/*            -> Blog router (handles /blog/:slug, /blog/categories/:cat, etc.)
+- /users/*           -> Users router (handles /users/:username, etc.)
+- /docs/*            -> Docs router (handles /docs/:category/:page, etc.)
+
+Last synced: YYYY-MM-DD
+"""
+
+# =============================================================================
+# MANAGEMENT COMMAND EXAMPLE
+# =============================================================================
+
+"""
+To use this configuration in a management command:
+
+# core/management/commands/list_routes.py
+from django.core.management.base import BaseCommand
+from core.routes_config import print_route_summary, validate_routes
+
+
+class Command(BaseCommand):
+    help = 'List all configured React routes'
+
+    def handle(self, *args, **options):
+        validate_routes()
+        print()
+        print_route_summary()
+        print()
+        self.stdout.write(self.style.SUCCESS('Done!'))
+
+Then run: python manage.py list_routes
+"""
+
+if __name__ == '__main__':
+    # For testing: python routes_config.py
+    print("Validating routes...")
+    if validate_routes():
+        print()
+        print_route_summary()
+        print()
+        print("Generated URL patterns code:")
+        print("-" * 80)
+        print(generate_url_patterns_code())

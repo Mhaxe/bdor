@@ -1,0 +1,276 @@
+playedPositions,playedPositionsShort,apps,subOn,manOfTheMatch,goal,assistTotal,name,playerId,positionText,teamId,teamName,tournamentId,tournamentRegionCode,tournamentRegionName,tournamentName,rating,minsPlayed,yellowCard,redCard,ranking
+-AMC-AML-AMR-FW-,"AM(CLR),FW",11,1,1,8,3,Mason Greenwood,367782,Forward,249,Marseille,22,fr,France,Ligue 1,7.442727273,865,1,0,1
+-DL-MC-ML-,"D(L),M(CL)",12,1,1,1,4,Valentín Barco,419341,Midfielder,148,Strasbourg,22,fr,France,Ligue 1,7.3625,988,2,0,2
+-AMC-AMR-FW-,"AM(CR),FW",12,0,3,5,4,Ilan Kebbal,422186,Midfielder,2832,Paris FC,22,fr,France,Ligue 1,7.36,1050,2,0,3
+-MC-ML-MR-,M(CLR),11,0,1,3,2,Aron Dønnum,339671,Midfielder,246,Toulouse,22,fr,France,Ligue 1,7.333636364,990,5,0,4
+-MC-,M(C),11,2,2,1,6,Vitinha,384887,Midfielder,304,PSG,22,fr,France,Ligue 1,7.295454545,788,0,0,5
+-MC-ML-MR-,M(CLR),12,0,3,1,4,Adrien Thomasson,113747,Midfielder,309,Lens,22,fr,France,Ligue 1,7.276666667,1074,4,0,6
+-FW-,FW,12,1,3,9,0,Joaquín Panichelli,458728,Forward,148,Strasbourg,22,fr,France,Ligue 1,7.270833333,958,2,0,7
+-DC-DL-,D(CL),7,0,1,1,0,Mohammed Salisu,362357,Defender,248,Monaco,22,fr,France,Ligue 1,7.184285714,630,3,0,8
+-DC-,D(C),12,0,2,3,1,Charlie Cresswell,400646,Defender,246,Toulouse,22,fr,France,Ligue 1,7.179166667,1080,3,0,9
+-DL-DR-FW-MC-ML-MR-,"D(LR),M(CLR),FW",7,2,1,0,1,Krépin Diatta,335692,Midfielder,248,Monaco,22,fr,France,Ligue 1,7.172857143,552,0,0,10
+-GK-,GK,12,0,4,0,0,Hervé Koffi,332870,Goalkeeper,614,Angers,22,fr,France,Ligue 1,7.169166667,1080,0,0,11
+-FW-,FW,10,0,2,7,3,Estéban Lepaul,515577,Forward,313,Rennes,22,fr,France,Ligue 1,7.166,823,0,0,12
+-GK-,GK,11,0,3,0,0,Anthony Lopes,71833,Goalkeeper,302,Nantes,22,fr,France,Ligue 1,7.150909091,989,1,0,13
+-DC-DL-,D(CL),7,0,1,1,0,Beraldo,440085,Defender,304,PSG,22,fr,France,Ligue 1,7.128571429,581,0,0,14
+-DR-ML-MR-,"D(R),M(LR)",9,1,1,1,2,Jonathan Clauss,301869,Defender,613,Nice,22,fr,France,Ligue 1,7.105555556,707,0,0,15
+-AMC-AML-AMR-FW-,"AM(CLR),FW",11,0,1,4,2,Romain Del Castillo,300291,Midfielder,2332,Brest,22,fr,France,Ligue 1,7.102727273,933,0,0,16
+-GK-,GK,10,0,2,0,0,Gerónimo Rulli,125375,Goalkeeper,249,Marseille,22,fr,France,Ligue 1,7.099,900,0,0,17
+-AML-FW-,"AM(L),FW",12,0,2,3,2,Issa Soumaré,422864,Forward,217,Le Havre,22,fr,France,Ligue 1,7.095,1080,1,0,18
+-AML-AMR-FW-,"AM(LR),FW",10,2,1,4,0,Bradley Barcola,425366,Forward,304,PSG,22,fr,France,Ligue 1,7.094,640,2,0,19
+-DC-,D(C),11,1,2,2,0,Samson Baidoo,454321,Defender,309,Lens,22,fr,France,Ligue 1,7.091818182,945,2,0,20
+-DC-DR-MR-,"D(CR),M(R)",8,1,0,1,3,Guéla Doué,447449,Defender,148,Strasbourg,22,fr,France,Ligue 1,7.08,653,1,0,21
+-DC-,D(C),8,0,1,1,0,Nayef Aguerd,362434,Defender,249,Marseille,22,fr,France,Ligue 1,7.0675,709,2,0,22
+-AMC-AML-FW-,"AM(CL),FW",12,1,0,3,1,Yann Gboho,361815,Forward,246,Toulouse,22,fr,France,Ligue 1,7.0625,1001,0,0,23
+-DL-ML-,"D(L),M(L)",10,0,0,2,1,Romain Perraud,331466,Defender,607,Lille,22,fr,France,Ligue 1,7.062,797,3,0,24
+-DC-DL-,D(CL),11,0,0,0,0,Malang Sarr,322747,Defender,309,Lens,22,fr,France,Ligue 1,7.060909091,990,2,0,25
+-FW-,FW,12,0,1,1,3,Ludovic Ajorque,234364,Forward,2332,Brest,22,fr,France,Ligue 1,7.054166667,1075,3,0,26
+-AMC-AML-AMR-FW-,"AM(CLR),FW",11,0,0,4,1,Hákon Haraldsson,424252,Midfielder,607,Lille,22,fr,France,Ligue 1,7.042727273,914,2,0,27
+-DC-DL-ML-,"D(CL),M(L)",12,0,0,0,1,Matthieu Udol,286443,Defender,309,Lens,22,fr,France,Ligue 1,7.001666667,1070,1,0,28
+-DR-MC-ML-MR-,"D(R),M(CLR)",10,0,0,1,1,Benjamin André,43415,Midfielder,607,Lille,22,fr,France,Ligue 1,6.989,891,5,0,29
+-GK-,GK,12,0,2,0,0,Yehvann Diouf,319767,Goalkeeper,613,Nice,22,fr,France,Ligue 1,6.985833333,1080,0,0,30
+-AMC-,AM(C),11,1,0,1,1,Mamadou Sangaré,442971,Midfielder,309,Lens,22,fr,France,Ligue 1,6.982727273,869,2,0,31
+-DL-ML-,"D(L),M(L)",11,1,0,1,2,Diego Moreira,438349,Forward,148,Strasbourg,22,fr,France,Ligue 1,6.962727273,841,2,0,32
+-DR-MC-MR-,"D(R),M(CR)",12,1,2,3,0,Corentin Tolisso,134894,Midfielder,228,Lyon,22,fr,France,Ligue 1,6.9625,950,2,0,33
+-AML-AMR-FW-,"AM(LR),FW",12,1,2,3,4,Félix Correia,412831,Forward,607,Lille,22,fr,France,Ligue 1,6.9525,873,0,0,34
+-DMC-,DMC,11,0,0,1,1,Tyler Morton,425568,Midfielder,228,Lyon,22,fr,France,Ligue 1,6.95,962,1,1,35
+-AMC-AML-AMR-FW-,"AM(CLR),FW",12,3,1,5,2,Wesley Saïd,129819,Forward,309,Lens,22,fr,France,Ligue 1,6.949166667,790,0,0,36
+-DC-,D(C),8,2,0,0,0,Leonardo Balerdi,362788,Defender,249,Marseille,22,fr,France,Ligue 1,6.94625,604,3,0,37
+-DC-DL-,D(CL),12,1,1,0,2,Moussa Niakhaté,296319,Defender,228,Lyon,22,fr,France,Ligue 1,6.945833333,1003,2,0,38
+-DC-,D(C),12,1,0,1,0,Kojo Peprah Oppong,573388,Defender,613,Nice,22,fr,France,Ligue 1,6.925,1042,1,0,39
+-DR-MC-,"D(R),M(C)",11,0,0,0,2,Valentin Rongier,231144,Midfielder,313,Rennes,22,fr,France,Ligue 1,6.914545455,946,2,0,40
+-AML-AMR-FW-,"AM(LR),FW",12,2,0,2,3,Matias Fernandez-Pardo,475462,Forward,607,Lille,22,fr,France,Ligue 1,6.905,892,2,0,41
+-FW-MC-ML-MR-,"M(CLR),FW",10,4,1,4,2,Pierre-Emerick Aubameyang,44120,Forward,249,Marseille,22,fr,France,Ligue 1,6.902,629,0,0,42
+-DMC-DR-MR-,"D(R),DMC,M(R)",12,2,0,1,1,Warren Zaïre-Emery,444679,Midfielder,304,PSG,22,fr,France,Ligue 1,6.890833333,901,0,0,43
+-FW-MC-ML-MR-,"M(CLR),FW",12,1,1,2,2,Florian Thauvin,99143,Forward,309,Lens,22,fr,France,Ligue 1,6.888333333,922,3,0,44
+-GK-,GK,12,0,0,0,0,Robin Risser,444597,Goalkeeper,309,Lens,22,fr,France,Ligue 1,6.884166667,1080,1,0,45
+-DL-ML-,"D(L),M(L)",9,4,2,2,1,Nuno Mendes,395221,Defender,304,PSG,22,fr,France,Ligue 1,6.88,487,0,0,46
+-DC-DL-DR-MR-,"D(CLR),M(R)",9,2,0,1,1,Benjamin Pavard,259648,Defender,249,Marseille,22,fr,France,Ligue 1,6.877777778,639,3,0,47
+-DC-DL-ML-,"D(CL),M(L)",9,2,0,0,1,Emerson,101955,Defender,249,Marseille,22,fr,France,Ligue 1,6.876666667,666,1,0,48
+-AML-FW-,"AM(L),FW",9,1,0,5,1,Odsonne Édouard,317504,Forward,309,Lens,22,fr,France,Ligue 1,6.871111111,518,1,0,49
+-MC-,M(C),12,2,0,0,1,Arthur Avom,468190,Midfielder,146,Lorient,22,fr,France,Ligue 1,6.869166667,909,3,0,50
+-DC-,D(C),8,0,0,1,0,Anthony Rouault,416149,Defender,313,Rennes,22,fr,France,Ligue 1,6.86875,720,3,0,51
+-AMC-AML-AMR-FW-,"AM(CLR),FW",10,4,1,1,2,Khvicha Kvaratskhelia,370984,Forward,304,PSG,22,fr,France,Ligue 1,6.865,497,1,0,52
+-ML-,M(L),9,0,1,2,1,Malick Fofana,438102,Forward,228,Lyon,22,fr,France,Ligue 1,6.863333333,729,1,0,53
+-ML-,M(L),12,1,2,1,2,Arsène Kouassi,556058,Defender,146,Lorient,22,fr,France,Ligue 1,6.850833333,1006,2,0,54
+-DC-DR-,D(CR),10,0,1,0,0,Antoine Mendy,415277,Defender,613,Nice,22,fr,France,Ligue 1,6.85,873,3,0,55
+-DC-DMC-,"D(C),DMC",10,1,1,1,0,Francisco Sierralta,362761,Defender,308,Auxerre,22,fr,France,Ligue 1,6.849,862,2,0,56
+-DC-,D(C),12,1,0,1,0,Ousmane Camara,438654,Defender,614,Angers,22,fr,France,Ligue 1,6.848333333,965,1,0,57
+-DC-DR-,D(CR),10,0,0,0,0,Jonathan Gradit,236552,Defender,309,Lens,22,fr,France,Ligue 1,6.845,809,2,1,58
+-AMC-AMR-,AM(CR),11,1,0,3,2,Maghnes Akliouche,426648,Midfielder,248,Monaco,22,fr,France,Ligue 1,6.836363636,870,1,0,59
+-DL-DR-MR-,"D(LR),M(R)",9,3,1,2,0,Achraf Hakimi,320834,Defender,304,PSG,22,fr,France,Ligue 1,6.825555556,654,2,0,60
+-GK-,GK,10,0,0,0,1,Berke Özer,361843,Goalkeeper,607,Lille,22,fr,France,Ligue 1,6.824,900,0,0,61
+-AML-FW-,"AM(L),FW",10,8,1,4,1,Hamza Igamane,470816,Forward,607,Lille,22,fr,France,Ligue 1,6.821,308,1,0,62
+-DC-,D(C),11,0,1,1,1,Gautier Lloris,123253,Defender,217,Le Havre,22,fr,France,Ligue 1,6.820909091,934,1,1,63
+-AMC-AML-AMR-,AM(CLR),12,4,1,6,1,Sofiane Diop,361284,Midfielder,613,Nice,22,fr,France,Ligue 1,6.8175,710,2,0,64
+-DC-DL-DR-MR-,"D(CLR),M(R)",12,3,1,2,0,Amir Murillo,280972,Defender,249,Marseille,22,fr,France,Ligue 1,6.816666667,786,4,0,65
+-DC-DL-,D(CL),7,0,0,0,0,Lucas Hernández,139186,Defender,304,PSG,22,fr,France,Ligue 1,6.81,563,2,0,66
+-DL-DR-MC-ML-MR-,"D(LR),M(CLR)",12,1,0,1,2,Ainsley Maitland-Niles,255169,Midfielder,228,Lyon,22,fr,France,Ligue 1,6.809166667,1066,0,0,67
+-DC-,D(C),9,0,1,0,0,Mamadou Sarr,467913,Defender,148,Strasbourg,22,fr,France,Ligue 1,6.803333333,810,3,0,68
+-AML-AMR-FW-,"AM(LR),FW",12,3,1,2,2,Matthis Abline,414249,Forward,302,Nantes,22,fr,France,Ligue 1,6.8025,887,2,0,69
+-MC-,M(C),12,2,0,1,0,Pierre-Emile Højbjerg,101859,Midfielder,249,Marseille,22,fr,France,Ligue 1,6.799166667,941,1,0,70
+-DC-DR-,D(CR),12,0,0,0,0,Chidozie Awaziem,290842,Defender,302,Nantes,22,fr,France,Ligue 1,6.7925,1066,4,0,71
+-DC-DL-DR-,D(CLR),10,1,0,0,0,Aïssa Mandi,90115,Defender,607,Lille,22,fr,France,Ligue 1,6.792,793,3,0,72
+-FW-MC-ML-,"M(CL),FW",11,1,0,3,0,Angel Gomes,338497,Midfielder,249,Marseille,22,fr,France,Ligue 1,6.776363636,770,3,0,73
+-AMC-AML-AMR-,AM(CLR),9,2,1,1,1,Igor Paixão,436553,Forward,249,Marseille,22,fr,France,Ligue 1,6.764444444,582,1,0,74
+-AMR-,AM(R),10,2,0,2,1,Herba Guirassy,536138,Forward,302,Nantes,22,fr,France,Ligue 1,6.762,593,0,0,75
+-DC-DR-,D(CR),8,3,1,0,1,Alidu Seidu,422192,Defender,313,Rennes,22,fr,France,Ligue 1,6.75875,435,1,0,76
+-DC-DL-,D(CL),12,0,0,0,1,Jordan Lefort,361890,Defender,614,Angers,22,fr,France,Ligue 1,6.758333333,1080,2,0,77
+-DC-DR-,D(CR),11,0,2,1,0,Arouna Sangante,486031,Defender,217,Le Havre,22,fr,France,Ligue 1,6.753636364,965,3,0,78
+-AMR-FW-,"AM(R),FW",9,0,2,3,1,Habib Diallo,296372,Forward,314,Metz,22,fr,France,Ligue 1,6.752222222,791,0,0,79
+-FW-MC-,"M(C),FW",9,2,0,1,1,Senny Mayulu,513665,Midfielder,304,PSG,22,fr,France,Ligue 1,6.751111111,568,1,0,80
+-DC-,D(C),11,1,0,1,0,Illia Zabarnyi,399826,Defender,304,PSG,22,fr,France,Ligue 1,6.744545455,922,2,0,81
+-FW-MC-ML-MR-,"M(CLR),FW",12,1,1,3,2,Moses Simon,202185,Forward,2832,Paris FC,22,fr,France,Ligue 1,6.736666667,916,0,0,82
+-DC-,D(C),12,0,0,0,0,Jérémy Jacquet,468827,Defender,313,Rennes,22,fr,France,Ligue 1,6.7325,1080,3,0,83
+-AMC-,AM(C),8,0,0,2,1,Kamory Doumbia,427362,Midfielder,2332,Brest,22,fr,France,Ligue 1,6.73,630,1,0,84
+-DR-MR-,"D(R),M(R)",12,1,0,0,0,Ruben Aguilar,236546,Defender,309,Lens,22,fr,France,Ligue 1,6.729166667,905,2,0,85
+-DMC-,DMC,9,1,0,0,2,Charles Vanhoutte,400142,Midfielder,613,Nice,22,fr,France,Ligue 1,6.727777778,717,4,0,86
+-MC-MR-,M(CR),9,3,1,1,2,Matt O'Riley,342889,Midfielder,249,Marseille,22,fr,France,Ligue 1,6.726666667,600,2,0,87
+-DC-DMC-DR-,"D(CR),DMC",11,1,0,0,0,Jordan Teze,361839,Defender,248,Monaco,22,fr,France,Ligue 1,6.724545455,867,3,0,88
+-AMC-FW-,"AM(C),FW",12,0,1,4,0,Frank Magri,430297,Forward,246,Toulouse,22,fr,France,Ligue 1,6.721666667,955,2,0,89
+-DC-,D(C),10,2,0,0,0,Juma Bah,513011,Defender,613,Nice,22,fr,France,Ligue 1,6.72,763,4,0,90
+-DC-,D(C),8,2,0,0,0,Willian Pacho,432378,Defender,304,PSG,22,fr,France,Ligue 1,6.72,565,0,0,91
+-DR-MR-,"D(R),M(R)",8,0,0,0,0,Thomas Meunier,104376,Defender,607,Lille,22,fr,France,Ligue 1,6.7175,701,1,0,92
+-MC-MR-,M(CR),11,2,0,1,2,Hicham Boudaoui,377583,Midfielder,613,Nice,22,fr,France,Ligue 1,6.717272727,820,3,0,93
+-AML-AMR-FW-,"AM(LR),FW",12,0,1,3,1,Lassine Sinayoko,431346,Forward,308,Auxerre,22,fr,France,Ligue 1,6.716666667,1002,2,0,94
+-DC-DMC-DR-,"D(CR),DMC",12,0,1,1,1,Jean-Philippe Gbamin,129758,Midfielder,314,Metz,22,fr,France,Ligue 1,6.713333333,1011,0,0,95
+-MC-MR-,M(CR),12,0,0,0,3,Maxime Lopez,288883,Midfielder,2832,Paris FC,22,fr,France,Ligue 1,6.713333333,1080,4,0,96
+-DL-DR-FW-ML-MR-,"D(LR),M(LR),FW",9,2,0,0,1,Timothy Weah,353991,Forward,249,Marseille,22,fr,France,Ligue 1,6.711111111,527,1,0,97
+-MR-,M(R),11,5,1,2,1,Fodé Doucouré,399003,Defender,217,Le Havre,22,fr,France,Ligue 1,6.710909091,541,0,0,98
+-FW-MC-ML-MR-,"M(CLR),FW",10,3,1,2,1,Ludovic Blas,299562,Midfielder,313,Rennes,22,fr,France,Ligue 1,6.71,589,0,0,99
+-FW-MC-ML-MR-,"M(CLR),FW",10,3,0,0,1,Lee Kang-In,367780,Midfielder,304,PSG,22,fr,France,Ligue 1,6.709,594,2,0,100
+-DC-,D(C),7,1,0,0,0,Junior Diaz,455459,Defender,2332,Brest,22,fr,France,Ligue 1,6.708571429,558,0,0,101
+-GK-,GK,12,1,0,0,0,Jonathan Fischer,521189,Goalkeeper,314,Metz,22,fr,France,Ligue 1,6.706666667,1003,0,0,102
+-FW-MC-ML-MR-,"M(CLR),FW",7,1,1,2,0,Aleksandr Golovin,244560,Midfielder,248,Monaco,22,fr,France,Ligue 1,6.701428571,452,1,0,103
+-DC-,D(C),11,0,0,0,0,Moustapha Mbow,416242,Defender,2832,Paris FC,22,fr,France,Ligue 1,6.699090909,990,2,0,104
+-GK-,GK,11,0,0,0,0,Mike Penders,429427,Goalkeeper,148,Strasbourg,22,fr,France,Ligue 1,6.693636364,990,3,0,105
+-DC-,D(C),10,0,1,0,0,Brendan Chardonnet,130298,Defender,2332,Brest,22,fr,France,Ligue 1,6.692,882,2,0,106
+-DMC-,DMC,12,2,0,1,0,Tanner Tessmann,393096,Midfielder,228,Lyon,22,fr,France,Ligue 1,6.691666667,860,0,0,107
+-DC-DR-MR-,"D(CR),M(R)",12,0,0,0,0,Marvin Senaya,404952,Defender,308,Auxerre,22,fr,France,Ligue 1,6.6875,1041,3,0,108
+-DMC-,DMC,10,3,0,2,0,Abdoulaye Touré,128880,Midfielder,217,Le Havre,22,fr,France,Ligue 1,6.685,683,1,0,109
+-MC-ML-MR-,M(CLR),10,1,0,1,1,Pierre Lees-Melou,301243,Midfielder,2832,Paris FC,22,fr,France,Ligue 1,6.68,815,2,0,110
+-DMC-DR-MR-,"D(R),DMC,M(R)",10,6,1,0,2,Tom Louchet,479902,Midfielder,613,Nice,22,fr,France,Ligue 1,6.677,476,1,0,111
+-FW-,FW,10,4,0,4,1,Folarin Balogun,384065,Forward,248,Monaco,22,fr,France,Ligue 1,6.675,584,0,1,112
+-AMC-,AM(C),11,6,0,5,1,Pavel Sulc,412171,Midfielder,228,Lyon,22,fr,France,Ligue 1,6.674545455,495,2,0,113
+-DC-,D(C),10,1,0,0,0,Otávio,402207,Defender,2832,Paris FC,22,fr,France,Ligue 1,6.665,849,3,1,114
+-DC-DR-MC-,"D(CR),M(C)",10,1,0,0,0,Mahdi Camara,349960,Midfielder,313,Rennes,22,fr,France,Ligue 1,6.664,720,3,1,115
+-ML-,M(L),12,2,0,0,0,Dayann Méthalie,534461,Defender,246,Toulouse,22,fr,France,Ligue 1,6.66,867,3,0,116
+-DMC-,DMC,12,1,1,0,1,Ayyoub Bouaddi,504830,Midfielder,607,Lille,22,fr,France,Ligue 1,6.650833333,903,4,0,117
+-DC-,D(C),10,1,1,0,1,Nathan Ngoy,414495,Defender,607,Lille,22,fr,France,Ligue 1,6.65,832,1,0,118
+-DC-DR-MR-,"D(CR),M(R)",12,0,1,0,0,Clinton Mata,364214,Defender,228,Lyon,22,fr,France,Ligue 1,6.65,1063,3,0,119
+-DR-MC-ML-MR-,"D(R),M(CLR)",8,2,0,0,1,Przemyslaw Frankowski,339500,Midfielder,313,Rennes,22,fr,France,Ligue 1,6.65,526,4,0,120
+-DR-,D(R),12,0,1,0,0,Koffi Kouao,342610,Defender,314,Metz,22,fr,France,Ligue 1,6.645833333,1045,3,0,121
+-DL-,D(L),11,1,1,0,1,Yanis Zouaoui,532224,Defender,217,Le Havre,22,fr,France,Ligue 1,6.640909091,875,4,0,122
+-DC-DL-ML-,"D(CL),M(L)",12,2,0,1,0,Melvin Bard,389064,Defender,613,Nice,22,fr,France,Ligue 1,6.639166667,990,2,0,123
+-FW-ML-MR-,"M(LR),FW",11,6,0,1,2,Mousa Tamari,383816,Forward,313,Rennes,22,fr,France,Ligue 1,6.637272727,573,2,0,124
+,Forward,11,8,1,4,2,Robinio Vaz,511691,Forward,249,Marseille,22,fr,France,Ligue 1,6.637272727,291,2,0,125
+-DL-ML-,"D(L),M(L)",9,1,0,0,3,Kassoum Ouattara,467072,Defender,248,Monaco,22,fr,France,Ligue 1,6.636666667,603,2,0,126
+-DL-ML-,"D(L),M(L)",11,1,2,0,2,Quentin Merlin,411087,Defender,313,Rennes,22,fr,France,Ligue 1,6.630909091,893,0,0,127
+-AMC-AMR-FW-,"AM(CR),FW",9,3,0,3,0,Breel Embolo,143695,Forward,313,Rennes,22,fr,France,Ligue 1,6.627777778,519,1,0,128
+-AMC-,AM(C),9,3,1,4,0,Pablo Pagis,431667,Forward,146,Lorient,22,fr,France,Ligue 1,6.625555556,477,1,0,129
+-FW-,FW,11,6,0,2,2,Mohamed Meïté,545888,Forward,313,Rennes,22,fr,France,Ligue 1,6.619090909,387,0,0,130
+-DL-ML-,"D(L),M(L)",12,1,0,0,1,Bradley Locko,422187,Defender,2332,Brest,22,fr,France,Ligue 1,6.616666667,930,0,0,131
+-DMC-,DMC,9,0,0,1,0,Junior Mwanga,437775,Midfielder,302,Nantes,22,fr,France,Ligue 1,6.612222222,797,1,0,132
+-MC-,M(C),10,3,0,1,0,Seko Fofana,254562,Midfielder,313,Rennes,22,fr,France,Ligue 1,6.609,642,0,0,133
+-MC-ML-,M(CL),7,2,1,1,1,Fabián Ruiz,294193,Midfielder,304,PSG,22,fr,France,Ligue 1,6.597142857,449,1,0,134
+-MC-,M(C),9,3,0,0,2,Félix Lemaréchal,426647,Midfielder,148,Strasbourg,22,fr,France,Ligue 1,6.596666667,486,1,0,135
+-DMC-,DMC,11,1,0,1,0,Joris Chotard,380645,Midfielder,2332,Brest,22,fr,France,Ligue 1,6.596363636,906,1,0,136
+-AMC-AML-FW-,"AM(CL),FW",8,5,1,5,0,Ansu Fati,382234,Forward,248,Monaco,22,fr,France,Ligue 1,6.59375,345,1,0,137
+-GK-,GK,12,0,1,0,1,Mory Diaw,235829,Goalkeeper,217,Le Havre,22,fr,France,Ligue 1,6.593333333,1080,0,0,138
+-MC-,M(C),9,2,0,1,1,Mamadou Coulibaly,482049,Midfielder,248,Monaco,22,fr,France,Ligue 1,6.592222222,516,4,0,139
+,Forward,10,7,0,2,2,Afonso Moreira,478033,Forward,228,Lyon,22,fr,France,Ligue 1,6.59,341,2,0,140
+-DR-MC-MR-,"D(R),M(CR)",11,1,0,0,0,Loïc Négo,77963,Defender,217,Le Havre,22,fr,France,Ligue 1,6.59,902,1,0,141
+-MC-,M(C),12,1,0,0,2,Yassin Belkhdim,434710,Midfielder,614,Angers,22,fr,France,Ligue 1,6.59,944,2,0,142
+-MC-MR-,M(CR),11,1,0,0,0,Cristian Cásseres,360502,Midfielder,246,Toulouse,22,fr,France,Ligue 1,6.572727273,900,2,0,143
+-ML-MR-,M(LR),11,5,1,2,1,Théo Le Bris,423962,Midfielder,146,Lorient,22,fr,France,Ligue 1,6.571818182,578,0,0,144
+-DMC-,DMC,12,1,0,0,0,Ayumu Seko,457079,Defender,217,Le Havre,22,fr,France,Ligue 1,6.571666667,1005,2,0,145
+-FW-MC-ML-,"M(CL),FW",9,2,0,1,0,Himad Abdelli,447045,Midfielder,614,Angers,22,fr,France,Ligue 1,6.567777778,620,0,0,146
+-MC-,M(C),12,3,0,3,0,Rassoul Ndiaye,438661,Midfielder,217,Le Havre,22,fr,France,Ligue 1,6.5675,753,0,0,147
+-MC-,M(C),8,4,0,2,0,Vincent Marchetti,289331,Midfielder,2832,Paris FC,22,fr,France,Ligue 1,6.56625,328,1,0,148
+,Forward,7,5,0,0,1,Sam Amo-Ameyaw,482895,Forward,148,Strasbourg,22,fr,France,Ligue 1,6.561428571,303,1,0,149
+-MC-,M(C),11,1,0,0,0,Kévin Danois,444755,Midfielder,308,Auxerre,22,fr,France,Ligue 1,6.560909091,884,1,0,150
+-DMC-,DMC,12,0,0,0,0,Haris Belkebla,236553,Midfielder,614,Angers,22,fr,France,Ligue 1,6.556666667,1065,2,0,151
+-DR-,D(R),11,1,0,1,0,Samir Chergui,438655,Defender,2832,Paris FC,22,fr,France,Ligue 1,6.554545455,914,1,0,152
+-AMC-AML-FW-,"AM(CL),FW",10,1,0,2,0,Danny Namaso,342857,Forward,308,Auxerre,22,fr,France,Ligue 1,6.553,822,3,0,153
+-AMC-AML-AMR-FW-,"AM(CLR),FW",12,5,0,2,2,Jérémie Boga,280766,Forward,613,Nice,22,fr,France,Ligue 1,6.5525,609,0,0,154
+-AMC-AMR-,AM(CR),10,1,0,4,2,Gauthier Hein,322671,Midfielder,314,Metz,22,fr,France,Ligue 1,6.552,822,1,1,155
+-DC-DL-DR-MR-,"D(CLR),M(R)",8,0,0,0,0,Thilo Kehrer,255167,Defender,248,Monaco,22,fr,France,Ligue 1,6.54875,668,2,1,156
+-DC-DL-ML-,"D(CL),M(L)",10,4,1,0,1,Nicolás Tagliafico,83809,Defender,228,Lyon,22,fr,France,Ligue 1,6.548,637,1,1,157
+-GK-,GK,12,0,1,0,0,Brice Samba,105198,Goalkeeper,313,Rennes,22,fr,France,Ligue 1,6.545,1080,2,0,158
+-MC-,M(C),10,1,0,1,0,Adama Camara,511559,Midfielder,2832,Paris FC,22,fr,France,Ligue 1,6.54,725,2,0,159
+-FW-,FW,10,1,1,2,1,Olivier Giroud,24444,Forward,607,Lille,22,fr,France,Ligue 1,6.539,746,1,0,160
+-AMC-AML-AMR-,AM(CLR),8,5,0,2,0,Martial Godo,454749,Forward,148,Strasbourg,22,fr,France,Ligue 1,6.5375,258,2,0,161
+-GK-,GK,12,0,0,0,0,Lucas Chevalier,398299,Goalkeeper,304,PSG,22,fr,France,Ligue 1,6.5325,1080,0,0,162
+-DR-FW-MC-ML-MR-,"D(R),M(CLR),FW",8,2,0,1,1,Mama Baldé,345396,Forward,2332,Brest,22,fr,France,Ligue 1,6.5275,469,0,0,163
+-DC-DL-,D(CL),7,1,0,0,0,Lilian Brassier,398931,Defender,313,Rennes,22,fr,France,Ligue 1,6.522857143,578,0,0,164
+-DL-DR-MR-,"D(LR),M(R)",12,0,0,0,1,Kenny Lala,105151,Defender,2332,Brest,22,fr,France,Ligue 1,6.5225,1068,2,0,165
+-FW-,FW,8,3,0,1,1,Emersonn,429556,Forward,246,Toulouse,22,fr,France,Ligue 1,6.52125,464,2,0,166
+-MR-,M(R),12,2,0,2,0,Abdoul Ouattara,433937,Midfielder,148,Strasbourg,22,fr,France,Ligue 1,6.516666667,837,1,0,167
+-AMC-FW-,"AM(C),FW",12,6,0,2,0,Gonçalo Ramos,395802,Forward,304,PSG,22,fr,France,Ligue 1,6.515,628,2,0,168
+-DC-,D(C),12,2,0,0,0,Rasmus Nicolaisen,402059,Defender,246,Toulouse,22,fr,France,Ligue 1,6.508333333,864,3,0,169
+-GK-,GK,8,0,1,0,1,Dominik Greif,383094,Goalkeeper,228,Lyon,22,fr,France,Ligue 1,6.5075,720,0,0,170
+-DC-,D(C),11,1,0,0,0,Mark McKenzie,355122,Defender,246,Toulouse,22,fr,France,Ligue 1,6.505454545,916,2,0,171
+-DMC-,DMC,8,1,0,0,0,Abu Francis,454674,Midfielder,246,Toulouse,22,fr,France,Ligue 1,6.50375,532,2,0,172
+-DL-ML-,"D(L),M(L)",11,1,0,0,0,Gideon Mensah,402749,Defender,308,Auxerre,22,fr,France,Ligue 1,6.495454545,866,2,0,173
+-DC-DL-DR-MR-,"D(CLR),M(R)",12,0,0,0,1,Kelvin Amian,297210,Defender,302,Nantes,22,fr,France,Ligue 1,6.490833333,1080,2,0,174
+,Forward,11,7,0,2,0,Rayan Fofana,554519,Forward,309,Lens,22,fr,France,Ligue 1,6.486363636,424,0,0,175
+-MC-,M(C),12,5,0,0,0,Samir El Mourabet,512740,Midfielder,148,Strasbourg,22,fr,France,Ligue 1,6.485833333,598,0,0,176
+-DC-DR-MR-,"D(CR),M(R)",7,1,0,1,0,Igor Silva,303017,Defender,146,Lorient,22,fr,France,Ligue 1,6.481428571,585,1,0,177
+-GK-,GK,10,0,1,0,0,Donovan Léon,105321,Goalkeeper,308,Auxerre,22,fr,France,Ligue 1,6.481,856,0,1,178
+-ML-MR-,M(LR),12,4,0,0,1,Giorgi Tsitaishvili,367803,Forward,314,Metz,22,fr,France,Ligue 1,6.461666667,702,0,0,179
+-AMC-FW-,"AM(C),FW",12,4,0,3,0,Aiyegun Tosin,405227,Forward,146,Lorient,22,fr,France,Ligue 1,6.459166667,654,1,0,180
+-AML-,AM(L),10,1,0,0,2,Cheikh Sabaly,399019,Forward,314,Metz,22,fr,France,Ligue 1,6.458,788,1,0,181
+-DR-MR-,"D(R),M(R)",11,3,0,0,1,Lilian Raolisoa,471064,Defender,614,Angers,22,fr,France,Ligue 1,6.453636364,653,1,0,182
+-FW-,FW,12,6,1,2,1,Jean-Philippe Krasso,396585,Forward,2832,Paris FC,22,fr,France,Ligue 1,6.4525,527,0,0,183
+-AMC-FW-,"AM(C),FW",10,6,0,2,0,Youssef El-Arabi,70080,Forward,302,Nantes,22,fr,France,Ligue 1,6.45,341,0,0,184
+-FW-,FW,12,4,0,3,0,Sidiki Cherif,511378,Forward,614,Angers,22,fr,France,Ligue 1,6.446666667,683,3,0,185
+-DC-,D(C),12,0,0,0,0,Montassar Talbi,361797,Defender,146,Lorient,22,fr,France,Ligue 1,6.445,1080,1,0,186
+-DR-,D(R),12,0,0,0,0,Carlens Arcus,313385,Defender,614,Angers,22,fr,France,Ligue 1,6.440833333,1059,3,0,187
+-MC-,M(C),10,4,0,0,0,Djaoui Cissé,468829,Midfielder,313,Rennes,22,fr,France,Ligue 1,6.439,477,2,0,188
+-DC-DMC-,"D(C),DMC",8,0,0,0,1,Ismaël Doukouré,432173,Defender,148,Strasbourg,22,fr,France,Ligue 1,6.43625,653,2,1,189
+-AMC-,AM(C),8,6,0,0,3,Bilal Nadir,422240,Midfielder,249,Marseille,22,fr,France,Ligue 1,6.43375,240,1,0,190
+-DMC-,DMC,12,1,0,0,0,Elisha Owusu,345988,Midfielder,308,Auxerre,22,fr,France,Ligue 1,6.4325,915,4,0,191
+-DL-DMC-,"D(L),DMC",12,2,0,1,1,Louis Leroux,535607,Midfielder,302,Nantes,22,fr,France,Ligue 1,6.43,927,1,0,192
+-DL-,D(L),12,4,0,0,0,Jacques Ekomié,430710,Defender,614,Angers,22,fr,France,Ligue 1,6.429166667,734,1,0,193
+-AMC-AML-AMR-FW-,"AM(CLR),FW",12,9,0,1,0,Morgan Guilavogui,415955,Forward,309,Lens,22,fr,France,Ligue 1,6.420833333,416,2,0,194
+-AMC-AMR-,AM(CR),11,3,0,1,0,Adam Karabec,399574,Midfielder,228,Lyon,22,fr,France,Ligue 1,6.42,656,2,0,195
+-DC-DL-DR-MR-,"D(CLR),M(R)",12,3,1,2,0,Djibril Sidibé,10454,Defender,246,Toulouse,22,fr,France,Ligue 1,6.409166667,730,1,0,196
+-GK-,GK,12,0,0,0,0,Guillaume Restes,468899,Goalkeeper,246,Toulouse,22,fr,France,Ligue 1,6.396666667,1080,2,0,197
+-AMR-,AM(R),10,5,0,0,0,Ibrahim Mbaye,535536,Forward,304,PSG,22,fr,France,Ligue 1,6.39,453,0,0,198
+-DR-ML-MR-,"D(R),M(LR)",10,8,0,0,0,Warren Kamanzi,397564,Defender,246,Toulouse,22,fr,France,Ligue 1,6.385,286,0,0,199
+,Midfielder,12,6,0,0,0,Alpha Touré,547575,Midfielder,314,Metz,22,fr,France,Ligue 1,6.383333333,620,2,0,200
+-DC-DL-ML-,"D(CL),M(L)",9,3,0,0,0,Nicolas Cozza,342540,Defender,302,Nantes,22,fr,France,Ligue 1,6.383333333,570,0,0,201
+-AMC-AML-AMR-FW-,"AM(CLR),FW",11,3,0,2,2,Takumi Minamino,262838,Midfielder,248,Monaco,22,fr,France,Ligue 1,6.379090909,672,3,0,202
+-FW-,FW,10,3,0,3,0,Prosper Peter,559360,Forward,614,Angers,22,fr,France,Ligue 1,6.378,550,0,0,203
+-FW-,FW,7,2,1,0,1,Martín Satriano,403803,Forward,228,Lyon,22,fr,France,Ligue 1,6.375714286,356,1,0,204
+-DMC-,DMC,11,1,0,0,0,Hugo Magnetti,330614,Midfielder,2332,Brest,22,fr,France,Ligue 1,6.368181818,873,2,0,205
+-FW-,FW,11,4,0,2,0,Mostafa Mohamed,409837,Forward,302,Nantes,22,fr,France,Ligue 1,6.362727273,626,1,0,206
+-FW-,FW,7,1,0,0,0,Kevin Carlos,400295,Forward,613,Nice,22,fr,France,Ligue 1,6.358571429,474,1,0,207
+-DMC-,DMC,12,0,0,0,0,Laurent Abergel,122346,Midfielder,146,Lorient,22,fr,France,Ligue 1,6.353333333,1038,4,0,208
+-DMC-,DMC,9,2,0,1,0,Boubacar Traoré,386612,Midfielder,314,Metz,22,fr,France,Ligue 1,6.348888889,630,2,0,209
+-AMC-AML-,AM(CL),10,10,0,1,2,Osame Sahraoui,366886,Forward,607,Lille,22,fr,France,Ligue 1,6.342,176,0,0,210
+-DC-,D(C),8,6,0,0,0,Andrew Omobamidele,399490,Defender,148,Strasbourg,22,fr,France,Ligue 1,6.33875,194,0,0,211
+-FW-,FW,12,9,0,2,2,Sambou Soumano,426904,Forward,146,Lorient,22,fr,France,Ligue 1,6.338333333,378,1,0,212
+,Forward,8,4,0,1,0,Giorgi Abuashvili,498983,Forward,314,Metz,22,fr,France,Ligue 1,6.3375,279,1,0,213
+-MC-,M(C),11,2,0,1,1,Yassine Kechta,477122,Midfielder,217,Le Havre,22,fr,France,Ligue 1,6.337272727,715,3,0,214
+-GK-,GK,10,1,0,0,0,Philipp Köhn,383689,Goalkeeper,248,Monaco,22,fr,France,Ligue 1,6.332,821,1,0,215
+-DC-DL-MC-ML-,"D(CL),M(CL)",10,3,0,0,0,Caio Henrique,320313,Defender,248,Monaco,22,fr,France,Ligue 1,6.331,683,1,0,216
+,Midfielder,9,8,0,0,0,Lasso Coulibaly,531773,Midfielder,308,Auxerre,22,fr,France,Ligue 1,6.33,201,0,0,217
+-DC-,D(C),11,1,0,0,0,Clément Akpa,511380,Defender,308,Auxerre,22,fr,France,Ligue 1,6.32,900,1,0,218
+-AMC-,AM(C),10,2,0,0,1,Dermane Karim,438297,Midfielder,146,Lorient,22,fr,France,Ligue 1,6.32,650,3,0,219
+-DC-,D(C),7,1,0,0,0,Abdoulaye Faye,498812,Defender,146,Lorient,22,fr,France,Ligue 1,6.318571429,574,5,0,220
+-FW-,FW,8,1,0,0,0,Mbwana Samatta,327685,Forward,217,Le Havre,22,fr,France,Ligue 1,6.3175,518,2,0,221
+-AMR-FW-,"AM(R),FW",8,4,0,2,0,Terem Moffi,400505,Forward,613,Nice,22,fr,France,Ligue 1,6.315,332,0,0,222
+-AMC-,AM(C),10,7,0,1,0,Kendry Páez,477772,Midfielder,148,Strasbourg,22,fr,France,Ligue 1,6.314,309,0,0,223
+,Midfielder,8,8,0,1,1,Alexis Vossah,574367,Midfielder,246,Toulouse,22,fr,France,Ligue 1,6.3075,158,1,1,224
+-DL-ML-,"D(L),M(L)",8,4,0,0,0,Florent Hanin,124006,Defender,614,Angers,22,fr,France,Ligue 1,6.305,383,0,0,225
+-DL-ML-,"D(L),M(L)",9,1,0,0,1,Thibault De Smet,328433,Defender,2832,Paris FC,22,fr,France,Ligue 1,6.3,658,2,1,226
+-FW-,FW,10,9,0,2,0,George Ilenikhena,470978,Forward,248,Monaco,22,fr,France,Ligue 1,6.3,214,0,0,227
+,Forward,8,4,0,1,0,Isak Jansson,407884,Forward,613,Nice,22,fr,France,Ligue 1,6.29875,331,1,0,228
+-DMC-,DMC,9,3,0,0,0,Kwon Hyeok-Kyu,493169,Midfielder,302,Nantes,22,fr,France,Ligue 1,6.29,533,2,0,229
+-DC-,D(C),9,0,0,0,0,Lucas Høgsberg,555179,Defender,148,Strasbourg,22,fr,France,Ligue 1,6.284444444,797,0,1,230
+-FW-,FW,11,2,0,1,0,Mika Biereth,430909,Forward,248,Monaco,22,fr,France,Ligue 1,6.281818182,622,0,0,231
+-AML-,AM(L),9,4,0,0,0,Pathé Mboup,492430,Forward,2332,Brest,22,fr,France,Ligue 1,6.281111111,424,4,0,232
+-AMR-,AM(R),11,5,0,0,2,Ibrahim Osman,519755,Forward,308,Auxerre,22,fr,France,Ligue 1,6.279090909,514,0,0,233
+,Forward,7,5,0,0,0,Noah Edjouma,496170,Forward,246,Toulouse,22,fr,France,Ligue 1,6.278571429,195,0,0,234
+-MC-,M(C),10,8,0,1,0,Nabil Bentaleb,137521,Midfielder,607,Lille,22,fr,France,Ligue 1,6.277,244,1,0,235
+-DL-,D(L),9,5,0,0,0,Fredrik Oppegård,403097,Defender,308,Auxerre,22,fr,France,Ligue 1,6.273333333,393,1,1,236
+-GK-,GK,10,0,0,0,0,Obed Nkambadio,467303,Goalkeeper,2832,Paris FC,22,fr,France,Ligue 1,6.273,900,0,0,237
+-MC-,M(C),12,6,0,0,0,Mário Sauer,547648,Midfielder,246,Toulouse,22,fr,France,Ligue 1,6.271666667,470,1,0,238
+-FW-,FW,8,4,0,0,0,Sékou Mara,402855,Forward,308,Auxerre,22,fr,France,Ligue 1,6.26875,394,0,0,239
+,Midfielder,10,6,0,0,0,Simon Ebonog,486033,Midfielder,217,Le Havre,22,fr,France,Ligue 1,6.266,354,2,0,240
+,Forward,10,8,0,1,1,Ibou Sané,493104,Forward,314,Metz,22,fr,France,Ligue 1,6.264,264,1,0,241
+-DC-,D(C),10,1,0,0,0,Terry Yegbe,530864,Defender,314,Metz,22,fr,France,Ligue 1,6.264,842,0,0,242
+-FW-,FW,12,5,0,1,1,Mohamed Bamba,515493,Forward,146,Lorient,22,fr,France,Ligue 1,6.261666667,575,2,0,243
+-MC-ML-MR-,M(CLR),9,7,0,0,1,Younes Namli,259930,Forward,217,Le Havre,22,fr,France,Ligue 1,6.26,232,1,0,244
+-DL-ML-,"D(L),M(L)",7,1,0,0,0,Ben Chilwell,299272,Defender,148,Strasbourg,22,fr,France,Ligue 1,6.258571429,524,2,0,245
+-MC-,M(C),12,5,0,0,0,Dehmaine Tabibou,483577,Midfielder,302,Nantes,22,fr,France,Ligue 1,6.258333333,533,1,0,246
+-FW-,FW,11,5,0,1,0,Willem Geubbels,345987,Forward,2832,Paris FC,22,fr,France,Ligue 1,6.253636364,484,0,0,247
+-AML-AMR-,AM(LR),7,4,0,0,0,Tiago Gouveia,437687,Forward,613,Nice,22,fr,France,Ligue 1,6.247142857,293,1,0,248
+-GK-,GK,10,0,0,0,0,Radoslaw Majecki,303208,Goalkeeper,2332,Brest,22,fr,France,Ligue 1,6.247,865,0,1,249
+,Forward,9,8,0,0,2,Santiago Hidalgo,437747,Forward,246,Toulouse,22,fr,France,Ligue 1,6.245555556,157,1,0,250
+-MC-ML-,M(CL),11,3,0,0,0,Jessy Deminguet,345661,Midfielder,314,Metz,22,fr,France,Ligue 1,6.238181818,665,3,0,251
+-DC-,D(C),11,0,0,0,0,Tylel Tati,577085,Defender,302,Nantes,22,fr,France,Ligue 1,6.229090909,966,3,0,252
+-MC-ML-,M(CL),9,5,0,0,1,Jean-Victor Makengo,300634,Midfielder,146,Lorient,22,fr,France,Ligue 1,6.228888889,372,0,0,253
+-AMC-,AM(C),11,2,0,0,0,Louis Mouton,431302,Midfielder,614,Angers,22,fr,France,Ligue 1,6.226363636,678,0,1,254
+-MR-,M(R),10,6,0,0,0,Joel Mvuka,422923,Midfielder,146,Lorient,22,fr,France,Ligue 1,6.226,431,0,0,255
+-MC-ML-MR-,M(CLR),9,5,0,1,0,Junior Dina Ebimbe,372927,Midfielder,2332,Brest,22,fr,France,Ligue 1,6.225555556,331,0,0,256
+,Midfielder,9,5,0,0,0,Yassine Benhattab,470182,Midfielder,302,Nantes,22,fr,France,Ligue 1,6.224444444,414,0,0,257
+-MC-,M(C),9,5,0,1,0,Ngal'ayel Mukau,468938,Midfielder,607,Lille,22,fr,France,Ligue 1,6.206666667,371,1,0,258
+-DMC-,DMC,8,3,0,0,0,Salis Abdul Samed,422189,Midfielder,613,Nice,22,fr,France,Ligue 1,6.1925,354,1,0,259
+-MR-,M(R),9,8,0,0,1,Saud Abdulhamid,457103,Defender,309,Lens,22,fr,France,Ligue 1,6.182222222,196,0,0,260
+-DC-DR-MC-,"D(CR),M(C)",8,2,0,0,0,Benjamin Stambouli,83303,Midfielder,314,Metz,22,fr,France,Ligue 1,6.1775,537,0,0,261
+,Midfielder,7,2,0,0,0,Khalis Merah,575108,Midfielder,228,Lyon,22,fr,France,Ligue 1,6.177142857,403,1,0,262
+-AMR-FW-,"AM(R),FW",7,7,0,1,1,Nouha Dicko,106003,Forward,2832,Paris FC,22,fr,France,Ligue 1,6.174285714,48,0,0,263
+-GK-,GK,9,0,0,0,0,Yvon Mvogo,103542,Goalkeeper,146,Lorient,22,fr,France,Ligue 1,6.173333333,810,0,0,264
+,Forward,9,6,0,0,0,Felix Mambimbi,383858,Forward,217,Le Havre,22,fr,France,Ligue 1,6.162222222,255,0,0,265
+,Defender,9,8,0,0,0,Marius Courcoul,511377,Defender,614,Angers,22,fr,France,Ligue 1,6.132222222,125,0,0,266
+-ML-,M(L),10,5,0,0,0,Darlin Yongwa,444789,Defender,146,Lorient,22,fr,France,Ligue 1,6.128,431,0,1,267
+,Midfielder,9,8,0,0,0,Rudy Matondo,557883,Midfielder,308,Auxerre,22,fr,France,Ligue 1,6.118888889,174,2,0,268
+-DR-FW-ML-MR-,"D(R),M(LR),FW",11,1,0,0,0,Josué Casimir,486042,Forward,308,Auxerre,22,fr,France,Ligue 1,6.113636364,832,1,1,269
+-MC-ML-MR-,M(CLR),10,9,0,0,1,Morgan Sanson,115508,Midfielder,613,Nice,22,fr,France,Ligue 1,6.092,200,0,0,270
+-DL-,D(L),8,5,0,0,0,Nhoa Sangui,513632,Defender,2832,Paris FC,22,fr,France,Ligue 1,6.0775,333,0,0,271
+,Midfielder,7,5,0,0,0,Noah Cadiou,511597,Midfielder,146,Lorient,22,fr,France,Ligue 1,6.074285714,201,0,0,272
+-FW-MC-MR-,"M(CR),FW",8,7,0,0,0,Florian Sotoca,274934,Forward,309,Lens,22,fr,France,Ligue 1,6.06125,42,1,0,273
+,Midfielder,8,7,0,0,0,Hamidou Makalou,512773,Midfielder,2332,Brest,22,fr,France,Ligue 1,6.0275,148,0,0,274
+,Forward,10,10,0,0,0,Lanroy Machine,559978,Forward,614,Angers,22,fr,France,Ligue 1,6.013,176,0,0,275

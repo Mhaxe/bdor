@@ -1,0 +1,296 @@
+playedPositions,playedPositionsShort,teamRegionName,tournamentShortName,apps,manOfTheMatch,goal,assistTotal,name,playerId,positionText,teamId,teamName,seasonName,tournamentRegionName,tournamentName,rating,minsPlayed,yellowCard,redCard,ranking
+-AMC-FW-,"AM(C),FW",Germany,GB,10,5,13,3,Harry Kane,83532,Forward,37,Bayern,2025/2026,Germany,Bundesliga,8.326,794,0,0,1
+-DL-ML-,"D(L),M(L)",Germany,GB,9,2,4,3,Alejandro Grimaldo,107252,Defender,36,Leverkusen,2025/2026,Germany,Bundesliga,7.701111111,766,2,0,2
+-AMC-AML-AMR-,AM(CLR),Germany,GB,10,1,4,3,Michael Olise,371281,Midfielder,37,Bayern,2025/2026,Germany,Bundesliga,7.623,767,3,0,3
+-AML-AMR-FW-,"AM(LR),FW",Germany,GB,10,1,6,4,Luis Díaz,377168,Forward,37,Bayern,2025/2026,Germany,Bundesliga,7.56,805,4,0,4
+-DC-,D(C),Germany,GB,6,1,0,1,Nico Schlotterbeck,371275,Defender,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,7.376666667,540,1,0,5
+-DC-,D(C),Germany,GB,8,2,1,0,Luka Vuskovic,533010,Defender,38,Hamburg,2025/2026,Germany,Bundesliga,7.37625,720,1,0,6
+-DL-ML-MR-,"D(L),M(LR)",Germany,GB,10,3,1,1,David Raum,330538,Defender,7614,RBL,2025/2026,Germany,Bundesliga,7.367,900,2,0,7
+-DL-MC-ML-,"D(L),M(CL)",Germany,GB,9,0,2,1,Maximilian Mittelstädt,261020,Defender,41,Stuttgart,2025/2026,Germany,Bundesliga,7.325555556,669,2,0,8
+-DC-DMC-DR-MR-,"D(CR),DMC,M(R)",Germany,GB,10,1,1,2,Joshua Kimmich,283323,Midfielder,37,Bayern,2025/2026,Germany,Bundesliga,7.318,777,3,0,9
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,10,2,3,3,Ritsu Doan,343435,Midfielder,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,7.309,815,1,0,10
+-AMC-FW-,"AM(C),FW",Germany,GB,9,0,5,3,Can Uzun,467776,Midfielder,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,7.275555556,594,2,0,11
+-DC-,D(C),Germany,GB,8,2,0,0,Jeff Chabot,343317,Defender,41,Stuttgart,2025/2026,Germany,Bundesliga,7.25375,638,0,0,12
+-DC-DR-MR-,"D(CR),M(R)",Germany,GB,7,1,1,0,Rasmus Kristensen,302812,Defender,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,7.221428571,531,3,0,13
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,9,0,4,3,Serge Gnabry,119501,Forward,37,Bayern,2025/2026,Germany,Bundesliga,7.201111111,510,1,0,14
+-DC-,D(C),Germany,GB,9,0,1,0,Castello Lukeba,415172,Defender,7614,RBL,2025/2026,Germany,Bundesliga,7.2,810,0,0,15
+-MC-ML-MR-,M(CLR),Germany,GB,10,1,4,1,Jakub Kaminski,401352,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,7.2,900,0,0,16
+-AML-AMR-FW-,"AM(LR),FW",Germany,GB,10,0,4,3,Rômulo,428330,Forward,7614,RBL,2025/2026,Germany,Bundesliga,7.171,812,0,0,17
+-DC-DMC-DR-,"D(CR),DMC",Germany,GB,10,0,1,0,Waldemar Anton,296768,Defender,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,7.17,900,1,0,18
+-DC-,D(C),Germany,GB,10,1,4,0,Danilho Doekhi,303076,Defender,796,Union Berlin,2025/2026,Germany,Bundesliga,7.165,900,1,0,19
+-DC-DR-MR-,"D(CR),M(R)",Germany,GB,10,1,1,4,Vladimír Coufal,111372,Defender,1211,Hoffenheim,2025/2026,Germany,Bundesliga,7.162,890,1,0,20
+-AML-,AM(L),Germany,GB,10,2,3,2,Yan Diomande,557000,Forward,7614,RBL,2025/2026,Germany,Bundesliga,7.145,534,2,0,21
+-AML-FW-,"AM(L),FW",Germany,GB,9,1,5,1,Serhou Guirassy,236506,Forward,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,7.142222222,792,2,0,22
+-DMC-,DMC,Germany,GB,8,3,4,0,Jens Stage,377280,Midfielder,42,Werder Bremen,2025/2026,Germany,Bundesliga,7.1375,653,2,0,23
+-DL-DR-MC-MR-,"D(LR),M(CR)",Germany,GB,10,0,1,3,Konrad Laimer,248010,Midfielder,37,Bayern,2025/2026,Germany,Bundesliga,7.132,790,4,0,24
+-AML-AMR-FW-,"AM(LR),FW",Germany,GB,9,2,4,1,Tim Lemperle,395001,Forward,1211,Hoffenheim,2025/2026,Germany,Bundesliga,7.123333333,645,1,0,25
+-MC-MR-,M(CR),Germany,GB,9,1,1,2,Maximilian Arnold,108919,Midfielder,33,Wolfsburg,2025/2026,Germany,Bundesliga,7.122222222,810,2,0,26
+-AMC-AML-AMR-,AM(CLR),Germany,GB,6,2,2,0,Malik Tillman,397465,Midfielder,36,Leverkusen,2025/2026,Germany,Bundesliga,7.116666667,423,0,0,27
+-DC-DL-DMC-ML-,"D(CL),DMC,M(L)",Germany,GB,9,0,0,0,Ramy Bensebaini,288892,Defender,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,7.104444444,765,3,0,28
+-DC-,D(C),Germany,GB,9,0,1,0,Jonathan Tah,134946,Defender,37,Bayern,2025/2026,Germany,Bundesliga,7.101111111,788,1,0,29
+-DC-,D(C),Germany,GB,10,1,0,0,Willi Orbán,104917,Defender,7614,RBL,2025/2026,Germany,Bundesliga,7.094,880,2,0,30
+-AMC-AML-,AM(CL),Germany,GB,8,0,2,2,Bilal El Khannouss,433572,Midfielder,41,Stuttgart,2025/2026,Germany,Bundesliga,7.08875,623,2,0,31
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,10,1,5,2,Christoph Baumgartner,369979,Midfielder,7614,RBL,2025/2026,Germany,Bundesliga,7.064,782,3,0,32
+-DC-,D(C),Germany,GB,10,2,2,2,Edmond Tapsoba,369446,Defender,36,Leverkusen,2025/2026,Germany,Bundesliga,7.058,866,1,0,33
+-AMR-FW-,"AM(R),FW",Germany,GB,8,1,5,1,Patrik Schick,243565,Forward,36,Leverkusen,2025/2026,Germany,Bundesliga,7.05375,552,0,0,34
+-FW-,FW,Germany,GB,9,1,6,2,Haris Tabakovic,119642,Forward,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,7.047777778,573,0,0,35
+-DMC-,DMC,Germany,GB,10,1,1,3,Angelo Stiller,407476,Midfielder,41,Stuttgart,2025/2026,Germany,Bundesliga,7.045,776,0,0,36
+-DMC-,DMC,Germany,GB,7,0,1,0,Chema Andres,539663,Midfielder,41,Stuttgart,2025/2026,Germany,Bundesliga,7.038571429,401,0,0,37
+-DC-DMC-,"D(C),DMC",Germany,GB,10,0,0,0,Nicolas Seiwald,418587,Midfielder,7614,RBL,2025/2026,Germany,Bundesliga,7.037,816,0,0,38
+-AML-,AM(L),Germany,GB,10,1,1,3,Bazoumana Touré,551965,Forward,1211,Hoffenheim,2025/2026,Germany,Bundesliga,7.036,809,1,0,39
+-DMC-,DMC,Germany,GB,9,1,1,0,Philipp Sander,367534,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,7.035555556,666,1,0,40
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,9,1,1,5,Farès Chaïbi,444725,Midfielder,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,7.035555556,643,1,0,41
+-MC-,M(C),Germany,GB,9,1,2,2,Wouter Burger,361878,Midfielder,1211,Hoffenheim,2025/2026,Germany,Bundesliga,7.028888889,726,2,0,42
+-MC-ML-MR-,M(CLR),Germany,GB,9,0,1,1,Antonio Nusa,416030,Midfielder,7614,RBL,2025/2026,Germany,Bundesliga,7.022222222,618,0,0,43
+-DC-DMC-,"D(C),DMC",Germany,GB,10,0,0,2,Eric Martel,404336,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,7.02,869,2,0,44
+-DR-MR-,"D(R),M(R)",Germany,GB,6,0,1,1,Yan Couto,421975,Defender,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,7.016666667,473,2,0,45
+-AMC-AMR-FW-,"AM(CR),FW",Germany,GB,9,2,6,0,Jonathan Burkardt,363037,Forward,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,7.012222222,607,1,0,46
+-MC-ML-,M(CL),Germany,GB,9,0,2,0,Jean-Luc Dompé,234353,Forward,38,Hamburg,2025/2026,Germany,Bundesliga,6.98,642,0,0,47
+-DR-FW-MC-ML-MR-,"D(R),M(CLR),FW",Germany,GB,8,2,2,3,Marius Bülter,361419,Forward,282,FC Koln,2025/2026,Germany,Bundesliga,6.97875,486,1,0,48
+-DC-,D(C),Germany,GB,8,0,0,0,Timo Hübers,296983,Defender,282,FC Koln,2025/2026,Germany,Bundesliga,6.9775,670,0,0,49
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,10,1,3,3,Andrej Kramaric,75217,Forward,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.976,603,1,0,50
+-AMC-FW-,"AM(C),FW",Germany,GB,10,0,5,2,Fisnik Asllani,428426,Forward,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.975,677,1,0,51
+-DC-DMC-,"D(C),DMC",Germany,GB,10,0,2,0,Robin Koch,276205,Defender,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.935,900,0,0,52
+-DR-MC-MR-,"D(R),M(CR)",Germany,GB,10,0,0,1,Ridle Baku,356183,Defender,7614,RBL,2025/2026,Germany,Bundesliga,6.934,888,2,0,53
+-DC-,D(C),Germany,GB,8,0,1,0,Albian Hajdari,402697,Defender,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.93,587,3,0,54
+-MC-,M(C),Germany,GB,10,1,1,1,Kaishu Sano,509815,Midfielder,219,Mainz,2025/2026,Germany,Bundesliga,6.93,900,0,0,55
+-MC-MR-,M(CR),Germany,GB,9,0,0,0,Leon Goretzka,115519,Midfielder,37,Bayern,2025/2026,Germany,Bundesliga,6.903333333,597,3,0,56
+-DC-DL-DR-ML-,"D(CLR),M(L)",Germany,GB,10,0,0,0,Bernardo,302588,Defender,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.896,893,3,0,57
+-AML-,AM(L),Germany,GB,9,1,3,1,Samuel Mbangula,468855,Forward,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.892222222,591,0,0,58
+-AMC-,AM(C),Germany,GB,10,1,2,3,Assan Ouédraogo,487063,Midfielder,7614,RBL,2025/2026,Germany,Bundesliga,6.886,466,0,0,59
+-MC-ML-MR-,M(CLR),Germany,GB,10,1,3,1,Nadiem Amiri,261021,Midfielder,219,Mainz,2025/2026,Germany,Bundesliga,6.886,857,4,0,60
+-AMC-,AM(C),Germany,GB,8,1,2,0,Ibrahim Maza,477985,Forward,36,Leverkusen,2025/2026,Germany,Bundesliga,6.88375,398,1,0,61
+-AML-FW-,"AM(L),FW",Germany,GB,10,0,4,1,Mohammed Amoura,431045,Forward,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.863,624,1,0,62
+-MC-MR-,M(CR),Germany,GB,10,1,2,0,Maximilian Eggestein,254557,Midfielder,50,Freiburg,2025/2026,Germany,Bundesliga,6.86,900,1,0,63
+-ML-,M(L),Germany,GB,10,1,1,0,Daniel Svensson,418584,Defender,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.856,833,0,0,64
+-DC-,D(C),Germany,GB,9,0,0,0,Loïc Badé,398416,Defender,36,Leverkusen,2025/2026,Germany,Bundesliga,6.855555556,711,3,0,65
+-GK-,GK,Germany,GB,10,2,0,0,Marvin Schwäbe,249897,Goalkeeper,282,FC Koln,2025/2026,Germany,Bundesliga,6.855,900,0,0,66
+-GK-,GK,Germany,GB,10,1,0,1,Alexander Nübel,260770,Goalkeeper,41,Stuttgart,2025/2026,Germany,Bundesliga,6.842,900,0,0,67
+-DC-DL-ML-,"D(CL),M(L)",Germany,GB,10,0,0,2,Miro Muheim,401743,Defender,38,Hamburg,2025/2026,Germany,Bundesliga,6.841,892,2,0,68
+-AMC-AML-,AM(CL),Germany,GB,9,1,2,1,Jean-Mattéo Bahoya,444748,Forward,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.835555556,440,0,0,69
+-DC-DMC-DR-,"D(CR),DMC",Germany,GB,10,0,0,0,Matthias Ginter,110182,Defender,50,Freiburg,2025/2026,Germany,Bundesliga,6.835,900,1,0,70
+-AMC-AMR-,AM(CR),Germany,GB,8,0,3,2,Fabian Rieder,404193,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.83375,675,2,0,71
+-AMC-AML-AMR-,AM(CLR),Germany,GB,9,0,4,2,Ernest Poku,422737,Forward,36,Leverkusen,2025/2026,Germany,Bundesliga,6.831111111,479,0,0,72
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,10,1,2,2,Romano Schmid,383847,Midfielder,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.828,868,1,0,73
+-DC-,D(C),Germany,GB,8,0,1,0,Jarell Quansah,430019,Defender,36,Leverkusen,2025/2026,Germany,Bundesliga,6.82,707,3,0,74
+-DC-DL-DR-,D(CLR),Germany,GB,10,0,0,0,Nico Elvedi,243534,Defender,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.818,900,2,0,75
+-DC-,D(C),Germany,GB,10,0,0,0,Leopold Querfeld,427502,Defender,796,Union Berlin,2025/2026,Germany,Bundesliga,6.812,900,3,0,76
+,Midfielder,Germany,GB,10,0,4,1,Saïd El Mala,517371,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,6.809,386,0,0,77
+-DC-DL-DR-MR-,"D(CLR),M(R)",Germany,GB,8,0,1,1,Lukas Kübler,111306,Defender,50,Freiburg,2025/2026,Germany,Bundesliga,6.8075,566,1,0,78
+-DMC-,DMC,Germany,GB,8,0,1,1,Yannik Engelhardt,434179,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.8075,631,0,0,79
+-MC-,M(C),Germany,GB,10,0,0,2,Aleix García,280663,Midfielder,36,Leverkusen,2025/2026,Germany,Bundesliga,6.802,798,1,0,80
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,8,0,2,2,Julian Brandt,141556,Midfielder,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.79125,359,0,0,81
+-DR-MR-,"D(R),M(R)",Germany,GB,9,0,0,3,Yukinari Sugawara,379783,Defender,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.791111111,793,0,0,82
+-GK-,GK,Germany,GB,8,0,0,0,Mio Backhaus,436119,Goalkeeper,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.7875,720,0,0,83
+-AMC-FW-,"AM(C),FW",Germany,GB,9,1,2,2,Mert Kömür,474412,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.782222222,630,1,0,84
+-MC-,M(C),Germany,GB,10,0,0,0,Rocco Reitz,401014,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.777,829,3,0,85
+-DL-DR-MC-ML-,"D(LR),M(CL)",Germany,GB,6,0,1,2,Raphaël Guerreiro,115375,Defender,37,Bayern,2025/2026,Germany,Bundesliga,6.773333333,194,0,0,86
+-DC-DR-,D(CR),Germany,GB,9,0,0,1,Andreas Hanche-Olsen,320749,Defender,219,Mainz,2025/2026,Germany,Bundesliga,6.768888889,564,2,0,87
+-DL-ML-,"D(L),M(L)",Germany,GB,10,0,1,2,Nathaniel Brown,445354,Defender,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.768,705,0,0,88
+-DR-FW-MC-ML-MR-,"D(R),M(CLR),FW",Germany,GB,7,0,2,1,Jan Thielmann,389376,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,6.762857143,451,1,0,89
+-AMC-FW-,"AM(C),FW",Germany,GB,6,2,3,0,Deniz Undav,357091,Forward,41,Stuttgart,2025/2026,Germany,Bundesliga,6.761666667,384,2,0,90
+-AMR-,AM(R),Germany,GB,9,1,2,0,Johan Bakayoko,427824,Forward,7614,RBL,2025/2026,Germany,Bundesliga,6.757777778,564,1,0,91
+-DMC-,DMC,Germany,GB,10,0,0,0,Vinicius Souza,373964,Midfielder,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.755,792,1,0,92
+-MC-,M(C),Germany,GB,10,0,1,1,Felix Nmecha,367783,Midfielder,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.75,623,0,0,93
+-FW-ML-MR-,"M(LR),FW",Germany,GB,7,0,0,2,Franck Honorat,137837,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.747142857,510,0,0,94
+-GK-,GK,Germany,GB,10,0,0,0,Gregor Kobel,336028,Goalkeeper,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.741,900,1,0,95
+-GK-,GK,Germany,GB,6,0,0,0,Michael Zetterer,280191,Goalkeeper,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.74,540,0,0,96
+-GK-,GK,Germany,GB,10,0,0,0,Daniel Heuer Fernandes,132896,Goalkeeper,38,Hamburg,2025/2026,Germany,Bundesliga,6.739,900,1,0,97
+-GK-,GK,Germany,GB,10,1,0,0,Frederik Rønnow,81842,Goalkeeper,796,Union Berlin,2025/2026,Germany,Bundesliga,6.739,900,0,0,98
+-AMC-AML-FW-,"AM(CL),FW",Germany,GB,10,1,4,0,Ilyas Ansah,494147,Forward,796,Union Berlin,2025/2026,Germany,Bundesliga,6.738,679,0,0,99
+-FW-,FW,Germany,GB,8,0,1,1,Junior Adamu,418590,Forward,50,Freiburg,2025/2026,Germany,Bundesliga,6.7375,440,1,0,100
+-DC-DL-DR-MC-ML-MR-,"D(CLR),M(CLR)",Germany,GB,9,0,0,3,Julian Ryerson,320436,Defender,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.736666667,516,2,0,101
+-DC-DMC-,"D(C),DMC",Germany,GB,10,1,1,0,Rani Khedira,110266,Midfielder,796,Union Berlin,2025/2026,Germany,Bundesliga,6.731,883,3,0,102
+-AMC-AML-FW-,"AM(CL),FW",Germany,GB,6,0,3,1,Ermedin Demirovic,351339,Forward,41,Stuttgart,2025/2026,Germany,Bundesliga,6.73,495,1,0,103
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,9,0,0,3,Jamie Leweling,379252,Forward,41,Stuttgart,2025/2026,Germany,Bundesliga,6.727777778,644,2,0,104
+-MC-MR-,M(CR),Germany,GB,8,1,0,3,Tom Bischof,431282,Midfielder,37,Bayern,2025/2026,Germany,Bundesliga,6.7275,310,1,0,105
+-DC-DL-ML-,"D(CL),M(L)",Germany,GB,9,0,0,0,Marco Friedl,333227,Defender,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.726666667,803,2,0,106
+-DMC-,DMC,Germany,GB,7,0,2,0,Albert Sambi Lokonga,349102,Midfielder,38,Hamburg,2025/2026,Germany,Bundesliga,6.725714286,412,0,0,107
+-DC-,D(C),Germany,GB,9,0,0,0,Dayot Upamecano,327721,Defender,37,Bayern,2025/2026,Germany,Bundesliga,6.721111111,653,2,0,108
+-AMC-AML-FW-,"AM(CL),FW",Germany,GB,10,0,2,1,Marco Grüll,385080,Forward,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.715,718,3,0,109
+-MC-,M(C),Germany,GB,10,0,0,1,Nicolai Remberg,485118,Midfielder,38,Hamburg,2025/2026,Germany,Bundesliga,6.711,900,3,0,110
+-GK-,GK,Germany,GB,10,0,0,0,Péter Gulácsi,67369,Goalkeeper,7614,RBL,2025/2026,Germany,Bundesliga,6.708,900,0,0,111
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,10,0,3,0,Tiago Tomás,395850,Forward,41,Stuttgart,2025/2026,Germany,Bundesliga,6.703,453,1,0,112
+,Midfielder,Germany,GB,8,0,1,1,Lennart Karl,557706,Midfielder,37,Bayern,2025/2026,Germany,Bundesliga,6.7025,227,0,0,113
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,9,0,2,1,Maximilian Beier,387125,Forward,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.702222222,562,1,0,114
+-DC-DL-DR-ML-MR-,"D(CLR),M(LR)",Germany,GB,9,0,0,2,Joe Scally,363069,Defender,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.698888889,717,4,0,115
+-DC-,D(C),Germany,GB,10,1,1,1,Chrislain Matsima,398372,Defender,1730,Augsburg,2025/2026,Germany,Bundesliga,6.692,900,4,0,116
+-AMC-AML-,AM(CL),Germany,GB,10,0,3,1,Vincenzo Grifo,121192,Midfielder,50,Freiburg,2025/2026,Germany,Bundesliga,6.691,571,0,0,117
+-DC-DL-,D(CL),Germany,GB,10,0,0,0,Arthur Theate,399961,Defender,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.689,900,3,0,118
+-GK-,GK,Germany,GB,10,1,0,0,Kamil Grabara,364015,Goalkeeper,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.687,900,1,0,119
+-DC-,D(C),Germany,GB,9,0,0,0,Konstantinos Koulierakis,457282,Defender,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.681111111,810,1,0,120
+-AMC-AMR-FW-,"AM(CR),FW",Germany,GB,10,1,3,0,Rayan Philippe,380644,Forward,38,Hamburg,2025/2026,Germany,Bundesliga,6.681,648,2,0,121
+-DC-,D(C),Germany,GB,10,0,0,1,Patrick Mainka,361425,Defender,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.677,900,0,0,122
+-DC-,D(C),Germany,GB,7,0,0,0,Diogo Leite,361852,Defender,796,Union Berlin,2025/2026,Germany,Bundesliga,6.674285714,600,1,0,123
+-DC-DL-DR-,D(CLR),Germany,GB,10,0,1,0,Kevin Diks,232262,Defender,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.671,793,3,0,124
+-DC-,D(C),Germany,GB,8,0,0,0,Moritz Jenz,425018,Defender,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.67,720,3,0,125
+-DL-DR-MR-,"D(LR),M(R)",Germany,GB,8,1,1,1,Josha Vagnoman,354241,Defender,41,Stuttgart,2025/2026,Germany,Bundesliga,6.66875,533,1,0,126
+-FW-,FW,Germany,GB,9,0,2,0,Christian Kofane,550465,Forward,36,Leverkusen,2025/2026,Germany,Bundesliga,6.667777778,371,3,0,127
+-DC-DMC-DR-MR-,"D(CR),DMC,M(R)",Germany,GB,8,0,1,1,Kristijan Jakic,402665,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.6675,635,1,0,128
+-DC-DMC-,"D(C),DMC",Germany,GB,9,0,0,0,Daniel Elfadli,442403,Midfielder,38,Hamburg,2025/2026,Germany,Bundesliga,6.665555556,748,2,0,129
+-DL-MC-ML-MR-,"D(L),M(CLR)",Germany,GB,7,0,0,0,Niklas Beste,353193,Defender,50,Freiburg,2025/2026,Germany,Bundesliga,6.661428571,570,2,0,130
+-AMC-,AM(C),Germany,GB,7,0,1,0,Carney Chukwuemeka,410639,Midfielder,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.657142857,297,0,0,131
+-AMC-AMR-FW-,"AM(CR),FW",Germany,GB,10,1,2,1,Danel Sinani,344949,Forward,283,St. Pauli,2025/2026,Germany,Bundesliga,6.653,758,2,0,132
+-FW-,FW,Germany,GB,9,0,0,4,Andrej Ilic,426239,Forward,796,Union Berlin,2025/2026,Germany,Bundesliga,6.652222222,745,3,0,133
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,10,2,2,1,Karim Adeyemi,392646,Forward,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.651,508,2,0,134
+-MC-,M(C),Germany,GB,10,0,4,1,Grischa Prömel,278125,Midfielder,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.649,325,1,0,135
+-DR-MR-,"D(R),M(R)",Germany,GB,6,0,0,1,Arthur,437724,Defender,36,Leverkusen,2025/2026,Germany,Bundesliga,6.645,407,0,0,136
+-GK-,GK,Germany,GB,10,0,0,0,Oliver Baumann,77440,Goalkeeper,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.643,900,0,0,137
+-DR-MR-,"D(R),M(R)",Germany,GB,7,0,0,0,Lorenz Assignon,402874,Defender,41,Stuttgart,2025/2026,Germany,Bundesliga,6.642857143,405,2,0,138
+-MC-,M(C),Germany,GB,10,0,1,1,Han-Noah Massengo,365831,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.636,861,0,0,139
+-DC-DR-MR-,"D(CR),M(R)",Germany,GB,9,0,0,1,Christopher Trimmel,71757,Defender,796,Union Berlin,2025/2026,Germany,Bundesliga,6.633333333,619,5,0,140
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,10,0,0,1,Mathias Pereira Lage,303314,Midfielder,283,St. Pauli,2025/2026,Germany,Bundesliga,6.627,753,1,0,141
+-DC-DR-,D(CR),Germany,GB,8,0,0,1,Nnamdi Collins,450125,Defender,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.62625,459,1,0,142
+-DC-DR-,D(CR),Germany,GB,6,0,1,0,Adam Dzwigala,118083,Defender,283,St. Pauli,2025/2026,Germany,Bundesliga,6.625,413,3,0,143
+-DMC-,DMC,Germany,GB,10,0,0,1,Leon Avdullahu,510234,Midfielder,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.62,849,2,0,144
+-DMC-DR-,"D(R),DMC",Germany,GB,10,0,1,1,Robin Fellhauer,446529,Defender,1730,Augsburg,2025/2026,Germany,Bundesliga,6.619,763,1,0,145
+-DL-ML-,"D(L),M(L)",Germany,GB,8,0,1,0,Dimitrios Giannoulis,296838,Defender,1730,Augsburg,2025/2026,Germany,Bundesliga,6.61875,547,4,0,146
+-GK-,GK,Germany,GB,10,0,0,0,Moritz Nicolas,322881,Goalkeeper,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.615,900,0,0,147
+-DL-DR-ML-MR-,"D(LR),M(LR)",Germany,GB,6,0,0,0,Felix Agu,379190,Defender,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.613333333,485,1,0,148
+-MC-,M(C),Germany,GB,8,0,0,1,Johan Manzambi,532577,Midfielder,50,Freiburg,2025/2026,Germany,Bundesliga,6.60625,634,2,1,149
+-GK-,GK,Germany,GB,10,2,0,0,Noah Atubolu,428308,Goalkeeper,50,Freiburg,2025/2026,Germany,Bundesliga,6.604,900,0,0,150
+-GK-,GK,Germany,GB,10,1,0,0,Nikola Vasilj,145304,Goalkeeper,283,St. Pauli,2025/2026,Germany,Bundesliga,6.603,900,0,0,151
+-DL-ML-,"D(L),M(L)",Germany,GB,7,0,1,0,Aaron Zehnter,444280,Defender,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.592857143,541,0,0,152
+-DMC-,DMC,Germany,GB,9,0,0,0,Senne Lynen,420405,Midfielder,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.578888889,793,1,0,153
+-DC-,D(C),Germany,GB,10,0,0,0,Robin Hranác,428031,Defender,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.569,867,1,0,154
+-DC-DMC-,"D(C),DMC",Germany,GB,9,0,0,0,James Sands,345160,Midfielder,283,St. Pauli,2025/2026,Germany,Bundesliga,6.566666667,731,2,0,155
+-DC-DL-ML-,"D(CL),M(L)",Germany,GB,10,0,1,1,Jonas Föhrenbach,280715,Defender,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.566,864,1,0,156
+-DMC-,DMC,Germany,GB,8,0,1,0,Aleksandar Pavlovic,481079,Midfielder,37,Bayern,2025/2026,Germany,Bundesliga,6.565,377,1,0,157
+-FW-,FW,Germany,GB,10,0,1,2,Ragnar Ache,335756,Forward,282,FC Koln,2025/2026,Germany,Bundesliga,6.562,340,1,0,158
+-MC-ML-MR-,M(CLR),Germany,GB,10,0,2,0,Ansgar Knauff,403747,Forward,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.544,430,2,0,159
+-MC-,M(C),Germany,GB,10,0,0,1,Joel Chima Fujita,447584,Midfielder,283,St. Pauli,2025/2026,Germany,Bundesliga,6.544,882,2,0,160
+-DC-DMC-,"D(C),DMC",Germany,GB,9,0,1,0,Dominik Kohr,110165,Midfielder,219,Mainz,2025/2026,Germany,Bundesliga,6.543333333,722,3,1,161
+-DL-DR-FW-MC-MR-,"D(LR),M(CR),FW",Germany,GB,9,0,0,1,Pascal Groß,71824,Midfielder,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.538888889,510,0,0,162
+-ML-,M(L),Germany,GB,9,0,0,0,Kristoffer Lund,484859,Defender,282,FC Koln,2025/2026,Germany,Bundesliga,6.537777778,634,1,0,163
+-DR-FW-MC-ML-MR-,"D(R),M(CLR),FW",Germany,GB,7,0,1,1,Jonas Hofmann,115163,Midfielder,36,Leverkusen,2025/2026,Germany,Bundesliga,6.535714286,288,1,0,164
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,9,0,0,1,Marcel Sabitzer,92051,Midfielder,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.534444444,545,1,0,165
+-DMC-,DMC,Germany,GB,6,0,0,0,Ellyes Skhiri,238903,Midfielder,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.533333333,419,0,0,166
+-MC-,M(C),Germany,GB,10,0,1,0,Ísak Bergmann Jóhannesson,406062,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,6.528,772,3,0,167
+-DL-ML-,"D(L),M(L)",Germany,GB,6,0,0,1,Luca Netz,394888,Defender,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.526666667,238,0,0,168
+-MC-,M(C),Germany,GB,9,0,0,1,Ezechiel Banzuzi,485929,Midfielder,7614,RBL,2025/2026,Germany,Bundesliga,6.524444444,284,2,0,169
+-GK-,GK,Germany,GB,9,0,0,0,Manuel Neuer,13754,Goalkeeper,37,Bayern,2025/2026,Germany,Bundesliga,6.516666667,810,0,0,170
+-DC-DR-MR-,"D(CR),M(R)",Germany,GB,7,0,1,0,Silvan Widmer,103622,Defender,219,Mainz,2025/2026,Germany,Bundesliga,6.51,386,1,0,171
+-DC-,D(C),Germany,GB,10,0,1,0,Karim Coulibaly,554472,Defender,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.508,803,2,0,172
+-MR-,M(R),Germany,GB,10,0,0,0,Sebastian Sebulonsen,395374,Defender,282,FC Koln,2025/2026,Germany,Bundesliga,6.508,734,3,0,173
+-FW-,FW,Germany,GB,8,1,2,0,Igor Matanovic,407222,Forward,50,Freiburg,2025/2026,Germany,Bundesliga,6.50375,186,0,0,174
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,6,0,2,1,Luca Waldschmidt,148484,Forward,282,FC Koln,2025/2026,Germany,Bundesliga,6.503333333,208,0,0,175
+-AMC-AML-,AM(CL),Germany,GB,9,0,0,0,Elias Saad,472205,Forward,1730,Augsburg,2025/2026,Germany,Bundesliga,6.501111111,475,1,0,176
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,7,0,0,1,Patrick Wimmer,418589,Midfielder,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.5,445,2,0,177
+-DC-DR-,D(CR),Germany,GB,8,0,0,0,Stefan Bell,83467,Defender,219,Mainz,2025/2026,Germany,Bundesliga,6.4975,327,1,0,178
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,9,1,3,0,Oliver Burke,244303,Forward,796,Union Berlin,2025/2026,Germany,Bundesliga,6.496666667,484,0,0,179
+-AML-,AM(L),Germany,GB,10,0,0,1,Arijon Ibrahimovic,430704,Midfielder,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.496,826,1,0,180
+-DC-,D(C),Germany,GB,8,0,0,0,Tim Siersleben,397260,Defender,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.49375,627,1,0,181
+-MC-,M(C),Germany,GB,8,0,0,0,Aljoscha Kemlein,455785,Midfielder,796,Union Berlin,2025/2026,Germany,Bundesliga,6.4925,370,0,0,182
+-MC-,M(C),Germany,GB,8,0,0,1,Florian Neuhaus,319448,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.49125,394,0,0,183
+-MC-ML-MR-,M(CLR),Germany,GB,7,0,1,0,Florian Kainz,296499,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,6.488571429,192,0,0,184
+-AML-FW-,"AM(L),FW",Germany,GB,9,0,2,0,Derry Scherhant,444289,Forward,50,Freiburg,2025/2026,Germany,Bundesliga,6.487777778,310,0,0,185
+-AMC-AMR-,AM(CR),Germany,GB,8,0,1,0,Paul Nebel,401107,Midfielder,219,Mainz,2025/2026,Germany,Bundesliga,6.4825,689,2,1,186
+-FW-,FW,Germany,GB,8,0,0,2,Victor Boniface,384000,Forward,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.47625,280,1,0,187
+-DL-DR-ML-MR-,"D(LR),M(LR)",Germany,GB,10,0,0,0,Phillipp Mwene,124021,Defender,219,Mainz,2025/2026,Germany,Bundesliga,6.474,798,2,0,188
+-DC-DR-MR-,"D(CR),M(R)",Germany,GB,7,0,0,0,Kilian Fischer,420243,Defender,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.472857143,606,0,0,189
+-GK-,GK,Germany,GB,10,0,0,0,Diant Ramaj,373154,Goalkeeper,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.472,900,1,0,190
+-DC-,D(C),Germany,GB,8,0,0,0,Philipp Lienhart,298446,Defender,50,Freiburg,2025/2026,Germany,Bundesliga,6.47125,704,1,1,191
+-DMC-,DMC,Germany,GB,8,0,0,1,Nicolás Capaldo,369480,Midfielder,38,Hamburg,2025/2026,Germany,Bundesliga,6.47,572,2,0,192
+-DL-,D(L),Germany,GB,10,0,0,0,Lukas Ullrich,444285,Defender,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.468,626,1,0,193
+-AMR-,AM(R),Germany,GB,8,0,2,0,Adam Daghim,514499,Forward,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.46625,538,0,0,194
+,Defender,Germany,GB,6,0,1,0,Isaac Schmidt,538407,Defender,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.465,125,1,0,195
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,9,0,0,0,Lucas Höler,227655,Forward,50,Freiburg,2025/2026,Germany,Bundesliga,6.46,633,0,0,196
+-MC-,M(C),Germany,GB,6,0,0,0,Xaver Schlager,262856,Midfielder,7614,RBL,2025/2026,Germany,Bundesliga,6.453333333,249,1,0,197
+-AMC-AMR-,AM(CR),Germany,GB,8,0,1,1,Lovro Majer,369887,Midfielder,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.45125,344,1,0,198
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,9,0,1,1,Chris Führich,349888,Midfielder,41,Stuttgart,2025/2026,Germany,Bundesliga,6.45,309,0,0,199
+-ML-,M(L),Germany,GB,10,0,1,0,Louis Oppie,486768,Defender,283,St. Pauli,2025/2026,Germany,Bundesliga,6.449,900,0,0,200
+-DC-DR-MR-,"D(CR),M(R)",Germany,GB,10,0,0,0,Danny da Costa,94934,Defender,219,Mainz,2025/2026,Germany,Bundesliga,6.44,823,2,0,201
+-AMC-,AM(C),Germany,GB,7,0,0,0,András Schäfer,369687,Midfielder,796,Union Berlin,2025/2026,Germany,Bundesliga,6.44,395,0,0,202
+-FW-,FW,Germany,GB,7,1,1,1,Mikkel Kaufmann,392643,Forward,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.434285714,364,1,0,203
+-FW-,FW,Germany,GB,8,0,1,0,Nicolas Jackson,426050,Forward,37,Bayern,2025/2026,Germany,Bundesliga,6.43125,305,0,0,204
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,10,0,0,1,Janik Haberer,110272,Midfielder,796,Union Berlin,2025/2026,Germany,Bundesliga,6.431,578,4,0,205
+-DC-,D(C),Germany,GB,6,0,0,0,Keven Schlotterbeck,369556,Defender,1730,Augsburg,2025/2026,Germany,Bundesliga,6.43,495,3,0,206
+-MC-MR-,M(CR),Germany,GB,8,1,1,0,Andreas Skov Olsen,377276,Forward,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.42375,363,1,0,207
+-DC-DMC-,"D(C),DMC",Germany,GB,10,1,1,0,Eric Smith,320525,Midfielder,283,St. Pauli,2025/2026,Germany,Bundesliga,6.421,900,2,0,208
+,Midfielder,Germany,GB,6,0,0,0,Anton Kade,431281,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.418333333,320,1,0,209
+-DMC-,DMC,Germany,GB,7,0,0,0,Julian Niehues,442253,Midfielder,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.411428571,346,0,0,210
+-MC-,M(C),Germany,GB,8,0,0,0,Denis Huseinbasic,444269,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,6.41125,391,1,0,211
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,8,0,1,0,Lee Jae-Sung,142959,Midfielder,219,Mainz,2025/2026,Germany,Bundesliga,6.41125,661,1,0,212
+-DL-DR-ML-MR-,"D(LR),M(LR)",Germany,GB,7,0,0,1,Joakim Mæhle,363652,Defender,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.407142857,425,0,0,213
+-GK-,GK,Germany,GB,10,0,0,0,Mark Flekken,115131,Goalkeeper,36,Leverkusen,2025/2026,Germany,Bundesliga,6.406,900,0,0,214
+-MC-,M(C),Germany,GB,8,0,0,2,Hugo Larsson,443796,Midfielder,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.405,518,0,0,215
+-DC-,D(C),Germany,GB,7,0,1,0,Noahkai Banks,532785,Defender,1730,Augsburg,2025/2026,Germany,Bundesliga,6.401428571,443,2,0,216
+-DMC-ML-,"DMC,M(L)",Germany,GB,8,0,0,0,Nikolas Nartey,349125,Midfielder,41,Stuttgart,2025/2026,Germany,Bundesliga,6.39625,199,1,0,217
+-DMC-,DMC,Germany,GB,7,0,0,0,Tom Krauß,367182,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,6.394285714,353,1,0,218
+-DC-,D(C),Germany,GB,10,0,0,0,Joël Schmied,550581,Defender,282,FC Koln,2025/2026,Germany,Bundesliga,6.394,734,4,0,219
+-DR-MC-MR-,"D(R),M(CR)",Germany,GB,7,0,1,0,Jens Castrop,431275,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.392857143,354,1,1,220
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,7,0,0,0,Mathias Honsak,361254,Forward,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.39,352,0,0,221
+-DC-,D(C),Germany,GB,9,0,1,0,Hauke Wahl,132104,Defender,283,St. Pauli,2025/2026,Germany,Bundesliga,6.374444444,810,0,0,222
+-AMC-AML-,AM(CL),Germany,GB,7,0,0,0,Muhammed Damar,444548,Midfielder,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.37,218,0,0,223
+-MC-ML-MR-,M(CLR),Germany,GB,9,0,2,1,Mattias Svanberg,282348,Midfielder,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.368888889,444,1,1,224
+-AMC-AML-FW-,"AM(CL),FW",Germany,GB,6,0,0,0,Eliesse Ben Seghir,444598,Midfielder,36,Leverkusen,2025/2026,Germany,Bundesliga,6.366666667,168,2,0,225
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,8,0,0,0,Arnaud Nordin,328288,Forward,219,Mainz,2025/2026,Germany,Bundesliga,6.3625,358,0,0,226
+-DC-DMC-,"D(C),DMC",Germany,GB,9,0,0,0,Atakan Karazor,347884,Midfielder,41,Stuttgart,2025/2026,Germany,Bundesliga,6.362222222,550,0,0,227
+-ML-MR-,M(LR),Germany,GB,7,0,0,0,Philipp Treu,486776,Defender,50,Freiburg,2025/2026,Germany,Bundesliga,6.36,438,0,0,228
+-DR-MR-,"D(R),M(R)",Germany,GB,8,0,0,1,Manolis Saliakas,144493,Defender,283,St. Pauli,2025/2026,Germany,Bundesliga,6.35625,451,2,0,229
+-DC-DL-,D(CL),Germany,GB,8,0,0,0,Ramon Hendriks,422909,Defender,41,Stuttgart,2025/2026,Germany,Bundesliga,6.35375,360,1,0,230
+-AMC-AMR-FW-,"AM(CR),FW",Germany,GB,10,0,2,0,Justin Njinmah,438066,Forward,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.35,484,1,0,231
+-GK-,GK,Germany,GB,8,0,0,0,Robin Zentner,245634,Goalkeeper,219,Mainz,2025/2026,Germany,Bundesliga,6.34875,697,2,1,232
+-DR-,D(R),Germany,GB,9,0,0,0,Sacha Boey,372280,Defender,37,Bayern,2025/2026,Germany,Bundesliga,6.346666667,464,1,0,233
+-DC-MC-,"D(C),M(C)",Germany,GB,9,0,0,0,Robert Andrich,122140,Midfielder,36,Leverkusen,2025/2026,Germany,Bundesliga,6.34,599,0,1,234
+-DL-,D(L),Germany,GB,8,0,0,0,Jordy Makengo,496922,Defender,50,Freiburg,2025/2026,Germany,Bundesliga,6.3325,566,1,0,235
+-DR-MR-,"D(R),M(R)",Germany,GB,10,0,0,1,Marnon Busch,238699,Defender,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.331,502,1,0,236
+-FW-,FW,Germany,GB,9,0,3,0,Andréas Hountondji,511603,Forward,283,St. Pauli,2025/2026,Germany,Bundesliga,6.33,477,1,0,237
+-AMC-FW-,"AM(C),FW",Germany,GB,10,0,2,0,Armindo Sieb,410364,Forward,219,Mainz,2025/2026,Germany,Bundesliga,6.329,303,1,0,238
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,7,0,0,1,Christian Eriksen,69344,Midfielder,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.322857143,403,0,0,239
+-MC-ML-,M(CL),Germany,GB,8,0,0,0,Kevin Stöger,104011,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.31,404,0,0,240
+-MR-,M(R),Germany,GB,7,0,0,0,Arkadiusz Pyrka,499622,Defender,283,St. Pauli,2025/2026,Germany,Bundesliga,6.304285714,441,2,0,241
+-FW-MC-,"M(C),FW",Germany,GB,10,0,0,0,Jobe Bellingham,422365,Midfielder,44,Borussia Dortmund,2025/2026,Germany,Bundesliga,6.287,327,0,0,242
+-DR-MR-,"D(R),M(R)",Germany,GB,7,0,0,0,Giorgi Gocholeishvili,460456,Defender,38,Hamburg,2025/2026,Germany,Bundesliga,6.282857143,508,0,1,243
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,6,0,0,1,Benedict Hollerbach,485184,Forward,219,Mainz,2025/2026,Germany,Bundesliga,6.28,370,0,0,244
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,10,0,1,0,Ransford Königsdörffer,389899,Forward,38,Hamburg,2025/2026,Germany,Bundesliga,6.28,687,0,0,245
+-AMC-,AM(C),Germany,GB,8,0,0,0,Cameron Puertas,431791,Midfielder,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.2675,437,3,0,246
+-AMC-AMR-,AM(CR),Germany,GB,7,0,0,0,Badredine Bouanani,454467,Midfielder,41,Stuttgart,2025/2026,Germany,Bundesliga,6.264285714,227,1,0,247
+-MC-,M(C),Germany,GB,9,0,0,0,Niklas Dorsch,306637,Midfielder,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.252222222,575,0,0,248
+-DC-DL-ML-,"D(CL),M(L)",Germany,GB,6,0,0,0,Lars Ritzka,334039,Defender,283,St. Pauli,2025/2026,Germany,Bundesliga,6.236666667,246,0,0,249
+-AMC-AML-FW-,"AM(CL),FW",Germany,GB,9,0,1,0,Shuto Machino,447590,Forward,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.234444444,396,1,0,250
+-DL-ML-,"D(L),M(L)",Germany,GB,6,0,0,1,Christian Günter,116464,Defender,50,Freiburg,2025/2026,Germany,Bundesliga,6.233333333,348,1,0,251
+-MC-MR-,M(CR),Germany,GB,10,0,0,1,Connor Metcalfe,442302,Midfielder,283,St. Pauli,2025/2026,Germany,Bundesliga,6.226,221,0,0,252
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,6,0,0,0,Linton Maina,354555,Midfielder,282,FC Koln,2025/2026,Germany,Bundesliga,6.225,221,0,0,253
+-FW-,FW,Germany,GB,6,0,1,0,Samuel Essende,451881,Forward,1730,Augsburg,2025/2026,Germany,Bundesliga,6.205,187,1,0,254
+-MC-,M(C),Germany,GB,9,0,0,0,Elvis Rexhbeçaj,349837,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.195555556,502,3,0,255
+-AMC-AMR-FW-,"AM(CR),FW",Germany,GB,6,0,0,0,Yussuf Poulsen,132943,Forward,38,Hamburg,2025/2026,Germany,Bundesliga,6.195,183,3,0,256
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,7,0,0,0,Mario Götze,80382,Midfielder,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.192857143,193,0,0,257
+-DR-MR-,"D(R),M(R)",Germany,GB,10,0,0,1,Omar Haktab Traoré,485191,Defender,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.192,687,1,0,258
+-DC-DL-ML-,"D(CL),M(L)",Germany,GB,10,0,0,0,Derrick Köhn,400010,Defender,796,Union Berlin,2025/2026,Germany,Bundesliga,6.188,529,2,0,259
+-DL-DMC-ML-,"D(L),DMC,M(L)",Germany,GB,10,0,0,0,Alexander Prass,418588,Defender,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.184,242,0,0,260
+-FW-,FW,Germany,GB,6,0,0,0,Max Moerstedt,517609,Forward,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.18,117,0,0,261
+-MC-,M(C),Germany,GB,9,0,0,0,Jan Schöppner,401079,Midfielder,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.176666667,717,3,0,262
+-MC-,M(C),Germany,GB,6,0,0,0,Alex Král,369861,Midfielder,796,Union Berlin,2025/2026,Germany,Bundesliga,6.173333333,153,1,0,263
+-DC-,D(C),Germany,GB,7,0,0,0,Cédric Zesiger,383857,Defender,1730,Augsburg,2025/2026,Germany,Bundesliga,6.172857143,211,2,0,264
+-DR-MC-ML-MR-,"D(R),M(CLR)",Germany,GB,8,1,1,0,Marius Wolf,312666,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.1675,328,1,0,265
+-DL-ML-,"D(L),M(L)",Germany,GB,9,0,1,0,Tom Rothe,437020,Defender,796,Union Berlin,2025/2026,Germany,Bundesliga,6.166666667,429,1,1,266
+,Defender,Germany,GB,8,0,0,0,Nikolas Veratschnig,496994,Defender,219,Mainz,2025/2026,Germany,Bundesliga,6.1625,151,1,0,267
+-AMC-AMR-,AM(CR),Germany,GB,9,0,0,0,Adrian Beck,399262,Midfielder,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.152222222,311,0,0,268
+-AMC-AML-AMR-,AM(CLR),Germany,GB,6,0,0,0,Giovanni Reyna,389087,Midfielder,134,Borussia M.Gladbach,2025/2026,Germany,Bundesliga,6.15,149,1,0,269
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,7,0,0,0,Leonardo Bittencourt,100805,Midfielder,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.148571429,179,1,0,270
+-FW-,FW,Germany,GB,7,0,1,0,Budu Zivzivadze,295158,Forward,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.144285714,353,0,1,271
+-FW-,FW,Germany,GB,6,0,0,1,Keke Topp,429336,Forward,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.14,144,2,0,272
+-AMC-AML-FW-,"AM(CL),FW",Germany,GB,7,0,0,0,Alexis Claude-Maurice,327905,Midfielder,1730,Augsburg,2025/2026,Germany,Bundesliga,6.131428571,436,1,0,273
+-AMC-FW-,"AM(C),FW",Germany,GB,7,0,0,0,Jonas Wind,353565,Forward,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.12,271,1,0,274
+-AMC-AMR-FW-,"AM(CR),FW",Germany,GB,8,0,0,0,Woo-yeong Jeong,366868,Midfielder,796,Union Berlin,2025/2026,Germany,Bundesliga,6.11625,161,0,0,275
+-FW-,FW,Germany,GB,7,0,0,0,Robert Glatzel,136707,Forward,38,Hamburg,2025/2026,Germany,Bundesliga,6.115714286,74,0,0,276
+-FW-,FW,Germany,GB,8,0,0,0,Conrad Harder,538807,Forward,7614,RBL,2025/2026,Germany,Bundesliga,6.11125,91,1,0,277
+-FW-,FW,Germany,GB,8,0,1,0,Phillip Tietz,298145,Forward,1730,Augsburg,2025/2026,Germany,Bundesliga,6.1075,170,2,0,278
+,Forward,Germany,GB,6,0,0,0,Alexander Røssing-Lelesiit,527354,Forward,38,Hamburg,2025/2026,Germany,Bundesliga,6.105,196,0,0,279
+-FW-,FW,Germany,GB,8,0,0,0,Dzenan Pejcinovic,444298,Forward,33,Wolfsburg,2025/2026,Germany,Bundesliga,6.10375,233,0,0,280
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,9,0,0,0,Tim Skarke,285654,Midfielder,796,Union Berlin,2025/2026,Germany,Bundesliga,6.09,319,0,0,281
+-AMC-AML-AMR-FW-,"AM(CLR),FW",Germany,GB,7,0,0,0,Oladapo Afolayan,382797,Forward,283,St. Pauli,2025/2026,Germany,Bundesliga,6.085714286,145,1,0,282
+,Forward,Germany,GB,6,0,0,0,Fabio Baldé,535020,Forward,38,Hamburg,2025/2026,Germany,Bundesliga,6.085,72,0,0,283
+-DR-MR-,"D(R),M(R)",Germany,GB,10,0,0,0,William Mikelbrencis,415817,Defender,38,Hamburg,2025/2026,Germany,Bundesliga,6.085,369,0,0,284
+-AML-FW-,"AM(L),FW",Germany,GB,9,0,0,1,Elye Wahi,407661,Forward,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,6.077777778,308,1,0,285
+-FW-,FW,Germany,GB,9,0,0,0,Nelson Weiper,459062,Forward,219,Mainz,2025/2026,Germany,Bundesliga,6.054444444,305,0,0,286
+-FW-MC-ML-MR-,"M(CLR),FW",Germany,GB,6,0,0,0,Ihlas Bebou,132021,Forward,1211,Hoffenheim,2025/2026,Germany,Bundesliga,6.053333333,77,0,0,287
+,Midfielder,Germany,GB,7,0,0,0,Patrice Covic,549133,Midfielder,42,Werder Bremen,2025/2026,Germany,Bundesliga,6.047142857,201,1,0,288
+,Forward,Germany,GB,7,0,0,0,Abdoulie Ceesay,549502,Forward,283,St. Pauli,2025/2026,Germany,Bundesliga,6.045714286,133,2,0,289
+-FW-,FW,Germany,GB,9,0,0,0,Martijn Kaars,531846,Forward,283,St. Pauli,2025/2026,Germany,Bundesliga,6.04,443,0,0,290
+-GK-,GK,Germany,GB,10,0,0,0,Finn Dahmen,353985,Goalkeeper,1730,Augsburg,2025/2026,Germany,Bundesliga,6.035,900,0,0,291
+-AMC-AML-AMR-,AM(CLR),Germany,GB,7,0,0,0,Eren Dinkçi,408357,Forward,50,Freiburg,2025/2026,Germany,Bundesliga,6.017142857,220,1,0,292
+-DC-DMC-,"D(C),DMC",Germany,GB,7,0,0,0,Benedikt Gimber,291623,Defender,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,6.004285714,398,1,0,293
+-DMC-,DMC,Germany,GB,6,0,0,0,Luca Kerber,485051,Midfielder,4852,FC Heidenheim,2025/2026,Germany,Bundesliga,5.985,321,2,0,294
+-DMC-,DMC,Germany,GB,7,0,0,0,Oscar Højlund,492867,Midfielder,45,Eintracht Frankfurt,2025/2026,Germany,Bundesliga,5.91,156,0,0,295
