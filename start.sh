@@ -15,17 +15,10 @@ if [ ! -f "manage.py" ]; then
     exit 1
 fi
 
-# Check if virtual environment is activated
-if [ -z "$VIRTUAL_ENV" ]; then
-    echo "⚠️  Warning: No virtual environment detected."
-    echo "   Consider activating your virtual environment first:"
-    echo "   source .venv/bin/activate"
-    echo ""
-    read -p "Continue anyway? (y/N) " -n 1 -r
-    echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        exit 1
-    fi
+# Activate virtual environment if it exists
+if [ -f ".venv/bin/activate" ]; then
+    echo "🔄 Activating virtual environment..."
+    source .venv/bin/activate
 fi
 
 # Build React frontend
