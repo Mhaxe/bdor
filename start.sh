@@ -61,6 +61,11 @@ fi
 echo "✅ Migrations completed!"
 echo ""
 
+echo "📦 Collecting static files..."
+python manage.py collectstatic --noinput
+
+echo "✅ Static files collected!"
+
 # Start Django server
 echo "🚀 Starting Django server..."
 echo ""
