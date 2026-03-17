@@ -50,25 +50,41 @@ class ErrorLogs(APIView):
     """API view that returns logged exceptions"""
 
     def get(self, request):
-        """Get the exceptions log file content"""
+        """Query AppLog and return the most recent entries."""
         try:
-            log_file = Path(__file__).resolve().parent.parent / "logs" / "exceptions.log"
-            
-            if not log_file.exists():
+            from api.models import AppLog
+
+            logs = AppLog.objects.all()[:200]
+            if not logs:
                 return HttpResponse(
                     "No errors logged yet.",
                     content_type="text/plain",
-                    status=200
+                    status=200,
                 )
-            
-            with open(log_file, "r") as f:
-                content = f.read()
-            
-            return HttpResponse(content, content_type="text/plain", status=200)
+
+            lines = []
+            for log in logs:
+                timestamp = log.timestamp.strftime("%Y-%m-%d %H:%M:%S")
+                lines.append(
+                    f"[{timestamp}] {log.level} {log.logger_name}: {log.message}\n"
+                )
+                if log.path or log.method:
+                    lines.append(f"    {log.method} {log.path}\n")
+                if log.exception_type:
+                    lines.append(f"    Exception: {log.exception_type}\n")
+                if log.traceback:
+                    lines.append(f"    Traceback:\n{log.traceback}\n")
+
+            return HttpResponse(
+                "\n".join(lines),
+                content_type="text/plain",
+                status=200,
+            )
         except Exception as e:
             import traceback
+
             return HttpResponse(
                 f"Error reading logs: {str(e)}\n\n{traceback.format_exc()}",
                 content_type="text/plain",
-                status=500
+                status=500,
             )

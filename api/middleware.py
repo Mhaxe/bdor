@@ -35,25 +35,3 @@ class ExceptionLoggingMiddleware:
             )
         except Exception:
             pass  # Silently fail to avoid recursive errors
-
-
-
-
-class RequestLogMiddleware(MiddlewareMixin):
-    def process_request(self, request):
-        request._start_time = time.time()
-
-    def process_response(self, request, response):
-        try:
-            from api.models import RequestLog
-            duration = (time.time() - getattr(request, '_start_time', time.time())) * 1000
-            RequestLog.objects.create(
-                method=request.method,
-                path=request.path,
-                status_code=response.status_code,
-                ip_address=request.META.get('REMOTE_ADDR'),
-                response_time_ms=round(duration, 2),
-            )
-        except Exception:
-            pass
-        return response

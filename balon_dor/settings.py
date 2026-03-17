@@ -92,7 +92,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "api.middleware.ExceptionLoggingMiddleware",
-    'api.middleware.RequestLogMiddleware',
 ]
 
 ROOT_URLCONF = "balon_dor.urls"
@@ -163,11 +162,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "frontend", "dist", "static"),
 ]
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 # For production deployment we need to collect static files so WhiteNoise can serve them.
 # Set a STATIC_ROOT so `manage.py collectstatic` has a target directory.
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+if not DEBUG: 
+    STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
