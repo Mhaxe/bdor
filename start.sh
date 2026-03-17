@@ -71,5 +71,4 @@ echo ""
 echo "Press Ctrl+C to stop the server"
 echo ""
 
-python manage.py collectstatic --noinput
 python manage.py runserver

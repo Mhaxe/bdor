@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "bash ./build.sh",
   "builds": [
     {
       "src": "balon_dor/wsgi.py",
