@@ -18,13 +18,12 @@ class Rankings(APIView):
 
     def get(self, request):
         try:
-            ExternalStatsService.sync_if_stale()
+            player_points = ExternalStatsService.sync_if_stale()
             cache_key = f"rankings_api_response:{timezone.localdate().isoformat()}"
             cached_response = cache.get(cache_key)
             if cached_response is not None:
                 return Response(cached_response, status=status.HTTP_200_OK)
 
-            player_points = PlayerRankingService.get_player_rankings()
             response_data = {
                 "success": True,
                 "total_players": len(player_points),

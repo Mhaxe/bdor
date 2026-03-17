@@ -13,5 +13,12 @@ export default defineConfig({
   },
   build: {
     assetsDir: "static",
+    rollupOptions: {
+      output: {
+        entryFileNames: "static/[name].js",
+        chunkFileNames: "static/[name].js",
+        assetFileNames: "static/[name].[ext]",
+      },
+    },
   },
 });

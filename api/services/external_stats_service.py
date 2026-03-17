@@ -1,19 +1,17 @@
 import logging
-from typing import cast
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import cloudscraper
 from django.db import OperationalError, ProgrammingError
-from django.db.models import Manager
 from django.db.transaction import atomic
 from django.utils import timezone
+from django.conf import settings
 
-from api.models import ExternalPlayerStat, ExternalStatsBatch, StatsSource
-from api.selectors.stats_selectors import (
-    SUPPORTED_STATS_SOURCES,
-    get_latest_stats_batches,
-)
+from api.models import Player, StatsSource
+from api.services.data_normalization_service import DataNormalizationService
+from api.services.player_ranking_service import PlayerRankingService
 
-URL = "https://1xbet.whoscored.com/statisticsfeed/1/getplayerstatistics"
+URL = settings.STATS_URL
 logger = logging.getLogger(__name__)
 
 SOURCE_CONFIG: dict[str, dict[str, dict[str, str]]] = {
@@ -63,58 +61,25 @@ SOURCE_CONFIG: dict[str, dict[str, dict[str, str]]] = {
     },
 }
 
-
-def to_int(value) -> int | None:
-    """Convert external numeric values to integers when possible."""
-
-    if value is None or value == "":
-            return None
-    return int(float(value))
-
-def to_float(value) -> float | None:
-    """Convert external numeric values to floats when possible."""
-    if value is None or value == "":
-            return None
-    return float(value)
-
-def get_first_int(payload: list[dict], key: str) -> int | None:
-    """Return the first integer-like value for a payload field."""
-
-    if not payload:
-        return None
-    return to_int(payload[0].get(key))
-
-def get_first_str(payload: list[dict], key: str) -> str:
-    """Return the first string value for a payload field."""
-
-    if not payload:
-        return ""
-    return str(payload[0].get(key) or "")
+SUPPORTED_STATS_SOURCES = list(StatsSource.values)
 
 class ExternalStatsService:
-    """Fetch and persist external player stats as raw JSON and rows."""
+    """Fetch external stats and upsert one stable combined player row per player."""
 
     @staticmethod
-    def _batch_manager() -> Manager:
-        """Return the default manager for stats batches."""
+    def sync_if_stale() -> list[dict]:
+        """Fetch stats only when today's data has not already been stored.
 
-        return cast(Manager, ExternalStatsBatch._default_manager)
-
-    @staticmethod
-    def _player_stat_manager() -> Manager:
-        """Return the default manager for normalized player stats."""
-
-        return cast(Manager, ExternalPlayerStat._default_manager)
-
-    @staticmethod
-    def sync_if_stale() -> list[ExternalStatsBatch]:
-        """Fetch stats only when today's data has not already been stored."""
+        When fetching is not required, this method still returns the latest
+        computed rankings from the database so callers do not need to invoke
+        `PlayerRankingService.get_player_rankings()`.
+        """
 
         if not ExternalStatsService.should_fetch_today():
             logger.info(
                 "Skipping external stats fetch because today's data is already stored"
             )
-            return []
+            return PlayerRankingService.get_player_rankings()
 
         logger.info("Fetching external stats because stored data is stale or missing")
         return ExternalStatsService.sync_all_sources()
@@ -124,7 +89,7 @@ class ExternalStatsService:
         """Return whether external stats should be fetched for today."""
 
         try:
-            latest_batches = get_latest_stats_batches()
+            latest_player = Player.objects.order_by("-updated_at", "player_id").first()
         except (OperationalError, ProgrammingError):
             logger.debug(
                 "Skipping external stats freshness check before database is ready"
@@ -134,38 +99,11 @@ class ExternalStatsService:
             logger.exception("Unexpected error while checking external stats freshness")
             return False
 
-        if len(latest_batches) < len(SUPPORTED_STATS_SOURCES):
+        if latest_player is None:
             return True
 
         today = timezone.localdate()
-        for batch in latest_batches:
-            if timezone.localdate(batch.fetched_at) != today:
-                return True
-
-        return False
-
-    @staticmethod
-    def fetch_and_store_source(source: str) -> ExternalStatsBatch:
-        """Fetch one source payload and persist both raw and normalized rows."""
-
-        payload = ExternalStatsService._fetch_source_payload(source)
-        with atomic():
-            return ExternalStatsService._store_source_payload(source, payload)
-
-    @staticmethod
-    def sync_all_sources() -> list[ExternalStatsBatch]:
-        """Fetch all sources, then store them atomically as one unit."""
-
-        fetched_payloads = [
-            (str(source), ExternalStatsService._fetch_source_payload(str(source)))
-            for source in SUPPORTED_STATS_SOURCES
-        ]
-
-        with atomic():
-            return [
-                ExternalStatsService._store_source_payload(source, payload)
-                for source, payload in fetched_payloads
-            ]
+        return timezone.localdate(latest_player.updated_at) != today
 
     @staticmethod
     def _fetch_source_payload(source: str) -> list[dict]:
@@ -178,60 +116,36 @@ class ExternalStatsService:
         response.raise_for_status()
         return response.json().get("playerTableStats", [])
 
-    @staticmethod
-    def _store_source_payload(source: str, payload: list[dict]) -> ExternalStatsBatch:
-        """Store one fetched payload and its normalized player rows."""
-
-        batch = ExternalStatsService._batch_manager().create(
-            source=source,
-            season_id=get_first_int(payload, "seasonId"),
-            competition_name=get_first_str(payload, "tournamentName"),
-            request_params=SOURCE_CONFIG[source]["params"],
-            raw_payload=payload,
-            record_count=len(payload),
-        )
-        ExternalStatsService._create_normalized_rows(batch=batch, payload=payload)
-
-        logger.info(
-            "Stored %s external stats rows for source '%s' in batch %s",
-            len(payload),
-            source,
-            batch.id,
-        )
-        return batch
 
     @staticmethod
-    def _create_normalized_rows(batch: ExternalStatsBatch, payload: list[dict]) -> None:
-        """Persist query-friendly player stats rows for a batch."""
+    def sync_all_sources() -> list[dict]:
+        """Fetch all sources in parallel, compute rankings, and persist aggregated players.
 
-        player_rows_by_id: dict[int, dict] = {}
-        for row in payload:
-            player_id = to_int(row.get("playerId"))
-            if player_id is None:
-                continue
+        Returns:
+            list[dict]: The computed player ranking records.
+        """
 
-            player_rows_by_id[player_id] = row
+        # Fetch each source payload concurrently to reduce total latency.
+        fetched_payloads: list[tuple[str, list[dict]]] = []
+        with ThreadPoolExecutor(max_workers=len(SUPPORTED_STATS_SOURCES)) as executor:
+            future_to_source = {
+                executor.submit(ExternalStatsService._fetch_source_payload, str(source)): str(source)
+                for source in SUPPORTED_STATS_SOURCES
+            }
 
-        player_stats = [
-            ExternalPlayerStat(
-                batch=batch,
-                source=batch.source,
-                player_id=player_id,
-                name=str(row.get("name") or ""),
-                position_text=str(row.get("positionText") or ""),
-                team_id=to_int(row.get("teamId")),
-                team_name=str(row.get("teamName") or ""),
-                goals=to_int(row.get("goal")) or 0,
-                assists=to_int(row.get("assistTotal")) or 0,
-                yellow_cards=to_int(row.get("yellowCard")) or 0,
-                red_cards=to_int(row.get("redCard")) or 0,
-                man_of_the_match=to_int(row.get("manOfTheMatch"))
-                or 0,
-                appearances=to_int(row.get("apps")) or 0,
-                rating=to_float(row.get("rating")) or 0.0,
-                raw_row=row,
+            for future in as_completed(future_to_source):
+                source = future_to_source[future]
+                fetched_payloads.append((source, future.result()))
+
+        # Maintain deterministic ordering across runs (matching SUPPORTED_STATS_SOURCES).
+        fetched_payloads.sort(key=lambda item: SUPPORTED_STATS_SOURCES.index(item[0]))
+
+        normalized_records = DataNormalizationService.normalize_payloads(fetched_payloads)
+
+        # Compute rankings and persist players/ranks in a single place.
+        with atomic():
+            rankings = PlayerRankingService.get_player_rankings(
+                player_records=normalized_records, persist=True
             )
-            for player_id, row in player_rows_by_id.items()
-        ]
 
-        ExternalStatsService._player_stat_manager().bulk_create(player_stats)
+        return rankings
