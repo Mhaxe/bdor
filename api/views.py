@@ -1,6 +1,9 @@
 from django.core.cache import cache
 from django.utils import timezone
 from django.http import HttpResponse
+from django.views.decorators.cache import cache_page
+from django.utils.decorators import method_decorator 
+from pathlib import Path
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -14,24 +17,15 @@ RANKINGS_CACHE_TIMEOUT = 60 * 60 * 24
 class Rankings(APIView):
     """API view that returns player points calculations as JSON"""
 
+    @method_decorator(cache_page(RANKINGS_CACHE_TIMEOUT))
     def get(self, request):
         try:
-            cache_key = f"rankings_api_response:{timezone.localdate().isoformat()}"
-            cached_response = cache.get(cache_key)
-            if cached_response is not None:
-                return Response(cached_response, status=status.HTTP_200_OK)
-
             player_points = ExternalStatsService.sync_if_stale()
             response_data = {
                 "success": True,
                 "total_players": len(player_points),
                 "players": player_points,
             }
-            cache.set(
-                cache_key,
-                response_data,
-                timeout=RANKINGS_CACHE_TIMEOUT,
-            )
             return Response(response_data, status=status.HTTP_200_OK)
         except Exception as e:
             import traceback
