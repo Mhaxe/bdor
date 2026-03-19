@@ -13,5 +13,6 @@ dependencies = [
     "psycopg2-binary>=2.9.11",
     "pydantic>=2.12.5",
     "python-dotenv>=1.2.2",
+    "redis[hiredis]>=7.3.0",
     "whitenoise>=6.12.0",
 ]
