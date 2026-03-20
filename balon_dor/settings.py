@@ -59,7 +59,7 @@ if USE_SQLITE and DEBUG:
 else:
     CACHES = {
         "default": {
-            "BACKEND": "django_redis.cache.RedisCache",
+            "BACKEND": "django.core.cache.backends.redis.RedisCache",
             "LOCATION": os.getenv('REDIS_URL'),
         }
     }
