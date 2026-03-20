@@ -3,6 +3,14 @@ import { ArrowUpRightIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
+} from "@/components/ui/navigation-menu";
+import {
   Empty,
   EmptyContent,
   EmptyDescription,
@@ -13,7 +21,29 @@ import {
 
 function App() {
   return (
-    <Empty>
+    <div className="space-y-6">
+      <NavigationMenu>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <NavigationMenuLink asChild>
+                <a href="/">Overview</a>
+              </NavigationMenuLink>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Rankings</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <NavigationMenuLink asChild>
+                <a href="/rankings">Players</a>
+              </NavigationMenuLink>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+
+      <Empty>
       <EmptyHeader>
         <EmptyMedia variant="icon">
           <IconFolderCode />
