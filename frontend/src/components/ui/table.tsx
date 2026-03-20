@@ -21,7 +21,8 @@ function TableHeader({ className, ...props }: React.ComponentProps<"thead">) {
   return (
     <thead
       data-slot="table-header"
-      className={cn("[&_tr]:border-b", className)}
+      // use a deeper muted background for header rows so they stand out from body rows
+      className={cn("bg-muted/80 [&_tr]:border-b", className)}
       {...props}
     />
   )

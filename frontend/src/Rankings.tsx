@@ -270,6 +270,15 @@ function Rankings() {
     },
   });
 
+  const scrollToTop = React.useCallback(() => {
+    try {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (e) {
+      // fallback for environments where window might be undefined
+      // ignore silently
+    }
+  }, []);
+
   if (isLoading) {
     return (
       <div className="w-full p-4">
@@ -379,16 +388,23 @@ function Rankings() {
         </Table>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 py-4">
+        {/* Commented out selection count UI per request. If you want it back,
+            uncomment the block below. */}
+        {/**
         <div className="text-muted-foreground text-sm order-3 md:order-1">
-          {table.getFilteredSelectedRowModel().rows.length} of{" "}
+          {table.getFilteredSelectedRowModel().rows.length} of {" "}
           {table.getFilteredRowModel().rows.length} row(s) selected.
         </div>
+        */}
         <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto order-1 md:order-2">
           <div className="space-x-2">
             <Button
               variant="outline"
               size="sm"
-              onClick={() => table.previousPage()}
+              onClick={() => {
+                table.previousPage();
+                scrollToTop();
+              }}
               disabled={!table.getCanPreviousPage()}
             >
               Previous
@@ -396,7 +412,10 @@ function Rankings() {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => table.nextPage()}
+              onClick={() => {
+                table.nextPage();
+                scrollToTop();
+              }}
               disabled={!table.getCanNextPage()}
             >
               Next
@@ -419,6 +438,7 @@ function Rankings() {
                 setCurrentPage(value); // if value is 0 the input field will be empty
                 if (value > 0 && value <= table.getPageCount()) {
                   table.setPageIndex(pageIndex);
+                  scrollToTop();
                 }
               }}
               onBlur={() => {
