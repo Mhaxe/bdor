@@ -21,29 +21,12 @@ export default function MainLayout({ children }: Props) {
       <header className="w-full border-b bg-background/50">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <a href="#" onClick={(e) => e.preventDefault()} className="flex items-center gap-3" aria-disabled>
-            <img src="/static/balonrank.logo.png" alt="BallonRank logo" className="h-8 w-auto object-contain" />
-            <span className="font-semibold text-sm">BallonRank</span>
+            <img src="/static/balonrank-logo.png" alt="BalonRank logo" className="h-12 w-auto object-contain" />
+            <span className="font-semibold text-sm">BalonRank</span>
           </a>
           <NavigationMenu>
             <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="w-72">
-                  <li>
-                      <NavigationMenuLink asChild>
-                       <a href="#" onClick={(e) => e.preventDefault()}>Overview</a>
-                     </NavigationMenuLink>
-                  </li>
-                  <li>
-                      <NavigationMenuLink asChild>
-                       <a href="#" onClick={(e) => e.preventDefault()}>Rankings</a>
-                     </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-
+            
             <NavigationMenuItem>
               <NavigationMenuTrigger>Supported Competitions</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -137,9 +120,16 @@ export default function MainLayout({ children }: Props) {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-                 <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                 <a href="#" onClick={(e) => e.preventDefault()}>FAQs</a>
-               </NavigationMenuLink>
+              <NavigationMenuTrigger>FAQs</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="w-72">
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <a href="#" onClick={(e) => e.preventDefault()}>How are the points calculated?</a>
+                    </NavigationMenuLink>
+                  </li>
+                </ul>
+              </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
           </NavigationMenu>
