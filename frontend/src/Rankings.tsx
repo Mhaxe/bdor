@@ -222,6 +222,8 @@ const columns: ColumnDef<Player>[] = [
   },
 ];
 
+import MainLayout from "@/layouts/MainLayout"
+
 function Rankings() {
   const {
     data: apiData,
@@ -288,7 +290,8 @@ function Rankings() {
   }
 
   return (
-    <div className="w-full p-4">
+    <MainLayout>
+      <div className="w-full p-4">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter names..."
@@ -430,7 +433,8 @@ function Rankings() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </MainLayout>
   );
 }
 
