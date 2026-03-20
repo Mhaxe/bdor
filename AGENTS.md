@@ -36,6 +36,14 @@ Build / lint / test (commands)
   - Build production bundle: `bun run build` or `npm run build`.
   - Lint: `bun run lint` or `npm run lint` (runs `eslint .` per `frontend/package.json`).
 
+- Package management (preferred tools)
+  - Use `uv` for Python dependency and environment workflows when available in the environment. Examples (project-specific `uv` workflows may vary):
+    - Install dependencies: `uv install` or follow the repository's `uv` workflow (check `uv.lock`/docs).
+    - Run Python commands inside the `uv` environment as the project prefers instead of raw `pip`/`venv` when `uv` is provided.
+  - Use `bun` for JavaScript package management and scripts in the frontend. Examples:
+    - Install frontend deps: `cd frontend && bun install`.
+    - Run scripts: `cd frontend && bun run dev`, `cd frontend && bun run build`, `cd frontend && bun run lint`.
+
 CI / local checks (recommended tools)
 - The repository does not enforce specific formatting tools, but agents should prefer non-disruptive checks first:
   - Python: `black` for formatting, `isort` for import ordering, `ruff` or `flake8` for linting.

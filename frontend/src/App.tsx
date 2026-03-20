@@ -1,5 +1,6 @@
 import { IconFolderCode } from "@tabler/icons-react";
 import { ArrowUpRightIcon } from "lucide-react";
+// Keep anchors here so the component works without a Router context.
 
 import { Button } from "@/components/ui/button";
 import {
@@ -27,17 +28,17 @@ function App() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>Home</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <NavigationMenuLink asChild>
-                <a href="/">Overview</a>
-              </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <a href="/">Overview</a>
+                </NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Rankings</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <NavigationMenuLink asChild>
-                <a href="/rankings">Players</a>
-              </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <a href="/rankings">Players</a>
+                </NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
