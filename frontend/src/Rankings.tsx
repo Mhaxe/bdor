@@ -14,16 +14,10 @@ import {
   useReactTable,
   type VisibilityState,
 } from "@tanstack/react-table";
-import { ChevronDown, ArrowUp, ArrowDown, Circle } from "lucide-react";
+import { ArrowUp, ArrowDown, Circle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 // import { Checkbox } from "@/components/ui/checkbox";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import {
   Table,
@@ -244,6 +238,7 @@ function Rankings() {
     React.useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = React.useState({});
   const [currentPage, setCurrentPage] = React.useState(1);
+  const [nameFilterInput, setNameFilterInput] = React.useState("");
   const [pagination, setPagination] = React.useState<PaginationState>({
     pageIndex: 0,
     pageSize: 50,
@@ -269,6 +264,14 @@ function Rankings() {
       pagination,
     },
   });
+
+  React.useEffect(() => {
+    const timeoutId = window.setTimeout(() => {
+      table.getColumn("name")?.setFilterValue(nameFilterInput);
+    }, 200);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [nameFilterInput, table]);
 
   const scrollToTop = React.useCallback(() => {
     try {
@@ -301,15 +304,14 @@ function Rankings() {
   return (
     <MainLayout>
       <div className="w-full p-4">
-      <div className="flex items-center gap-4 py-4">
+      <div className="flex justify-center py-4">
         <Input
           placeholder="Filter names..."
-          value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
-          onChange={(event) =>
-            table.getColumn("name")?.setFilterValue(event.target.value)
-          }
-          className="max-w-sm"
+          value={nameFilterInput}
+          onChange={(event) => setNameFilterInput(event.target.value)}
+          className="w-full max-w-md focus:border-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600"
         />
+        {/*
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="ml-4 md:ml-auto">
@@ -336,6 +338,7 @@ function Rankings() {
               })}
           </DropdownMenuContent>
         </DropdownMenu>
+        */}
       </div>
       <div className="overflow-hidden rounded-md border">
         <Table>
