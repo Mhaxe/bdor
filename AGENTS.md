@@ -4,7 +4,7 @@ This document instructs agentic coding assistants how to build, lint, test, and 
 
 - Project root: repository uses Django backend + React (Vite + TypeScript) frontend; see `README.md` for high-level dev flows.
 - Python target: 3.12+ (see `pyproject.toml`).
-- Frontend package file: `frontend/package.json` (vite + bun/npm compatible scripts).
+- Frontend package file: `frontend/package.json` (use `bun` for package-manager operations and frontend scripts).
 
 Build / lint / test (commands)
 - Create and activate Python venv (first-time):
@@ -32,15 +32,15 @@ Build / lint / test (commands)
   python manage.py test core.tests.MyTestCase.test_specific_behavior
   ```
 - Frontend (from `frontend/`):
-  - Dev server (vite): `bun run dev` or `npm run dev` or `pnpm run dev` (depending on environment).
-  - Build production bundle: `bun run build` or `npm run build`.
-  - Lint: `bun run lint` or `npm run lint` (runs `eslint .` per `frontend/package.json`).
+  - Dev server (vite): `bun run dev`.
+  - Build production bundle: `bun run build`.
+  - Lint: `bun run lint` (runs `eslint .` per `frontend/package.json`).
 
 - Package management (preferred tools)
   - Use `uv` for Python dependency and environment workflows when available in the environment. Examples (project-specific `uv` workflows may vary):
     - Install dependencies: `uv install` or follow the repository's `uv` workflow (check `uv.lock`/docs).
     - Run Python commands inside the `uv` environment as the project prefers instead of raw `pip`/`venv` when `uv` is provided.
-  - Use `bun` for JavaScript package management and scripts in the frontend. Examples:
+  - Use `bun` for JavaScript package management and scripts in the frontend. Do not use `npm`, `pnpm`, or other JS package managers for dependency installation, builds, or script execution unless the user explicitly requests an exception. Examples:
     - Install frontend deps: `cd frontend && bun install`.
     - Run scripts: `cd frontend && bun run dev`, `cd frontend && bun run build`, `cd frontend && bun run lint`.
 
@@ -122,7 +122,7 @@ Verification checklist for a code change
 1. Run unit tests relevant to the change (`python manage.py test path.to.test`).
 2. Run linters/formatters: backend `black`/`isort`/`ruff` and frontend `eslint` + `tsc` as applicable.
 3. Ensure no secrets were added and `.gitignore` is respected.
-4. Run frontend dev build (`bun run build` or `npm run build`) if UI assets changed.
+4. Run frontend dev build (`bun run build`) if UI assets changed.
 5. Include or update tests for bug fixes and new features.
 
 If blocked, ask one targeted question (exactly one) and include the recommended default action.
