@@ -33,6 +33,21 @@ class PlayerPointsSystem(ABC, Generic[P]):
             + player.red_cards * self.points_per_red_card
             + ceil(player.appearances * player.rating)
         )
+    
+    @classmethod
+    def getPointsContext(cls):
+        return {
+            "points_per_goal": getattr(cls, "points_per_goal", 0),
+            "points_per_assist": getattr(cls, "points_per_assist", 0),
+            "points_per_clean_sheet": getattr(cls, "points_per_clean_sheet", 0),
+            "points_per_penalty_save": getattr(cls, "points_per_penalty_save", 0),
+            "points_per_penalty_miss": getattr(cls, "points_per_penalty_miss", 0),
+            "points_per_yellow_card": getattr(cls, "points_per_yellow_card", 0),
+            "points_per_red_card": getattr(cls, "points_per_red_card", 0),
+            "points_per_own_goal": getattr(cls, "points_per_own_goal", 0),
+            "points_per_2_goals_conceded": getattr(cls, "points_per_2_goals_conceded", 0),
+            "points_per_man_of_the_match": getattr(cls, "points_per_man_of_the_match", 0),
+        }
 
 
 class StrikerPointsSystem(PlayerPointsSystem["Striker"]):

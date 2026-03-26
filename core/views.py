@@ -9,3 +9,6 @@ class IndexView(View):
 
 class RankingView(TemplateView):
     template_name = "index.html"
+
+class FAQsView(TemplateView):
+    template_name = "index.html"
