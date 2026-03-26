@@ -142,9 +142,9 @@ const columns: ColumnDef<Player>[] = [
   {
     id: "rank",
     accessorKey: "rank",
-    header: () => <div className="text-center w-20">Rank</div>,
+    header: () => <div className="text-center w-28">Rank</div>,
     cell: ({ row }) => (
-      <div className="flex items-center justify-center gap-2 w-20">
+      <div className="flex items-center justify-center gap-2 w-28">
         <span className="font-medium">{row.getValue("rank")}</span>
         <RankChangeIcon
           rankChange={row.original.rank_change}
@@ -350,8 +350,8 @@ function Rankings() {
 
   return (
     <MainLayout>
-      <div className="w-full p-4">
-      <div className="flex flex-wrap items-center justify-center gap-2 py-4">
+      <div className="w-full">
+      <div className="flex flex-wrap items-center justify-center gap-2 pb-4">
         <Input
           placeholder="Filter names..."
           value={nameFilterInput}
