@@ -7,6 +7,8 @@ from api.services.data_normalization_service import (
 )
 from core.players import create_player
 
+SQLITE_SAFE_BULK_BATCH_SIZE = 100
+
 
 class PlayerRankingService:
     """Build ranked player results from normalized stats records.
@@ -156,7 +158,10 @@ class PlayerRankingService:
             to_update.append(existing)
 
         if to_create:
-            Player.objects.bulk_create(to_create)
+            Player.objects.bulk_create(
+                to_create,
+                batch_size=SQLITE_SAFE_BULK_BATCH_SIZE,
+            )
         if to_update:
             Player.objects.bulk_update(
                 to_update,
@@ -175,4 +180,5 @@ class PlayerRankingService:
                     "previous_rank",
                     "updated_at",
                 ],
+                batch_size=SQLITE_SAFE_BULK_BATCH_SIZE,
             )

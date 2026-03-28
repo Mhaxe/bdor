@@ -1,9 +1,12 @@
 import * as React from "react";
+import type { CSSProperties } from "react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import {
+  type Column,
   type ColumnDef,
   type ColumnFiltersState,
+  type ColumnPinningState,
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
@@ -142,9 +145,12 @@ const columns: ColumnDef<Player>[] = [
   {
     id: "rank",
     accessorKey: "rank",
-    header: () => <div className="text-center w-28">Rank</div>,
+    size: 144,
+    minSize: 144,
+    maxSize: 144,
+    header: () => <div className="text-center">Rank</div>,
     cell: ({ row }) => (
-      <div className="flex items-center justify-center gap-2 w-28">
+      <div className="flex items-center justify-center gap-2">
         <span className="font-medium">{row.getValue("rank")}</span>
         <RankChangeIcon
           rankChange={row.original.rank_change}
@@ -156,6 +162,8 @@ const columns: ColumnDef<Player>[] = [
   },
   {
     accessorKey: "name",
+    size: 224,
+    minSize: 224,
     header: "Name",
     cell: ({ row }) => <div>{row.getValue("name")}</div>,
   },
@@ -238,6 +246,54 @@ const columns: ColumnDef<Player>[] = [
 
 import MainLayout from "@/layouts/MainLayout"
 
+const getPinnedColumnStyles = (
+  column: Column<Player>,
+): CSSProperties => {
+  const pinnedSide = column.getIsPinned();
+
+  if (!pinnedSide) {
+    return {
+      width: column.getSize(),
+    };
+  }
+
+  return {
+    isolation: "isolate",
+    left: `${column.getStart("left")}px`,
+    position: "sticky",
+    width: column.getSize(),
+    zIndex: column.id === "rank" ? 30 : 20,
+  };
+};
+
+const getPinnedColumnClasses = (column: Column<Player>, isHeader = false) => {
+  if (!column.getIsPinned()) {
+    return "";
+  }
+
+  const shadowClass = column.getIsLastColumn("left")
+    ? "shadow-none border-r border-border"
+    : "";
+  const backgroundClass = isHeader
+    ? "bg-muted"
+    : "bg-background group-hover:bg-muted";
+
+  return `relative ${backgroundClass} bg-clip-padding overflow-hidden ${shadowClass}`;
+};
+
+const getColumnDividerClasses = (
+  column: Column<Player>,
+  isHeader = false,
+) => {
+  const dividerClass = column.getIsPinned() ? "border-border" : "border-border/70";
+  const rightDividerClass = column.getIsLastColumn("left")
+    ? ""
+    : "border-r";
+  const bottomDividerClass = isHeader ? "border-b" : "border-b";
+
+  return `${rightDividerClass} ${bottomDividerClass} ${dividerClass}`.trim();
+};
+
 function Rankings() {
   const {
     data: apiData,
@@ -256,6 +312,9 @@ function Rankings() {
   );
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({});
+  const [columnPinning] = React.useState<ColumnPinningState>({
+    left: ["rank", "name"],
+  });
   const [rowSelection, setRowSelection] = React.useState({});
   const [currentPage, setCurrentPage] = React.useState(1);
   const [nameFilterInput, setNameFilterInput] = React.useState("");
@@ -298,6 +357,7 @@ function Rankings() {
       sorting,
       columnFilters,
       columnVisibility,
+      columnPinning,
       rowSelection,
       pagination,
     },
@@ -360,7 +420,7 @@ function Rankings() {
         />
         <Combobox
           value={teamFilter}
-          onValueChange={(value) => setTeamFilter(value as string | null)}
+          onValueChange={(value: string | null) => setTeamFilter(value)}
           items={teamNames}
         >
           <ComboboxInput
@@ -395,6 +455,7 @@ function Rankings() {
               <DropdownMenuCheckboxItem
                 key={pos}
                 className="uppercase"
+                indicatorSide="right"
                 checked={positionFilter.includes(pos)}
                 onCheckedChange={(checked) => {
                   setPositionFilter((prev) =>
@@ -410,6 +471,7 @@ function Rankings() {
                 <DropdownMenuSeparator />
                 <DropdownMenuCheckboxItem
                   checked={false}
+                  indicatorSide="right"
                   onCheckedChange={() => setPositionFilter([])}
                   className="text-muted-foreground"
                 >
@@ -421,13 +483,20 @@ function Rankings() {
         </DropdownMenu>
       </div>
       <div className="overflow-hidden rounded-md border">
-        <Table>
-          <TableHeader>
+        <Table className="min-w-max border-separate border-spacing-0">
+          <TableHeader className="bg-muted">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
                   return (
-                    <TableHead key={header.id}>
+                    <TableHead
+                      key={header.id}
+                      className={`${getPinnedColumnClasses(header.column, true)} ${getColumnDividerClasses(header.column, true)}`}
+                      style={{
+                        ...getPinnedColumnStyles(header.column),
+                        zIndex: header.column.id === "rank" ? 50 : 40,
+                      }}
+                    >
                       {header.isPlaceholder
                         ? null
                         : flexRender(
@@ -446,9 +515,14 @@ function Rankings() {
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
+                  className="group bg-background hover:bg-muted"
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
+                    <TableCell
+                      key={cell.id}
+                      className={`${getPinnedColumnClasses(cell.column)} ${getColumnDividerClasses(cell.column)}`}
+                      style={getPinnedColumnStyles(cell.column)}
+                    >
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext(),
