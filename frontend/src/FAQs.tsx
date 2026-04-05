@@ -2,12 +2,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import MainLayout from "@/layouts/MainLayout";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 interface PointsContext {
   points_per_goal: number;
@@ -75,49 +69,70 @@ const fetchFaqs = async (): Promise<FAQsApiResponse> => {
   const response = await axios.get("/api/faqs/");
   return response.data;
 };
+const formatPointsValue = (value: number) => {
+  if (value === 0) return "N/A";
+  if (value > 0) return `+${value}`;
+  return `${value}`;
+};
 
-const PointsTable = ({ data }: { data: PointsContext | undefined }) => {
+const PointsMatrix = ({ data }: { data: PointsSystem | undefined }) => {
   if (!data) return null;
 
-  const pointsMap = [
-    { label: "Every goal scored", value: data.points_per_goal },
-    { label: "Every assist", value: data.points_per_assist },
-    { label: "Every clean sheet", value: data.points_per_clean_sheet },
-    { label: "Every penalty save", value: data.points_per_penalty_save },
-    { label: "Every penalty miss", value: data.points_per_penalty_miss },
-    { label: "Every yellow card", value: data.points_per_yellow_card },
-    { label: "Every red card", value: data.points_per_red_card },
-    { label: "Every own goal", value: data.points_per_own_goal },
-    { label: "Every 2 goals conceded", value: data.points_per_2_goals_conceded },
-    { label: "Every Man of the Match", value: data.points_per_man_of_the_match },
-  ];
+  const columns = [
+    { key: "points_per_goal", label: "Goals" },
+    { key: "points_per_assist", label: "Assists" },
+    { key: "points_per_clean_sheet", label: "Clean Sheets" },
+    { key: "points_per_penalty_save", label: "Penalty Saves" },
+    { key: "points_per_penalty_miss", label: "Penalty Misses" },
+    { key: "points_per_yellow_card", label: "Yellow Cards" },
+    { key: "points_per_red_card", label: "Red Cards" },
+    { key: "points_per_own_goal", label: "Own Goals" },
+    { key: "points_per_2_goals_conceded", label: "2 Goals Conceded" },
+    { key: "points_per_man_of_the_match", label: "Man of the Match" },
+  ] as const;
+
+  const rows = [
+    { label: "Forward (Striker or Winger)", values: data.forward },
+    { label: "Midfielder", values: data.midfielder },
+    { label: "Defender", values: data.defender },
+    { label: "Keeper", values: data.goalkeeper },
+  ] as const;
 
   return (
     <div className="overflow-x-auto rounded-md border mt-2">
       <table className="w-full text-sm text-left">
         <thead className="bg-muted text-muted-foreground border-b">
           <tr>
-            <th className="px-4 py-2 font-medium">Action</th>
-            <th className="px-4 py-2 font-medium text-right">Points</th>
+            <th className="px-4 py-2 font-medium min-w-56">Position</th>
+            {columns.map((column) => (
+              <th key={column.key} className="px-4 py-2 font-medium text-right whitespace-nowrap">
+                {column.label}
+              </th>
+            ))}
           </tr>
         </thead>
         <tbody className="divide-y">
-          {pointsMap.map((item, idx) => (
-            <tr key={idx} className="hover:bg-muted/50 transition-colors">
-              <td className="px-4 py-2">{item.label}</td>
-              <td className="px-4 py-2 text-right">
-                <span
-                  className={
-                    item.value > 0
-                      ? "text-green-600 font-medium"
-                      : item.value < 0
-                        ? "text-red-600 font-medium"
-                        : "text-muted-foreground"
-                  }
-                >
-                  {item.value > 0 ? `+${item.value}` : item.value}
-                </span>
-              </td>
+          {rows.map((row) => (
+            <tr key={row.label} className="hover:bg-muted/50 transition-colors">
+              <td className="px-4 py-2 font-medium">{row.label}</td>
+              {columns.map((column) => {
+                const rawValue = row.values[column.key];
+                return (
+                  <td key={`${row.label}-${column.key}`} className="px-4 py-2 text-right">
+                    <span
+                      className={
+                        rawValue > 0
+                          ? "text-green-600 font-medium"
+                          : rawValue < 0
+                            ? "text-red-600 font-medium"
+                            : "text-muted-foreground"
+                      }
+                    >
+                      {formatPointsValue(rawValue)}
+                    </span>
+                  </td>
+                );
+              })}
             </tr>
           ))}
         </tbody>
@@ -158,42 +173,9 @@ function FAQs() {
           <section id="points-system" className="space-y-6">
             <h2 className="text-2xl font-semibold border-b pb-2">Points System</h2>
             <p className="text-muted-foreground">
-              Points are awarded differently depending on the player's position. Check the criteria below.
+              Points are awarded differently depending on the player's position. Values shown as N/A do not apply to that position.
             </p>
-            <Accordion type="single" collapsible className="w-full border rounded-lg px-4 bg-card">
-              <AccordionItem value="forward">
-                <AccordionTrigger className="hover:no-underline font-semibold text-lg">
-                  Forward (Striker or Winger)
-                </AccordionTrigger>
-                <AccordionContent>
-                  <PointsTable data={data.points_system.forward} />
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="midfielder">
-                <AccordionTrigger className="hover:no-underline font-semibold text-lg">
-                  Midfielder
-                </AccordionTrigger>
-                <AccordionContent>
-                  <PointsTable data={data.points_system.midfielder} />
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="defender">
-                <AccordionTrigger className="hover:no-underline font-semibold text-lg">
-                  Defender
-                </AccordionTrigger>
-                <AccordionContent>
-                  <PointsTable data={data.points_system.defender} />
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="goalkeeper" className="border-b-0">
-                <AccordionTrigger className="hover:no-underline font-semibold text-lg">
-                  Goalkeeper
-                </AccordionTrigger>
-                <AccordionContent>
-                  <PointsTable data={data.points_system.goalkeeper} />
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+            <PointsMatrix data={data.points_system} />
           </section>
         )}
 
