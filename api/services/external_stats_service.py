@@ -1,4 +1,5 @@
 import logging
+from datetime import timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import cloudscraper
@@ -7,7 +8,7 @@ from django.db.transaction import atomic
 from django.utils import timezone
 from django.conf import settings
 
-from api.models import Player, StatsSource
+from api.models import StatsSource, FetchRecord
 from api.services.data_normalization_service import DataNormalizationService
 from api.services.player_ranking_service import PlayerRankingService
 
@@ -67,6 +68,13 @@ class ExternalStatsService:
     """Fetch external stats and upsert one stable combined player row per player."""
 
     @staticmethod
+    def get_next_thursday(dt):
+        """Calculate the next Thursday always in the future."""
+        # Mon=0, Tue=1, Wed=2, Thu=3, Fri=4, Sat=5, Sun=6
+        days_ahead = 7 - (dt.weekday() - 3) % 7
+        return dt + timedelta(days=days_ahead)
+
+    @staticmethod
     def sync_if_stale() -> list[dict]:
         """Fetch stats only when today's data has not already been stored.
 
@@ -77,33 +85,30 @@ class ExternalStatsService:
 
         if not ExternalStatsService.should_fetch_today():
             logger.info(
-                "Skipping external stats fetch because today's data is already stored"
+                "Skipping external stats fetch"
             )
             return PlayerRankingService.get_player_rankings()
 
-        logger.info("Fetching external stats because stored data is stale or missing")
-        return ExternalStatsService.sync_all_sources()
+        logger.info("Fetching external stats")
+        return ExternalStatsService.fetch_external_stats()
 
     @staticmethod
     def should_fetch_today() -> bool:
         """Return whether external stats should be fetched for today."""
 
         try:
-            latest_player = Player.objects.order_by("-updated_at", "player_id").first()
+            fetch_record = FetchRecord.objects.first()
+            if fetch_record is None:
+                return True
+            return fetch_record.fetch_next_at < timezone.now()
         except (OperationalError, ProgrammingError):
             logger.debug(
-                "Skipping external stats freshness check before database is ready"
+                "Skipping external stats check before database is ready"
             )
             return False
         except Exception:
-            logger.exception("Unexpected error while checking external stats freshness")
+            logger.exception("Unexpected error while checking external stats")
             return False
-
-        if latest_player is None:
-            return True
-
-        today = timezone.localdate()
-        return timezone.localdate(latest_player.updated_at) != today
 
     @staticmethod
     def _fetch_source_payload(source: str) -> list[dict]:
@@ -116,9 +121,15 @@ class ExternalStatsService:
         response.raise_for_status()
         return response.json().get("playerTableStats", [])
 
+    @staticmethod
+    def update_stats():
+        scraper = cloudscraper.create_scraper()
+        response = scraper.get(settings.UPDATE_URL)
+        response.raise_for_status()
+        return response.json()
 
     @staticmethod
-    def sync_all_sources() -> list[dict]:
+    def fetch_external_stats() -> list[dict]:
         """Fetch all sources in parallel, compute rankings, and persist aggregated players.
 
         Returns:
@@ -148,4 +159,16 @@ class ExternalStatsService:
                 player_records=normalized_records, persist=True
             )
 
+            # Update fetch record for next time
+            fetch_record = FetchRecord.objects.first()
+            now = timezone.now()
+            if fetch_record:
+                fetch_record.last_fetch_at = now
+                fetch_record.fetch_next_at = ExternalStatsService.get_next_thursday(now)
+                fetch_record.save()
+            else:
+                FetchRecord.objects.create(
+                    fetch_next_at=ExternalStatsService.get_next_thursday(now),
+                    last_fetch_at=now,
+                )
         return rankings

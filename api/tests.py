@@ -1,10 +1,10 @@
-from datetime import timedelta
+from datetime import datetime, timedelta
 from unittest.mock import patch
 
 from django.test import TestCase
 from django.utils import timezone
 
-from api.models import Player
+from api.models import Player, FetchRecord
 from api.services.data_normalization_service import DataNormalizationService
 from api.services.external_stats_service import ExternalStatsService
 from api.services.player_ranking_service import PlayerRankingService
@@ -50,15 +50,21 @@ class ExternalStatsServiceTests(TestCase):
     def test_should_fetch_today_when_no_players_exist(self):
         self.assertTrue(ExternalStatsService.should_fetch_today())
 
-    def test_should_fetch_today_returns_false_for_today_player_update(self):
-        Player.objects.create(player_id=1, name="A")
+    def test_should_fetch_today_returns_false_for_fresh_record(self):
+        # Create a record that expires in the future.
+        FetchRecord.objects.create(
+            fetch_next_at=timezone.now() + timedelta(days=1),
+            last_fetch_at=timezone.now(),
+        )
 
         self.assertFalse(ExternalStatsService.should_fetch_today())
 
-    def test_should_fetch_today_returns_true_for_stale_player_update(self):
-        player = Player.objects.create(player_id=1, name="A")
-        # Use queryset update() to avoid auto_now resetting the field.
-        Player.objects.filter(pk=player.pk).update(updated_at=timezone.now() - timedelta(days=1))
+    def test_should_fetch_today_returns_true_for_stale_record(self):
+        # Create a record that is already expired.
+        FetchRecord.objects.create(
+            fetch_next_at=timezone.now() - timedelta(minutes=1),
+            last_fetch_at=timezone.now() - timedelta(days=1),
+        )
 
         self.assertTrue(ExternalStatsService.should_fetch_today())
 
@@ -79,7 +85,7 @@ class ExternalStatsServiceTests(TestCase):
             side_effect=RuntimeError("upsert failed"),
         ):
             with self.assertRaises(RuntimeError):
-                ExternalStatsService.sync_all_sources()
+                ExternalStatsService.fetch_external_stats()
 
         self.assertEqual(Player.objects.count(), 0)
 
@@ -96,6 +102,63 @@ class ExternalStatsServiceTests(TestCase):
             else (_ for _ in ()).throw(RuntimeError("fetch failed")),
         ):
             with self.assertRaises(RuntimeError):
-                ExternalStatsService.sync_all_sources()
+                ExternalStatsService.fetch_external_stats()
 
         self.assertEqual(Player.objects.count(), 0)
+
+
+class ExternalStatsViewTests(TestCase):
+    """Test standard response behavior for the external-stats API view."""
+
+    def test_get_external_stats_returns_success(self):
+        # We patch sync_if_stale to avoid true network requests during unit tests.
+        with patch(
+            "api.services.external_stats_service.ExternalStatsService.sync_if_stale"
+        ) as mock_sync:
+            mock_sync.return_value = [
+                {"player_id": 1, "name": "Test Player", "points": 10}
+            ]
+
+            response = self.client.get("/api/external-stats/")
+
+            self.assertEqual(response.status_code, 200)
+            self.assertTrue(response.data["success"])
+            self.assertEqual(len(response.data["players"]), 1)
+            self.assertEqual(response.data["players"][0]["name"], "Test Player")
+
+    def test_get_external_stats_returns_error_on_failure(self):
+        with patch(
+            "api.services.external_stats_service.ExternalStatsService.sync_if_stale",
+            side_effect=Exception("sync failed"),
+        ):
+            response = self.client.get("/api/external-stats/")
+
+            self.assertEqual(response.status_code, 500)
+            self.assertFalse(response.data["success"])
+            self.assertEqual(response.data["error"], "sync failed")
+
+
+class ExternalStatsSchedulingTests(TestCase):
+    """Test the next-Thursday scheduling logic in ExternalStatsService."""
+
+    def test_get_next_thursday_logic(self):
+        # 2024-04-01 is Monday (0)
+        # 2024-04-04 is Thursday (3)
+        monday = datetime(2024, 4, 1)
+        next_thu = ExternalStatsService.get_next_thursday(monday)
+        self.assertEqual(next_thu.weekday(), 3)
+        self.assertEqual(next_thu.day, 4)
+
+        # 2024-04-04 is Thursday (3)
+        # Next Thursday should be 2024-04-11
+        thursday = datetime(2024, 4, 4)
+        next_thu = ExternalStatsService.get_next_thursday(thursday)
+        self.assertEqual(next_thu.weekday(), 3)
+        self.assertEqual(next_thu.day, 11)
+
+        # 2024-04-05 is Friday (4)
+        # Next Thursday should be 2024-04-11
+        friday = datetime(2024, 4, 5)
+        next_thu = ExternalStatsService.get_next_thursday(friday)
+        self.assertEqual(next_thu.weekday(), 3)
+        self.assertEqual(next_thu.day, 11)

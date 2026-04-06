@@ -38,41 +38,7 @@ class Player(models.Model):
         return f"{self.name} ({self.player_id})"
 
 
-class AppLog(models.Model):
-    LEVEL_CHOICES = [
-        ('DEBUG', 'Debug'),
-        ('INFO', 'Info'),
-        ('WARNING', 'Warning'),
-        ('ERROR', 'Error'),
-        ('CRITICAL', 'Critical'),
-    ]
-    level = models.CharField(max_length=10, choices=LEVEL_CHOICES)
-    logger_name = models.CharField(max_length=200)
-    message = models.TextField()
-    timestamp = models.DateTimeField(auto_now_add=True)
-
-    # Extra context like RequestLog has
-    path = models.CharField(max_length=500, null=True, blank=True)
-    method = models.CharField(max_length=10, null=True, blank=True)
-    exception_type = models.CharField(max_length=200, null=True, blank=True)
-    traceback = models.TextField(null=True, blank=True)
-
-    class Meta:
-        ordering = ['-timestamp']
-
-    def __str__(self):
-        return f"[{self.timestamp}] {self.level} {self.logger_name}: {self.message[:100]}"
-
-class RequestLog(models.Model):
-    method = models.CharField(max_length=10)
-    path = models.CharField(max_length=500)
-    status_code = models.IntegerField(null=True, blank=True)
-    ip_address = models.GenericIPAddressField(null=True, blank=True)
-    timestamp = models.DateTimeField(auto_now_add=True)
-    response_time_ms = models.FloatField(null=True, blank=True)
-
-    class Meta:
-        ordering = ['-timestamp']
-
-    def __str__(self):
-        return f"[{self.timestamp}] {self.method} {self.path} - {self.status_code}"
+class FetchRecord(models.Model):
+    fetch_next_at = models.DateTimeField()
+    last_fetch_at = models.DateTimeField()
+    

@@ -4,7 +4,7 @@ from api.services.external_stats_service import ExternalStatsService
 def fetch_data():
     """Fetch external stats and store raw payloads plus normalized rows."""
 
-    return ExternalStatsService.sync_all_sources()
+    return ExternalStatsService.fetch_external_stats()
 
 
 def fetch_data_if_stale():
