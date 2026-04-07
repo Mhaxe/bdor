@@ -71,7 +71,7 @@ else:
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 ALLOWED_HOSTS = [
-    "*.vercel.app",
+    ".vercel.app",
     "localhost",
     "127.0.0.1",
     "balonrank.fun",
