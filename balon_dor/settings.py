@@ -93,9 +93,31 @@ INSTALLED_APPS = [
     "rest_framework",
 ]
 
+# Rate limiting defaults
+RATE_LIMIT_ANON = os.getenv("RATE_LIMIT_ANON", "60/min")
+RATE_LIMIT_USER = os.getenv("RATE_LIMIT_USER", "600/min")
+RATE_LIMIT_WHITELIST = [
+    p for p in os.getenv("RATE_LIMIT_WHITELIST", "").split(",") if p
+]
+RATE_LIMIT_CACHE_PREFIX = os.getenv("RATE_LIMIT_CACHE_PREFIX", "rl:")
+
+# DRF throttle configuration
+REST_FRAMEWORK = {
+    "DEFAULT_THROTTLE_CLASSES": [
+        "rest_framework.throttling.UserRateThrottle",
+        "rest_framework.throttling.AnonRateThrottle",
+    ],
+    "DEFAULT_THROTTLE_RATES": {
+        "user": os.getenv("RATE_LIMIT_USER", RATE_LIMIT_USER),
+        "anon": os.getenv("RATE_LIMIT_ANON", RATE_LIMIT_ANON),
+    },
+}
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",  # for vercel
+    # Rate limit middleware should run early to protect all endpoints
+    "core.middleware.rate_limit.RateLimitMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
