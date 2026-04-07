@@ -172,10 +172,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "frontend", "dist", "static"),
 ]
 
-# For production deployment we need to collect static files so WhiteNoise can serve them.
-# Set a STATIC_ROOT so `manage.py collectstatic` has a target directory.
+STATIC_ROOT = os.getenv("STATIC_ROOT", os.path.join(BASE_DIR, "staticfiles"))
 if not DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
     STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
