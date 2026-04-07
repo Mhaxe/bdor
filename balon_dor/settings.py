@@ -9,44 +9,44 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+
 from dotenv import load_dotenv
 import os
 from pathlib import Path
 
 
-
 load_dotenv()
 
-UPDATE_URL = os.getenv('UPDATE_URL')
+UPDATE_URL = os.getenv("UPDATE_URL")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
-USE_SQLITE = os.getenv('USE_SQLITE', 'False') == 'True'
+USE_SQLITE = os.getenv("USE_SQLITE", "False") == "True"
 if USE_SQLITE and DEBUG:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
         }
     }
 else:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('DB_NAME'),
-            'USER': os.getenv('DB_USER'),
-            'PASSWORD': os.getenv('DB_PASSWORD'),
-            'HOST': os.getenv('DB_HOST'),
-            'PORT': os.getenv('DB_PORT'),
-            'OPTIONS': {
-                'sslmode': 'require',
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.getenv("DB_NAME"),
+            "USER": os.getenv("DB_USER"),
+            "PASSWORD": os.getenv("DB_PASSWORD"),
+            "HOST": os.getenv("DB_HOST"),
+            "PORT": os.getenv("DB_PORT"),
+            "OPTIONS": {
+                "sslmode": "require",
             },
         }
     }
@@ -62,7 +62,7 @@ else:
     CACHES = {
         "default": {
             "BACKEND": "django.core.cache.backends.redis.RedisCache",
-            "LOCATION": os.getenv('REDIS_URL'),
+            "LOCATION": os.getenv("REDIS_URL"),
         }
     }
 
@@ -71,12 +71,11 @@ else:
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 ALLOWED_HOSTS = [
-    '.vercel.app',
-    'https://balonrank.fun/',  # your purchased domain
-    'localhost',
-    '127.0.0.1',
-    'balonrank.fun',
-    'www.balonrank.fun'
+    "bdor-sooty.vercel.app",
+    "localhost",
+    "127.0.0.1",
+    "balonrank.fun",
+    "www.balonrank.fun",
 ]
 
 
@@ -96,7 +95,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    'whitenoise.middleware.WhiteNoiseMiddleware', #for vercel
+    "whitenoise.middleware.WhiteNoiseMiddleware",  # for vercel
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -166,7 +165,7 @@ USE_TZ = True
 
 # NOTE: STATIC_URL must include a leading and trailing slash so that
 # requests like `/static/index.css` are correctly matched by WhiteNoise.
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 # Additional locations of static files
 STATICFILES_DIRS = [
@@ -175,7 +174,7 @@ STATICFILES_DIRS = [
 
 # For production deployment we need to collect static files so WhiteNoise can serve them.
 # Set a STATIC_ROOT so `manage.py collectstatic` has a target directory.
-if not DEBUG: 
+if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
     STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
@@ -208,4 +207,4 @@ LOGGING = {
     },
 }
 
-STATS_URL = os.getenv('STATS_URL')
+STATS_URL = os.getenv("STATS_URL")

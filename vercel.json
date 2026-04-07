@@ -2,18 +2,25 @@
   "version": 2,
   "builds": [
     {
-      "src": "balon_dor/wsgi.py",
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "frontend/dist"
+      }
+    },
+    {
+      "src": "config/vercel_app.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
+        "runtime": "python3.12"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "balon_dor/wsgi.py"
+      "dest": "config/vercel_app.py"
     }
   ]
 }

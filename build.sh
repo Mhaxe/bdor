@@ -1,39 +1,31 @@
-"
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Balon d'Or - Quick Start Script
-# This script builds the React frontend and starts the Django server
-
-set -e  # Exit on error
-
-echo "🏆 Balon d'Or - Quick Start"
-echo "============================"
-echo ""
-
-# Check if we're in the correct directory
-if [ ! -f "manage.py" ]; then
-    echo "❌ Error: manage.py not found. Please run this script from the project root."
-    exit 1
+# Build script used by Vercel to build frontend and collect static files
+ROOT_DIR=$(dirname "$0")
+echo "Building frontend with bun..."
+if [ -d "$ROOT_DIR/frontend" ]; then
+  (cd "$ROOT_DIR/frontend" && if command -v bun >/dev/null 2>&1; then bun install --prefer-offline; bun run build; else echo "bun not found, skipping frontend build"; fi)
+else
+  echo "No frontend directory found, skipping frontend build"
 fi
 
-# Activate virtual environment if it exists
-if [ -f ".venv/bin/activate" ]; then
-    echo "🔄 Activating virtual environment..."
-    source .venv/bin/activate
+echo "Installing Python dependencies..."
+if [ -f "$ROOT_DIR/uv.lock" ] && command -v uv >/dev/null 2>&1; then
+  echo "uv.lock detected and uv available: installing dependencies with uv"
+  # Try sync first (preferred), fall back to install
+  if ! uv sync; then
+    uv install
+  fi
+
+  echo "Running collectstatic via uv"
+  uv run python manage.py collectstatic --noinput
+else
+  echo "uv not available or uv.lock missing: falling back to pip"
+  if [ -f "$ROOT_DIR/requirements.txt" ]; then
+    pip install -r "$ROOT_DIR/requirements.txt"
+  fi
+
+  echo "Collecting static files"
+  python manage.py collectstatic --noinput
 fi
-
-
-# Run migrations
-echo "🔄 Running database migrations..."
-python manage.py migrate
-
-if [ $? -ne 0 ]; then
-    echo "❌ Error: Database migrations failed."
-    exit 1
-fi
-
-echo "✅ Migrations completed!"
-echo ""
-
-echo "📦 Collecting static files..."
-python manage.py collectstatic --noinput
