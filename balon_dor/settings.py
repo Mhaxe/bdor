@@ -71,14 +71,11 @@ else:
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 ALLOWED_HOSTS = [
-    "bdor-sooty.vercel.app",
     "localhost",
     "127.0.0.1",
     "balonrank.fun",
     "www.balonrank.fun",
-    "bdor-l8mw5xmbo-mxwllhayibor0-6348s-projects.vercel.app",
-    "bdor.vercel.app",
-    "bdor-n4upysxjr-mxwllhayibor0-6348s-projects.vercel.app",
+    ".vercel.app",
 ]
 
 
