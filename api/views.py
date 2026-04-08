@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 
 from api.services.player_ranking_service import PlayerRankingService
 from api.services.external_stats_service import ExternalStatsService
-
+from api.selectors import delete_fetch_record
 
 RANKINGS_CACHE_TIMEOUT = 60 * 60 * 12
 RANKINGS_CACHE_KEY = "api:rankings:v1"
@@ -89,3 +89,8 @@ class ClearCache(APIView):
     def get(self, request):
         cache.clear()
         return Response({"success": True, "message": "Cache cleared successfully"}, status=status.HTTP_200_OK)
+
+class DeleteFetchRecord(APIView):
+    def get(self, request):
+        delete_fetch_record()
+        return Response({"success": True, "message": "Fetch record deleted successfully"}, status=status.HTTP_200_OK)
