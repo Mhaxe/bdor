@@ -68,11 +68,8 @@ class ExternalStatsService:
     """Fetch external stats and upsert one stable combined player row per player."""
 
     @staticmethod
-    def get_next_thursday(dt):
-        """Calculate the next Thursday always in the future."""
-        # Mon=0, Tue=1, Wed=2, Thu=3, Fri=4, Sat=5, Sun=6
-        days_ahead = 7 - (dt.weekday() - 3) % 7
-        return dt + timedelta(days=days_ahead)
+    def get_next_fetch_day(dt):
+        return dt + timedelta(days=2)
 
     @staticmethod
     def sync_if_stale() -> list[dict]:
@@ -164,11 +161,11 @@ class ExternalStatsService:
             now = timezone.now()
             if fetch_record:
                 fetch_record.last_fetch_at = now
-                fetch_record.fetch_next_at = ExternalStatsService.get_next_thursday(now)
+                fetch_record.fetch_next_at = ExternalStatsService.get_next_fetch_day(now)
                 fetch_record.save()
             else:
                 FetchRecord.objects.create(
-                    fetch_next_at=ExternalStatsService.get_next_thursday(now),
+                    fetch_next_at=ExternalStatsService.get_next_fetch_day(now),
                     last_fetch_at=now,
                 )
         return rankings

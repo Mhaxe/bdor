@@ -156,29 +156,3 @@ class ClearCacheViewTests(TestCase):
 
         # Verify the cache is cleared
         self.assertIsNone(cache.get("test_key"))
-
-
-class ExternalStatsSchedulingTests(TestCase):
-    """Test the next-Thursday scheduling logic in ExternalStatsService."""
-
-    def test_get_next_thursday_logic(self):
-        # 2024-04-01 is Monday (0)
-        # 2024-04-04 is Thursday (3)
-        monday = datetime(2024, 4, 1)
-        next_thu = ExternalStatsService.get_next_thursday(monday)
-        self.assertEqual(next_thu.weekday(), 3)
-        self.assertEqual(next_thu.day, 4)
-
-        # 2024-04-04 is Thursday (3)
-        # Next Thursday should be 2024-04-11
-        thursday = datetime(2024, 4, 4)
-        next_thu = ExternalStatsService.get_next_thursday(thursday)
-        self.assertEqual(next_thu.weekday(), 3)
-        self.assertEqual(next_thu.day, 11)
-
-        # 2024-04-05 is Friday (4)
-        # Next Thursday should be 2024-04-11
-        friday = datetime(2024, 4, 5)
-        next_thu = ExternalStatsService.get_next_thursday(friday)
-        self.assertEqual(next_thu.weekday(), 3)
-        self.assertEqual(next_thu.day, 11)
