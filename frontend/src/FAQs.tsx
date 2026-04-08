@@ -103,9 +103,8 @@ const PointsMatrix = ({ data }: { data: PointsSystem | undefined }) => {
             {columns.map((column, idx) => (
               <th
                 key={column.key}
-                className={`px-4 py-2 font-medium text-right whitespace-nowrap ${
-                  idx > 0 ? "border-l border-border" : ""
-                }`}
+                className={`px-4 py-2 font-medium text-right whitespace-nowrap ${idx > 0 ? "border-l border-border" : ""
+                  }`}
               >
                 {column.label}
               </th>
@@ -116,13 +115,13 @@ const PointsMatrix = ({ data }: { data: PointsSystem | undefined }) => {
           {rows.map((row) => (
             <tr key={row.label} className="hover:bg-muted/50 transition-colors">
               <td className="px-4 py-2 font-medium">{row.label}</td>
-               {columns.map((column, idx) => {
-                 const rawValue = row.values[column.key];
-                 return (
-                   <td
-                     key={`${row.label}-${column.key}`}
-                     className={`px-4 py-2 text-right ${idx > 0 ? "border-l border-border" : ""}`}
-                   >
+              {columns.map((column, idx) => {
+                const rawValue = row.values[column.key];
+                return (
+                  <td
+                    key={`${row.label}-${column.key}`}
+                    className={`px-4 py-2 text-right ${idx > 0 ? "border-l border-border" : ""}`}
+                  >
                     <span
                       className={
                         rawValue > 0
@@ -191,7 +190,7 @@ function FAQs() {
         )}
 
         <section id="supported-competitions" className="space-y-6">
-          <h2 className="text-2xl font-semibold border-b pb-2">Supported Competitions</h2>
+          <h2 className="text-2xl font-semibold border-b pb-2">Competitions</h2>
           <p className="text-muted-foreground">
             BalonRank currently tracks player statistics and performances across these elite competitions.
           </p>
