@@ -15,34 +15,19 @@ class Rankings(APIView):
     """API view that returns player points calculations as JSON"""
 
     def get(self, request):
-        try:
-            response_data = cache.get(RANKINGS_CACHE_KEY)
-            if response_data is None:
-                if ExternalStatsService.should_fetch_today():
-                    try:
-                        response_data = ExternalStatsService.update_stats()
-                    except Exception as e:
-                        response_data = self.get_local_rankings()
-                else:
-                    response_data = self.get_local_rankings()
-                cache.set(
-                    RANKINGS_CACHE_KEY,
-                    response_data,
-                    timeout=RANKINGS_CACHE_TIMEOUT,
-                )
-            return Response(response_data, status=status.HTTP_200_OK)
-        except Exception as e:
-            import traceback
-
-            print(f"Error: {e}")
-            print(traceback.format_exc())
-            return Response(
-                {"success": False, "error": str(e)},
-                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            )
+        response_data = cache.get(RANKINGS_CACHE_KEY)
+        if response_data is None:
+            player_points = ExternalStatsService.update_stats()
+            response_data = self.build_response(player_points)
+        
+        cache.set(
+            RANKINGS_CACHE_KEY,
+            response_data,
+            timeout=RANKINGS_CACHE_TIMEOUT,
+        )
+        return Response(response_data, status=status.HTTP_200_OK)
     
-    def get_local_rankings(self):
-        player_points = PlayerRankingService.get_player_rankings()
+    def build_response(self, player_points):
         return {
             "success": True,
             "total_players": len(player_points),
@@ -56,32 +41,6 @@ class FAQs(APIView):
 
         serializer = FAQPointsSystemSerializer(instance={})
         return Response(serializer.data, status=status.HTTP_200_OK)
-
-
-class ExternalStats(APIView):
-    """API view that triggers external stats synchronization and returns the current rankings."""
-
-    def get(self, request):
-        try:
-            # Using sync_if_stale to trigger a fetch only if today's data is missing.
-            player_points = ExternalStatsService.sync_if_stale()
-            response_data = {
-                "success": True,
-                "total_players": len(player_points),
-                "players": player_points,
-            }
-            return Response(response_data, status=status.HTTP_200_OK)
-        except Exception as e:
-            import traceback
-            import logging
-            logger = logging.getLogger(__name__)
-            logger.error(f"Error in ExternalStats view: {e}")
-            logger.error(traceback.format_exc())
-            return Response(
-                {"success": False, "error": str(e)},
-                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            )
-
 
 class ClearCache(APIView):
     """API view that forcefully clears the cache."""

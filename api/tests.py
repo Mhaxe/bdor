@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
 from unittest.mock import patch
 
 from django.test import TestCase
@@ -105,38 +105,6 @@ class ExternalStatsServiceTests(TestCase):
                 ExternalStatsService.fetch_external_stats()
 
         self.assertEqual(Player.objects.count(), 0)
-
-
-class ExternalStatsViewTests(TestCase):
-    """Test standard response behavior for the external-stats API view."""
-
-    def test_get_external_stats_returns_success(self):
-        # We patch sync_if_stale to avoid true network requests during unit tests.
-        with patch(
-            "api.services.external_stats_service.ExternalStatsService.sync_if_stale"
-        ) as mock_sync:
-            mock_sync.return_value = [
-                {"player_id": 1, "name": "Test Player", "points": 10}
-            ]
-
-            response = self.client.get("/api/external-stats/")
-
-            self.assertEqual(response.status_code, 200)
-            self.assertTrue(response.data["success"])
-            self.assertEqual(len(response.data["players"]), 1)
-            self.assertEqual(response.data["players"][0]["name"], "Test Player")
-
-    def test_get_external_stats_returns_error_on_failure(self):
-        with patch(
-            "api.services.external_stats_service.ExternalStatsService.sync_if_stale",
-            side_effect=Exception("sync failed"),
-        ):
-            response = self.client.get("/api/external-stats/")
-
-            self.assertEqual(response.status_code, 500)
-            self.assertFalse(response.data["success"])
-            self.assertEqual(response.data["error"], "sync failed")
-
 
 from django.core.cache import cache
 

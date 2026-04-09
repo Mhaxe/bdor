@@ -73,7 +73,7 @@ class ExternalStatsService:
         return dt + timedelta(days=2)
 
     @staticmethod
-    def sync_if_stale() -> list[dict]:
+    def update_stats() -> list[dict]:
         """Fetch stats only when today's data has not already been stored.
 
         When fetching is not required, this method still returns the latest
@@ -88,7 +88,12 @@ class ExternalStatsService:
             return PlayerRankingService.get_player_rankings()
 
         logger.info("Fetching external stats")
-        return ExternalStatsService.fetch_external_stats()
+        try:
+            player_points = ExternalStatsService.fetch_external_stats()
+        except Exception as e:
+            logger.exception("Failed to fetch external stats")
+            player_points = PlayerRankingService.get_player_rankings()
+        return player_points
 
     @staticmethod
     def should_fetch_today() -> bool:
@@ -125,13 +130,6 @@ class ExternalStatsService:
         response = scraper.get(URL, params=config["params"], headers={})
         response.raise_for_status()
         return response.json().get("playerTableStats", [])
-
-    @staticmethod
-    def update_stats():
-        scraper = cloudscraper.create_scraper()
-        response = scraper.get(settings.UPDATE_URL)
-        response.raise_for_status()
-        return response.json()
 
     @staticmethod
     def fetch_external_stats() -> list[dict]:

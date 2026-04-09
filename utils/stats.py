@@ -10,7 +10,7 @@ def fetch_data():
 def fetch_data_if_stale():
     """Fetch external stats only when today's data is not already stored."""
 
-    return ExternalStatsService.sync_if_stale()
+    return ExternalStatsService.update_stats()
 
 
 if __name__ == "__main__":
