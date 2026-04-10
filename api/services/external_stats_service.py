@@ -146,7 +146,7 @@ class ExternalStatsService:
         for i, source in enumerate(SUPPORTED_STATS_SOURCES):
             # Add a small random delay between requests (except the first one) to mimic human behavior.
             if i > 0:
-                delay = random.uniform(0.5, 1)
+                delay = random.uniform(1, 5)
                 logger.debug("Sleeping for %.2f seconds before fetching next source", delay)
                 time.sleep(delay)
 
