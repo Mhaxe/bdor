@@ -35,7 +35,7 @@ export default function MainLayout({ children }: Props) {
         <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
           <div className="flex min-w-0 items-center gap-4 md:gap-6">
             <a href="/rankings" className="flex items-center gap-3">
-              <img src="/static/balonrank-logo.png" alt="BalonRank logo" className="h-12 w-auto object-contain" />
+              <img src="/static/og/logo-720.png" alt="BalonRank logo" className="h-12 w-auto object-contain" />
               <span className="font-semibold text-sm">BalonRank</span>
             </a>
             <NavigationMenu className="hidden flex-none md:flex">
