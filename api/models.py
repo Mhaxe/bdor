@@ -26,6 +26,7 @@ class Player(models.Model):
     man_of_the_match = models.PositiveIntegerField(default=0)
     appearances = models.PositiveIntegerField(default=0)
     rating = models.FloatField(default=0.0)
+    competitions_count = models.PositiveSmallIntegerField(default=0)
 
     rank = models.PositiveIntegerField(null=True, blank=True, db_index=True)
     previous_rank = models.PositiveIntegerField(null=True, blank=True)

@@ -35,6 +35,7 @@ class DataNormalizationService:
                     "team_name": player.team_name,
                     "appearances": int(player.appearances or 0),
                     "rating": float(player.rating or 0.0),
+                    "competitions_count": int(player.competitions_count or 0),
                     "previous_rank": player.previous_rank,
                 }
             )
@@ -79,6 +80,7 @@ class DataNormalizationService:
             "manOfTheMatch",
             "apps",
             "rating",
+            "tournamentId",
         ]:
             if col not in df.columns:
                 df[col] = None
@@ -103,6 +105,7 @@ class DataNormalizationService:
                 man_of_the_match=("manOfTheMatch", "sum"),
                 appearances=("apps", "sum"),
                 rating=("rating", "mean"),
+                competitions_count=("tournamentId", "nunique"),
             )
             .reset_index()
         )
@@ -150,6 +153,7 @@ class DataNormalizationService:
                     "team_name": row.get("team_name") or "",
                     "appearances": int(row.get("appearances") or 0),
                     "rating": float(row.get("rating") or 0.0),
+                    "competitions_count": int(row.get("competitions_count") or 0),
                     "previous_rank": existing.rank if existing is not None else None,
                 }
             )

@@ -56,6 +56,7 @@ class PlayerRankingService:
                         "man_of_the_match": player.man_of_the_match,
                         "rating": player.rating,
                         "appearances": player.appearances,
+                        "competitions_count": int(record.get("competitions_count") or 0),
                         "previous_rank": record.get("previous_rank"),
                     }
                 )
@@ -115,6 +116,7 @@ class PlayerRankingService:
                 "man_of_the_match": int(ranking.get("man_of_the_match") or 0),
                 "appearances": int(ranking.get("appearances") or 0),
                 "rating": float(ranking.get("rating") or 0.0),
+                "competitions_count": int(ranking.get("competitions_count") or 0),
                 "rank": ranking.get("rank"),
                 "previous_rank": ranking.get("previous_rank"),
                 "updated_at": now,
@@ -134,6 +136,7 @@ class PlayerRankingService:
             existing.man_of_the_match = player_kwargs["man_of_the_match"]
             existing.appearances = player_kwargs["appearances"]
             existing.rating = player_kwargs["rating"]
+            existing.competitions_count = player_kwargs["competitions_count"]
             existing.rank = player_kwargs["rank"]
             existing.previous_rank = player_kwargs["previous_rank"]
             existing.updated_at = now
@@ -158,6 +161,7 @@ class PlayerRankingService:
                     "man_of_the_match",
                     "appearances",
                     "rating",
+                    "competitions_count",
                     "rank",
                     "previous_rank",
                     "updated_at",

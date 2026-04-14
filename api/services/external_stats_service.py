@@ -101,10 +101,6 @@ class ExternalStatsService:
         concurrent requests from triggering redundant external API calls.
         """
         
-        if settings.DEBUG: 
-            logger.info("Avoiding external network calls in DEBUG mode")
-            return PlayerRankingService.get_player_rankings()
-
         # First fast check (unlocked)
         if not ExternalStatsService.should_fetch_today():
             logger.info("Skipping external stats fetch (data is fresh)")
@@ -178,17 +174,17 @@ class ExternalStatsService:
         Returns:
             list[dict]: The computed player ranking records.
         """
-
+        
         # Fetch each source payload sequentially with jitter to avoid IP blocking.
         fetched_payloads: list[tuple[str, list[dict]]] = []
         scraper = cloudscraper.create_scraper()
-
-        for i, source in enumerate(SUPPORTED_STATS_SOURCES):
-            # Add a small random delay between requests (except the first one) to mimic human behavior.
-            if i > 0:
-                delay = random.uniform(1, 5)
-                logger.debug("Sleeping for %.2f seconds before fetching next source", delay)
-                time.sleep(delay)
+        if not settings.DEBUG:
+            for i, source in enumerate(SUPPORTED_STATS_SOURCES):
+                # Add a small random delay between requests (except the first one) to mimic human behavior.
+                if i > 0:
+                    delay = random.uniform(1, 5)
+                    logger.debug("Sleeping for %.2f seconds before fetching next source", delay)
+                    time.sleep(delay)
 
             source_str = str(source)
             try:
@@ -197,6 +193,18 @@ class ExternalStatsService:
             except Exception:
                 logger.exception("Failed to fetch external stats for source '%s'", source_str)
                 raise
+        else:
+            import json
+            from pathlib import Path
+            sample_path = Path(__file__).resolve().parents[2] / "core" / "stats" / "leagues_sample_data.json"
+            with sample_path.open(encoding="utf-8") as f:
+                data = json.load(f)
+            player_stats = data.get("playerTableStats", [])
+            fetched_payloads = [(str(StatsSource.LEAGUE), player_stats)]
+            logger.info(
+                "DEBUG mode: returning stub rankings from leagues_sample_data.json (%d players)",
+                len(player_stats),
+            )
 
         # Maintain deterministic ordering across runs (matching SUPPORTED_STATS_SOURCES).
         fetched_payloads.sort(key=lambda item: SUPPORTED_STATS_SOURCES.index(item[0]))
@@ -206,7 +214,7 @@ class ExternalStatsService:
         # Compute rankings and persist players/ranks in a single place.
         with atomic():
             rankings = PlayerRankingService.get_player_rankings(
-                player_records=normalized_records, persist=True
+                player_records=normalized_records, persist=not settings.DEBUG
             )
 
             # Update fetch record for next time
