@@ -4,7 +4,6 @@ import time
 from datetime import timedelta
 
 import cloudscraper
-import contextlib
 from django.db import OperationalError, ProgrammingError
 from django.db.transaction import atomic
 from django.utils import timezone
@@ -14,6 +13,7 @@ from django.core.cache import cache
 from api.models import StatsSource, FetchRecord
 from api.services.data_normalization_service import DataNormalizationService
 from api.services.player_ranking_service import PlayerRankingService
+from utils.cache import cache_lock
 
 URL = settings.STATS_URL
 logger = logging.getLogger(__name__)
@@ -61,28 +61,6 @@ SOURCE_CONFIG: dict[str, dict[str, dict[str, str]]] = {
         }
     },
 }
-
-
-@contextlib.contextmanager
-def cache_lock(lock_key: str, timeout: int = 600, wait_timeout: int = 30):
-    """Distributed lock using django cache.
-
-    Yields:
-        bool: True if lock was acquired, False if it timed out.
-    """
-    start_time = time.time()
-    acquired = False
-    while time.time() - start_time < wait_timeout:
-        if cache.add(lock_key, "locked", timeout=timeout):
-            acquired = True
-            break
-        time.sleep(0.5)
-
-    yield acquired
-
-    if acquired:
-        cache.delete(lock_key)
-
 
 SUPPORTED_STATS_SOURCES = list(StatsSource.values)
 
