@@ -60,6 +60,21 @@ SOURCE_CONFIG: dict[str, dict[str, dict[str, str]]] = {
             "numberOfPlayersToPick": "789",
         }
     },
+    str(StatsSource.WORLD_CUP): {
+        "params": {
+            "category": "summary",
+            "subcategory": "all",
+            "statsAccumulationType": "0",
+            "isCurrent": "true",
+            "stageId": "23752",           # need the real stage ID for this tournament
+            "tournamentOptions": "36", # need the real tournament option code
+            "sortBy": "Rating",
+            "field": "Overall",
+            "isMinApp": "false",
+            "numberOfPlayersToPick": "774",  # roughly the player pool size
+        }
+    },
+    #add other nations league later
 }
 
 SUPPORTED_STATS_SOURCES = list(StatsSource.values)
