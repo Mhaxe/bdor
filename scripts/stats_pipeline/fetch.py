@@ -14,10 +14,24 @@ import time
 from collections.abc import Callable
 
 import cloudscraper
+import requests
 
 logger = logging.getLogger(__name__)
 
 SOURCES = ("league", "ucl", "europa")
+
+
+class FetchSourceError(Exception):
+    """Raised when fetching one specific source fails, carrying which source
+    it was so callers (e.g. the SNS failure alert) can report it - the
+    original exception is chained via `raise ... from e`, so nothing about
+    the underlying error is lost, just labeled with its source.
+    """
+
+    def __init__(self, source: str, original: Exception):
+        self.source = source
+        self.original = original
+        super().__init__(f"Failed fetching source={source}: {original}")
 
 # Mirrors infra/lambdas/fetch_stats/app.py's SOURCE_CONFIG.
 SOURCE_CONFIG: dict[str, dict[str, str]] = {
@@ -97,9 +111,10 @@ def fetch_all_sources(
             payload to S3 immediately for audit-trail parity before moving
             on to the next source.
 
-    Raises on the first failure. Any sources already fetched before the
-    failure have already been handed to on_payload_fetched, so their raw
-    payloads aren't lost even though the run as a whole is aborted.
+    Raises FetchSourceError (naming which source failed) on the first
+    failure. Any sources already fetched before the failure have already
+    been handed to on_payload_fetched, so their raw payloads aren't lost
+    even though the run as a whole is aborted.
     """
     scraper = cloudscraper.create_scraper()
     results: dict[str, list[dict]] = {}
@@ -110,7 +125,11 @@ def fetch_all_sources(
             logger.debug("Sleeping %.2fs before fetching next source", delay)
             time.sleep(delay)
 
-        payload = _fetch_one(scraper, stats_url, source)
+        try:
+            payload = _fetch_one(scraper, stats_url, source)
+        except requests.exceptions.HTTPError as e:
+            raise FetchSourceError(source, e) from e
+
         results[source] = payload
         if on_payload_fetched is not None:
             on_payload_fetched(source, payload)

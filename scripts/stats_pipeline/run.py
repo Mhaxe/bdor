@@ -17,7 +17,7 @@ from core.stats_aggregation import aggregate_payloads, calculate_rank_change
 from . import alerting, s3_io
 from .cadence import should_fetch_now
 from .config import Config, load_config
-from .fetch import fetch_all_sources
+from .fetch import FetchSourceError, fetch_all_sources
 from .lock import LockHeldError, acquire_lock
 
 logger = logging.getLogger("stats_pipeline")
@@ -111,8 +111,9 @@ def _do_fetch_and_publish(config: Config, s3_client) -> int:
         logger.info("Wrote summary for %s: %d players", date_str, manifest["player_count"])
         return 0
     except Exception as e:
-        logger.exception("Pipeline run failed at stage=%s", current_stage)
-        alerting.publish_failure(config.aws_region, config.sns_alert_topic_arn, current_stage, None, e)
+        source = e.source if isinstance(e, FetchSourceError) else None
+        logger.exception("Pipeline run failed at stage=%s source=%s", current_stage, source)
+        alerting.publish_failure(config.aws_region, config.sns_alert_topic_arn, current_stage, source, e)
         return 1
 
 
