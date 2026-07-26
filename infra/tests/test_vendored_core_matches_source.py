@@ -1,29 +1,37 @@
-"""Guards against infra/lambdas/aggregate_stats/core/ drifting from core/.
+"""Guards against infra/lambdas/aggregate_stats/'s vendored copies drifting
+from their canonical core/ sources.
 
-The aggregator Lambda needs its own physical copy of core/players.py and
-core/points_system.py inside its CodeUri directory (see the module docstring
-in infra/lambdas/aggregate_stats/app.py for why this can't be vendored at
-`sam build` time). This test fails loudly if someone edits the repo-root
-core/ package without updating the vendored copy to match.
+The aggregator Lambda needs physical copies of core/players.py,
+core/points_system.py, and core/stats_aggregation.py inside its CodeUri
+directory (see the module docstrings in infra/lambdas/aggregate_stats/app.py
+and core/stats_aggregation.py for why this can't be vendored at `sam build`
+time). This test fails loudly if someone edits a repo-root core/ module
+without updating the vendored copy to match.
 """
 
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-VENDORED_CORE = Path(__file__).resolve().parents[1] / "lambdas" / "aggregate_stats" / "core"
+INFRA_DIR = Path(__file__).resolve().parents[1]
 
-VENDORED_FILES = ["__init__.py", "players.py", "points_system.py"]
+# (source path relative to repo root, vendored path relative to infra/)
+VENDORED_PAIRS = [
+    ("core/__init__.py", "lambdas/aggregate_stats/core/__init__.py"),
+    ("core/players.py", "lambdas/aggregate_stats/core/players.py"),
+    ("core/points_system.py", "lambdas/aggregate_stats/core/points_system.py"),
+    ("core/stats_aggregation.py", "lambdas/aggregate_stats/normalization.py"),
+]
 
 
-def test_vendored_core_files_match_source():
+def test_vendored_files_match_source():
     mismatched = []
-    for filename in VENDORED_FILES:
-        source = (REPO_ROOT / "core" / filename).read_text()
-        vendored = (VENDORED_CORE / filename).read_text()
+    for source_rel, vendored_rel in VENDORED_PAIRS:
+        source = (REPO_ROOT / source_rel).read_text()
+        vendored = (INFRA_DIR / vendored_rel).read_text()
         if source != vendored:
-            mismatched.append(filename)
+            mismatched.append(f"{source_rel} -> {vendored_rel}")
 
     assert not mismatched, (
-        f"infra/lambdas/aggregate_stats/core/{{{', '.join(mismatched)}}} is out of sync "
-        f"with core/{{{', '.join(mismatched)}}} - copy the updated file(s) over."
+        "Vendored file(s) out of sync with their source - copy the updated "
+        f"file(s) over: {', '.join(mismatched)}"
     )

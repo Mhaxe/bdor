@@ -1,17 +1,18 @@
 """Aggregate the 3 raw per-competition payloads into a final ranked summary.
 
-Ports the old DataNormalizationService.normalize_payloads() merge logic
-(pure-Python, see normalization.py) and PlayerRankingService.get_player_rankings()
-ranking/points assignment - both originally in the Django app, now deleted
-there since fetching and ranking live entirely in this Lambda pipeline.
+Ports PlayerRankingService.get_player_rankings() ranking/points assignment -
+originally in the Django app, now deleted there since fetching and ranking
+live entirely in this Lambda pipeline (and, since then, also in the
+personal-machine script at scripts/stats_pipeline/ - see core/stats_aggregation.py).
 
-The `core/` package here (players.py, points_system.py) is a committed copy
-of the repo-root core/players.py and core/points_system.py, not built/copied
-at `sam build` time: SAM always stages just this function's CodeUri directory
-into a scratch build location, so a Makefile step reaching outside CodeUri
-(e.g. "../../../core/") fails in both local and --use-container builds. Keep
-this copy in sync by hand when the repo-root core/ package changes -
-infra/tests/test_vendored_core_matches_source.py fails the build if they drift.
+Both `core/` (players.py, points_system.py) and `normalization.py` here are
+committed copies of repo-root core/players.py, core/points_system.py, and
+core/stats_aggregation.py respectively, not built/copied at `sam build` time:
+SAM always stages just this function's CodeUri directory into a scratch build
+location, so a Makefile step reaching outside CodeUri (e.g. "../../../core/")
+fails in both local and --use-container builds. Keep these copies in sync by
+hand when the repo-root sources change - infra/tests/test_vendored_core_matches_source.py
+fails the build if they drift.
 
 Writes the final ranked shape directly to S3 so the Django read path
 (api/services/s3_summary_service.py) can serve it with no further ranking
