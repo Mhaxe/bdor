@@ -1,0 +1,151 @@
+{
+  "Comment": "Fetch League, UCL and Europa stats sequentially with jitter (to avoid upstream IP-blocking), then aggregate into a ranked summary. Any single source failing fails the whole run and leaves the previous summary/latest_summary.json untouched.",
+  "StartAt": "FetchLeague",
+  "States": {
+    "FetchLeague": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "${FetchLeagueFunctionArn}",
+        "Payload.$": "$"
+      },
+      "ResultSelector": {
+        "source.$": "$.Payload.source",
+        "s3_key.$": "$.Payload.s3_key",
+        "player_count.$": "$.Payload.player_count"
+      },
+      "ResultPath": "$.results.league",
+      "Retry": [
+        {
+          "ErrorEquals": ["Lambda.ServiceException", "Lambda.SdkClientException", "Lambda.TooManyRequestsException"],
+          "IntervalSeconds": 5,
+          "MaxAttempts": 2,
+          "BackoffRate": 2
+        }
+      ],
+      "Catch": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "ResultPath": "$.error",
+          "Next": "PipelineFailed"
+        }
+      ],
+      "Next": "ComputeJitterBeforeUcl"
+    },
+    "ComputeJitterBeforeUcl": {
+      "Type": "Pass",
+      "Parameters": {
+        "seconds.$": "States.MathRandom(1, 5)"
+      },
+      "ResultPath": "$.jitter",
+      "Next": "WaitBeforeUcl"
+    },
+    "WaitBeforeUcl": {
+      "Type": "Wait",
+      "SecondsPath": "$.jitter.seconds",
+      "Next": "FetchUcl"
+    },
+    "FetchUcl": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "${FetchUclFunctionArn}",
+        "Payload.$": "$"
+      },
+      "ResultSelector": {
+        "source.$": "$.Payload.source",
+        "s3_key.$": "$.Payload.s3_key",
+        "player_count.$": "$.Payload.player_count"
+      },
+      "ResultPath": "$.results.ucl",
+      "Retry": [
+        {
+          "ErrorEquals": ["Lambda.ServiceException", "Lambda.SdkClientException", "Lambda.TooManyRequestsException"],
+          "IntervalSeconds": 5,
+          "MaxAttempts": 2,
+          "BackoffRate": 2
+        }
+      ],
+      "Catch": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "ResultPath": "$.error",
+          "Next": "PipelineFailed"
+        }
+      ],
+      "Next": "ComputeJitterBeforeEuropa"
+    },
+    "ComputeJitterBeforeEuropa": {
+      "Type": "Pass",
+      "Parameters": {
+        "seconds.$": "States.MathRandom(1, 5)"
+      },
+      "ResultPath": "$.jitter",
+      "Next": "WaitBeforeEuropa"
+    },
+    "WaitBeforeEuropa": {
+      "Type": "Wait",
+      "SecondsPath": "$.jitter.seconds",
+      "Next": "FetchEuropa"
+    },
+    "FetchEuropa": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "${FetchEuropaFunctionArn}",
+        "Payload.$": "$"
+      },
+      "ResultSelector": {
+        "source.$": "$.Payload.source",
+        "s3_key.$": "$.Payload.s3_key",
+        "player_count.$": "$.Payload.player_count"
+      },
+      "ResultPath": "$.results.europa",
+      "Retry": [
+        {
+          "ErrorEquals": ["Lambda.ServiceException", "Lambda.SdkClientException", "Lambda.TooManyRequestsException"],
+          "IntervalSeconds": 5,
+          "MaxAttempts": 2,
+          "BackoffRate": 2
+        }
+      ],
+      "Catch": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "ResultPath": "$.error",
+          "Next": "PipelineFailed"
+        }
+      ],
+      "Next": "Aggregate"
+    },
+    "Aggregate": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "${AggregateStatsFunctionArn}",
+        "Payload.$": "$"
+      },
+      "ResultPath": "$.aggregateResult",
+      "Retry": [
+        {
+          "ErrorEquals": ["Lambda.ServiceException", "Lambda.SdkClientException", "Lambda.TooManyRequestsException"],
+          "IntervalSeconds": 5,
+          "MaxAttempts": 2,
+          "BackoffRate": 2
+        }
+      ],
+      "Catch": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "ResultPath": "$.error",
+          "Next": "PipelineFailed"
+        }
+      ],
+      "End": true
+    },
+    "PipelineFailed": {
+      "Type": "Fail",
+      "Cause": "One or more stages failed; summary/latest_summary.json left unchanged from the prior successful run."
+    }
+  }
+}
