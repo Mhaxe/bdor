@@ -26,28 +26,17 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
-USE_SQLITE = os.getenv("USE_SQLITE", "False") == "True"
-if DEBUG:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
+# Rankings are served from S3 (api/services/s3_summary_service.py), not the
+# database. Nothing in this app persists real data to Postgres anymore, so a
+# database is only kept around for django.contrib.admin/auth/sessions (none
+# of which are actively used today, but Django needs one configured). SQLite
+# is enough for that.
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.getenv("DB_NAME"),
-            "USER": os.getenv("DB_USER"),
-            "PASSWORD": os.getenv("DB_PASSWORD"),
-            "HOST": os.getenv("DB_HOST"),
-            "PORT": os.getenv("DB_PORT"),
-            "OPTIONS": {
-                "sslmode": "require",
-            },
-        }
-    }
+}
 
 if DEBUG:
     CACHES = {
@@ -226,3 +215,10 @@ LOGGING = {
 }
 
 STATS_URL = os.getenv("STATS_URL")
+
+AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
+S3_SUMMARY_BUCKET = os.getenv("S3_SUMMARY_BUCKET")
+S3_SUMMARY_LATEST_KEY = os.getenv("S3_SUMMARY_LATEST_KEY", "summary/latest_summary.json")
+
+# Shared secret for the admin-only ClearCache endpoint (api/views.py).
+ADMIN_API_TOKEN = os.getenv("ADMIN_API_TOKEN")

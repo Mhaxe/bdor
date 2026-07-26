@@ -1,11 +1,12 @@
+import secrets
+
+from django.conf import settings
 from django.core.cache import cache
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from api.services.player_ranking_service import PlayerRankingService
-from api.services.external_stats_service import ExternalStatsService
-from api.selectors import delete_fetch_record
+from api.services.s3_summary_service import S3SummaryService, SummaryNotAvailable
 from utils.cache import cache_lock
 
 RANKINGS_CACHE_TIMEOUT = 60 * 60 * 12
@@ -18,18 +19,33 @@ class Rankings(APIView):
     def get(self, request):
         response_data = cache.get(RANKINGS_CACHE_KEY)
         if response_data is None:
-            with cache_lock(f"lock:{RANKINGS_CACHE_KEY}", timeout=60, wait_timeout=10) as acquired:
+            with cache_lock(f"lock:{RANKINGS_CACHE_KEY}", timeout=60, wait_timeout=10):
                 response_data = cache.get(RANKINGS_CACHE_KEY)
                 if response_data is None:
-                    player_points = PlayerRankingService.get_player_rankings()
-                    response_data = self.build_response_data(player_points)
+                    try:
+                        response_data = self.load_response_data()
+                    except SummaryNotAvailable:
+                        return Response(
+                            {
+                                "success": False,
+                                "status": "not_ready",
+                                "message": "Rankings data is not available yet. Please check back shortly.",
+                                "total_players": 0,
+                                "players": [],
+                            },
+                            status=status.HTTP_503_SERVICE_UNAVAILABLE,
+                        )
                     cache.set(
                         RANKINGS_CACHE_KEY,
                         response_data,
                         timeout=RANKINGS_CACHE_TIMEOUT,
                     )
         return Response(response_data, status=status.HTTP_200_OK)
-    
+
+    def load_response_data(self):
+        summary = S3SummaryService.get_latest_summary()
+        return self.build_response_data(summary["players"])
+
     def build_response_data(self, player_points):
         return {
             "success": True,
@@ -45,20 +61,14 @@ class FAQs(APIView):
         serializer = FAQPointsSystemSerializer(instance={})
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+
 class ClearCache(APIView):
-    """API view that forcefully clears the cache."""
+    """Admin-only API view that forcefully clears the rankings cache entry."""
 
     def get(self, request):
-        cache.clear()
+        provided = request.headers.get("X-Admin-Token", "")
+        if not settings.ADMIN_API_TOKEN or not secrets.compare_digest(provided, settings.ADMIN_API_TOKEN):
+            return Response({"success": False, "message": "Forbidden"}, status=status.HTTP_403_FORBIDDEN)
+
+        cache.delete(RANKINGS_CACHE_KEY)
         return Response({"success": True, "message": "Cache cleared successfully"}, status=status.HTTP_200_OK)
-
-class DeleteFetchRecord(APIView):
-    def get(self, request):
-        delete_fetch_record()
-        return Response({"success": True, "message": "Fetch record deleted successfully"}, status=status.HTTP_200_OK)
-
-class UpdateStats(APIView):
-    def get(self, request):
-        delete_fetch_record()
-        ExternalStatsService.update_stats()
-        return Response({"success": True, "message": "Stats updated successfully"}, status=status.HTTP_200_OK)

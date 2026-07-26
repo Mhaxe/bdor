@@ -13,3 +13,6 @@ venv/
 env/
 .venv/
 staticfiles/
+
+# AWS SAM build artifacts
+.aws-sam/
