@@ -63,6 +63,19 @@ SOURCE_CONFIG = {
         "isMinApp": "false",
         "numberOfPlayersToPick": "789",
     },
+    "world_cup": {
+        "category": "summary",
+        "subcategory": "all",
+        "statsAccumulationType": "0",
+        "isCurrent": "true",
+        "stageId": "23752",
+        "tournamentOptions": "36",
+        "sortBy": "Rating",
+        "field": "Overall",
+        "isMinApp": "false",
+        "numberOfPlayersToPick": "789",
+    },
+
 }
 
 
