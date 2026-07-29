@@ -18,7 +18,7 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-SOURCES = ("league", "ucl", "europa")
+SOURCES = ("league", "ucl", "europa","world_cup")
 
 
 class FetchSourceError(Exception):
@@ -65,6 +65,18 @@ SOURCE_CONFIG: dict[str, dict[str, str]] = {
         "isCurrent": "true",
         "stageId": "24799",
         "tournamentOptions": "30",
+        "sortBy": "Rating",
+        "field": "Overall",
+        "isMinApp": "false",
+        "numberOfPlayersToPick": "789",
+    },
+    "world_cup": {
+        "category": "summary",
+        "subcategory": "all",
+        "statsAccumulationType": "0",
+        "isCurrent": "true",
+        "stageId": "23752",
+        "tournamentOptions": "36",
         "sortBy": "Rating",
         "field": "Overall",
         "isMinApp": "false",

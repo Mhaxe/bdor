@@ -16,8 +16,10 @@ TOURNAMENTS = {
     "Bundesliga": {"tournamentOptions": 3, "stageId": 24478},
     "SerieA": {"tournamentOptions": 5, "stageId": 24500},
     "Ligue1": {"tournamentOptions": 22, "stageId": 24609},
-    #"ChampionsLeague": {"tournamentOptions": 12, "stageId": 24796},
-    #"EuropaLeague": {"tournamentOptions": 13, "stageId": 24797},
+    "ChampionsLeague": {"tournamentOptions": 12, "stageId": 24797},
+    "EuropaLeague": {"tournamentOptions": 30, "stageId": 24799},
+    "WorldCup": {"tournamentOptions": 36, "stageId": 23752},
+    "European": {"tournamentOptions": 124, "stageId": 21415 },
 }
 
 CATEGORIES = ["summary", "defensive", "offensive"]
