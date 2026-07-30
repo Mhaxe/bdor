@@ -17,7 +17,7 @@ from core.stats_aggregation import aggregate_payloads, calculate_rank_change
 
 from . import alerting, s3_io
 from .cadence import should_fetch_now
-from .config import Config, load_config
+from .config import ENV_PATH, Config, load_config
 from .fetch import FetchSourceError, fetch_all_sources
 from .lock import LockHeldError, acquire_lock
 
@@ -142,6 +142,21 @@ def _do_fetch_and_publish(config: Config, s3_client) -> int:
 def run() -> int:
     config = load_config()
     _configure_logging(config.log_file)
+
+    if config.paused_warning:
+        logger.warning(config.paused_warning)
+
+    # Checked before the S3 client is built, so a paused tick does no AWS work
+    # at all: no manifest GetObject, and no SNS alert if credentials happen to
+    # break while paused (which would otherwise mean one alert per hourly tick,
+    # unnoticed because a pause is expected to be quiet).
+    if config.paused:
+        logger.info(
+            "Paused: PIPELINE_PAUSED is set in %s; skipping. Set it to false (or remove it) to resume - "
+            "the next tick will then fetch immediately, since the cadence interval has long since elapsed.",
+            ENV_PATH,
+        )
+        return 0
 
     try:
         s3_client = s3_io.get_client(config.aws_region)

@@ -110,6 +110,39 @@ gets retried within the hour instead of losing a full ~2-day cycle.
 doesn't source `.bashrc`/`.profile`, so `~/.local/bin` may not be on `PATH`.
 Confirm with `which uv` if you've installed it somewhere else.
 
+## Pausing fetches
+
+To stop fetching for a while without touching the cron job, set in `.env`:
+
+```dotenv
+PIPELINE_PAUSED=true
+```
+
+Every tick then logs `Paused: PIPELINE_PAUSED is set in ...; skipping.` and
+exits before building the S3 client, so a paused tick does no AWS work at all -
+no manifest read, and no failure alert if credentials break while paused (which
+would otherwise send one alert per hourly tick, easily missed because a pause is
+expected to be quiet).
+
+To resume, set it to `false` or remove the line. The next tick fetches
+immediately, since `FETCH_INTERVAL_DAYS` will have elapsed during the pause;
+after that run the normal cadence resumes from its timestamp.
+
+Accepts `1`/`true`/`yes`/`on` to pause and `0`/`false`/`no`/`off` (or absent) to
+resume, case-insensitively. An unrecognized value logs a warning and does **not**
+pause - failing open on purpose, since a silent freeze looks identical to a
+working pause and could go unnoticed for weeks, whereas an unintended fetch is
+visible in the log and costs one cycle.
+
+Don't pause by inflating `FETCH_INTERVAL_DAYS` instead. That value is measured
+from the last successful run's `generated_at`, not from now, so the arithmetic is
+easy to get wrong; `0` means "fetch every tick" rather than "off"; and a
+non-integer value raises before logging is configured, leaving no trace outside
+`logs/cron_stdout.log`.
+
+Note that a long pause makes the first run back report `rank_change` against the
+pre-pause summary, so a month of movement shows up as one jump.
+
 ## Failure alerting
 
 On any failure, the script publishes to the SNS topic the stack creates
