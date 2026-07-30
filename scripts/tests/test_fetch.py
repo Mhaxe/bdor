@@ -3,7 +3,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 import requests
 
-from scripts.stats_pipeline.fetch import FetchSourceError, fetch_all_sources
+from scripts.stats_pipeline.fetch import SOURCES, FetchSourceError, fetch_all_sources
 
 
 def _mock_response(status_code=200, payload=None, headers=None, text="1.2.3.4"):
@@ -22,14 +22,20 @@ def _mock_response(status_code=200, payload=None, headers=None, text="1.2.3.4"):
 
 
 def test_fetch_all_sources_happy_path():
+    # Derived from SOURCES rather than hardcoded per source. Each source costs
+    # two scraper.get calls - the ipify egress-IP probe, then the real request -
+    # so a fixed-length list silently goes stale as soon as a source is added,
+    # and the shortfall surfaces as a bare StopIteration several calls later
+    # (the probe's `except Exception` swallows the first one). That is exactly
+    # how adding world_cup broke this test.
     scraper = MagicMock()
     scraper.get.side_effect = [
-        _mock_response(200),  # ipify for league
-        _mock_response(200, payload=[{"playerId": 1}]),  # league real request
-        _mock_response(200),  # ipify for ucl
-        _mock_response(200, payload=[{"playerId": 2}]),  # ucl real request
-        _mock_response(200),  # ipify for europa
-        _mock_response(200, payload=[{"playerId": 3}]),  # europa real request
+        response
+        for index in range(len(SOURCES))
+        for response in (
+            _mock_response(200),  # ipify probe
+            _mock_response(200, payload=[{"playerId": index + 1}]),  # real request
+        )
     ]
     fetched = []
 
@@ -41,12 +47,11 @@ def test_fetch_all_sources_happy_path():
             "https://example.test/stats", on_payload_fetched=lambda s, p: fetched.append(s)
         )
 
-    assert result == {
-        "league": [{"playerId": 1}],
-        "ucl": [{"playerId": 2}],
-        "europa": [{"playerId": 3}],
-    }
-    assert fetched == ["league", "ucl", "europa"]
+    assert result == {source: [{"playerId": index + 1}] for index, source in enumerate(SOURCES)}
+    assert fetched == list(SOURCES)
+    # Two calls per source, so an exhausted or over-long stub fails loudly here
+    # rather than as a StopIteration from whichever call ran out.
+    assert scraper.get.call_count == 2 * len(SOURCES)
 
 
 def test_fetch_all_sources_raises_fetch_source_error_naming_the_failed_source():

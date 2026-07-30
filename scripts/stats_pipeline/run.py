@@ -49,8 +49,23 @@ def _configure_logging(log_file: str) -> None:
 
 
 def _build_player_points(aggregated: list[dict], previous_ranks: dict) -> list[dict]:
+    """Score and rank the aggregated records, keeping only eligible players.
+
+    Ineligible players (no top-5-league appearance - see LEAGUE_TOURNAMENT_IDS
+    in core/stats_aggregation.py) are dropped BEFORE sorting, so ranks run
+    1..n with no gaps and the published summary contains only ranked-eligible
+    players. Nothing downstream filters on is_eligible: the Django read path
+    and the frontend render whatever is in summary/latest_summary.json, so if
+    they're not excluded here they show up in the table.
+    """
     player_points = []
+    skipped_ineligible = 0
+
     for record in aggregated:
+        if not record["is_eligible"]:
+            skipped_ineligible += 1
+            continue
+
         record["position"] = POSITION_MAPPING.get(record["position"], record["position"])
         try:
             player = create_player(record)
@@ -77,6 +92,12 @@ def _build_player_points(aggregated: list[dict], previous_ranks: dict) -> list[d
                 "previous_rank": previous_ranks.get(record["player_id"]),
             }
         )
+
+    logger.info(
+        "Ranking %d eligible players; dropped %d ineligible (no top-5-league appearance)",
+        len(player_points),
+        skipped_ineligible,
+    )
 
     player_points.sort(key=lambda p: p["points"], reverse=True)
     for index, player in enumerate(player_points):
