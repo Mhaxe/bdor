@@ -214,7 +214,9 @@ LOGGING = {
     },
 }
 
-STATS_URL = os.getenv("STATS_URL")
+# No STATS_URL here: the Django app never fetches from WhoScored - it only
+# reads the summary below. The stats pipeline (scripts/stats_pipeline/) reads
+# STATS_URL from its own .env.
 
 AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
 S3_SUMMARY_BUCKET = os.getenv("S3_SUMMARY_BUCKET")

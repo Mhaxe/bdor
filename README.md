@@ -68,6 +68,8 @@ bdor/
 ├── core/                # Domain logic: players, points system, frontend views
 ├── docs/                # Supporting documentation
 ├── frontend/            # React + Vite + TypeScript application
+├── infra/               # CloudFormation: stats S3 bucket and alert topic
+├── scripts/             # Stats pipeline (fetch, aggregate, publish to S3)
 ├── manage.py            # Django entry point
 ├── pyproject.toml       # Python project metadata and dependencies
 ├── requirements.txt     # Minimal backend requirements
@@ -76,9 +78,10 @@ bdor/
 
 Important areas:
 
-- `api/services/external_stats_service.py`: external fetch and refresh orchestration
-- `api/services/data_normalization_service.py`: payload merging and normalization
-- `api/services/player_ranking_service.py`: scoring, sorting, rank persistence
+- `scripts/stats_pipeline/`: the stats pipeline - fetch, aggregate, publish to S3
+  (runs from a personal machine on cron; see its README)
+- `api/services/s3_summary_service.py`: reads the published summary from S3
+- `core/stats_aggregation.py`: payload merging and normalization
 - `core/points_system.py`: position-based scoring rules
 - `core/players.py`: validated player domain models
 - `frontend/src/Rankings.tsx`: rankings table UI

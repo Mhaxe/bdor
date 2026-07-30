@@ -1,6 +1,5 @@
 """Ensures the repo root is on sys.path so `core.*` and `scripts.*` import
-correctly regardless of pytest's invocation directory - same pattern already
-established in infra/tests/conftest.py.
+correctly regardless of pytest's invocation directory.
 """
 
 import sys

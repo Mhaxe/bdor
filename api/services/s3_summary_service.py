@@ -13,7 +13,9 @@ class SummaryNotAvailable(Exception):
 
 
 class S3SummaryService:
-    """Read the latest player-rankings summary produced by the Lambda pipeline."""
+    """Read the latest player-rankings summary produced by the stats pipeline
+    (scripts/stats_pipeline/).
+    """
 
     _client = None
 

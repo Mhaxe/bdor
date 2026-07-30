@@ -1,11 +1,14 @@
 # Personal-machine stats pipeline
 
-Fetches WhoScored's League/UCL/Europa player stats, aggregates them into a
-ranked summary, and writes it to the same S3 bucket the AWS Lambda pipeline
-(`infra/`) was supposed to, but from this machine's residential IP instead of
-AWS Lambda's - see `docs/LAMBDA_PIPELINE_MIGRATION.md` for why the Lambda
-pipeline's fetch step doesn't work (WhoScored/Cloudflare blocks AWS's egress
-IPs with a flat 403).
+Fetches WhoScored's League/UCL/Europa/World Cup player stats, aggregates them
+into a ranked summary, and writes it to the stats S3 bucket - from this
+machine's residential IP.
+
+This is the only path that produces the app's rankings. It replaced an AWS
+Lambda + Step Functions pipeline whose fetch step could never work
+(WhoScored/Cloudflare answers AWS's egress IPs with a flat 403); that pipeline
+has since been deleted, and `infra/` now holds only the S3 bucket and the SNS
+alert topic this script uses.
 
 The Django app's read path (`api/services/s3_summary_service.py`) needs no
 changes - it only ever reads `summary/latest_summary.json`.
@@ -109,11 +112,14 @@ Confirm with `which uv` if you've installed it somewhere else.
 
 ## Failure alerting
 
-On any failure, the script publishes to the same SNS topic the AWS SAM stack
-already created (`AlertTopic` in `infra/template.yaml`, subscribed to the
-address configured when the stack was deployed) - no separate alerting setup
-needed. The ARN is hardcoded in `.env` rather than looked up live; update it
-if the stack is ever redeployed under a different `Stage`, account, or region.
+On any failure, the script publishes to the SNS topic the stack creates
+(`AlertTopic` in `infra/template.yaml`, subscribed to the address configured
+when the stack was deployed) - no separate alerting setup needed. This is the
+only alerting for the pipeline: the CloudWatch alarms that watched the old
+Lambda pipeline's executions and 403s were deleted with it, and this script's
+logs live on this machine rather than in CloudWatch. The ARN is hardcoded in
+`.env` rather than looked up live; update it if the stack is ever redeployed
+under a different `Stage`, account, or region.
 
 ## Logs
 

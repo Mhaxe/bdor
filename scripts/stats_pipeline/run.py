@@ -1,9 +1,10 @@
 """Orchestrates the personal-machine stats pipeline: cadence check -> lock ->
 fetch -> aggregate -> S3 write -> (on error) SNS alert.
 
-Does what the 3 AWS Lambda fetch functions + aggregator Lambda were supposed
-to do (infra/lambdas/), but from a residential IP that WhoScored/Cloudflare
-doesn't block.
+The only path that produces the app's rankings: it replaced an AWS Lambda +
+Step Functions pipeline (since removed) that could never work, because
+WhoScored/Cloudflare answers AWS egress IPs with a flat 403 - this runs from a
+residential IP instead.
 """
 
 import logging
