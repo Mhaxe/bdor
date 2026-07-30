@@ -1,12 +1,17 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Transform: AWS::Serverless-2016-10-31
 Description: >
-  Stats pipeline for the Balon d'Or ranking app: three sequential fetch
-  Lambdas (League, UCL, Europa) write raw WhoScored payloads to S3, an
-  aggregator Lambda merges them into a ranked summary, and the whole thing
-  is orchestrated by Step Functions on an EventBridge schedule. Replaces the
-  old request-triggered Postgres-backed pipeline; the Django app (deployed
-  separately on Vercel) only ever reads the resulting summary from S3.
+  Storage and alerting for the Balon d'Or ranking app's stats pipeline: an S3
+  bucket holding raw WhoScored payloads and ranked summaries, plus an SNS topic
+  for failure alerts. Fetching, aggregation and scheduling are NOT here - they
+  run on a personal machine (scripts/stats_pipeline/, driven by cron), because
+  WhoScored/Cloudflare answers AWS egress IPs with a flat 403. The Lambda +
+  Step Functions pipeline that used to do that work has been removed; only the
+  resources the script writes to and alerts through remain. The Django app
+  (deployed separately on Vercel) only ever reads the summary from S3.
+
+  No SAM/serverless resources remain, so this is plain CloudFormation. Deploy
+  with `sam deploy --config-env dev --parameter-overrides AlertEmail=you@example.com`
+  (see samconfig.toml) or `aws cloudformation deploy` directly.
 
 Parameters:
   Stage:
@@ -14,36 +19,9 @@ Parameters:
     Default: dev
     AllowedValues: [dev, prod]
     Description: Deployment stage, used to namespace resource names.
-  StatsUrl:
-    Type: String
-    NoEcho: true
-    Description: WhoScored stats endpoint URL (mirrors Django's STATS_URL setting).
   AlertEmail:
     Type: String
-    Description: Email address subscribed to pipeline-failure / 403 alarms.
-  ScheduleState:
-    Type: String
-    Default: DISABLED
-    AllowedValues: [ENABLED, DISABLED]
-    Description: >
-      Whether the EventBridge schedule actively triggers the pipeline. Keep
-      DISABLED until a manually-triggered run has been validated against the
-      live app's current output (see docs/DEPLOYMENT.md migration notes).
-
-Globals:
-  Function:
-    Runtime: python3.12
-    # x86_64 (not arm64/Graviton): at this pipeline's volume (~60 invocations/
-    # month, a few seconds each) the Graviton cost saving is fractions of a
-    # cent, not worth cross-architecture container builds - emulating arm64
-    # via QEMU on an x86_64 dev machine is slow and can fail outright on
-    # compiled extensions like pydantic-core (used by AggregateStatsFunction).
-    Architectures: [x86_64]
-    Timeout: 60
-    MemorySize: 256
-    Environment:
-      Variables:
-        LOG_LEVEL: INFO
+    Description: Email address subscribed to pipeline-failure alerts.
 
 Resources:
   StatsBucket:
@@ -78,220 +56,14 @@ Resources:
             NoncurrentVersionExpiration:
               NoncurrentDays: 30
 
-  # --- Fetch Lambdas (one per competition, invoked sequentially by the state
-  # machine below - never in parallel - to preserve the anti-IP-blocking
-  # behavior of the original single-process implementation). ---
-
-  FetchLeagueLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub /aws/lambda/bdor-fetch-league-${Stage}
-      RetentionInDays: 30
-
-  FetchLeagueFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub bdor-fetch-league-${Stage}
-      CodeUri: lambdas/fetch_stats/
-      Handler: app.handler
-      LoggingConfig:
-        LogGroup: !Ref FetchLeagueLogGroup
-      Environment:
-        Variables:
-          SOURCE: league
-          STATS_URL: !Ref StatsUrl
-          S3_BUCKET: !Ref StatsBucket
-          RAW_PREFIX: raw/
-      Policies:
-        - Statement:
-            - Effect: Allow
-              Action: s3:PutObject
-              Resource: !Sub "${StatsBucket.Arn}/raw/*"
-
-  FetchUclLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub /aws/lambda/bdor-fetch-ucl-${Stage}
-      RetentionInDays: 30
-
-  FetchUclFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub bdor-fetch-ucl-${Stage}
-      CodeUri: lambdas/fetch_stats/
-      Handler: app.handler
-      LoggingConfig:
-        LogGroup: !Ref FetchUclLogGroup
-      Environment:
-        Variables:
-          SOURCE: ucl
-          STATS_URL: !Ref StatsUrl
-          S3_BUCKET: !Ref StatsBucket
-          RAW_PREFIX: raw/
-      Policies:
-        - Statement:
-            - Effect: Allow
-              Action: s3:PutObject
-              Resource: !Sub "${StatsBucket.Arn}/raw/*"
-
-  FetchEuropaLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub /aws/lambda/bdor-fetch-europa-${Stage}
-      RetentionInDays: 30
-
-  FetchEuropaFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub bdor-fetch-europa-${Stage}
-      CodeUri: lambdas/fetch_stats/
-      Handler: app.handler
-      LoggingConfig:
-        LogGroup: !Ref FetchEuropaLogGroup
-      Environment:
-        Variables:
-          SOURCE: europa
-          STATS_URL: !Ref StatsUrl
-          S3_BUCKET: !Ref StatsBucket
-          RAW_PREFIX: raw/
-      Policies:
-        - Statement:
-            - Effect: Allow
-              Action: s3:PutObject
-              Resource: !Sub "${StatsBucket.Arn}/raw/*"
-
-  # --- Aggregator Lambda ---
-
-  AggregateStatsLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub /aws/lambda/bdor-aggregate-stats-${Stage}
-      RetentionInDays: 30
-
-  AggregateStatsFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub bdor-aggregate-stats-${Stage}
-      CodeUri: lambdas/aggregate_stats/
-      Handler: app.handler
-      Timeout: 90
-      MemorySize: 512
-      LoggingConfig:
-        LogGroup: !Ref AggregateStatsLogGroup
-      Environment:
-        Variables:
-          S3_BUCKET: !Ref StatsBucket
-          RAW_PREFIX: raw/
-          SUMMARY_PREFIX: summary/
-      Policies:
-        - Statement:
-            # Required even though this function only ever does GetObject/
-            # PutObject: without ListBucket, a GetObject on a key that
-            # doesn't exist yet (e.g. summary/latest_summary.json before the
-            # very first run) returns a misleading AccessDenied instead of
-            # NoSuchKey - confirmed live via the personal-machine script
-            # (scripts/stats_pipeline/) hitting exactly this on its first run.
-            - Effect: Allow
-              Action: s3:ListBucket
-              Resource: !GetAtt StatsBucket.Arn
-              Condition:
-                StringLike:
-                  s3:prefix: ["raw/*", "summary/*"]
-            - Effect: Allow
-              Action: s3:GetObject
-              Resource:
-                - !Sub "${StatsBucket.Arn}/raw/*"
-                - !Sub "${StatsBucket.Arn}/summary/*"
-            - Effect: Allow
-              Action: s3:PutObject
-              Resource: !Sub "${StatsBucket.Arn}/summary/*"
-
-  # --- Step Functions state machine: sequences the 3 fetches with jitter,
-  # then the aggregator. Any stage failing fails the whole run and leaves
-  # the previous summary/latest_summary.json untouched. ---
-
-  StateMachineLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub /aws/vendedlogs/states/bdor-stats-pipeline-${Stage}
-      RetentionInDays: 30
-
-  StatsPipelineStateMachine:
-    Type: AWS::Serverless::StateMachine
-    Properties:
-      Name: !Sub bdor-stats-pipeline-${Stage}
-      DefinitionUri: statemachine/stats_pipeline.asl.json
-      DefinitionSubstitutions:
-        FetchLeagueFunctionArn: !GetAtt FetchLeagueFunction.Arn
-        FetchUclFunctionArn: !GetAtt FetchUclFunction.Arn
-        FetchEuropaFunctionArn: !GetAtt FetchEuropaFunction.Arn
-        AggregateStatsFunctionArn: !GetAtt AggregateStatsFunction.Arn
-      Logging:
-        Level: ALL
-        IncludeExecutionData: true
-        Destinations:
-          - CloudWatchLogsLogGroup:
-              LogGroupArn: !GetAtt StateMachineLogGroup.Arn
-      Policies:
-        - LambdaInvokePolicy:
-            FunctionName: !Ref FetchLeagueFunction
-        - LambdaInvokePolicy:
-            FunctionName: !Ref FetchUclFunction
-        - LambdaInvokePolicy:
-            FunctionName: !Ref FetchEuropaFunction
-        - LambdaInvokePolicy:
-            FunctionName: !Ref AggregateStatsFunction
-        - Statement:
-            # Required by Step Functions to deliver Standard-workflow execution
-            # logs to CloudWatch Logs; these actions don't support
-            # resource-level permissions.
-            - Effect: Allow
-              Action:
-                - logs:CreateLogDelivery
-                - logs:GetLogDelivery
-                - logs:UpdateLogDelivery
-                - logs:DeleteLogDelivery
-                - logs:ListLogDeliveries
-                - logs:PutResourcePolicy
-                - logs:DescribeResourcePolicies
-                - logs:DescribeLogGroups
-              Resource: "*"
-
-  # --- EventBridge schedule ---
-
-  StatsPipelineScheduleRole:
-    Type: AWS::IAM::Role
-    Properties:
-      AssumeRolePolicyDocument:
-        Version: '2012-10-17'
-        Statement:
-          - Effect: Allow
-            Principal:
-              Service: scheduler.amazonaws.com
-            Action: sts:AssumeRole
-      Policies:
-        - PolicyName: StartStatsPipelineExecution
-          PolicyDocument:
-            Version: '2012-10-17'
-            Statement:
-              - Effect: Allow
-                Action: states:StartExecution
-                Resource: !Ref StatsPipelineStateMachine
-
-  StatsPipelineSchedule:
-    Type: AWS::Scheduler::Schedule
-    Properties:
-      Name: !Sub bdor-stats-pipeline-${Stage}
-      Description: Triggers the stats pipeline roughly every 2 days.
-      ScheduleExpression: rate(2 days)
-      FlexibleTimeWindow:
-        Mode: "OFF"
-      State: !Ref ScheduleState
-      Target:
-        Arn: !Ref StatsPipelineStateMachine
-        RoleArn: !GetAtt StatsPipelineScheduleRole.Arn
-
   # --- Alerting ---
+  #
+  # Published to directly by the personal-machine script
+  # (scripts/stats_pipeline/alerting.py) on any failed run - including the 403s
+  # the removed CloudWatch metric-filter alarm used to watch for, which the
+  # script now surfaces itself since its logs live on that machine, not in
+  # CloudWatch. The topic ARN is configured in the script's .env; keep the two
+  # in sync if this stack is redeployed under a different Stage/account/region.
 
   AlertTopic:
     Type: AWS::SNS::Topic
@@ -305,77 +77,6 @@ Resources:
       Protocol: email
       Endpoint: !Ref AlertEmail
 
-  PipelineExecutionFailedAlarm:
-    Type: AWS::CloudWatch::Alarm
-    Properties:
-      AlarmName: !Sub bdor-stats-pipeline-execution-failed-${Stage}
-      AlarmDescription: Fires when a scheduled stats-pipeline run fails.
-      Namespace: AWS/States
-      MetricName: ExecutionsFailed
-      Dimensions:
-        - Name: StateMachineArn
-          Value: !Ref StatsPipelineStateMachine
-      Statistic: Sum
-      Period: 86400
-      EvaluationPeriods: 1
-      Threshold: 1
-      ComparisonOperator: GreaterThanOrEqualToThreshold
-      TreatMissingData: notBreaching
-      AlarmActions:
-        - !Ref AlertTopic
-
-  # Operationalizes the egress-IP/CF-RAY diagnostic logging kept in the fetch
-  # Lambdas: counts "status=403" occurrences across all three fetch functions'
-  # logs and alarms if any show up in a run.
-  ForbiddenLogMetricFilterLeague:
-    Type: AWS::Logs::MetricFilter
-    Properties:
-      LogGroupName: !Ref FetchLeagueLogGroup
-      FilterPattern: '"status=403"'
-      MetricTransformations:
-        - MetricName: WhoScoredForbiddenCount
-          MetricNamespace: BdorStatsPipeline
-          MetricValue: "1"
-          DefaultValue: 0
-
-  ForbiddenLogMetricFilterUcl:
-    Type: AWS::Logs::MetricFilter
-    Properties:
-      LogGroupName: !Ref FetchUclLogGroup
-      FilterPattern: '"status=403"'
-      MetricTransformations:
-        - MetricName: WhoScoredForbiddenCount
-          MetricNamespace: BdorStatsPipeline
-          MetricValue: "1"
-          DefaultValue: 0
-
-  ForbiddenLogMetricFilterEuropa:
-    Type: AWS::Logs::MetricFilter
-    Properties:
-      LogGroupName: !Ref FetchEuropaLogGroup
-      FilterPattern: '"status=403"'
-      MetricTransformations:
-        - MetricName: WhoScoredForbiddenCount
-          MetricNamespace: BdorStatsPipeline
-          MetricValue: "1"
-          DefaultValue: 0
-
-  WhoScoredForbiddenAlarm:
-    Type: AWS::CloudWatch::Alarm
-    Properties:
-      AlarmName: !Sub bdor-stats-pipeline-403s-${Stage}
-      AlarmDescription: Fires when WhoScored returns a 403 during a fetch.
-      Namespace: BdorStatsPipeline
-      MetricName: WhoScoredForbiddenCount
-      Statistic: Sum
-      Period: 86400
-      EvaluationPeriods: 1
-      Threshold: 1
-      ComparisonOperator: GreaterThanOrEqualToThreshold
-      TreatMissingData: notBreaching
-      AlarmActions:
-        - !Ref AlertTopic
-
 Outputs:
   StatsBucketName:
     Description: S3 bucket holding raw payloads and ranking summaries.
@@ -383,6 +84,6 @@ Outputs:
   LatestSummaryKey:
     Description: Stable S3 key the Django app should GetObject for the latest ranking.
     Value: summary/latest_summary.json
-  StateMachineArn:
-    Description: Step Functions state machine ARN (for manual start-execution during validation).
-    Value: !Ref StatsPipelineStateMachine
+  AlertTopicArn:
+    Description: SNS topic ARN for the personal-machine script's SNS_ALERT_TOPIC_ARN setting.
+    Value: !Ref AlertTopic

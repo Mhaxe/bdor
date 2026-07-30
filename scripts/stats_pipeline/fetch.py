@@ -1,11 +1,9 @@
-"""Fetch the 3 WhoScored payloads sequentially using ONE shared cloudscraper
-session for the whole run - unlike the AWS Lambda pipeline
-(infra/lambdas/fetch_stats/app.py), which creates a new session per Lambda
-invocation (one per source) and loses Cloudflare session/cookie continuity
-between requests. Running all 3 fetches in one process restores the original
-single-process session-continuity behavior (matching the pre-migration
-Django ExternalStatsService.fetch_external_stats()) - a genuine improvement
-over what the Lambda architecture could achieve.
+"""Fetch every configured WhoScored payload sequentially using ONE shared
+cloudscraper session for the whole run. Running all fetches in one process
+keeps Cloudflare session/cookie continuity between requests - matching the
+pre-migration Django ExternalStatsService.fetch_external_stats(), and something
+the removed per-source Lambda fetch functions could not do, since each
+invocation started a fresh session.
 """
 
 import logging
@@ -33,7 +31,9 @@ class FetchSourceError(Exception):
         self.original = original
         super().__init__(f"Failed fetching source={source}: {original}")
 
-# Mirrors infra/lambdas/fetch_stats/app.py's SOURCE_CONFIG.
+# The WhoScored query params per source. Sole definition in the repo now that
+# the Lambda fetch functions and the pre-migration Django service that both
+# carried copies of it have been deleted.
 SOURCE_CONFIG: dict[str, dict[str, str]] = {
     "league": {
         "category": "summary",
@@ -89,9 +89,9 @@ def _fetch_one(scraper: "cloudscraper.CloudScraper", stats_url: str, source: str
     config = SOURCE_CONFIG[source]
 
     # Diagnostic logging: identify which egress IP / Cloudflare PoP this run
-    # uses. Kept from the original Django/Lambda implementations - it's the
-    # signal that would catch this residential IP eventually getting flagged
-    # the same way AWS Lambda's IP was.
+    # uses. Kept from the original Django implementation - it's the signal that
+    # would catch this residential IP eventually getting flagged the same way
+    # AWS's egress IPs were.
     try:
         egress_ip = scraper.get("https://api.ipify.org", timeout=10).text.strip()
     except Exception:

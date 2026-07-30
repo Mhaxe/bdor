@@ -1,6 +1,7 @@
-"""Best-effort SNS failure notification, reusing the SAM stack's existing
-AlertTopic (infra/template.yaml) rather than building new alerting for this
-personal-machine script.
+"""Best-effort SNS failure notification via the stack's AlertTopic
+(infra/template.yaml). Sole alerting path for the pipeline: the CloudWatch
+alarms that used to watch the Lambda pipeline's executions and 403s are gone
+along with it, and this script's logs live on the machine it runs on.
 """
 
 import logging

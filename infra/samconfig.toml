@@ -1,14 +1,13 @@
-# StatsUrl and AlertEmail have no defaults here (StatsUrl is passed with
-# --no-echo in the template; AlertEmail shouldn't be hardcoded). Supply both
-# on every deploy, e.g.:
-#   sam deploy --config-env dev --parameter-overrides \
-#     StatsUrl=https://... AlertEmail=you@example.com
+# AlertEmail has no default here (it shouldn't be hardcoded). Supply it on
+# every deploy, e.g.:
+#   sam deploy --config-env dev --parameter-overrides AlertEmail=you@example.com
+#
+# No build parameters: the stack is plain CloudFormation (an S3 bucket and an
+# SNS topic) since the Lambda pipeline was removed, so there's nothing to
+# `sam build`.
 version = 0.1
 
 [default]
-[default.build.parameters]
-use_container = true
-
 [default.deploy.parameters]
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
@@ -20,7 +19,7 @@ region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
-parameter_overrides = "Stage=dev ScheduleState=DISABLED"
+parameter_overrides = "Stage=dev"
 
 [prod.deploy.parameters]
 stack_name = "bdor-stats-pipeline-prod"
@@ -28,4 +27,4 @@ region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
-parameter_overrides = "Stage=prod ScheduleState=DISABLED"
+parameter_overrides = "Stage=prod"

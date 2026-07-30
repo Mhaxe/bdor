@@ -1,9 +1,8 @@
 """Thin S3 read/write helpers for the personal-machine stats pipeline.
 
-Uses the exact same key scheme as the AWS Lambda pipeline
-(infra/lambdas/aggregate_stats/app.py) so the Django read path
-(api/services/s3_summary_service.py) and the bucket's existing lifecycle
-rules keep working unchanged regardless of which pipeline produced the data.
+Keeps the key scheme the removed AWS Lambda pipeline established, so the Django
+read path (api/services/s3_summary_service.py) and the bucket's lifecycle rules
+(raw/ and summary/ prefixes, infra/template.yaml) keep working unchanged.
 """
 
 import json

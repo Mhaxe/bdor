@@ -4,17 +4,10 @@ rating averaged, eligibility derived from top-5-league participation).
 
 Originally ported from the deleted DataNormalizationService.normalize_payloads()
 (api/services/data_normalization_service.py, pandas-based) when fetching moved
-to AWS Lambda. Lives here in core/ - not inside a specific pipeline's
-directory - because it has zero AWS/Django dependency and is shared by more
-than one caller: the AWS Lambda pipeline (infra/lambdas/aggregate_stats/) and
-the personal-machine script (scripts/stats_pipeline/) both need it.
-
-The Lambda vendors a physical copy at infra/lambdas/aggregate_stats/normalization.py
-(sam build can't reach outside a function's CodeUri directory, so it can't
-import this module directly - see that Lambda's app.py docstring). Drift
-between the two is guarded by infra/tests/test_vendored_core_matches_source.py.
-The personal-machine script, running in this same repo/venv, imports this
-module directly with no vendoring needed.
+out of the Django request path. Lives here in core/ - not inside its caller's
+directory - because it has zero AWS/Django dependency: the personal-machine
+script (scripts/stats_pipeline/) imports it directly, and the Django read path
+stays free of any ranking computation.
 """
 
 from collections import defaultdict

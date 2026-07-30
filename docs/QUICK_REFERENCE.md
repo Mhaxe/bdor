@@ -150,7 +150,7 @@ Available configurations:
 - `Django Test`
 
 How to use it:
-1. Open a backend file such as `api/views.py` or `api/services/player_ranking_service.py`
+1. Open a backend file such as `api/views.py` or `api/services/s3_summary_service.py`
 2. Click in the gutter to add a breakpoint
 3. Open the Run and Debug panel in VS Code
 4. Choose `Django Runserver` or `Django Test`
@@ -168,9 +168,9 @@ Useful VS Code shortcuts:
 ### Good Backend Files to Debug
 
 - `api/views.py`
-- `api/services/external_stats_service.py`
-- `api/services/data_normalization_service.py`
-- `api/services/player_ranking_service.py`
+- `api/services/s3_summary_service.py`
+- `core/stats_aggregation.py`
+- `core/points_system.py`
 
 ---
 
