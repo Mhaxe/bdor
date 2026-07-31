@@ -121,7 +121,7 @@ const fetchPlayerRankings = async (): Promise<ApiResponse> => {
 // 01 · HIERARCHY — three weight tiers, not twelve
 const TIER1 = "text-[15px] font-bold text-[#08283B]"; // Rank, Player, Points
 const TIER2 = "text-[13.5px] font-medium text-gray-700"; // Position/Team, Goals, Assists, Rating
-const TIER3 = "text-xs font-normal text-gray-400"; // Yellow, Red, MOTM, Apps
+const TIER3 = "text-xs font-normal text-gray-500"; // Yellow, Red, MOTM, Apps
 
 // 04 · NUMERICS — tabular figures
 const NUMERIC = "font-mono tabular-nums [font-variant-numeric:slashed-zero]";
@@ -134,7 +134,7 @@ const numOrDash = (value: number) => (value === 0 ? "—" : value);
 const ratingTintClass = (rating: number) => {
   if (rating >= 7.8) return "bg-emerald-50 text-emerald-700";
   if (rating >= 7.2) return "bg-sky-50 text-sky-800";
-  return "text-gray-500";
+  return "bg-gray-100 text-gray-600";
 };
 
 const disciplineChipClass = (value: number, tone: "amber" | "red") => {
