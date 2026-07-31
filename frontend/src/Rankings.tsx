@@ -151,20 +151,28 @@ const disciplineChipClass = (value: number, tone: "amber" | "red") => {
 const medallionClass = (rank: number) => {
   if (rank === 1) return "bg-[#08283B] border-[#08283B] text-white";
   if (rank === 2) return "border-orange-500 text-[#08283B]";
-  if (rank === 3) return "border-orange-300 text-[#08283B]";
-  return "border-gray-300 text-gray-500";
+  return "border-orange-300 text-[#08283B]";
 };
 
-const RankMedallion = ({ rank }: { rank: number }) => (
-    <span
-        className={cn(
-            "inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold",
-            medallionClass(rank),
-        )}
-    >
-    {rank}
-  </span>
-);
+const RankMedallion = ({ rank }: { rank: number }) => {
+  if (rank > 3) {
+    return (
+        <span className="shrink-0 text-sm font-bold tabular-nums text-[#08283B]">
+          {rank}
+        </span>
+    );
+  }
+  return (
+      <span
+          className={cn(
+              "inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold",
+              medallionClass(rank),
+          )}
+      >
+      {rank}
+    </span>
+  );
+};
 
 // ---------------------------------------------------------------------------
 // 02 · RANK CHANGE — fixed-width delta pill (shows how far, not where from)
@@ -474,12 +482,8 @@ const getPinnedColumnStyles = (column: Column<Player>): CSSProperties => {
 
 const getPinnedColumnClasses = (column: Column<Player>, isHeader = false) => {
   if (!column.getIsPinned()) return "";
-  const backgroundClass = isHeader ? "bg-[#08283B]" : "bg-background group-hover:bg-sky-50";
-  // Soft pin edge: inset shadow instead of a hard border.
-  const edgeClass = column.getIsLastColumn("left")
-      ? "shadow-[inset_-8px_0_8px_-8px_rgba(8,40,59,0.14)]"
-      : "";
-  return cn("relative bg-clip-padding overflow-hidden", backgroundClass, edgeClass);
+  const backgroundClass = isHeader ? "bg-[#08283B]" : "bg-inherit group-hover:bg-sky-50";
+  return cn("relative", !isHeader && "bg-clip-padding overflow-hidden", backgroundClass);
 };
 
 // Approximate sticky behaviour for a group header cell whose children
