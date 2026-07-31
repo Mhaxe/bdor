@@ -445,7 +445,7 @@ const columns: ColumnDef<Player>[] = [
                       ratingTintClass(r),
                   )}
               >
-                {r.toFixed(1)}
+                {r.toFixed(2)}
               </span>
               </div>
           );
@@ -515,7 +515,7 @@ const STAT_TABS: { key: StatKey; label: string }[] = [
 
 const heroValue = (player: Player, stat: StatKey) => {
   if (stat === "points") return player.points.toFixed(2);
-  if (stat === "rating") return player.rating.toFixed(1);
+  if (stat === "rating") return player.rating.toFixed(2);
   return player[stat];
 };
 
@@ -597,7 +597,7 @@ const PlayerCard = ({
                         ratingTintClass(player.rating),
                     )}
                 >
-              {player.rating.toFixed(1)}
+              {player.rating.toFixed(2)}
             </span>
               </div>
               <div>
