@@ -253,7 +253,7 @@ const countActiveFilters = (filters: SheetFiltersState) => {
 // ---------------------------------------------------------------------------
 // 05 · HEADER & DENSITY — grouped columns
 // PLAYER groups Rank/Player/Position/Team, TOTAL is Points, ATTACKING is
-// Goals/Assists, DISCIPLINE is Yellow/Red/MOTM/Apps, FORM is Rating.
+// Goals/Assists, DISCIPLINE is Yellow/Red, FORM is MOTM/Rating/Apps.
 // rank_change stays a hidden leaf column purely to drive the movement filter
 // (the visible delta pill lives inside the Rank cell).
 // ---------------------------------------------------------------------------
@@ -406,6 +406,12 @@ const columns: ColumnDef<Player>[] = [
           );
         },
       },
+    ],
+  },
+  {
+    id: "form-group",
+    header: () => <span>Form</span>,
+    columns: [
       {
         accessorKey: "man_of_the_match",
         header: () => <div className="text-right">MOTM</div>,
@@ -415,21 +421,6 @@ const columns: ColumnDef<Player>[] = [
             </div>
         ),
       },
-      {
-        accessorKey: "appearances",
-        header: () => <div className="text-right">Apps</div>,
-        cell: ({ row }) => (
-            <div className={cn(TIER3, NUMERIC, "text-right")}>
-              {row.getValue("appearances")}
-            </div>
-        ),
-      },
-    ],
-  },
-  {
-    id: "form-group",
-    header: () => <span>Form</span>,
-    columns: [
       {
         accessorKey: "rating",
         header: () => <div className="text-right">Rating</div>,
@@ -450,6 +441,15 @@ const columns: ColumnDef<Player>[] = [
               </div>
           );
         },
+      },
+      {
+        accessorKey: "appearances",
+        header: () => <div className="text-right">Apps</div>,
+        cell: ({ row }) => (
+            <div className={cn(TIER3, NUMERIC, "text-right")}>
+              {row.getValue("appearances")}
+            </div>
+        ),
       },
       // Hidden — drives the All / Rising / Falling toolbar control only.
       {
