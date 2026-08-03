@@ -59,6 +59,11 @@ const competitions = [
     imageSrc: "/static/competitions/europa-league.webp",
     imageAlt: "Europa League",
   },
+  {
+    name: "FIFA World Cup 2026",
+    imageSrc: "/static/competitions/fifa-2026-world-cup.webp",
+    imageAlt: "FIFA World Cup 2026",
+  },
 ] as const;
 
 interface FAQsApiResponse {
