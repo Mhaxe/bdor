@@ -771,6 +771,7 @@ function Rankings() {
       table.getColumn("name")?.setFilterValue(nameFilterInput || undefined);
       table.setPageIndex(0);
       setCurrentPage(1);
+      setMobileVisibleCount(12);
     }, 200);
     return () => window.clearTimeout(timeoutId);
   }, [nameFilterInput, table]);
@@ -838,10 +839,21 @@ function Rankings() {
   // Rows for the narrow-screen card list: same filtered rows as the table,
   // re-sorted by whichever stat tab is active, sliced to the "load next 12"
   // window.
-  const mobileSortedRows = React.useMemo(() => {
-    const rows = table.getFilteredRowModel().rows.map((r) => r.original);
-    return [...rows].sort((a, b) => b[statTab] - a[statTab]);
-  }, [table, statTab, appliedFilters, movementTab, nameFilterInput, data]);
+  //
+  // Key the memo on the filtered row model itself, never on the filter inputs
+  // (movementTab / nameFilterInput / appliedFilters). Those are pushed into the
+  // table from effects, so they change one render *before* the filter is
+  // actually applied — memoising on them yields a list that lags a full
+  // interaction behind. getFilteredRowModel() is memoised inside the table, so
+  // this reference changes exactly when the filtered result does.
+  const filteredRows = table.getFilteredRowModel().rows;
+  const mobileSortedRows = React.useMemo(
+      () =>
+          filteredRows
+              .map((r) => r.original)
+              .sort((a, b) => b[statTab] - a[statTab]),
+      [filteredRows, statTab],
+  );
 
   const mobileVisibleRows = mobileSortedRows.slice(0, mobileVisibleCount);
 
@@ -879,7 +891,10 @@ function Rankings() {
           {/* Toolbar --------------------------------------------------------*/}
           <div className="pb-4">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <InputGroup className="h-11 flex-1 rounded-lg border-2 has-[[data-slot=input-group-control]:focus-visible]:border-blue-500 has-[[data-slot=input-group-control]:focus-visible]:ring-0">
+              {/* Desktop-only: below md the card list has its own search box
+                  in its dark header, so showing this one too would duplicate
+                  the control (both write to the same nameFilterInput state). */}
+              <InputGroup className="hidden h-11 flex-1 rounded-lg border-2 has-[[data-slot=input-group-control]:focus-visible]:border-blue-500 has-[[data-slot=input-group-control]:focus-visible]:ring-0 md:flex">
                 <InputGroupAddon align="inline-start">
                   <InputGroupText>
                     <SearchIcon className="size-4" />
@@ -964,22 +979,25 @@ function Rankings() {
               </span>
 
                 <Sheet open={isFilterSheetOpen} onOpenChange={handleFilterSheetOpenChange}>
+                  {/* Desktop-only trigger — the card list header carries the
+                      narrow-screen filter button. The sheet itself is open-state
+                      controlled, so it still opens from that button below md. */}
                   <Button
                       type="button"
                       variant="outline"
                       aria-label="Open filters"
                       onClick={() => handleFilterSheetOpenChange(true)}
                       className={cn(
-                          "relative h-11 w-11 shrink-0 rounded-lg border-2 p-0 sm:w-auto sm:min-w-[112px] sm:justify-between sm:px-3",
+                          "relative hidden h-11 shrink-0 rounded-lg border-2 p-0 md:inline-flex md:min-w-[112px] md:justify-between md:px-3",
                           activeFilterCount > 0 && "border-blue-500/40",
                       )}
                   >
                   <span className="flex items-center gap-2">
                     <FilterIcon className="size-4" />
-                    <span className="hidden sm:inline">Filters</span>
+                    <span>Filters</span>
                   </span>
                     {activeFilterCount > 0 && (
-                        <span className="absolute -right-1.5 -top-1.5 flex size-5 items-center justify-center rounded-full bg-orange-500 text-[11px] font-semibold text-white sm:static sm:ml-1">
+                        <span className="ml-1 flex size-5 items-center justify-center rounded-full bg-orange-500 text-[11px] font-semibold text-white">
                       {activeFilterCount}
                     </span>
                     )}
