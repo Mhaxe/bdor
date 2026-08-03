@@ -1122,8 +1122,13 @@ function Rankings() {
               <TableHeader>
                 {table.getHeaderGroups().map((headerGroup) => (
                     <TableRow key={headerGroup.id} className="hover:bg-transparent">
-                      {headerGroup.headers.map((header) => {
+                      {headerGroup.headers.map((header, index) => {
                         const isGroupHeader = header.subHeaders && header.subHeaders.length > 0;
+                        // Rule each group boundary in the group row, so Player /
+                        // Total / Attacking / Discipline / Form read as distinct
+                        // spans. The leading group needs no divider — the table
+                        // border already closes that edge.
+                        const isGroupBoundary = isGroupHeader && index > 0;
                         return (
                             <TableHead
                                 key={header.id}
@@ -1131,6 +1136,7 @@ function Rankings() {
                                 className={cn(
                                     getPinnedColumnClasses(header.column, true),
                                     "border-b border-white/10 bg-[#08283B] text-white/70",
+                                    isGroupBoundary && "border-l border-white/10",
                                     isGroupHeader
                                         ? "h-7 text-[10px] font-normal uppercase tracking-[0.08em] text-white/50"
                                         : "h-10 text-[11px] font-medium uppercase tracking-[0.08em] text-white/80",
