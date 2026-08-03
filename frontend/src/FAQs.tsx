@@ -105,11 +105,10 @@ const PointsMatrix = ({ data }: { data: PointsSystem | undefined }) => {
         <thead className="bg-muted text-muted-foreground border-b">
           <tr>
             <th className="px-4 py-2 font-medium min-w-56">Position</th>
-            {columns.map((column, idx) => (
+            {columns.map((column) => (
               <th
                 key={column.key}
-                className={`px-4 py-2 font-medium text-right whitespace-nowrap ${idx > 0 ? "border-l border-border" : ""
-                  }`}
+                className="px-4 py-2 font-medium text-right whitespace-nowrap border-l border-border"
               >
                 {column.label}
               </th>
@@ -120,12 +119,12 @@ const PointsMatrix = ({ data }: { data: PointsSystem | undefined }) => {
           {rows.map((row) => (
             <tr key={row.label} className="hover:bg-muted/50 transition-colors">
               <td className="px-4 py-2 font-medium">{row.label}</td>
-              {columns.map((column, idx) => {
+              {columns.map((column) => {
                 const rawValue = row.values[column.key];
                 return (
                   <td
                     key={`${row.label}-${column.key}`}
-                    className={`px-4 py-2 text-right ${idx > 0 ? "border-l border-border" : ""}`}
+                    className="px-4 py-2 text-right border-l border-border"
                   >
                     <span
                       className={
