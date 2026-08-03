@@ -771,6 +771,7 @@ function Rankings() {
       table.getColumn("name")?.setFilterValue(nameFilterInput || undefined);
       table.setPageIndex(0);
       setCurrentPage(1);
+      setMobileVisibleCount(12);
     }, 200);
     return () => window.clearTimeout(timeoutId);
   }, [nameFilterInput, table]);
@@ -838,10 +839,21 @@ function Rankings() {
   // Rows for the narrow-screen card list: same filtered rows as the table,
   // re-sorted by whichever stat tab is active, sliced to the "load next 12"
   // window.
-  const mobileSortedRows = React.useMemo(() => {
-    const rows = table.getFilteredRowModel().rows.map((r) => r.original);
-    return [...rows].sort((a, b) => b[statTab] - a[statTab]);
-  }, [table, statTab, appliedFilters, movementTab, nameFilterInput, data]);
+  //
+  // Key the memo on the filtered row model itself, never on the filter inputs
+  // (movementTab / nameFilterInput / appliedFilters). Those are pushed into the
+  // table from effects, so they change one render *before* the filter is
+  // actually applied — memoising on them yields a list that lags a full
+  // interaction behind. getFilteredRowModel() is memoised inside the table, so
+  // this reference changes exactly when the filtered result does.
+  const filteredRows = table.getFilteredRowModel().rows;
+  const mobileSortedRows = React.useMemo(
+      () =>
+          filteredRows
+              .map((r) => r.original)
+              .sort((a, b) => b[statTab] - a[statTab]),
+      [filteredRows, statTab],
+  );
 
   const mobileVisibleRows = mobileSortedRows.slice(0, mobileVisibleCount);
 
