@@ -60,9 +60,9 @@ const competitions = [
     imageAlt: "Europa League",
   },
   {
-    name: "FIFA World Cup 2026",
+    name: "World Cup",
     imageSrc: "/static/competitions/fifa-2026-world-cup.webp",
-    imageAlt: "FIFA World Cup 2026",
+    imageAlt: "World Cup",
   },
 ] as const;
 
